@@ -1,0 +1,61 @@
+{
+  "_id": "e01b9735f1c3a44b",
+  "name": "Trapdoor Smart Mine",
+  "type": "weapon",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "weaponType": "heavy",
+    "skill": "gunnery",
+    "damageCode": "14D",
+    "damageType": "physical",
+    "concealability": 8,
+    "reach": 0,
+    "firingModes": {
+      "ss": true,
+      "sa": false,
+      "bf": false,
+      "fa": false
+    },
+    "ammo": {
+      "current": 3,
+      "max": 3,
+      "type": "mine"
+    },
+    "recoilComp": 0,
+    "smartgunCompatible": false,
+    "ranges": {
+      "short": 0,
+      "medium": 0,
+      "long": 0,
+      "extreme": 0
+    },
+    "strengthMin": 0,
+    "weight": 15,
+    "cost": 10000,
+    "availability": "14/21 days",
+    "legality": "Forbidden",
+    "streetIndex": "4",
+    "equipped": false,
+    "accessories": [],
+    "notes": "Sensor-guided smart anti-vehicle mine; fires an explosively-formed penetrator (Rating 4 sensor / Rating 2 Pilot). Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!e01b9735f1c3a44b"
+}

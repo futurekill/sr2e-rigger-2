@@ -1,0 +1,61 @@
+{
+  "_id": "e809214509859b95",
+  "name": "Ares Victory Autocannon",
+  "type": "weapon",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "weaponType": "heavy",
+    "skill": "gunnery",
+    "damageCode": "20D",
+    "damageType": "physical",
+    "concealability": 99,
+    "reach": 0,
+    "firingModes": {
+      "ss": true,
+      "sa": false,
+      "bf": false,
+      "fa": true
+    },
+    "ammo": {
+      "current": 0,
+      "max": 0,
+      "type": "belt"
+    },
+    "recoilComp": 0,
+    "smartgunCompatible": false,
+    "ranges": {
+      "short": 50,
+      "medium": 150,
+      "long": 350,
+      "extreme": 550
+    },
+    "strengthMin": 0,
+    "weight": 105,
+    "cost": 125000,
+    "availability": "20/45 days",
+    "legality": "Forbidden",
+    "streetIndex": "5",
+    "equipped": false,
+    "accessories": [],
+    "notes": "Heavy belt-fed vehicle autocannon; single-shot or full-auto. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!e809214509859b95"
+}

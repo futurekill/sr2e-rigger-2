@@ -1,0 +1,61 @@
+{
+  "_id": "1463f91bb4d804fe",
+  "name": "Ares Vengeance Minigun",
+  "type": "weapon",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "weaponType": "heavy",
+    "skill": "gunnery",
+    "damageCode": "9S",
+    "damageType": "physical",
+    "concealability": 99,
+    "reach": 0,
+    "firingModes": {
+      "ss": false,
+      "sa": false,
+      "bf": false,
+      "fa": true
+    },
+    "ammo": {
+      "current": 0,
+      "max": 0,
+      "type": "belt"
+    },
+    "recoilComp": 0,
+    "smartgunCompatible": false,
+    "ranges": {
+      "short": 50,
+      "medium": 150,
+      "long": 350,
+      "extreme": 550
+    },
+    "strengthMin": 0,
+    "weight": 30,
+    "cost": 50000,
+    "availability": "18/28 days",
+    "legality": "Forbidden",
+    "streetIndex": "3.5",
+    "equipped": false,
+    "accessories": [],
+    "notes": "Vehicle-mounted minigun (MMG class), belt-fed full-auto. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1463f91bb4d804fe"
+}

@@ -1,0 +1,61 @@
+{
+  "_id": "d998123df2320b4e",
+  "name": "Outlaw Missile (Block II)",
+  "type": "weapon",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "weaponType": "heavy",
+    "skill": "gunnery",
+    "damageCode": "14D",
+    "damageType": "physical",
+    "concealability": 99,
+    "reach": 0,
+    "firingModes": {
+      "ss": true,
+      "sa": false,
+      "bf": false,
+      "fa": false
+    },
+    "ammo": {
+      "current": 1,
+      "max": 1,
+      "type": "missile"
+    },
+    "recoilComp": 0,
+    "smartgunCompatible": false,
+    "ranges": {
+      "short": 0,
+      "medium": 0,
+      "long": 0,
+      "extreme": 0
+    },
+    "strengthMin": 0,
+    "weight": 17,
+    "cost": 0,
+    "availability": "18/28 days",
+    "legality": "Forbidden",
+    "streetIndex": "4",
+    "equipped": false,
+    "accessories": [],
+    "notes": "Man-portable Outlaw missile; Intelligence 5. Cost illegible in the source scan — pending a physical-book capture. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!d998123df2320b4e"
+}

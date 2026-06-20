@@ -1,0 +1,61 @@
+{
+  "_id": "317d79c419e181c4",
+  "name": "Ares Vanquisher Minigun",
+  "type": "weapon",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "weaponType": "heavy",
+    "skill": "gunnery",
+    "damageCode": "10S",
+    "damageType": "physical",
+    "concealability": 99,
+    "reach": 0,
+    "firingModes": {
+      "ss": false,
+      "sa": false,
+      "bf": false,
+      "fa": true
+    },
+    "ammo": {
+      "current": 0,
+      "max": 0,
+      "type": "belt"
+    },
+    "recoilComp": 0,
+    "smartgunCompatible": false,
+    "ranges": {
+      "short": 50,
+      "medium": 150,
+      "long": 350,
+      "extreme": 550
+    },
+    "strengthMin": 0,
+    "weight": 45,
+    "cost": 75000,
+    "availability": "18/28 days",
+    "legality": "Forbidden",
+    "streetIndex": "3.5",
+    "equipped": false,
+    "accessories": [],
+    "notes": "Heavy vehicle minigun (HMG class), belt-fed full-auto. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!317d79c419e181c4"
+}

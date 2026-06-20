@@ -8,7 +8,12 @@ Format: **pack / item — field** — what's wrong, what was used as a placehold
 
 ## Open
 
-- (none yet — transcription not started)
+- **r2-vehicle-weapons / Outlaw Missile (Block II) — cost** — book p.93 missile
+  table; the cost cell is illegible in the scan. Placeholder: `0` (noted in item).
+- **r2-vehicle-weapons / all — ranges** — the precise vehicle-weapon range
+  brackets are on the R2 Weapon Ranges Table (book p.107), not yet transcribed.
+  Guns currently use placeholder heavy/long values; missiles/mines use 0 (guided).
+  Refine when the ranges table is transcribed.
 
 ## Resolved
 

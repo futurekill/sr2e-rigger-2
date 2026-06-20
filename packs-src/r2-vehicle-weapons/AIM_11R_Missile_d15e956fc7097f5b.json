@@ -1,0 +1,61 @@
+{
+  "_id": "d15e956fc7097f5b",
+  "name": "AIM-11R Missile",
+  "type": "weapon",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "weaponType": "heavy",
+    "skill": "gunnery",
+    "damageCode": "14D",
+    "damageType": "physical",
+    "concealability": 99,
+    "reach": 0,
+    "firingModes": {
+      "ss": true,
+      "sa": false,
+      "bf": false,
+      "fa": false
+    },
+    "ammo": {
+      "current": 1,
+      "max": 1,
+      "type": "missile"
+    },
+    "recoilComp": 0,
+    "smartgunCompatible": false,
+    "ranges": {
+      "short": 0,
+      "medium": 0,
+      "long": 0,
+      "extreme": 0
+    },
+    "strengthMin": 0,
+    "weight": 90,
+    "cost": 25000,
+    "availability": "GM's discretion",
+    "legality": "Forbidden",
+    "streetIndex": "5",
+    "equipped": false,
+    "accessories": [],
+    "notes": "Anti-air missile, Intelligence 6 guidance; fired from a missile launcher. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!d15e956fc7097f5b"
+}
