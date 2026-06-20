@@ -1,0 +1,61 @@
+{
+  "_id": "012f99c92fa59f65",
+  "name": "Jabberwocky Jammer Rocket",
+  "type": "weapon",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "weaponType": "heavy",
+    "skill": "gunnery",
+    "damageCode": "Special",
+    "damageType": "physical",
+    "concealability": 99,
+    "reach": 0,
+    "firingModes": {
+      "ss": true,
+      "sa": false,
+      "bf": false,
+      "fa": false
+    },
+    "ammo": {
+      "current": 1,
+      "max": 1,
+      "type": "rocket"
+    },
+    "recoilComp": 0,
+    "smartgunCompatible": false,
+    "ranges": {
+      "short": 0,
+      "medium": 0,
+      "long": 0,
+      "extreme": 0
+    },
+    "strengthMin": 0,
+    "weight": 200,
+    "cost": 9000,
+    "availability": "12/21 days",
+    "legality": "Forbidden",
+    "streetIndex": "5",
+    "equipped": false,
+    "accessories": [],
+    "notes": "Unguided rocket that scatters electronic-warfare jamming transponders over an area rather than dealing damage — fouls sensors, radios, and remote-control links. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!012f99c92fa59f65"
+}

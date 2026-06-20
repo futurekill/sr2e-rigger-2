@@ -60,7 +60,11 @@ const WEAPONS = [
   // --- Mines / rockets ---
   { name: "Trapdoor Smart Mine", conceal: 8, dmg: "14D", mode: "SS", ammo: 3, ammoType: "mine", wt: 15, avail: "14/21 days", cost: 10000, index: 4, range: "none", notes: "Sensor-guided smart anti-vehicle mine; fires an explosively-formed penetrator (Rating 4 sensor / Rating 2 Pilot). Rigger 2." },
   { name: "RASCAM (Rocket-Assisted Smart Mines)", dmg: "14D", mode: "SS", ammo: 8, ammoType: "mine", wt: 160, avail: "14/21 days", cost: 100000, index: 4, range: "none", notes: "Rocket-deployed cluster of 8 Trapdoor smart mines; Intelligence 4. Rigger 2." },
-  { name: "Zapper Static-Discharge Rocket", dmg: "16D", mode: "SS", ammo: 1, ammoType: "rocket", wt: 25, avail: "10/14 days", cost: 2500, index: 2.5, range: "none", notes: "Static-discharge rocket — overloads a target drone's electronics on impact rather than destroying it outright. Rigger 2." }
+  { name: "Zapper Static-Discharge Rocket", dmg: "16D", mode: "SS", ammo: 1, ammoType: "rocket", wt: 25, avail: "10/14 days", cost: 2500, index: 2.5, range: "none", notes: "Static-discharge rocket — overloads a target drone's electronics on impact rather than destroying it outright. Rigger 2." },
+  // --- Electronic-warfare munitions (Jabberwocky jammers, Silencer AARM) ---
+  { name: "Jabberwocky Jammer Rocket", dmg: "Special", mode: "SS", ammo: 1, ammoType: "rocket", wt: 200, avail: "12/21 days", cost: 9000, index: 5, range: "none", notes: "Unguided rocket that scatters electronic-warfare jamming transponders over an area rather than dealing damage — fouls sensors, radios, and remote-control links. Rigger 2." },
+  { name: "Jabberwocky Jammer Missile", dmg: "Special", mode: "SS", ammo: 1, ammoType: "missile", wt: 200, avail: "12/21 days", cost: 14000, index: 5, range: "none", notes: "Guided jammer missile (Intelligence 3) — delivers electronic-warfare jamming transponders to a chosen target area. Rigger 2." },
+  { name: "Silencer AARM", dmg: "16D", mode: "SS", ammo: 1, ammoType: "missile", wt: 250, avail: "16/28 days", cost: 25000, index: 5, range: "none", notes: "Anti-radiation missile (Intelligence 5) that homes on a target's sensor/ECM emissions; resolved with the missile-combat rules. Rigger 2." }
 ];
 
 let n = 0;

@@ -1,0 +1,49 @@
+{
+  "_id": "dcf4e3de552be1dc",
+  "name": "Remote Control Encryption Module",
+  "type": "cyberware",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "location": "headware",
+    "grade": "standard",
+    "essenceCost": 0.2,
+    "rating": 1,
+    "cost": 10000,
+    "availability": "varies (Rating-based)",
+    "streetIndex": "3",
+    "legality": "Restricted",
+    "installed": false,
+    "combatTnMod": 0,
+    "isVcr": false,
+    "attributeMods": {
+      "body": 0,
+      "quickness": 0,
+      "strength": 0,
+      "charisma": 0,
+      "intelligence": 0,
+      "willpower": 0,
+      "reaction": 0,
+      "initiativeDice": 0
+    },
+    "notes": "Encrypts a remote-control deck's signals (Rating 1–10). Cost = Rating × 10,000¥; availability scales with Rating. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!dcf4e3de552be1dc"
+}

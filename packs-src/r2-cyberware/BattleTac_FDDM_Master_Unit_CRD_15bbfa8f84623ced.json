@@ -1,0 +1,49 @@
+{
+  "_id": "15bbfa8f84623ced",
+  "name": "BattleTac FDDM Master Unit (CRD)",
+  "type": "cyberware",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "location": "headware",
+    "grade": "standard",
+    "essenceCost": 0.15,
+    "rating": 0,
+    "cost": 200000,
+    "availability": "10/21 days",
+    "streetIndex": "3",
+    "legality": "Restricted",
+    "installed": false,
+    "combatTnMod": 0,
+    "isVcr": false,
+    "attributeMods": {
+      "body": 0,
+      "quickness": 0,
+      "strength": 0,
+      "charisma": 0,
+      "intelligence": 0,
+      "willpower": 0,
+      "reaction": 0,
+      "initiativeDice": 0
+    },
+    "notes": "Cranial master unit for a BattleTac FDDM tactical network. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!15bbfa8f84623ced"
+}
