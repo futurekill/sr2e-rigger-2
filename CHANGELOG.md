@@ -31,7 +31,11 @@
   Victory/Vigilant Autocannons, Zapper rocket, and Jabberwocky jammer rocket/
   missile. Resolves the ranges item in `docs/NEEDS-CAPTURE.md`.
 
-### Vehicle modifications (`r2-vehicle-mods`, 35 so far)
+### Vehicle modifications (`r2-vehicle-mods`, 38 so far)
+- Added electronic-warfare systems (book p.137–138): Electronic Countermeasures
+  (ECM), Electronic Counter-Countermeasures (ECCM), Electronic Deception (ED) —
+  each a 1–10 (ED 1–6) leveled system with its full cost/weight table in notes.
+  (ECCM's scanned low-level cost cells are garbled; flagged in NEEDS-CAPTURE.)
 - Added weapon-mount & electronics mods (book p.134–136): Ring Mount, Smartlink
   Integration Kit, Weapon Turret (Mini/Small/Medium size table), Remote Weapon
   Turret, Vehicle Gyroscopic Stabilizer, BattleTac FDDM & IVIS Receiver Modules.

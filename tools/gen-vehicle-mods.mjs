@@ -98,7 +98,13 @@ const MODS = [
   { name: "BattleTac FDDM Receiver Module", modType: "electronics", cost: 35000,
     notes: "Lets a remote-controlled vehicle/drone share targeting data over a BattleTac FDDM network, enabling indirect fire on targets outside its own line of sight. Parts cost = Pilot Rating × 35,000¥; design = Pilot × 350 points; Avail 10/21 days; Street Index 3; Base Time 64 hrs; needs Computer B/R + a microtronics shop. Rigger 2 p.136." },
   { name: "BattleTac IVIS Receiver Module", modType: "electronics", cost: 25000,
-    notes: "Lets a remote-controlled vehicle/drone join a BattleTac IVIS network for coordinated tactics — provides extra dice on the Comprehension Test or an Initiative Pool for the drones (the Pilot must be modified to interface with IVIS). Parts cost = Pilot Rating × 25,000¥; design = Pilot × 250 points; Avail 8/14 days; Street Index 3; Base Time 64 hrs; needs Computer B/R. Rigger 2 p.136." }
+    notes: "Lets a remote-controlled vehicle/drone join a BattleTac IVIS network for coordinated tactics — provides extra dice on the Comprehension Test or an Initiative Pool for the drones (the Pilot must be modified to interface with IVIS). Parts cost = Pilot Rating × 25,000¥; design = Pilot × 250 points; Avail 8/14 days; Street Index 3; Base Time 64 hrs; needs Computer B/R. Rigger 2 p.136." },
+  { name: "Electronic Countermeasures (ECM)", modType: "electronics", rating: 10, cost: 25000,
+    notes: "Active jamming — barrage radio/infrared jammers, chaff, flare dispensers, harmonic disrupters — that foul enemy sensors and remote-control comms (security/military only). Cost & weight by Level: L1 25,000¥/12 kg/SI 2.5, L2 75,000¥/25, L3 125,000¥/35, L4 250,000¥/50, L5 375,000¥, L6 750,000¥, L7 1.5M¥, L8 7.5M¥, L9 15M¥, L10 30M¥; Avail 5/7 days (L1) up to 20/1 year (L10). Rigger 2 p.137." },
+  { name: "Electronic Counter-Countermeasures (ECCM)", modType: "electronics", rating: 10, cost: 10000,
+    notes: "Signal amplifiers and noise filters that nullify enemy ECM (generally more available than ECM). Leveled 1–10; weight 12 kg (L1) up to 250 kg (L10); Base Time 16 hrs/level; Avail 4/7 days (L1) up to 18/1 year (L10). NOTE: the per-level Customization Cost column is garbled in the scan (L1 reads 110,000¥, inconsistent with L2 30,000¥) — costs flagged in NEEDS-CAPTURE pending a clean capture; the 10,000¥ here is a placeholder. Rigger 2 p.138." },
+  { name: "Electronic Deception (ED)", modType: "electronics", rating: 6, cost: 50000,
+    notes: "Feeds sensors false data about a target's range, position, and heading — subtler than ECM (a sensor isn't aware it's deceived). Cost & weight by Level: L1 50,000¥/35 kg/SI 3, L2 190,000¥/45/SI 3.5, L3 400,000¥/60/SI 4, L4 1M¥/60/SI 4.5, L5 4M¥/60/SI 5, L6 8M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6). Rigger 2 p.138." }
 ];
 
 let n = 0;

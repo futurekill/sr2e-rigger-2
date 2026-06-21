@@ -15,6 +15,12 @@ Format: **pack / item — field** — what's wrong, what was used as a placehold
 - **r2-cyberware / Cyberlimb Signal Booster — Essence** — the Essence cell reads
   "—" in the table; interpreted as "no separate Essence (uses the cyberlimb's
   capacity)" → stored 0. Confirm that reading.
+- **r2-vehicle-mods / Electronic Counter-Countermeasures (ECCM) — per-level
+  cost** — the ECCM Systems Table cost column (book p.138) is garbled in the
+  scan: L1 reads 110,000¥, then L2 30,000¥ / L3 100,000¥ / L4 100,000¥, which is
+  non-monotonic. Stored 10,000¥ placeholder for L1; the higher tiers
+  (L5 150,000 / L6 250,000 / L7 750,000 / L8 2.5M / L9 6M / L10 12M) look clean.
+  Need a clean capture of the L1–L4 cost cells.
 
 ## Resolved
 

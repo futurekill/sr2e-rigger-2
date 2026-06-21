@@ -1,0 +1,32 @@
+{
+  "_id": "9defe09e44a05121",
+  "name": "Electronic Countermeasures (ECM)",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "electronics",
+    "rating": 10,
+    "cost": 25000,
+    "installed": false,
+    "notes": "Active jamming — barrage radio/infrared jammers, chaff, flare dispensers, harmonic disrupters — that foul enemy sensors and remote-control comms (security/military only). Cost & weight by Level: L1 25,000¥/12 kg/SI 2.5, L2 75,000¥/25, L3 125,000¥/35, L4 250,000¥/50, L5 375,000¥, L6 750,000¥, L7 1.5M¥, L8 7.5M¥, L9 15M¥, L10 30M¥; Avail 5/7 days (L1) up to 20/1 year (L10). Rigger 2 p.137."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9defe09e44a05121"
+}
