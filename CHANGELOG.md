@@ -14,6 +14,13 @@
   jammer rocket & missile, Silencer AARM. From the New Toys weapons tables
   (book p.92–95). Vehicle-mounted, so they use the Gunnery skill.
 
+### Vehicles & drones (`r2-vehicles`, 4 so far)
+- New Toys drones: Aeroquip Redball Express resupply drone, Aerodesign Condor
+  LDSD-23 & Condor II LDSD-41 recon drones, Ares Arms Sentry II weapons stand.
+  From the "Drones and Robots" stat blocks (book p.100–101). First slice of the
+  big vehicles/drones catalog — more drones, New Toys vehicles, and the
+  back-of-book Vehicle List still to come.
+
 ### Rigger cyberware (`r2-cyberware`, 10)
 - Remote Control Deck, BattleTac IVIS/FDDM master units, remote-control
   encryption & decryption modules, ECCM (tiered), rigger protocol-emulation

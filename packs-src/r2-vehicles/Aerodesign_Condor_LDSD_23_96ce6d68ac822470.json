@@ -1,0 +1,67 @@
+{
+  "_id": "96ce6d68ac822470",
+  "name": "Aerodesign Condor LDSD-23",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "",
+    "handling": 4,
+    "speed": 60,
+    "acceleration": 3,
+    "body": 2,
+    "armor": 0,
+    "signature": 10,
+    "pilot": 1,
+    "sensor": 1,
+    "cargo": 1,
+    "load": 50,
+    "seating": "0",
+    "cost": 3325,
+    "availability": "",
+    "autonav": 0,
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "notes": "Solar-electric VTOL recon drone — a stealthy, long-endurance eye in the sky (SunCell solar generators drop economy to 0 on sunny days). Cargo 1 CF. Remote control interface + rigger adaptation. Rigger 2."
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Aerodesign Condor LDSD-23",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!96ce6d68ac822470"
+}

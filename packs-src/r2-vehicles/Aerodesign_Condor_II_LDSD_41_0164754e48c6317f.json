@@ -1,0 +1,67 @@
+{
+  "_id": "0164754e48c6317f",
+  "name": "Aerodesign Condor II LDSD-41",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "",
+    "handling": 4,
+    "speed": 90,
+    "acceleration": 5,
+    "body": 2,
+    "armor": 3,
+    "signature": 10,
+    "pilot": 3,
+    "sensor": 1,
+    "cargo": 3,
+    "load": 50,
+    "seating": "0",
+    "cost": 36000,
+    "availability": "",
+    "autonav": 0,
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "notes": "Improved Condor recon drone — SHAPELY enhanced-lift airfoil, extended-duration batteries, faster and tougher than the LDSD-23. Cargo 3 CF. Remote control interface + rigger adaptation. Rigger 2."
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Aerodesign Condor II LDSD-41",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!0164754e48c6317f"
+}
