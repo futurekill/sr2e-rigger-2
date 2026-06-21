@@ -83,9 +83,8 @@ LS/Aztlan) and are out of scope.
 
 **Resolved since the audit:**
 - ✅ New Edges and Flaws (p.15) — `quality` system type added + 5 in `r2-qualities`.
+- ✅ The Mechanic (p.19) — shipped as a `contact` archetype template in `r2-contacts`.
 
-**Still open:**
-- The Mechanic contact (p.19) — optional sample NPC (next).
-
-After the 8 accessories + the 5 edges/flaws, the book's **item** content is
-complete; design-from-scratch is the only remaining deferred feature.
+The book's **item** content is now complete. The only remaining work is the
+deferred **design-from-scratch** engine (chassis/power-plant tables + calculator
++ UI) and the **NEEDS-CAPTURE** values that need physical-book photos.

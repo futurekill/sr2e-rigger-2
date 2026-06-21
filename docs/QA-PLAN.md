@@ -43,6 +43,7 @@ These catch the cheap mistakes before opening Foundry. Run from the repo root.
   | R2 Cyberware (`r2-cyberware`) | 10 | Item (cyberware) |
   | R2 Rigger Electronics (`r2-sensors`) | 14 | Item (gear) |
   | R2 Edges & Flaws (`r2-qualities`) | 5 | Item (quality) |
+  | R2 Contacts (`r2-contacts`) | 1 | Item (contact) |
 
   *(update counts as more content lands — they should equal the
   `wrote N …` line each `tools/gen-*.mjs` prints.)*

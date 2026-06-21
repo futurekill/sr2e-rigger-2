@@ -73,6 +73,11 @@
   pricing rule in its notes. Remaining: turret/ring mounts and the rest of the
   customization chapter (p.134+), plus the Vehicle List.
 
+### Contacts (`r2-contacts`, 1) — new pack
+- The Mechanic (book p.19): a rigger's vehicle/drone specialist contact, shipped
+  as a reusable `contact` archetype template (services scale by connection level
+  1–3, summarised in the description). Resolves the audit's last open question.
+
 ### Edges & Flaws (`r2-qualities`, 5) — new pack
 - The Rigger-2-new rigger qualities (book p.15): Computer Illiterate, Sensitive
   Neural Structure, Simsense Vertigo, Spike Resistance, Gremlins. Requires the
