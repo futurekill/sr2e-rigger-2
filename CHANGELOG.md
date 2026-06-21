@@ -31,6 +31,17 @@
   Victory/Vigilant Autocannons, Zapper rocket, and Jabberwocky jammer rocket/
   missile. Resolves the ranges item in `docs/NEEDS-CAPTURE.md`.
 
+### Vehicle modifications (`r2-vehicle-mods`, 17 so far)
+- Vehicle Customization modifications (book p.124–128). Control & handling:
+  Contingency Maneuver Controls, Datajack Port, Drive-by-Wire System, Improved
+  Control Surfaces (watercraft), Improved Suspension (ground), Off-Road
+  Suspension, Remote-Control Interface, Remote Pilot Advanced Programming,
+  Rigger Adaptation, Secondary Controls. Protective systems: Standard, Concealed
+  & Ablative vehicle armor; Advanced Passenger Protection System; Crash Cage;
+  EnviroSeal; Life Support. Many are formula-priced (× vehicle cost, per Armor
+  Point, per seat), so each item carries the full pricing rule in its notes. The
+  rest of the customization chapter (p.129+) and the Vehicle List are still to come.
+
 ### Sensors & ECM gear (`r2-sensors`, 6)
 - External (carried) remote-control electronic-warfare gear: encryption module,
   rigger decryption module, ECCM (tiered), protocol-emulation module, signal

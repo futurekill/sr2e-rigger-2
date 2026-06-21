@@ -1,0 +1,32 @@
+{
+  "_id": "e256a44d958959c6",
+  "name": "Crash Cage",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "protection",
+    "rating": 0,
+    "cost": 3500,
+    "installed": false,
+    "notes": "A padded, hydraulically-cushioned passenger cage that protects occupants in a crash (grants a Damage Resistance Test); not for motorcycles. Parts cost 3,500¥; Avail 6/96 hrs; Street Index 2; Base Time 16 hrs; load −25 kg. Rigger 2 p.128."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!e256a44d958959c6"
+}

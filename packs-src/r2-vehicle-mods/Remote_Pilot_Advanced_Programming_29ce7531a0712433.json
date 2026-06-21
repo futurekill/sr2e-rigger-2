@@ -1,0 +1,32 @@
+{
+  "_id": "29ce7531a0712433",
+  "name": "Remote Pilot Advanced Programming",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "control",
+    "rating": 5,
+    "cost": 5000,
+    "installed": false,
+    "notes": "Upgrades a remote-control interface's onboard Pilot Rating (up to Pilot 5). Parts cost by level: P2 5,000¥, P3 25,000¥, P4 125,000¥, P5 500,000¥; Avail 6/14 days (P2–3), 10/35 (P4), 14/70 (P5); Street Index 2 (P2–3), 4 (P4); Base Time 64 hrs. Rigger 2 p.126."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!29ce7531a0712433"
+}
