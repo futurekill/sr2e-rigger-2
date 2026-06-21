@@ -39,7 +39,7 @@ These catch the cheap mistakes before opening Foundry. Run from the repo root.
   |---|---|---|
   | R2 Vehicles & Drones (`r2-vehicles`) | 21 | Actor (vehicle) |
   | R2 Vehicle Weapons (`r2-vehicle-weapons`) | 16 | Item (weapon) |
-  | R2 Vehicle Mods (`r2-vehicle-mods`) | 38 | Item (vehicle_mod) |
+  | R2 Vehicle Mods (`r2-vehicle-mods`) | 58 | Item (vehicle_mod) |
   | R2 Cyberware (`r2-cyberware`) | 10 | Item (cyberware) |
   | R2 Sensors & ECM (`r2-sensors`) | 6 | Item (gear) |
 
