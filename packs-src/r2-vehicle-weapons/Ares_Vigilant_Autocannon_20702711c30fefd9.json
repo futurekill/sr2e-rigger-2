@@ -24,10 +24,10 @@
     "recoilComp": 0,
     "smartgunCompatible": false,
     "ranges": {
-      "short": 50,
-      "medium": 150,
-      "long": 350,
-      "extreme": 550
+      "short": 100,
+      "medium": 500,
+      "long": 2500,
+      "extreme": 5000
     },
     "strengthMin": 0,
     "weight": 90,

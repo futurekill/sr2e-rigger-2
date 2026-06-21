@@ -64,7 +64,21 @@ const VEHICLES = [
   { name: "GTE-Ford Retrans Unit", vtype: "drone", handling: 4, speed: 105, accel: 20, body: 2, armor: 0, sig: 6, pilot: 2, sensor: 5, cargo: 0, load: 120, seating: "0", cost: 30000,
     notes: "Mobile retransmission drone (cruise/max 40/105) — extends a remote-control network's reach by relaying transmissions from the edge of a deck's range (retrans unit, Flux Rating 3). Remote control interface + rigger adaptation. Rigger 2." },
   { name: "MCT-Nissan Roto-Drone", vtype: "drone", handling: 4, speed: 70, accel: 6, body: 2, armor: 0, sig: 5, pilot: 1, sensor: 3, cargo: 0, load: 150, seating: "0", cost: 6000,
-    notes: "Inexpensive VTOL rotor drone — a versatile, easily-customized utility/recon platform. Remote control interface + rigger adaptation. Rigger 2." }
+    notes: "Inexpensive VTOL rotor drone — a versatile, easily-customized utility/recon platform. Remote control interface + rigger adaptation. Rigger 2." },
+  { name: "Mesametric Kodiak Roadway Clearance System", vtype: "drone", handling: 4, speed: 30, accel: 2, body: 4, armor: 12, sig: 2, pilot: 2, sensor: 3, cargo: 0, load: 1000, seating: "0", cost: 40000,
+    notes: "Heavily-armored (Armor 12) roadway-clearance & mine-clearing drone — bulldozer blade plus an excavating shovel that can dig a half-meter-wide trench and move two cubic meters of debris per Combat Turn. Remote control interface + rigger adaptation. Rigger 2." },
+  { name: "Renraku Arachnoid Mini-Drone", vtype: "drone", handling: 3, speed: 2, accel: 0, body: 0, armor: 0, sig: 16, pilot: 1, sensor: 1, cargo: 0, load: 0, seating: "0", cost: 5000,
+    notes: "Insect-sized (≈17 cm) spider-legged spy drone for cramped spaces — Body 0, so any hit of any size destroys it; sensors have a fixed Flux Rating of 0. Remote control interface + rigger adaptation. Rigger 2." },
+  { name: "Pratt & Whitney Sundowner", vtype: "drone", handling: 4, speed: 105, accel: 20, body: 2, armor: 0, sig: 6, pilot: 2, sensor: 1, cargo: 0, load: 120, seating: "0", cost: 15500,
+    notes: "Unmanned aerial-sprayer aircraft (cruise/max 40/105) — disperses any liquid or gas as a mist (50-liter tank); a cloud roughly 25 × 25 × 10 m per liter. Remote control interface + rigger adaptation. Rigger 2." },
+  { name: "Saab-Thyssen Bloodhound", vtype: "drone", handling: 3, speed: 90, accel: 2, body: 1, armor: 0, sig: 5, pilot: 2, sensor: 4, cargo: 1, load: 10, seating: "0", cost: 10000,
+    notes: "HAZMAT survey & decontamination drone — amphibious (2), with chemical/biological/radiation sensors and a 10-liter decon sprayer; detects emissions and contamination at up to 10 m. Remote control interface + rigger adaptation. Rigger 2." },
+  { name: "Shiawase Kanmushi Mechanical Crawler", vtype: "drone", handling: 2, speed: 2, accel: 0, body: 0, armor: 0, sig: 16, pilot: 1, sensor: 1, cargo: 0, load: 0, seating: "0", cost: 30000,
+    notes: "Insect-sized 'Beetle' crawler built from smart materials, ideal for penetrating tight spaces — Body 0, so any hit destroys it; sensors have a fixed Flux Rating of 0. Remote control interface. Rigger 2." },
+  { name: "Sikorsky-Bell Microskimmer II", vtype: "drone", handling: 3, speed: 90, accel: 6, body: 1, armor: 0, sig: 7, pilot: 1, sensor: 1, cargo: 5, load: 50, seating: "0", cost: 5500,
+    notes: "Saucer-shaped multi-role air-cushion drone — runs as a hovercraft or a vectored-thrust aircraft (Signature 7/5 by mode); can even operate just underwater to 0.5 m. Remote control interface + rigger adaptation. Rigger 2." },
+  { name: "Toyota MK-Guyver", vtype: "drone", handling: 3, speed: 20, accel: 4, body: 2, armor: 3, sig: 4, pilot: 3, sensor: 1, cargo: 5, load: 1000, seating: "0", cost: 29000,
+    notes: "Search-and-rescue robot with self-learning AI and two articulated arms — two movement modes: wheels/tracks (Speed 20/Accel 4) or mechanical legs (Speed 5) over rubble. Learning Pool 2 (for Search and Rescue). Remote control interface + rigger adaptation. Rigger 2." }
 ];
 
 let n = 0;

@@ -1,0 +1,67 @@
+{
+  "_id": "0fa0079a17748313",
+  "name": "Renraku Arachnoid Mini-Drone",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "",
+    "handling": 3,
+    "speed": 2,
+    "acceleration": 0,
+    "body": 0,
+    "armor": 0,
+    "signature": 16,
+    "pilot": 1,
+    "sensor": 1,
+    "cargo": 0,
+    "load": 0,
+    "seating": "0",
+    "cost": 5000,
+    "availability": "",
+    "autonav": 0,
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "notes": "Insect-sized (≈17 cm) spider-legged spy drone for cramped spaces — Body 0, so any hit of any size destroys it; sensors have a fixed Flux Rating of 0. Remote control interface + rigger adaptation. Rigger 2."
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Renraku Arachnoid Mini-Drone",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!0fa0079a17748313"
+}

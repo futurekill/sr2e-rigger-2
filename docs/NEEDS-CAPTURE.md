@@ -10,10 +10,6 @@ Format: **pack / item — field** — what's wrong, what was used as a placehold
 
 - **r2-vehicle-weapons / Outlaw Missile (Block II) — cost** — book p.93 missile
   table; the cost cell is illegible in the scan. Placeholder: `0` (noted in item).
-- **r2-vehicle-weapons / all — ranges** — the precise vehicle-weapon range
-  brackets are on the R2 Weapon Ranges Table (book p.107), not yet transcribed.
-  Guns currently use placeholder heavy/long values; missiles/mines use 0 (guided).
-  Refine when the ranges table is transcribed.
 - **r2-cyberware / Snake-Eyes FDDM Link — Street Index** — book p.96 cyberware
   table; the SI cell is illegible in the scan. Placeholder: blank.
 - **r2-cyberware / Cyberlimb Signal Booster — Essence** — the Essence cell reads
@@ -22,4 +18,9 @@ Format: **pack / item — field** — what's wrong, what was used as a placehold
 
 ## Resolved
 
-- (none yet)
+- **r2-vehicle-weapons — ranges** — Weapon Ranges Table read off book p.107
+  (PDF p.116). Real brackets applied: Victory/Vigilant Autocannons 100/500/
+  2,500/5,000 m; Zapper 70/250/750/2,000 m; Jabberwocky 750/2,000/3,500/
+  11,000 m. The table lists only these; miniguns keep a generic heavy preset
+  (no R2-specific row) and guided missiles/mines stay at 0 (range set by
+  guidance, not a bracket).

@@ -14,14 +14,22 @@
   jammer rocket & missile, Silencer AARM. From the New Toys weapons tables
   (book p.92–95). Vehicle-mounted, so they use the Gunnery skill.
 
-### Vehicles & drones (`r2-vehicles`, 14 so far)
-- New Toys "Drones and Robots" (book p.100–104): Aeroquip Redball Express
+### Vehicles & drones (`r2-vehicles`, 21 so far)
+- New Toys "Drones and Robots" (book p.100–107): Aeroquip Redball Express
   resupply drone; Aerodesign Condor LDSD-23 & Condor II LDSD-41 recon drones;
   Ares Arms Sentry II weapons stand; Aztechnology Hedgehog signal-interceptor &
   GCR-23C Crawler; IWS DLK MK 6 Utility Machine + Armed Variant; Citroën
   Brouillard smoke generator; Aerospace Designs Wolfhound recon aircraft;
   FMC-Stonebrooke TADS Firebird & Salamander; GTE-Ford Retrans Unit; MCT-Nissan
-  Roto-Drone. More New Toys vehicles and the back-of-book Vehicle List to come.
+  Roto-Drone; Mesametric Kodiak roadway-clearance vehicle; Renraku Arachnoid &
+  Shiawase Kanmushi insect mini-drones; Pratt & Whitney Sundowner sprayer;
+  Saab-Thyssen Bloodhound HAZMAT drone; Sikorsky-Bell Microskimmer II;
+  Toyota MK-Guyver search-and-rescue robot. Back-of-book Vehicle List still to come.
+
+### Vehicle-weapon ranges
+- Applied the real range brackets from the Weapon Ranges Table (book p.107):
+  Victory/Vigilant Autocannons, Zapper rocket, and Jabberwocky jammer rocket/
+  missile. Resolves the ranges item in `docs/NEEDS-CAPTURE.md`.
 
 ### Rigger cyberware (`r2-cyberware`, 10)
 - Remote Control Deck, BattleTac IVIS/FDDM master units, remote-control
