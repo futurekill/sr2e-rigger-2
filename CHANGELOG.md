@@ -73,11 +73,16 @@
   pricing rule in its notes. Remaining: turret/ring mounts and the rest of the
   customization chapter (p.134+), plus the Vehicle List.
 
-### Sensors & ECM gear (`r2-sensors`, 6)
-- External (carried) remote-control electronic-warfare gear: encryption module,
-  rigger decryption module, ECCM (tiered), protocol-emulation module, signal
-  amplifier, storage memory. The weight-based counterparts to the implanted
-  cyber modules. From the New Toys gear table (book p.98).
+### Rigger Electronics (`r2-sensors`, 14) — pack relabeled
+- Content audit (`docs/CONTENT-AUDIT.md`) found 8 missed New Toys items in the
+  Remote-Control-Accessories / Autosofts area (book p.97–100); added them and
+  relabeled the pack from "R2 Sensors & ECM" to **R2 Rigger Electronics**.
+- New gear: External Remote Control Deck; BattleTac IVIS & FDDM Master Units
+  (RC Deck / external); Hitcher Jacks; Audio/Visual Screen Displays; Intercom
+  Speaker. New autosofts (category `autosoft`): TAPS Sharpshooter (Gunnery),
+  IPA ClearSight (Perception) — the only two the book defines.
+- Original 6 (external EW modules) unchanged: encryption, rigger decryption,
+  ECCM (tiered), protocol emulation, signal amplifier, storage memory (p.98).
 
 ### Rigger cyberware (`r2-cyberware`, 10)
 - Remote Control Deck, BattleTac IVIS/FDDM master units, remote-control

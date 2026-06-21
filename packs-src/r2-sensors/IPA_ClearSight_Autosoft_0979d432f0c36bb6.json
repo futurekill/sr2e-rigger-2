@@ -1,0 +1,42 @@
+{
+  "_id": "0979d432f0c36bb6",
+  "name": "IPA ClearSight Autosoft",
+  "type": "gear",
+  "img": "icons/svg/chip.svg",
+  "system": {
+    "category": "autosoft",
+    "rating": 1,
+    "quantity": 1,
+    "weight": 0,
+    "cost": 250000,
+    "availability": "8/14 days",
+    "legality": "Restricted",
+    "equipped": false,
+    "concealability": 0,
+    "weaponAccessory": false,
+    "linkedWeaponId": "",
+    "combatTnMod": 0,
+    "accessoryRecoilComp": 0,
+    "requiresSmartgun": false,
+    "notes": "Imagery-analysis expert system (Rating 1–5) that adds its Rating to a drone's Pilot Rating for Perception Tests (a rigger can use it in conjunction with their own Intelligence). Parts cost = Rating × 250,000¥ (R1–3; R4–5 GM's discretion); Street Index 3; Base Time 72 hrs; needs Computer B/R. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0979d432f0c36bb6"
+}

@@ -45,7 +45,25 @@ const GEAR = [
   { name: "Signal Amplifier", weight: 1, rating: 1, cost: 250, avail: "(Rating)/(Rating × 12) hours", legality: "Legal",
     notes: "Boosts a remote-control signal's range (Rating 1–10). Weight = 1 × Rating kg; cost = Rating × 250¥. Street Index 1.5. Rigger 2." },
   { name: "Storage Memory", weight: 1, rating: 0, cost: 5, avail: "2/24 hours", legality: "Legal",
-    notes: "Removable mass-storage for a remote-control deck. Cost = Mp × 5¥ (per megapulse). Street Index 1. Rigger 2." }
+    notes: "Removable mass-storage for a remote-control deck. Cost = Mp × 5¥ (per megapulse). Street Index 1. Rigger 2." },
+  // --- Remote Control Accessories (book p.97-99) ---
+  { name: "Remote Control Deck (External)", weight: 3, rating: 1, cost: 5000, avail: "4/72 hours", legality: "Restricted",
+    notes: "Carried (non-cyber) remote-control deck for jumping into and piloting drones/vehicles; holds storage memory, protocol emulation, and other modules. Cost = Rating × 5,000¥. Street Index 3. The external counterpart of the cranial deck. Rigger 2." },
+  { name: "BattleTac IVIS Master Unit (RC Deck)", weight: 1, rating: 0, cost: 75000, avail: "8/14 days", legality: "Restricted",
+    notes: "Deck-mounted master unit coordinating a BattleTac IVIS tactical network (the external counterpart of the cranial CRD unit). Street Index 3. Rigger 2." },
+  { name: "BattleTac FDDM Master Unit (RC Deck)", weight: 1, rating: 0, cost: 125000, avail: "10/21 days", legality: "Restricted",
+    notes: "Deck-mounted master unit for a BattleTac FDDM (Fire Direction Data Manager) network — coordinates indirect-fire targeting across drones. External counterpart of the cranial CRD unit. Street Index 3. Rigger 2." },
+  { name: "Hitcher Jacks", weight: 0, rating: 1, cost: 100, avail: "2/48 hours", legality: "Legal",
+    notes: "Extra datajack ports on a remote-control deck that let passengers ('hitchers') jack in and share the rigger's sensory feed — a hitcher can observe but not control (the number of jacks a deck handles is capped at its Rating). Cost = Rating × 100¥ per jack. Street Index 1. Rigger 2." },
+  { name: "Audio/Visual Screen Displays", weight: 0.5, rating: 0, cost: 100, avail: "2/24 hours", legality: "Legal",
+    notes: "LCD screens that mirror the rigger's point of view (a drone's sensor feed) for passengers who aren't jacked in; one screen shows one drone at a time, up to the deck's Rating. Cost 100¥ each. Street Index 1. Rigger 2." },
+  { name: "Intercom Speaker", weight: 0, rating: 0, cost: 25, avail: "2/24 hours", legality: "Legal",
+    notes: "A two-way intercom letting the rigger and passengers talk while the rigger is jacked in (speaking is a Complex Action for a jacked-in rigger). Cost 25¥. Street Index 1. Rigger 2." },
+  // --- Autosofts (book p.99-100): add their Rating to a drone's Pilot for one task ---
+  { name: "TAPS Sharpshooter Autosoft", category: "autosoft", weight: 0, rating: 1, cost: 250000, avail: "8/14 days", legality: "Restricted",
+    notes: "Target-acquisition expert system (Rating 1–5) that adds its Rating to a drone's Pilot Rating for Gunnery Tests, letting the drone fight effectively without a rigger jacked in. Parts cost = Rating × 250,000¥ (R1–2; R3–5 GM's discretion); Street Index 3; Base Time 72 hrs; needs Computer B/R. Rigger 2." },
+  { name: "IPA ClearSight Autosoft", category: "autosoft", weight: 0, rating: 1, cost: 250000, avail: "8/14 days", legality: "Restricted",
+    notes: "Imagery-analysis expert system (Rating 1–5) that adds its Rating to a drone's Pilot Rating for Perception Tests (a rigger can use it in conjunction with their own Intelligence). Parts cost = Rating × 250,000¥ (R1–3; R4–5 GM's discretion); Street Index 3; Base Time 72 hrs; needs Computer B/R. Rigger 2." }
 ];
 
 let n = 0;

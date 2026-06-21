@@ -24,7 +24,7 @@
     { "name": "r2-vehicle-mods",     "label": "R2 Vehicle Mods",      "path": "packs/r2-vehicle-mods",     "type": "Item",  "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
     { "name": "r2-vehicle-weapons",  "label": "R2 Vehicle Weapons",   "path": "packs/r2-vehicle-weapons",  "type": "Item",  "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
     { "name": "r2-cyberware",        "label": "R2 Rigger Cyberware",  "path": "packs/r2-cyberware",        "type": "Item",  "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "r2-sensors",          "label": "R2 Sensors & ECM",     "path": "packs/r2-sensors",          "type": "Item",  "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } }
+    { "name": "r2-sensors",          "label": "R2 Rigger Electronics", "path": "packs/r2-sensors",          "type": "Item",  "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } }
   ],
   "packFolders": [
     {

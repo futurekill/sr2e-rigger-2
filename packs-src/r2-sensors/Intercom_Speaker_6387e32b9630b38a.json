@@ -1,0 +1,42 @@
+{
+  "_id": "6387e32b9630b38a",
+  "name": "Intercom Speaker",
+  "type": "gear",
+  "img": "icons/svg/chip.svg",
+  "system": {
+    "category": "electronics",
+    "rating": 0,
+    "quantity": 1,
+    "weight": 0,
+    "cost": 25,
+    "availability": "2/24 hours",
+    "legality": "Legal",
+    "equipped": false,
+    "concealability": 0,
+    "weaponAccessory": false,
+    "linkedWeaponId": "",
+    "combatTnMod": 0,
+    "accessoryRecoilComp": 0,
+    "requiresSmartgun": false,
+    "notes": "A two-way intercom letting the rigger and passengers talk while the rigger is jacked in (speaking is a Complex Action for a jacked-in rigger). Cost 25¥. Street Index 1. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6387e32b9630b38a"
+}

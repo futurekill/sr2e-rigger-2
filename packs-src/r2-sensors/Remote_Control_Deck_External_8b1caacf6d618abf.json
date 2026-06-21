@@ -1,0 +1,42 @@
+{
+  "_id": "8b1caacf6d618abf",
+  "name": "Remote Control Deck (External)",
+  "type": "gear",
+  "img": "icons/svg/chip.svg",
+  "system": {
+    "category": "electronics",
+    "rating": 1,
+    "quantity": 1,
+    "weight": 3,
+    "cost": 5000,
+    "availability": "4/72 hours",
+    "legality": "Restricted",
+    "equipped": false,
+    "concealability": 0,
+    "weaponAccessory": false,
+    "linkedWeaponId": "",
+    "combatTnMod": 0,
+    "accessoryRecoilComp": 0,
+    "requiresSmartgun": false,
+    "notes": "Carried (non-cyber) remote-control deck for jumping into and piloting drones/vehicles; holds storage memory, protocol emulation, and other modules. Cost = Rating × 5,000¥. Street Index 3. The external counterpart of the cranial deck. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8b1caacf6d618abf"
+}

@@ -41,7 +41,7 @@ These catch the cheap mistakes before opening Foundry. Run from the repo root.
   | R2 Vehicle Weapons (`r2-vehicle-weapons`) | 16 | Item (weapon) |
   | R2 Vehicle Mods (`r2-vehicle-mods`) | 58 | Item (vehicle_mod) |
   | R2 Cyberware (`r2-cyberware`) | 10 | Item (cyberware) |
-  | R2 Sensors & ECM (`r2-sensors`) | 6 | Item (gear) |
+  | R2 Rigger Electronics (`r2-sensors`) | 14 | Item (gear) |
 
   *(update counts as more content lands — they should equal the
   `wrote N …` line each `tools/gen-*.mjs` prints.)*
@@ -82,9 +82,14 @@ These catch the cheap mistakes before opening Foundry. Run from the repo root.
       Essence cost applies to the character's Essence/derived stats.
 - [ ] **Snake-Eyes FDDM Link** notes flag the missing Street Index.
 
-### r2-sensors
+### r2-sensors (R2 Rigger Electronics)
 - [ ] Drag **Remote Control Encryption Module (External)** onto a character →
       gear item, weight/cost present, category electronics.
+- [ ] Remote-control accessories present: **External Remote Control Deck**,
+      **BattleTac IVIS/FDDM Master Unit (RC Deck)**, **Hitcher Jacks**,
+      **Audio/Visual Screen Displays**, **Intercom Speaker**.
+- [ ] **Autosofts** (TAPS Sharpshooter, IPA ClearSight) present with category
+      `autosoft` and rating editable (they add Rating to a drone's Pilot).
 
 ## 3. Cross-checks vs the source
 

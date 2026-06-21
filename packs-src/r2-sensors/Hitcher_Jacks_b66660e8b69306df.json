@@ -1,0 +1,42 @@
+{
+  "_id": "b66660e8b69306df",
+  "name": "Hitcher Jacks",
+  "type": "gear",
+  "img": "icons/svg/chip.svg",
+  "system": {
+    "category": "electronics",
+    "rating": 1,
+    "quantity": 1,
+    "weight": 0,
+    "cost": 100,
+    "availability": "2/48 hours",
+    "legality": "Legal",
+    "equipped": false,
+    "concealability": 0,
+    "weaponAccessory": false,
+    "linkedWeaponId": "",
+    "combatTnMod": 0,
+    "accessoryRecoilComp": 0,
+    "requiresSmartgun": false,
+    "notes": "Extra datajack ports on a remote-control deck that let passengers ('hitchers') jack in and share the rigger's sensory feed — a hitcher can observe but not control (the number of jacks a deck handles is capped at its Rating). Cost = Rating × 100¥ per jack. Street Index 1. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!b66660e8b69306df"
+}
