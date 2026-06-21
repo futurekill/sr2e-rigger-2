@@ -1,0 +1,32 @@
+{
+  "_id": "3810c08cf32c56de",
+  "name": "Power Amplifier",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "electronics",
+    "rating": 10,
+    "cost": 250,
+    "installed": false,
+    "notes": "Boosts the Flux Rating of sensors, ECM/ECCM, and hardwired remote-control decks — extending remote-control range and EW resistance. Parts cost 250¥/rating (max Rating 10); load −1 kg/rating; Avail Rating + (Rating × 12) hrs; Street Index 1.5; Base Time 8 hrs. Rigger 2 p.139."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3810c08cf32c56de"
+}

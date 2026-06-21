@@ -1,0 +1,32 @@
+{
+  "_id": "ca37290d39d118f6",
+  "name": "Electronics Port",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "electronics",
+    "rating": 0,
+    "cost": 1000,
+    "installed": false,
+    "notes": "A powered mount for electronics unrelated to driving (radios, cameras, surveillance gear, a remote-control deck); attached devices draw vehicle power and gain +½ the vehicle's Body (round up) to their Flux Rating. Parts cost = 1,000¥ + the equipment's cost; 1 CF per 0.1 m³ of equipment; Avail 3/6 days; Street Index 1; Base Time 8 hrs. Rigger 2 p.139."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ca37290d39d118f6"
+}

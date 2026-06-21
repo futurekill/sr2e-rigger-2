@@ -31,7 +31,12 @@
   Victory/Vigilant Autocannons, Zapper rocket, and Jabberwocky jammer rocket/
   missile. Resolves the ranges item in `docs/NEEDS-CAPTURE.md`.
 
-### Vehicle modifications (`r2-vehicle-mods`, 38 so far)
+### Vehicle modifications (`r2-vehicle-mods`, 48 so far)
+- Added electronics tail + accessories (book p.139–143): Electronic
+  Counter-Deception (ECD), Electronics Port, Power Amplifier, Vehicle Sensor
+  System (L1–10 table), Aircraft Drop Tanks, Amphibious Operation Package
+  (L1–3), Anti-Theft System (rated, with shock/explosion options), Vehicle
+  Seats (bench/bucket), Ejection Bucket Seat, Convertible Top.
 - Added electronic-warfare systems (book p.137–138): Electronic Countermeasures
   (ECM), Electronic Counter-Countermeasures (ECCM), Electronic Deception (ED) —
   each a 1–10 (ED 1–6) leveled system with its full cost/weight table in notes.

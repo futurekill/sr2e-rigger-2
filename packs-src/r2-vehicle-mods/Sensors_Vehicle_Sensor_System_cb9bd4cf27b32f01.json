@@ -1,0 +1,32 @@
+{
+  "_id": "cb9bd4cf27b32f01",
+  "name": "Sensors (Vehicle Sensor System)",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "electronics",
+    "rating": 10,
+    "cost": 5000,
+    "installed": false,
+    "notes": "Standard-to-military sensor suites (audio/video, thermal, radar, ultrasound) with ID/recognition/tracking software; higher levels are restricted. Cost & weight by Level: L1 5,000¥/12 kg/SI 2, L2 15,000¥/25/SI 2.5, L3 25,000¥/35/SI 3, L4 50,000¥/50/SI 3.5, L5 75,000¥, L6 125,000¥, L7 375,000¥, L8 1.25M¥, L9 3M¥, L10 6M¥; Avail 4/7 days (L1) up to 18/1 year (L10); Base Time 16 hrs/level. Rigger 2 p.139–140."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!cb9bd4cf27b32f01"
+}

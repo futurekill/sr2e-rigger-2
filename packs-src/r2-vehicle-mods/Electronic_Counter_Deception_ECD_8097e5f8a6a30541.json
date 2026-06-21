@@ -1,0 +1,32 @@
+{
+  "_id": "8097e5f8a6a30541",
+  "name": "Electronic Counter-Deception (ECD)",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "electronics",
+    "rating": 6,
+    "cost": 25000,
+    "installed": false,
+    "notes": "Reality-checking components (inertial nav, flux-density monitors) that negate enemy Electronic Deception (security/military only). Cost & weight by Level: L1 25,000¥/35 kg/SI 3, L2 80,000¥/45/SI 3.5, L3 200,000¥/60/SI 4, L4 750,000¥/60/SI 4.5, L5 2M¥/60/SI 5, L6 5M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6); Base Time 10 hrs/level. Rigger 2 p.139."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8097e5f8a6a30541"
+}

@@ -1,0 +1,32 @@
+{
+  "_id": "bc1fbcaedfc8862b",
+  "name": "Ejection Bucket Seat",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "accessory",
+    "rating": 0,
+    "cost": 3000,
+    "installed": false,
+    "notes": "A bucket seat with a small solid-fuel rocket, stabilization, and a para-raft that deploys to lower a strapped-in occupant safely; activation controls sited at install. Parts cost 3,000¥ (reinforced 6,000¥; double for reinforced ejection); design 35/60 points; 6 CF; load −100 kg (−250+ reinforced); Avail 5/10 days; Street Index 2. Rigger 2 p.142."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bc1fbcaedfc8862b"
+}

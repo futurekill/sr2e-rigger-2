@@ -1,0 +1,32 @@
+{
+  "_id": "113bffb23a1fb4f1",
+  "name": "Anti-Theft System",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "accessory",
+    "rating": 10,
+    "cost": 100,
+    "installed": false,
+    "notes": "Rated 1–10 (the rating = dice in an opposed test vs an intruder's Electronics/Maglocks). Parts cost by tier: R1–3 100¥/rating (SI 1), R4–6 400¥ (SI 1.25), R7–9 1,000¥ (SI 1.5), R10+ 5,000¥ (SI 2). Optional responses: automated security call; standard shock system +2,000¥ (10S Stun); or an explosive self-destruct (plastic explosive, Power = Body²). Base Time 40 hrs. Rigger 2 p.141."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!113bffb23a1fb4f1"
+}

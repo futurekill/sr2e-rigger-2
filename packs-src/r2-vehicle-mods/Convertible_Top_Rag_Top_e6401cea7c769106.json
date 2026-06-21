@@ -1,0 +1,32 @@
+{
+  "_id": "e6401cea7c769106",
+  "name": "Convertible Top (Rag-Top)",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "accessory",
+    "rating": 0,
+    "cost": 2500,
+    "installed": false,
+    "notes": "Replaces a hardtop roof with a retractable folding canopy; gives no protection from side/rear/top attacks, and without a roll bar doubles the TN on post-crash passenger Damage Resistance Tests. Parts cost = vehicle cost × 0.1 + 2,500¥; Avail 4/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.143."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!e6401cea7c769106"
+}

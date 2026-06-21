@@ -104,7 +104,27 @@ const MODS = [
   { name: "Electronic Counter-Countermeasures (ECCM)", modType: "electronics", rating: 10, cost: 10000,
     notes: "Signal amplifiers and noise filters that nullify enemy ECM (generally more available than ECM). Leveled 1–10; weight 12 kg (L1) up to 250 kg (L10); Base Time 16 hrs/level; Avail 4/7 days (L1) up to 18/1 year (L10). NOTE: the per-level Customization Cost column is garbled in the scan (L1 reads 110,000¥, inconsistent with L2 30,000¥) — costs flagged in NEEDS-CAPTURE pending a clean capture; the 10,000¥ here is a placeholder. Rigger 2 p.138." },
   { name: "Electronic Deception (ED)", modType: "electronics", rating: 6, cost: 50000,
-    notes: "Feeds sensors false data about a target's range, position, and heading — subtler than ECM (a sensor isn't aware it's deceived). Cost & weight by Level: L1 50,000¥/35 kg/SI 3, L2 190,000¥/45/SI 3.5, L3 400,000¥/60/SI 4, L4 1M¥/60/SI 4.5, L5 4M¥/60/SI 5, L6 8M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6). Rigger 2 p.138." }
+    notes: "Feeds sensors false data about a target's range, position, and heading — subtler than ECM (a sensor isn't aware it's deceived). Cost & weight by Level: L1 50,000¥/35 kg/SI 3, L2 190,000¥/45/SI 3.5, L3 400,000¥/60/SI 4, L4 1M¥/60/SI 4.5, L5 4M¥/60/SI 5, L6 8M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6). Rigger 2 p.138." },
+  { name: "Electronic Counter-Deception (ECD)", modType: "electronics", rating: 6, cost: 25000,
+    notes: "Reality-checking components (inertial nav, flux-density monitors) that negate enemy Electronic Deception (security/military only). Cost & weight by Level: L1 25,000¥/35 kg/SI 3, L2 80,000¥/45/SI 3.5, L3 200,000¥/60/SI 4, L4 750,000¥/60/SI 4.5, L5 2M¥/60/SI 5, L6 5M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6); Base Time 10 hrs/level. Rigger 2 p.139." },
+  { name: "Electronics Port", modType: "electronics", cost: 1000,
+    notes: "A powered mount for electronics unrelated to driving (radios, cameras, surveillance gear, a remote-control deck); attached devices draw vehicle power and gain +½ the vehicle's Body (round up) to their Flux Rating. Parts cost = 1,000¥ + the equipment's cost; 1 CF per 0.1 m³ of equipment; Avail 3/6 days; Street Index 1; Base Time 8 hrs. Rigger 2 p.139." },
+  { name: "Power Amplifier", modType: "electronics", rating: 10, cost: 250,
+    notes: "Boosts the Flux Rating of sensors, ECM/ECCM, and hardwired remote-control decks — extending remote-control range and EW resistance. Parts cost 250¥/rating (max Rating 10); load −1 kg/rating; Avail Rating + (Rating × 12) hrs; Street Index 1.5; Base Time 8 hrs. Rigger 2 p.139." },
+  { name: "Sensors (Vehicle Sensor System)", modType: "electronics", rating: 10, cost: 5000,
+    notes: "Standard-to-military sensor suites (audio/video, thermal, radar, ultrasound) with ID/recognition/tracking software; higher levels are restricted. Cost & weight by Level: L1 5,000¥/12 kg/SI 2, L2 15,000¥/25/SI 2.5, L3 25,000¥/35/SI 3, L4 50,000¥/50/SI 3.5, L5 75,000¥, L6 125,000¥, L7 375,000¥, L8 1.25M¥, L9 3M¥, L10 6M¥; Avail 4/7 days (L1) up to 18/1 year (L10); Base Time 16 hrs/level. Rigger 2 p.139–140." },
+  { name: "Aircraft Drop Tanks", modType: "accessory", cost: 8000,
+    notes: "A jettisonable pair of external fuel tanks (1,000 L each) fitted in place of two external mounts; adds 2,000 L fuel and −1 Signature, but each extra pair costs −15 Speed (every two pairs +1 Handling). Body 1, Armor 3; a pair costs 8,000¥ (install parts 2,500¥); Avail 5/10 days; Street Index 1.25; Base Time 32 hrs. Rigger 2 p.140." },
+  { name: "Amphibious Operation Package", modType: "accessory", rating: 3, cost: 2500,
+    notes: "Modifies a ground vehicle to travel on/through water (needs watertight seals + life support + sealed power plant for full submersion). L1 (2,500¥, wheels propel at Speed 15, +2 Handling), L2 (7,500¥, propeller drive, Speed 30, no penalty, 2 CF), L3 (15,000¥, water-jet/impeller, Speed 45, no penalty, 2 CF); Avail 5/10–3/6 days; Street Index 1–1.5. Rigger 2 p.140–141." },
+  { name: "Anti-Theft System", modType: "accessory", rating: 10, cost: 100,
+    notes: "Rated 1–10 (the rating = dice in an opposed test vs an intruder's Electronics/Maglocks). Parts cost by tier: R1–3 100¥/rating (SI 1), R4–6 400¥ (SI 1.25), R7–9 1,000¥ (SI 1.5), R10+ 5,000¥ (SI 2). Optional responses: automated security call; standard shock system +2,000¥ (10S Stun); or an explosive self-destruct (plastic explosive, Power = Body²). Base Time 40 hrs. Rigger 2 p.141." },
+  { name: "Vehicle Seats (Bench/Bucket)", modType: "accessory", cost: 700,
+    notes: "Replacement seating. Parts cost: standard bucket 700¥, standard bench 750¥, folding bench 0¥, reinforced bench 1,500¥, reinforced bucket 1,500¥ (+100¥ per 25 kg of support over 250 kg); 6–8 CF; Avail 3/48 hrs; Street Index 1; Base Time 4 hrs. Bench-seat armor costs 1,250¥/point. Rigger 2 p.142–143." },
+  { name: "Ejection Bucket Seat", modType: "accessory", cost: 3000,
+    notes: "A bucket seat with a small solid-fuel rocket, stabilization, and a para-raft that deploys to lower a strapped-in occupant safely; activation controls sited at install. Parts cost 3,000¥ (reinforced 6,000¥; double for reinforced ejection); design 35/60 points; 6 CF; load −100 kg (−250+ reinforced); Avail 5/10 days; Street Index 2. Rigger 2 p.142." },
+  { name: "Convertible Top (Rag-Top)", modType: "accessory", cost: 2500,
+    notes: "Replaces a hardtop roof with a retractable folding canopy; gives no protection from side/rear/top attacks, and without a roll bar doubles the TN on post-crash passenger Damage Resistance Tests. Parts cost = vehicle cost × 0.1 + 2,500¥; Avail 4/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.143." }
 ];
 
 let n = 0;
