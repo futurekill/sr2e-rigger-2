@@ -1,0 +1,32 @@
+{
+  "_id": "7d87eb7b988f4d76",
+  "name": "BattleTac IVIS Receiver Module",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "electronics",
+    "rating": 0,
+    "cost": 25000,
+    "installed": false,
+    "notes": "Lets a remote-controlled vehicle/drone join a BattleTac IVIS network for coordinated tactics — provides extra dice on the Comprehension Test or an Initiative Pool for the drones (the Pilot must be modified to interface with IVIS). Parts cost = Pilot Rating × 25,000¥; design = Pilot × 250 points; Avail 8/14 days; Street Index 3; Base Time 64 hrs; needs Computer B/R. Rigger 2 p.136."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7d87eb7b988f4d76"
+}

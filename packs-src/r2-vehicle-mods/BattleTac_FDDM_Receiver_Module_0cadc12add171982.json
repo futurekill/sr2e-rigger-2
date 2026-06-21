@@ -1,0 +1,32 @@
+{
+  "_id": "0cadc12add171982",
+  "name": "BattleTac FDDM Receiver Module",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "electronics",
+    "rating": 0,
+    "cost": 35000,
+    "installed": false,
+    "notes": "Lets a remote-controlled vehicle/drone share targeting data over a BattleTac FDDM network, enabling indirect fire on targets outside its own line of sight. Parts cost = Pilot Rating × 35,000¥; design = Pilot × 350 points; Avail 10/21 days; Street Index 3; Base Time 64 hrs; needs Computer B/R + a microtronics shop. Rigger 2 p.136."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0cadc12add171982"
+}

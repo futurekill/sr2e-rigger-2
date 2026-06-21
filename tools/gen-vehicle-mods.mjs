@@ -84,7 +84,21 @@ const MODS = [
   { name: "Internal Missile/Rocket Mount", modType: "weapon", cost: 0,
     notes: "An internal firing system (one firmpoint) for missiles or rockets — does not reduce Signature and is protected by the vehicle's armor. Carries up to (Body × 3) rounds; the mounting actuators consume an extra 2 CF. Rigger 2 p.133." },
   { name: "Pintle Mount", modType: "weapon", cost: 50,
-    notes: "The simplest mount — a reinforced swivel socket (one firmpoint) accepting any firmpoint-sized weapon; ~60° left/right and 30° up/down arc, and grants 2 points of recoil compensation. Cannot be operated remotely by a jacked-in rigger; mounting/removing is a Complex Action (+ Quickness (3) Test if moving). Parts cost 50¥; Avail 4/96 hrs; Street Index 1.5; Base Time 12 hrs. Rigger 2 p.133." }
+    notes: "The simplest mount — a reinforced swivel socket (one firmpoint) accepting any firmpoint-sized weapon; ~60° left/right and 30° up/down arc, and grants 2 points of recoil compensation. Cannot be operated remotely by a jacked-in rigger; mounting/removing is a Complex Action (+ Quickness (3) Test if moving). Parts cost 50¥; Avail 4/96 hrs; Street Index 1.5; Base Time 12 hrs. Rigger 2 p.133." },
+  { name: "Ring Mount", modType: "weapon", cost: 3000,
+    notes: "A freely-rotating ring with a tripod, a step up from a pintle mount (hardtop or roll-bar-equipped vehicles only); counts as a hardpoint, can be operated remotely by a jacked-in rigger, and grants 6 points of recoil compensation. Parts cost 3,000¥; Avail 8/14 days; Street Index 2; Base Time 8 hrs; 1 CF (16 CF for door-gun config); load −25 kg. Rigger 2 p.133–134." },
+  { name: "Smartlink Integration Kit", modType: "weapon", cost: 650,
+    notes: "Connects a smartgun-equipped weapon in a fixed mount or turret to the gunner. Level I (650¥, 4/48 hrs, SI 1) requires the gunner to be jacked into the vehicle; Level II (900¥, 6/48 hrs, SI 2) adds palm-induction links so the gunner needn't be jacked in. Not needed for pintle/ring mounts. Base Time 24 hrs. Rigger 2 p.134." },
+  { name: "Weapon Turret", modType: "weapon", cost: 5000,
+    notes: "A motorized, armored ring mount that protects its weapon (−1 to the vehicle's Signature). Sizes by max Weapon Value / hardpoints / parts cost: Mini (WV 2, 1 hp, 5,000¥, 7 CF, −25 kg), Small (WV 3, 2 hp, 7,500¥, 8 CF, −100 kg), Medium (WV 6, 3 hp, 15,000¥, 16 CF, −1,000 kg); Large (WV 8, 4 hp) and Extra-Large (WV 10, 6 hp) are custom-built. Anti-aircraft variant ×1.5 cost +1 CF; pop-up variant ×2 cost, doubled CF. Avail by formula; SI 2–3. Rigger 2 p.134–135." },
+  { name: "Remote Weapon Turret", modType: "weapon", cost: 2500,
+    notes: "A weapons-only turret the operator controls from inside via remote sensors (a second rigger can run it independently of the driver). Sizes by parts cost / CF / load: Micro (2,500¥, 1 CF, −10 kg; pop-up micro = WV 1, 1 firmpoint), Mini (3 CF... , −25 kg), Small (9,000¥, 5 CF, −100 kg), Medium (8 CF, −1,000 kg). Avail per formula; Street Index 2 (micro/mini), 3 (small/medium); Base Time 72 hrs. Rigger 2 p.135–136." },
+  { name: "Vehicle Gyroscopic Stabilizer", modType: "weapon", cost: 1000,
+    notes: "Stabilizes weapons in fixed mounts/turrets — each level negates 1 point of combined recoil + movement modifiers (not compatible with gunnery recoil adjusters). If total active rating exceeds the vehicle's Body, Handling worsens by 1 per point over Body. Parts cost 1,000¥/level; max 2 × Body; load −(Rating × 24) kg; Avail 8/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.136." },
+  { name: "BattleTac FDDM Receiver Module", modType: "electronics", cost: 35000,
+    notes: "Lets a remote-controlled vehicle/drone share targeting data over a BattleTac FDDM network, enabling indirect fire on targets outside its own line of sight. Parts cost = Pilot Rating × 35,000¥; design = Pilot × 350 points; Avail 10/21 days; Street Index 3; Base Time 64 hrs; needs Computer B/R + a microtronics shop. Rigger 2 p.136." },
+  { name: "BattleTac IVIS Receiver Module", modType: "electronics", cost: 25000,
+    notes: "Lets a remote-controlled vehicle/drone join a BattleTac IVIS network for coordinated tactics — provides extra dice on the Comprehension Test or an Initiative Pool for the drones (the Pilot must be modified to interface with IVIS). Parts cost = Pilot Rating × 25,000¥; design = Pilot × 250 points; Avail 8/14 days; Street Index 3; Base Time 64 hrs; needs Computer B/R. Rigger 2 p.136." }
 ];
 
 let n = 0;

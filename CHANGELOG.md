@@ -31,7 +31,10 @@
   Victory/Vigilant Autocannons, Zapper rocket, and Jabberwocky jammer rocket/
   missile. Resolves the ranges item in `docs/NEEDS-CAPTURE.md`.
 
-### Vehicle modifications (`r2-vehicle-mods`, 28 so far)
+### Vehicle modifications (`r2-vehicle-mods`, 35 so far)
+- Added weapon-mount & electronics mods (book p.134–136): Ring Mount, Smartlink
+  Integration Kit, Weapon Turret (Mini/Small/Medium size table), Remote Weapon
+  Turret, Vehicle Gyroscopic Stabilizer, BattleTac FDDM & IVIS Receiver Modules.
 - Vehicle Customization modifications (book p.124–133). Control & handling:
   Contingency Maneuver Controls, Datajack Port, Drive-by-Wire System, Improved
   Control Surfaces (watercraft), Improved Suspension (ground), Off-Road

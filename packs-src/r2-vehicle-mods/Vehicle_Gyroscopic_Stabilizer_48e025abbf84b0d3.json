@@ -1,0 +1,32 @@
+{
+  "_id": "48e025abbf84b0d3",
+  "name": "Vehicle Gyroscopic Stabilizer",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "weapon",
+    "rating": 0,
+    "cost": 1000,
+    "installed": false,
+    "notes": "Stabilizes weapons in fixed mounts/turrets — each level negates 1 point of combined recoil + movement modifiers (not compatible with gunnery recoil adjusters). If total active rating exceeds the vehicle's Body, Handling worsens by 1 per point over Body. Parts cost 1,000¥/level; max 2 × Body; load −(Rating × 24) kg; Avail 8/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.136."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!48e025abbf84b0d3"
+}

@@ -1,0 +1,32 @@
+{
+  "_id": "8b4314aa57e8bc9e",
+  "name": "Weapon Turret",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "weapon",
+    "rating": 0,
+    "cost": 5000,
+    "installed": false,
+    "notes": "A motorized, armored ring mount that protects its weapon (−1 to the vehicle's Signature). Sizes by max Weapon Value / hardpoints / parts cost: Mini (WV 2, 1 hp, 5,000¥, 7 CF, −25 kg), Small (WV 3, 2 hp, 7,500¥, 8 CF, −100 kg), Medium (WV 6, 3 hp, 15,000¥, 16 CF, −1,000 kg); Large (WV 8, 4 hp) and Extra-Large (WV 10, 6 hp) are custom-built. Anti-aircraft variant ×1.5 cost +1 CF; pop-up variant ×2 cost, doubled CF. Avail by formula; SI 2–3. Rigger 2 p.134–135."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8b4314aa57e8bc9e"
+}
