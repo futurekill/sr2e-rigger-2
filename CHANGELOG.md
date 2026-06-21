@@ -31,6 +31,12 @@
   Victory/Vigilant Autocannons, Zapper rocket, and Jabberwocky jammer rocket/
   missile. Resolves the ranges item in `docs/NEEDS-CAPTURE.md`.
 
+### Sensors & ECM gear (`r2-sensors`, 6)
+- External (carried) remote-control electronic-warfare gear: encryption module,
+  rigger decryption module, ECCM (tiered), protocol-emulation module, signal
+  amplifier, storage memory. The weight-based counterparts to the implanted
+  cyber modules. From the New Toys gear table (book p.98).
+
 ### Rigger cyberware (`r2-cyberware`, 10)
 - Remote Control Deck, BattleTac IVIS/FDDM master units, remote-control
   encryption & decryption modules, ECCM (tiered), rigger protocol-emulation

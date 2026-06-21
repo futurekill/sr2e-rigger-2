@@ -1,0 +1,42 @@
+{
+  "_id": "374ee094513653e6",
+  "name": "Remote Control ECCM (External)",
+  "type": "gear",
+  "img": "icons/svg/chip.svg",
+  "system": {
+    "category": "electronics",
+    "rating": 1,
+    "quantity": 1,
+    "weight": 1.5,
+    "cost": 7500,
+    "availability": "4/7 days",
+    "legality": "Restricted",
+    "equipped": false,
+    "concealability": 0,
+    "weaponAccessory": false,
+    "linkedWeaponId": "",
+    "combatTnMod": 0,
+    "accessoryRecoilComp": 0,
+    "requiresSmartgun": false,
+    "notes": "Carried electronic counter-countermeasures for a remote-control deck. Tiers: R1–3 (1.5 kg, ×7,500¥, 4/7 days, SI 2); R4–6 (2 kg, ×15,000¥, 6/14 days, SI 3); R7–9 (2.5 kg, ×35,000¥, 12/28 days, SI 4); R10 (2.5 kg, 500,000¥ flat, 18/45 days). Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!374ee094513653e6"
+}

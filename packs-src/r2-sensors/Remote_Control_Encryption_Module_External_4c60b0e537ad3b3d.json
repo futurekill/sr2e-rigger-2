@@ -1,0 +1,42 @@
+{
+  "_id": "4c60b0e537ad3b3d",
+  "name": "Remote Control Encryption Module (External)",
+  "type": "gear",
+  "img": "icons/svg/chip.svg",
+  "system": {
+    "category": "electronics",
+    "rating": 1,
+    "quantity": 1,
+    "weight": 0.5,
+    "cost": 5000,
+    "availability": "(Rating)/(Rating) days",
+    "legality": "Restricted",
+    "equipped": false,
+    "concealability": 0,
+    "weaponAccessory": false,
+    "linkedWeaponId": "",
+    "combatTnMod": 0,
+    "accessoryRecoilComp": 0,
+    "requiresSmartgun": false,
+    "notes": "Carried encryption unit for a remote-control deck (Rating 1–10). Cost = Rating × 5,000¥. Street Index 3. The external counterpart of the implanted module. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4c60b0e537ad3b3d"
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "50be507a307a868d",
+  "name": "Rigger Protocol Emulation Module (External)",
+  "type": "gear",
+  "img": "icons/svg/chip.svg",
+  "system": {
+    "category": "electronics",
+    "rating": 1,
+    "quantity": 1,
+    "weight": 0.5,
+    "cost": 5000,
+    "availability": "(Rating+2)/(Rating) days",
+    "legality": "Forbidden",
+    "equipped": false,
+    "concealability": 0,
+    "weaponAccessory": false,
+    "linkedWeaponId": "",
+    "combatTnMod": 0,
+    "accessoryRecoilComp": 0,
+    "requiresSmartgun": false,
+    "notes": "Carried unit that emulates another deck's control protocols to seize foreign drones (Rating 1–10). Cost = Rating × 5,000¥. Street Index 2. Rigger 2."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!50be507a307a868d"
+}
