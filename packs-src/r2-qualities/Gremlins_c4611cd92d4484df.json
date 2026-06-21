@@ -1,0 +1,32 @@
+{
+  "_id": "c4611cd92d4484df",
+  "name": "Gremlins",
+  "type": "quality",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "kind": "flaw",
+    "category": "other",
+    "pointValue": -1,
+    "source": "Rigger 2 p.15",
+    "notes": "The character's gear is temperamental. On a 1 (rolled on 2D6 against a target number set by the flaw's value), a piece of equipment glitches — operating at a +1 modifier (1-point flaw), needing a Simple/Complex Action to clear, or failing for the scene at worse tiers. Tiered: −1, −2, −3, or −4 (higher = more frequent/severe)."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!c4611cd92d4484df"
+}

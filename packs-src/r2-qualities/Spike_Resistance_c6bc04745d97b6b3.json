@@ -1,0 +1,32 @@
+{
+  "_id": "c6bc04745d97b6b3",
+  "name": "Spike Resistance",
+  "type": "quality",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "kind": "edge",
+    "category": "mental",
+    "pointValue": 2,
+    "source": "Rigger 2 p.15",
+    "notes": "The character shrugs off harsh ASIST spikes and dump shock: add 1 (at value +2) or 2 (at value +4) to Willpower when resisting spike/dump-shock damage. Tiered: +2 or +4."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!c6bc04745d97b6b3"
+}

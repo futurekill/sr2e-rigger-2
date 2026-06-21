@@ -73,6 +73,13 @@
   pricing rule in its notes. Remaining: turret/ring mounts and the rest of the
   customization chapter (p.134+), plus the Vehicle List.
 
+### Edges & Flaws (`r2-qualities`, 5) — new pack
+- The Rigger-2-new rigger qualities (book p.15): Computer Illiterate, Sensitive
+  Neural Structure, Simsense Vertigo, Spike Resistance, Gremlins. Requires the
+  SR2E system's new `quality` item type (Edge/Flaw with a build-point value;
+  Edges & Flaws list on the character bio tab). The other qualities discussed on
+  p.14-15 are SR Companion entries Rigger 2 only annotates — out of scope.
+
 ### Rigger Electronics (`r2-sensors`, 14) — pack relabeled
 - Content audit (`docs/CONTENT-AUDIT.md`) found 8 missed New Toys items in the
   Remote-Control-Accessories / Autosofts area (book p.97–100); added them and

@@ -42,6 +42,7 @@ These catch the cheap mistakes before opening Foundry. Run from the repo root.
   | R2 Vehicle Mods (`r2-vehicle-mods`) | 58 | Item (vehicle_mod) |
   | R2 Cyberware (`r2-cyberware`) | 10 | Item (cyberware) |
   | R2 Rigger Electronics (`r2-sensors`) | 14 | Item (gear) |
+  | R2 Edges & Flaws (`r2-qualities`) | 5 | Item (quality) |
 
   *(update counts as more content lands — they should equal the
   `wrote N …` line each `tools/gen-*.mjs` prints.)*
@@ -90,6 +91,12 @@ These catch the cheap mistakes before opening Foundry. Run from the repo root.
       **Audio/Visual Screen Displays**, **Intercom Speaker**.
 - [ ] **Autosofts** (TAPS Sharpshooter, IPA ClearSight) present with category
       `autosoft` and rating editable (they add Rating to a drone's Pilot).
+
+### r2-qualities (Edges & Flaws — needs the system `quality` type)
+- [ ] All 5 open as `quality` items (kind edge/flaw, signed point value, notes).
+- [ ] Drag onto a character → appear in the bio tab's **Edges & Flaws** list;
+      the Net value reflects their signed point values (e.g. Gremlins −1 lowers
+      it, Spike Resistance +2 raises it).
 
 ## 3. Cross-checks vs the source
 

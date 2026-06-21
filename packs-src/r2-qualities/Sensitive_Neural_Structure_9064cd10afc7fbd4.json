@@ -1,0 +1,32 @@
+{
+  "_id": "9064cd10afc7fbd4",
+  "name": "Sensitive Neural Structure",
+  "type": "quality",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "kind": "flaw",
+    "category": "mental",
+    "pointValue": -2,
+    "source": "Rigger 2 p.15",
+    "notes": "The character is unusually vulnerable to neural damage — BTL chips, black IC, rigger drain, and dump shock. Reduce Willpower by 1 (at value −2) or 2 (at value −4) when resisting such damage. Tiered: −2 or −4."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9064cd10afc7fbd4"
+}

@@ -1,0 +1,32 @@
+{
+  "_id": "4ddf73e8f8d0d8c2",
+  "name": "Computer Illiterate",
+  "type": "quality",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "kind": "flaw",
+    "category": "skill",
+    "pointValue": -3,
+    "source": "Rigger 2 p.15",
+    "notes": "The character has extreme difficulty with computers and other electronics, suffering a +1 target-number modifier to all tests involving computer or electronic devices (which for a rigger includes piloting drones and decks)."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4ddf73e8f8d0d8c2"
+}

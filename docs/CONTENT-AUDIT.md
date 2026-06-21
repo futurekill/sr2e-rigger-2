@@ -24,10 +24,13 @@ GM reference). Not compendium content.
   Subsystem Damage. 🚫
 
 **Item-adjacent exceptions in the rules chapters:**
-- **New Edges and Flaws (p.15)** — rigger character qualities. ❓ Only become
-  compendium items *if* the SR2E system models edges/flaws (the base system does
-  not have an edge/flaw item type). Out of scope unless we add that — flag for a
-  decision, don't auto-build.
+- **New Edges and Flaws (p.15)** — ✅ done. Added a `quality` item type to the
+  SR2E system (Edge/Flaw with a build-point value + an Edges & Flaws list on the
+  character bio tab), then shipped the 5 Rigger-2-new qualities in `r2-qualities`:
+  Computer Illiterate, Sensitive Neural Structure, Simsense Vertigo, Spike
+  Resistance, Gremlins. (The others on p.14-15 — Adrenaline Surge, Bio-Rejection,
+  Blind, Deaf, Night Vision/Blindness — are SR Companion qualities Rigger 2 only
+  annotates for rigging; out of scope.)
 - **The Mechanic (contact, p.19)** — a contact archetype. ❓ Could ship as a
   sample NPC actor; optional, low priority.
 
@@ -78,9 +81,11 @@ LS/Aztlan) and are out of scope.
 | 7 | TAPS Sharpshooter Autosoft | `r2-sensors` (category autosoft) | gear |
 | 8 | IPA ClearSight Autosoft | `r2-sensors` (category autosoft) | gear |
 
-**Open questions (need a decision, not auto-built):**
-- New Edges and Flaws (p.15) — only if the system gains an edge/flaw item type.
-- The Mechanic contact (p.19) — optional sample NPC.
+**Resolved since the audit:**
+- ✅ New Edges and Flaws (p.15) — `quality` system type added + 5 in `r2-qualities`.
 
-After the 8 above land, the book's **item** content is complete (design-from-
-scratch is the only remaining deferred feature).
+**Still open:**
+- The Mechanic contact (p.19) — optional sample NPC (next).
+
+After the 8 accessories + the 5 edges/flaws, the book's **item** content is
+complete; design-from-scratch is the only remaining deferred feature.

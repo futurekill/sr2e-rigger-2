@@ -1,0 +1,32 @@
+{
+  "_id": "f94365525601975a",
+  "name": "Simsense Vertigo",
+  "type": "quality",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "kind": "flaw",
+    "category": "mental",
+    "pointValue": -2,
+    "source": "Rigger 2 p.15",
+    "notes": "Simsense and direct-neural cyber-interfaces leave the character disoriented; apply a +1 target-number modifier to all simsense-related tests (rigging, BTL, etc.)."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!f94365525601975a"
+}
