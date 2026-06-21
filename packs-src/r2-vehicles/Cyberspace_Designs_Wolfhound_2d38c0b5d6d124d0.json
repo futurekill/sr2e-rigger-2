@@ -1,6 +1,6 @@
 {
-  "_id": "9c94bb8bb49a3238",
-  "name": "Aerospace Designs Wolfhound",
+  "_id": "2d38c0b5d6d124d0",
+  "name": "Cyberspace Designs Wolfhound",
   "type": "vehicle",
   "img": "icons/svg/explosion.svg",
   "system": {
@@ -24,7 +24,7 @@
       "value": 0,
       "max": 10
     },
-    "notes": "Advanced reconnaissance aircraft drone — improved pilot system, aerodynamic streamlining, and long flight endurance. VTOL; Learning Pool 2 (for Avoid Detection). Remote control interface + rigger adaptation. Rigger 2."
+    "notes": "Advanced reconnaissance aircraft drone — the follow-up to the Dalmatian UAV, with an improved pilot system, aerodynamic streamlining, and long flight endurance. VTOL; Learning Pool 2 (for Avoid Detection). Remote control interface + rigger adaptation. Rigger 2."
   },
   "items": [],
   "effects": [],
@@ -43,7 +43,7 @@
     "exportSource": null
   },
   "prototypeToken": {
-    "name": "Aerospace Designs Wolfhound",
+    "name": "Cyberspace Designs Wolfhound",
     "displayName": 0,
     "actorLink": false,
     "width": 1,
@@ -63,5 +63,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!actors!9c94bb8bb49a3238"
+  "_key": "!actors!2d38c0b5d6d124d0"
 }

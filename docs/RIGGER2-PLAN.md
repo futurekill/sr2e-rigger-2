@@ -13,9 +13,16 @@ expanded rules are a separate, later track.
   EW rules; and the **Vehicle Design** system.
 - **Content — "New Toys", ≈ p.91–115** — stat block + writeup each:
   vehicle weapons, rigger cyberware, new vehicles, drones, sensors/ECM.
-- **Content — "Vehicle List", ≈ p.170–186** — a master catalog of vehicles &
+- **Content — "Vehicle List", ≈ p.148–165** — a master catalog of vehicles &
   drones with full stats + a **source reference** per entry (reprints many
   core-book vehicles alongside Rigger-2-new ones).
+  - **RESOLVED (scanned at 200dpi):** every `Reference: R2` entry in the list
+    re-lists a New Toys drone already in `r2-vehicles` (Condor, Redball, Sentry
+    II, Crawler, Hedgehog, Roto-Drone, Kodiak, Wolfhound, …); all other entries
+    reference *other* sourcebooks (RBII, CS, FF, NAGRL, SRII, LS, Aztlan) and
+    are **out of scope** for this module. The Vehicle List therefore needs **no
+    new transcription**. (Reference field is NOT legible at 150dpi — the survey
+    pass misread several; verified at 200dpi.)
 - **Vehicle-design component tables** — chassis/accessory/mod costs scattered
   through the design chapters.
 

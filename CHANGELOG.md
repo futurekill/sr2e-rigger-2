@@ -14,7 +14,17 @@
   jammer rocket & missile, Silencer AARM. From the New Toys weapons tables
   (book p.92–95). Vehicle-mounted, so they use the Gunnery skill.
 
-### Vehicles & drones (`r2-vehicles`, 21 so far)
+### Vehicle List scan (no new content) + Wolfhound fix
+- Scanned the back-of-book Vehicle List (p.148–165) at 200dpi: every
+  `Reference: R2` entry just re-lists a New Toys drone already in `r2-vehicles`;
+  all other entries reference other sourcebooks (RBII/CS/FF/NAGRL/SRII/LS/Aztlan)
+  and are out of scope. So the Vehicle List needs no new transcription — the 21
+  New Toys vehicles are the complete R2-new set.
+- Corrected the Wolfhound's manufacturer: "Aerospace Designs" → **Cyberspace
+  Designs** (its writeup calls it the follow-up to the Dalmatian UAV); the New
+  Toys heading was misread.
+
+### Vehicles & drones (`r2-vehicles`, 21)
 - New Toys "Drones and Robots" (book p.100–107): Aeroquip Redball Express
   resupply drone; Aerodesign Condor LDSD-23 & Condor II LDSD-41 recon drones;
   Ares Arms Sentry II weapons stand; Aztechnology Hedgehog signal-interceptor &
