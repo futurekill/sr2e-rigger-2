@@ -31,16 +31,20 @@
   Victory/Vigilant Autocannons, Zapper rocket, and Jabberwocky jammer rocket/
   missile. Resolves the ranges item in `docs/NEEDS-CAPTURE.md`.
 
-### Vehicle modifications (`r2-vehicle-mods`, 17 so far)
-- Vehicle Customization modifications (book p.124–128). Control & handling:
+### Vehicle modifications (`r2-vehicle-mods`, 28 so far)
+- Vehicle Customization modifications (book p.124–133). Control & handling:
   Contingency Maneuver Controls, Datajack Port, Drive-by-Wire System, Improved
   Control Surfaces (watercraft), Improved Suspension (ground), Off-Road
   Suspension, Remote-Control Interface, Remote Pilot Advanced Programming,
   Rigger Adaptation, Secondary Controls. Protective systems: Standard, Concealed
-  & Ablative vehicle armor; Advanced Passenger Protection System; Crash Cage;
-  EnviroSeal; Life Support. Many are formula-priced (× vehicle cost, per Armor
-  Point, per seat), so each item carries the full pricing rule in its notes. The
-  rest of the customization chapter (p.129+) and the Vehicle List are still to come.
+  & Ablative vehicle armor; Smart Armor System; Roll Bars; Advanced Passenger
+  Protection System; Crash Cage; EnviroSeal; Life Support. Signature: Thermal
+  Baffles, Active Thermal Masking, Radar-Absorbent Materials. Weapon mounts:
+  Firearm Conversion Kit, Fixed Weapon Mount, Gunnery Recoil Adjuster,
+  External/Internal Missile-Rocket Mounts, Pintle Mount. Many are formula-priced
+  (× vehicle cost, per Armor Point/seat/level), so each item carries the full
+  pricing rule in its notes. Remaining: turret/ring mounts and the rest of the
+  customization chapter (p.134+), plus the Vehicle List.
 
 ### Sensors & ECM gear (`r2-sensors`, 6)
 - External (carried) remote-control electronic-warfare gear: encryption module,

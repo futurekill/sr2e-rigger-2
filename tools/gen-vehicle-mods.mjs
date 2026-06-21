@@ -62,7 +62,29 @@ const MODS = [
   { name: "EnviroSeal System", modType: "protection", cost: 0,
     notes: "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128." },
   { name: "Life Support System", modType: "protection", cost: 500,
-    notes: "Provides oxygen and basic climate control inside a sealed vehicle, rated in man-hours of support. Parts cost = 500¥ + 100¥ per man-hour; load −(25 kg per 10 man-hours); Avail 8/14 days. Rigger 2 p.128." }
+    notes: "Provides oxygen and basic climate control inside a sealed vehicle, rated in man-hours of support. Parts cost = 500¥ + 100¥ per man-hour; load −(25 kg per 10 man-hours); Avail 8/14 days. Rigger 2 p.128." },
+  { name: "Roll Bars", modType: "protection", cost: 2000,
+    notes: "Adds rigidity that mitigates roll-over damage: negates the doubled Damage Resistance penalty for hard-tops and grants +3 dice to the occupant's Damage Resistance Test in a roll. Also required to mount some weapons on civilian vehicles. Parts cost 2,000¥; Avail 3/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.129." },
+  { name: "Smart Armor System (SAS)", modType: "armor", cost: 20000,
+    notes: "Reactive (proactive) armor of small explosive cells that detonate outward to defeat incoming rounds. On each hit, roll 2d6 vs an Activation TN (1 on the first hit, +1 each subsequent hit) — on success, reduce the attack's damage code by a level (standard anti-vehicle reductions still apply). Military-grade. Parts cost 20,000¥ install / Body × 500¥ replacement; load −(Body × 50) kg/point; Avail 10/28 days; Base Time (Body × 40) hrs. Rigger 2 p.129." },
+  { name: "Thermal Baffles", modType: "signature", cost: 0,
+    notes: "Heat-blocking baffles that mask a vehicle's thermographic signature (gasoline/methane/diesel/jet engines). Parts cost per +1 Signature: ground Body × 5,000¥, motorcycles Body × 6,000¥, trucks/fixed-wing Body × 7,500¥, tractors/helicopters Body × 10,000¥, hovercraft Body × 3,750¥, watercraft/zeppelins Body × 2,500¥; max +2; load −(Body × 50) kg/level; Avail 6/14 days; Street Index 3. Rigger 2 p.130." },
+  { name: "Active Thermal Masking", modType: "signature", cost: 0,
+    notes: "A high-powered coolant system that actively absorbs engine heat; each active level masks +1 Signature but costs 15 m of Speed Rating while running. Cost = engine-customization cost × 2 for the first level, +0.25 to the multiplier per added level; max equals the engine-customization level; Avail 8/21 days; Street Index 2; load −100 kg. Rigger 2 p.130." },
+  { name: "Radar-Absorbent Materials (RAM)", modType: "signature", cost: 25000,
+    notes: "Radar-absorbing coatings/enamels that mask a vehicle's radar signature; each level adds +1 (max +3). Automatically makes the vehicle military-grade — very hard to obtain. Design cost = levels × 50 points; parts cost = levels × 25,000¥; Avail 18/30 days; Street Index military only. Rigger 2 p.130." },
+  { name: "Firearm Conversion Kit", modType: "weapon", cost: 150,
+    notes: "Required to mount a personal firearm on a vehicle weapon mount. Cost/availability by class: Pistol 150¥ 4/36 hrs (SI 2); SMG 150¥ 5/48 hrs (SI 2, −0.25 kg); Rifle/Shotgun/LMG 750¥ 6/72 hrs (SI 2.5, −0.5 kg); Heavy Weapons 1,000¥ 16/14 days (SI 2.5, −1 kg). Rigger 2 p.131." },
+  { name: "Fixed Weapon Mount", modType: "weapon", cost: 2000,
+    notes: "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132." },
+  { name: "Gunnery Recoil Adjuster", modType: "weapon", cost: 500,
+    notes: "Precision micro-actuators in a weapon mount that compensate recoil; each level negates 1 point of recoil (not compatible with gyro-stabilization). Max level by mount: fixed firmpoint/micro-turret 3, mini-turret 6, small turret/fixed hardpoint 9, medium+ turret 12. Parts cost 500¥/level; Avail 6/48 hrs; Street Index 1.5; load −(Rating + 24) kg. Rigger 2 p.132." },
+  { name: "External Missile/Rocket Mount", modType: "weapon", cost: 0,
+    notes: "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133." },
+  { name: "Internal Missile/Rocket Mount", modType: "weapon", cost: 0,
+    notes: "An internal firing system (one firmpoint) for missiles or rockets — does not reduce Signature and is protected by the vehicle's armor. Carries up to (Body × 3) rounds; the mounting actuators consume an extra 2 CF. Rigger 2 p.133." },
+  { name: "Pintle Mount", modType: "weapon", cost: 50,
+    notes: "The simplest mount — a reinforced swivel socket (one firmpoint) accepting any firmpoint-sized weapon; ~60° left/right and 30° up/down arc, and grants 2 points of recoil compensation. Cannot be operated remotely by a jacked-in rigger; mounting/removing is a Complex Action (+ Quickness (3) Test if moving). Parts cost 50¥; Avail 4/96 hrs; Street Index 1.5; Base Time 12 hrs. Rigger 2 p.133." }
 ];
 
 let n = 0;

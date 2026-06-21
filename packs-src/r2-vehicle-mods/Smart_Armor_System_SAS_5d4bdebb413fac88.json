@@ -1,0 +1,32 @@
+{
+  "_id": "5d4bdebb413fac88",
+  "name": "Smart Armor System (SAS)",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "armor",
+    "rating": 0,
+    "cost": 20000,
+    "installed": false,
+    "notes": "Reactive (proactive) armor of small explosive cells that detonate outward to defeat incoming rounds. On each hit, roll 2d6 vs an Activation TN (1 on the first hit, +1 each subsequent hit) — on success, reduce the attack's damage code by a level (standard anti-vehicle reductions still apply). Military-grade. Parts cost 20,000¥ install / Body × 500¥ replacement; load −(Body × 50) kg/point; Avail 10/28 days; Base Time (Body × 40) hrs. Rigger 2 p.129."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5d4bdebb413fac88"
+}
