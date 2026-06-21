@@ -1,0 +1,32 @@
+{
+  "_id": "53a3ae4e60eb6fbb",
+  "name": "External Cargo Mount",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "accessory",
+    "rating": 0,
+    "cost": 250,
+    "installed": false,
+    "notes": "Roof racks or motorcycle side cargo-boxes — no CF cost, but Handling worsens by 1 while loaded; capacity up to the vehicle's internal cargo space. Customization-only. Parts cost 250¥ per CF held; Avail 3/24 hrs; Street Index 1; Base Time 8 hrs; load −45 kg. Rigger 2 p.144."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!53a3ae4e60eb6fbb"
+}

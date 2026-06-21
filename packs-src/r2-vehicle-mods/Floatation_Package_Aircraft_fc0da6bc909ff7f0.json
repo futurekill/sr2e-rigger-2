@@ -1,0 +1,32 @@
+{
+  "_id": "fc0da6bc909ff7f0",
+  "name": "Floatation Package (Aircraft)",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "accessory",
+    "rating": 0,
+    "cost": 2500,
+    "installed": false,
+    "notes": "Floats for an aircraft or helicopter for water operation. Aircraft: economy ×1.20, Speed halved, cannot land on land. Helicopters: Speed ×0.9, can still land on land. Parts cost = vehicle cost × 0.1 + 2,500¥; design = chassis Point Value × 1.20; Avail 4/7 days; Street Index 2. Rigger 2 p.144."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fc0da6bc909ff7f0"
+}

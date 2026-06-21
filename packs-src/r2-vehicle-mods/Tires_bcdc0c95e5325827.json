@@ -1,0 +1,32 @@
+{
+  "_id": "bcdc0c95e5325827",
+  "name": "Tires",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "accessory",
+    "rating": 0,
+    "cost": 0,
+    "installed": false,
+    "notes": "Replacement tires (spares take ½ Body CF). Cost each by type: Standard Body × 50¥ (halves suspension/Handling mod benefits), Performance Body × 75¥ (for improved suspension/drive-by-wire), Off-Road Body × 125¥ (required for off-road suspension), Dual-Purpose Body × 250¥ (on/off-road active suspension); Runflat = tire cost + 200¥ (5/3 armor protection). Rigger 2 p.146."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bcdc0c95e5325827"
+}

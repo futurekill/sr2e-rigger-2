@@ -1,0 +1,32 @@
+{
+  "_id": "deeb7a3a4d1f7379",
+  "name": "Winch",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "accessory",
+    "rating": 0,
+    "cost": 0,
+    "installed": false,
+    "notes": "A bumper winch for pulling/towing/lifting, with its own Load Rating up to the Winch Capacity Table max by Body: B0 5 kg, B1 25, B2 200, B3 750, B4 2,000, B5 5,000, B6 20,000, B7 30,000, B8 45,000, B9 60,000, B10+ Body²×750. Parts cost = Load Rating × 75¥; load −(Body × 2.5) kg; Avail 6/14 days; Street Index 1.5; Base Time 1 day. Rigger 2 p.146."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!deeb7a3a4d1f7379"
+}

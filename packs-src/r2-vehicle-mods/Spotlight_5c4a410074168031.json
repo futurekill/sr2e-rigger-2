@@ -1,0 +1,32 @@
+{
+  "_id": "5c4a410074168031",
+  "name": "Spotlight",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "accessory",
+    "rating": 0,
+    "cost": 600,
+    "installed": false,
+    "notes": "A concentrated beam (effective range 600 m; spot ~0.5 m at the source widening to ~5 m at max), controllable manually or remotely from inside; also available in invisible medium-range infrared. Parts cost 600¥; Avail 4/96 hrs; Street Index 1.5; Base Time 1 day. Rigger 2 p.145–146."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5c4a410074168031"
+}

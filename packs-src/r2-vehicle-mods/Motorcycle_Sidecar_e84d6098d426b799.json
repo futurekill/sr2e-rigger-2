@@ -1,0 +1,32 @@
+{
+  "_id": "e84d6098d426b799",
+  "name": "Motorcycle Sidecar",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "accessory",
+    "rating": 0,
+    "cost": 1000,
+    "installed": false,
+    "notes": "A sidecar (Body = the cycle's): −15 Speed, +Handling, economy ×0.9. Sizes by cargo/Handling/cost: Small 4 CF/+1/1,000¥, Medium 8 CF/+1/2,000¥, Large 12 CF/+2/3,500¥ (seating eats the cargo CF). Mount/remove in 15 min; armor upgradeable per the standard rules. Rigger 2 p.145."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!e84d6098d426b799"
+}

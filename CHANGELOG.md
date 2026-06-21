@@ -31,7 +31,12 @@
   Victory/Vigilant Autocannons, Zapper rocket, and Jabberwocky jammer rocket/
   missile. Resolves the ranges item in `docs/NEEDS-CAPTURE.md`.
 
-### Vehicle modifications (`r2-vehicle-mods`, 48 so far)
+### Vehicle modifications (`r2-vehicle-mods`, 58 — customization chapter complete)
+- Finished the Accessories section (book p.144–146): Crane (+capacity table),
+  Drone Rack, External Cargo Mount, Floatation Package, Hovercraft Water Seals,
+  Mechanical Arms, Motorcycle Sidecar, Spotlight, Tires (5 types), Winch
+  (+capacity table). This completes the entire Vehicle Design & Customization
+  modifications chapter (p.124–146). Next: the back-of-book Vehicle List.
 - Added electronics tail + accessories (book p.139–143): Electronic
   Counter-Deception (ECD), Electronics Port, Power Amplifier, Vehicle Sensor
   System (L1–10 table), Aircraft Drop Tanks, Amphibious Operation Package

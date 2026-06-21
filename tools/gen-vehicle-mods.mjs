@@ -124,7 +124,27 @@ const MODS = [
   { name: "Ejection Bucket Seat", modType: "accessory", cost: 3000,
     notes: "A bucket seat with a small solid-fuel rocket, stabilization, and a para-raft that deploys to lower a strapped-in occupant safely; activation controls sited at install. Parts cost 3,000¥ (reinforced 6,000¥; double for reinforced ejection); design 35/60 points; 6 CF; load −100 kg (−250+ reinforced); Avail 5/10 days; Street Index 2. Rigger 2 p.142." },
   { name: "Convertible Top (Rag-Top)", modType: "accessory", cost: 2500,
-    notes: "Replaces a hardtop roof with a retractable folding canopy; gives no protection from side/rear/top attacks, and without a roll bar doubles the TN on post-crash passenger Damage Resistance Tests. Parts cost = vehicle cost × 0.1 + 2,500¥; Avail 4/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.143." }
+    notes: "Replaces a hardtop roof with a retractable folding canopy; gives no protection from side/rear/top attacks, and without a roll bar doubles the TN on post-crash passenger Damage Resistance Tests. Parts cost = vehicle cost × 0.1 + 2,500¥; Avail 4/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.143." },
+  { name: "Crane", modType: "accessory", cost: 0,
+    notes: "A hydraulic boom for lifting heavy loads (vehicle must be stationary and chocked; not available on Body-0 vehicles). The crane has its own Load Rating up to the Crane Capacity Table max by Body: B1 25 kg, B2 200, B3 750, B4 2,000, B5 5,000, B6 20,000, B7 30,000, B8 45,000, B9 60,000, B10+ Body²×750. Parts cost = Load Rating × 100¥; 35 CF; load −(Body × 80) kg; Avail 6/14 days; Street Index 2. Rigger 2 p.143–144." },
+  { name: "Drone Rack", modType: "accessory", cost: 0,
+    notes: "A cradle that launches and recovers airborne drones from a moving vehicle and stores them as an armored mini-hangar (same Armor as the vehicle, ½ its Body). Launching takes two actions; recovery needs Handling Tests from both drivers. Design cost = Body × 12 points; parts cost scales per Body point; CF = drone storage + 2 CF; Avail 6/14 days; Street Index 2. Rigger 2 p.144." },
+  { name: "External Cargo Mount", modType: "accessory", cost: 250,
+    notes: "Roof racks or motorcycle side cargo-boxes — no CF cost, but Handling worsens by 1 while loaded; capacity up to the vehicle's internal cargo space. Customization-only. Parts cost 250¥ per CF held; Avail 3/24 hrs; Street Index 1; Base Time 8 hrs; load −45 kg. Rigger 2 p.144." },
+  { name: "Floatation Package (Aircraft)", modType: "accessory", cost: 2500,
+    notes: "Floats for an aircraft or helicopter for water operation. Aircraft: economy ×1.20, Speed halved, cannot land on land. Helicopters: Speed ×0.9, can still land on land. Parts cost = vehicle cost × 0.1 + 2,500¥; design = chassis Point Value × 1.20; Avail 4/7 days; Street Index 2. Rigger 2 p.144." },
+  { name: "Hovercraft Water Seals", modType: "accessory", cost: 0,
+    notes: "Watertight chassis seals so a powered-down hovercraft floats instead of sinking (a normal hovercraft sinks within 30 min over water). Parts cost = Body × 500¥; design = Body × 5 points; Avail 4/96 hrs; Street Index 1; Base Time 32 hrs. Rigger 2 p.145." },
+  { name: "Mechanical Arms", modType: "accessory", cost: 25000,
+    notes: "Articulated arms (Body = ½ vehicle Body) — weaker than a crane but dextrous, doing anything a metahuman arm can; base Strength scales, lifts (Strength × 50) kg, and can mount most cyberarm accessories (at half a cyberarm's cost). Strength may be bought up: parts +75,000¥/point (1–3) or +90,000¥/point (4+); base parts 25,000¥; 4 CF; load −(Strength × 25) kg; Avail 4/4 days; needs Cybertechnology B/R. Rigger 2 p.145." },
+  { name: "Motorcycle Sidecar", modType: "accessory", cost: 1000,
+    notes: "A sidecar (Body = the cycle's): −15 Speed, +Handling, economy ×0.9. Sizes by cargo/Handling/cost: Small 4 CF/+1/1,000¥, Medium 8 CF/+1/2,000¥, Large 12 CF/+2/3,500¥ (seating eats the cargo CF). Mount/remove in 15 min; armor upgradeable per the standard rules. Rigger 2 p.145." },
+  { name: "Spotlight", modType: "accessory", cost: 600,
+    notes: "A concentrated beam (effective range 600 m; spot ~0.5 m at the source widening to ~5 m at max), controllable manually or remotely from inside; also available in invisible medium-range infrared. Parts cost 600¥; Avail 4/96 hrs; Street Index 1.5; Base Time 1 day. Rigger 2 p.145–146." },
+  { name: "Tires", modType: "accessory", cost: 0,
+    notes: "Replacement tires (spares take ½ Body CF). Cost each by type: Standard Body × 50¥ (halves suspension/Handling mod benefits), Performance Body × 75¥ (for improved suspension/drive-by-wire), Off-Road Body × 125¥ (required for off-road suspension), Dual-Purpose Body × 250¥ (on/off-road active suspension); Runflat = tire cost + 200¥ (5/3 armor protection). Rigger 2 p.146." },
+  { name: "Winch", modType: "accessory", cost: 0,
+    notes: "A bumper winch for pulling/towing/lifting, with its own Load Rating up to the Winch Capacity Table max by Body: B0 5 kg, B1 25, B2 200, B3 750, B4 2,000, B5 5,000, B6 20,000, B7 30,000, B8 45,000, B9 60,000, B10+ Body²×750. Parts cost = Load Rating × 75¥; load −(Body × 2.5) kg; Avail 6/14 days; Street Index 1.5; Base Time 1 day. Rigger 2 p.146." }
 ];
 
 let n = 0;

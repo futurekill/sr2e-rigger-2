@@ -1,0 +1,32 @@
+{
+  "_id": "40e7a33cc4bef2dd",
+  "name": "Drone Rack",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "accessory",
+    "rating": 0,
+    "cost": 0,
+    "installed": false,
+    "notes": "A cradle that launches and recovers airborne drones from a moving vehicle and stores them as an armored mini-hangar (same Armor as the vehicle, ½ its Body). Launching takes two actions; recovery needs Handling Tests from both drivers. Design cost = Body × 12 points; parts cost scales per Body point; CF = drone storage + 2 CF; Avail 6/14 days; Street Index 2. Rigger 2 p.144."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!40e7a33cc4bef2dd"
+}
