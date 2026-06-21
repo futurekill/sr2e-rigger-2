@@ -1,0 +1,67 @@
+{
+  "_id": "0ab4d1006c8b14ca",
+  "name": "Citroën Brouillard Smoke Generator",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "",
+    "handling": 4,
+    "speed": 50,
+    "acceleration": 5,
+    "body": 2,
+    "armor": 0,
+    "signature": 4,
+    "pilot": 1,
+    "sensor": 1,
+    "cargo": 0,
+    "load": 250,
+    "seating": "0",
+    "cost": 12500,
+    "availability": "",
+    "autonav": 0,
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "notes": "Wide-area smoke-screen generator drone — lays a curtain of cover with a 250-liter fog-oil tank plus a 60-liter graphite tank (graphite smoke blinds thermographic and active sensors). Remote control interface + rigger adaptation. Rigger 2."
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Citroën Brouillard Smoke Generator",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!0ab4d1006c8b14ca"
+}

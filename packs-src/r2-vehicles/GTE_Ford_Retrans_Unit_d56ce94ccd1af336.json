@@ -1,0 +1,67 @@
+{
+  "_id": "d56ce94ccd1af336",
+  "name": "GTE-Ford Retrans Unit",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "",
+    "handling": 4,
+    "speed": 105,
+    "acceleration": 20,
+    "body": 2,
+    "armor": 0,
+    "signature": 6,
+    "pilot": 2,
+    "sensor": 5,
+    "cargo": 0,
+    "load": 120,
+    "seating": "0",
+    "cost": 30000,
+    "availability": "",
+    "autonav": 0,
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "notes": "Mobile retransmission drone (cruise/max 40/105) — extends a remote-control network's reach by relaying transmissions from the edge of a deck's range (retrans unit, Flux Rating 3). Remote control interface + rigger adaptation. Rigger 2."
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "GTE-Ford Retrans Unit",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!d56ce94ccd1af336"
+}

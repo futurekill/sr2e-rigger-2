@@ -1,0 +1,67 @@
+{
+  "_id": "da38d07d8b2bfee3",
+  "name": "MCT-Nissan Roto-Drone",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "",
+    "handling": 4,
+    "speed": 70,
+    "acceleration": 6,
+    "body": 2,
+    "armor": 0,
+    "signature": 5,
+    "pilot": 1,
+    "sensor": 3,
+    "cargo": 0,
+    "load": 150,
+    "seating": "0",
+    "cost": 6000,
+    "availability": "",
+    "autonav": 0,
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "notes": "Inexpensive VTOL rotor drone — a versatile, easily-customized utility/recon platform. Remote control interface + rigger adaptation. Rigger 2."
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "MCT-Nissan Roto-Drone",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!da38d07d8b2bfee3"
+}

@@ -1,0 +1,67 @@
+{
+  "_id": "5799a406de06ad92",
+  "name": "Aztechnology Hedgehog",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "",
+    "handling": 4,
+    "speed": 15,
+    "acceleration": 3,
+    "body": 1,
+    "armor": 0,
+    "signature": 8,
+    "pilot": 1,
+    "sensor": 4,
+    "cargo": 15,
+    "load": 15,
+    "seating": "0",
+    "cost": 55000,
+    "availability": "",
+    "autonav": 0,
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "notes": "Signal-interceptor drone — eavesdrops on enemy comms and traffic, with a built-in Rigger Decryption Unit (4) and Rigger Protocol Emulation Module (4) to read and even seize foreign drones. Remote control interface + rigger adaptation. Rigger 2."
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Aztechnology Hedgehog",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!5799a406de06ad92"
+}
