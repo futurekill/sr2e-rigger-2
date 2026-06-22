@@ -78,13 +78,13 @@ stored fields so a finished vehicle behaves like the existing compendium ones.
 
 ## Phased plan
 
-- **Phase 0a — content gap (DO FIRST).** Transcribe the missed Vehicle
-  Customization mods on book **p.118–123** into `r2-vehicle-mods`: Structural
-  Agility, Engine Customization/Modifications, Turbocharging / Superconductive
-  Drive, Adjusted Controls, Autonavigation Systems, and the rating-improvement
-  options (Acceleration, Speed, Handling, Body, Armor, Cargo, Load). These are
-  both content (completes the catalog) and the engine's design options. Also
-  corrects `CONTENT-AUDIT.md`.
+- **Phase 0a — content gap.** ✅ **DONE.** Added the 8 missed engine/early mods
+  (p.118–123) to `r2-vehicle-mods` (now 66, full catalog p.118–146): Structural
+  Agility, Engine Customization, GridLink Power, Nitrous Oxide Injectors,
+  SurCell Power, Turbocharging/Superconductive Drive, Adjusted Controls,
+  Autonavigation System. The mod Design-Point costs live in their notes; Phase
+  0b will promote them to structured fields. (The Vehicle Modifications index is
+  on book p.119 — cross-checked.)
 - **Phase 0b — design data.** Transcribe the **Chassis Table** (p.170–171) and
   **Power Plant Table** (p.168–169) into the new `vehicle_chassis` /
   `vehicle_powerplant` types + module packs; promote mod Design-Point costs to
