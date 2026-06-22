@@ -1,6 +1,6 @@
 {
-  "_id": "6d956a2eeb3ae51d",
-  "name": "Outlaw Missile (Block IA, ICM)",
+  "_id": "be3049e5662d827d",
+  "name": "Vogeljäger Missile",
   "type": "weapon",
   "img": "icons/svg/explosion.svg",
   "system": {
@@ -30,14 +30,14 @@
       "extreme": 0
     },
     "strengthMin": 0,
-    "weight": 200,
-    "cost": 25000,
-    "availability": "20/30 days",
+    "weight": 17,
+    "cost": 5000,
+    "availability": "18/28 days",
     "legality": "Forbidden",
-    "streetIndex": "5",
+    "streetIndex": "4",
     "equipped": false,
     "accessories": [],
-    "notes": "Outlaw vehicle missile, improved cluster munition; Intelligence 5. Rigger 2."
+    "notes": "Light man-portable anti-air missile; Intelligence 5. Rigger 2 p.93."
   },
   "effects": [],
   "flags": {},
@@ -57,5 +57,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!6d956a2eeb3ae51d"
+  "_key": "!items!be3049e5662d827d"
 }

@@ -1,14 +1,14 @@
 {
-  "_id": "371be680f3aa7de2",
-  "name": "Non-Portable Missile Launcher",
+  "_id": "f7f6f90a77ab2855",
+  "name": "Outlaw Missile (Block I, ICM)",
   "type": "weapon",
   "img": "icons/svg/explosion.svg",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",
-    "damageCode": "—",
+    "damageCode": "14D",
     "damageType": "physical",
-    "concealability": 6,
+    "concealability": 99,
     "reach": 0,
     "firingModes": {
       "ss": true,
@@ -30,14 +30,14 @@
       "extreme": 0
     },
     "strengthMin": 0,
-    "weight": 30,
-    "cost": 12500,
-    "availability": "18/28 days",
+    "weight": 200,
+    "cost": 15000,
+    "availability": "20/30 days",
     "legality": "Forbidden",
-    "streetIndex": "6",
+    "streetIndex": "5",
     "equipped": false,
     "accessories": [],
-    "notes": "Vehicle/hardpoint missile launcher; fires one missile per shot (load a missile below). Rigger 2."
+    "notes": "Outlaw vehicle missile, improved conventional munition (ICM); Intelligence 5. Rigger 2 p.93."
   },
   "effects": [],
   "flags": {},
@@ -57,5 +57,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!371be680f3aa7de2"
+  "_key": "!items!f7f6f90a77ab2855"
 }

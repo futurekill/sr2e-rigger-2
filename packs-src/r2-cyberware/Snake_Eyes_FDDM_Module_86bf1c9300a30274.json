@@ -1,16 +1,16 @@
 {
-  "_id": "3af068021765c89e",
-  "name": "Snake-Eyes FDDM Link",
+  "_id": "86bf1c9300a30274",
+  "name": "Snake-Eyes FDDM Module",
   "type": "cyberware",
   "img": "icons/svg/upgrade.svg",
   "system": {
     "location": "headware",
     "grade": "standard",
-    "essenceCost": 1,
+    "essenceCost": 0.1,
     "rating": 0,
     "cost": 70000,
     "availability": "10/21 days",
-    "streetIndex": "",
+    "streetIndex": "3",
     "legality": "Restricted",
     "installed": false,
     "combatTnMod": 0,
@@ -25,7 +25,7 @@
       "reaction": 0,
       "initiativeDice": 0
     },
-    "notes": "Snake-Eyes interface link for an FDDM network. Street Index illegible in the source scan — pending a physical-book capture. Rigger 2."
+    "notes": "Snake-Eyes add-on module for an FDDM network (Essence 0.1). Rigger 2 p.96."
   },
   "effects": [],
   "flags": {},
@@ -45,5 +45,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!3af068021765c89e"
+  "_key": "!items!86bf1c9300a30274"
 }

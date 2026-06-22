@@ -8,22 +8,28 @@ Format: **pack / item — field** — what's wrong, what was used as a placehold
 
 ## Open
 
-- **r2-vehicle-weapons / Outlaw Missile (Block II) — cost** — book p.93 missile
-  table; the cost cell is illegible in the scan. Placeholder: `0` (noted in item).
-- **r2-cyberware / Snake-Eyes FDDM Link — Street Index** — book p.96 cyberware
-  table; the SI cell is illegible in the scan. Placeholder: blank.
-- **r2-cyberware / Cyberlimb Signal Booster — Essence** — the Essence cell reads
-  "—" in the table; interpreted as "no separate Essence (uses the cyberlimb's
-  capacity)" → stored 0. Confirm that reading.
 - **r2-vehicle-mods / Electronic Counter-Countermeasures (ECCM) — per-level
-  cost** — the ECCM Systems Table cost column (book p.138) is garbled in the
-  scan: L1 reads 110,000¥, then L2 30,000¥ / L3 100,000¥ / L4 100,000¥, which is
-  non-monotonic. Stored 10,000¥ placeholder for L1; the higher tiers
-  (L5 150,000 / L6 250,000 / L7 750,000 / L8 2.5M / L9 6M / L10 12M) look clean.
-  Need a clean capture of the L1–L4 cost cells.
+  cost** — the p.138 capture (IMG_6426) was at a steep angle, so the **cost**
+  column sits on the page curve and still isn't legible. Availability/Street
+  Index ARE now confirmed (4/7 SI 2, 4/10 SI 2.5, 5/14 SI 3, 6/21 SI 3.5, then
+  8/30, 10/45, 12/60, 14/3 mo, 16/6 mo, 18/1 yr; SI — for L5+). Still need a
+  **straight-on reshoot of just the ECCM cost column** to fix L1–L4. Placeholder
+  L1 cost stays 10,000¥.
 
 ## Resolved
 
+- **r2-vehicle-weapons / missiles — names & costs** — high-res p.93 capture
+  (IMG_6423). Corrected: the launcher is **Man-Portable** (weight 8, SI 4, not
+  "Non-Portable"/30); Outlaw variants are **Block I (ICM)** 15,000¥, **Block IA
+  (DP-ICM)** 25,000¥, **Block II** 20D/35,000¥ (this resolves the old illegible
+  "Block II cost"); and the light wt-17 missile is the **Vogeljäger** (14D,
+  5,000¥), not a Block II Outlaw. AIM-11R confirmed (14D, 90, 25,000¥).
+- **r2-cyberware / Snake-Eyes FDDM — Street Index & Essence** — p.96 capture
+  (IMG_6424). It's the **Snake-Eyes FDDM Module**: Essence **0.1** (was wrongly
+  1.0), Street Index **3**, 70,000¥, 10/21 days.
+- **r2-cyberware / Cyberlimb Signal Booster — Essence** — p.96 capture confirms
+  the Essence cell is literally "—": no separate Essence (uses the limb's
+  capacity). Stored 0; note updated.
 - **r2-vehicle-weapons — ranges** — Weapon Ranges Table read off book p.107
   (PDF p.116). Real brackets applied: Victory/Vigilant Autocannons 100/500/
   2,500/5,000 m; Zapper 70/250/750/2,000 m; Jabberwocky 750/2,000/3,500/

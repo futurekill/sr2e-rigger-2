@@ -2,6 +2,17 @@
 
 ## 0.0.1 (in development)
 
+### Capture-driven corrections (high-res book photos)
+- **Missiles (p.93):** the launcher is **Man-Portable** (weight 8, SI 4); Outlaw
+  variants corrected to **Block I (ICM)** 15,000¥, **Block IA (DP-ICM)** 25,000¥,
+  **Block II** 20D/35,000¥; added the **Vogeljäger** light AA missile (14D,
+  5,000¥) — previously mislabeled as a Block II Outlaw with an unknown cost.
+- **Cyberware (p.96):** **Snake-Eyes FDDM Module** (renamed from "Link") —
+  Essence corrected 1.0 → **0.1**, Street Index **3**. Cyberlimb Signal Booster
+  Essence "—" confirmed (no separate Essence).
+- Three of the four `NEEDS-CAPTURE` items resolved; only the ECCM per-level cost
+  column remains (the p.138 photo was too angled to read it).
+
 - Scaffolded the `sr2e-rigger-2` content module: `module.json` requiring the
   `sr2e` system (≥ 0.9.0), packs for vehicles/drones, vehicle mods, vehicle
   weapons, rigger cyberware, and sensors; pack-build tooling; release workflow.

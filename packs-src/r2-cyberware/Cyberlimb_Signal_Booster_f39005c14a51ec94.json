@@ -25,7 +25,7 @@
       "reaction": 0,
       "initiativeDice": 0
     },
-    "notes": "Extends remote-control signal range; installed in a cyberlimb and uses the limb's capacity (table lists no separate Essence — confirm). Cost = Rating × 15,000¥. Rigger 2."
+    "notes": "Extends remote-control signal range; installed in a cyberlimb. The table lists its Essence as '—': no separate Essence cost — it uses the limb's capacity. Cost = Rating × 15,000¥. Rigger 2 p.96."
   },
   "effects": [],
   "flags": {},

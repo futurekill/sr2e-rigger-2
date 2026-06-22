@@ -1,14 +1,14 @@
 {
-  "_id": "23ea8250e67c2bd6",
-  "name": "Outlaw Missile (Block IB)",
+  "_id": "31ae1ee0bbeff7ee",
+  "name": "Man-Portable Missile Launcher",
   "type": "weapon",
   "img": "icons/svg/explosion.svg",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",
-    "damageCode": "20D",
+    "damageCode": "—",
     "damageType": "physical",
-    "concealability": 99,
+    "concealability": 6,
     "reach": 0,
     "firingModes": {
       "ss": true,
@@ -30,14 +30,14 @@
       "extreme": 0
     },
     "strengthMin": 0,
-    "weight": 200,
-    "cost": 35000,
-    "availability": "20/30 days",
+    "weight": 8,
+    "cost": 12500,
+    "availability": "18/28 days",
     "legality": "Forbidden",
-    "streetIndex": "5",
+    "streetIndex": "4",
     "equipped": false,
     "accessories": [],
-    "notes": "Outlaw missile, single high-explosive warhead; Intelligence 5. Rigger 2."
+    "notes": "Shoulder-fired/hardpoint missile launcher; fires one missile per shot (load a missile below). Rigger 2 p.93."
   },
   "effects": [],
   "flags": {},
@@ -57,5 +57,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!23ea8250e67c2bd6"
+  "_key": "!items!31ae1ee0bbeff7ee"
 }
