@@ -73,5 +73,28 @@
     "Zeppelin":               { "speedStart": 40, "speedMax": 125, "accelStart": 1, "accelMax": null,"loadStart": 1000,"loadMax": 4000,  "sig": 4,    "economyStart": 0.25, "economyMax": 1,   "fuelSize": 1000,"designPoints": 500 },
     "Mini Blimp":             { "speedStart": 40, "speedMax": 75,  "accelStart": 1, "accelMax": 1,   "loadStart": 2,   "loadMax": 75,    "sig": 0,    "economyStart": 0.5,  "economyMax": 1,   "fuelSize": 40,  "designPoints": 10 },
     "Walker":                 { "speedStart": 2,  "speedMax": 15,  "accelStart": 1, "accelMax": null,"loadStart": null,"loadMax": null,  "sig": null, "economyStart": 0.5,  "economyMax": 1,   "fuelSize": null,"designPoints": 10 }
-  }
+  },
+  "_jetTurbine_note": "From IMG_6438 (right-side up). Helicopters/jets/UAVs; left edge had camera shadow. Drone load like '450x8' = ×Body. Some drone/vector cells flagged null.",
+  "jetTurbine": {
+    "Autogyro":              { "speedStart": 60,  "speedMax": 200,  "accelStart": 10,  "accelMax": 20,  "loadStart": 15,   "loadMax": 155,    "sig": 4,    "economyStart": 0.25, "economyMax": 0.4,  "fuelSize": 250,  "designPoints": 25 },
+    "Utility Helicopter (standard)":{ "speedStart": 120,"speedMax": 350,"accelStart": 10,"accelMax": 25,"loadStart": 850,"loadMax": 3600,"sig": 3,"economyStart": 0.2,"economyMax": 0.35,"fuelSize": 1000,"designPoints": 50 },
+    "Utility Helicopter":    { "speedStart": 300, "speedMax": 500,  "accelStart": 10,  "accelMax": 40,  "loadStart": 400,  "loadMax": 900,    "sig": 2,    "economyStart": 0.1,  "economyMax": 0.3,  "fuelSize": 1500, "designPoints": 50 },
+    "Cargo Helicopter":      { "speedStart": 120, "speedMax": 350,  "accelStart": 10,  "accelMax": 25,  "loadStart": 850,  "loadMax": 12000,  "sig": 3,    "economyStart": 0.2,  "economyMax": 0.35, "fuelSize": 1500, "designPoints": 50 },
+    "Attack Helicopter":     { "speedStart": 250, "speedMax": 350,  "accelStart": 20,  "accelMax": 35,  "loadStart": 1500, "loadMax": 5000,   "sig": 4,    "economyStart": 0.1,  "economyMax": 0.3,  "fuelSize": 1000, "designPoints": 90 },
+    "Rotary Wing UAV (all)": { "speedStart": 60,  "speedMax": 200,  "accelStart": 6,   "accelMax": 18,  "loadStart": "10x8","loadMax": "450x8","sig": "0-8","economyStart": 0.25,"economyMax": 0.4, "fuelSize": 120,  "designPoints": "35 + (10x8)" },
+    "Single Engine":         { "speedStart": 60,  "speedMax": 320,  "accelStart": 20,  "accelMax": 35,  "loadStart": 250,  "loadMax": 2500,   "sig": 3,    "economyStart": 0.5,  "economyMax": 0.75, "fuelSize": 750,  "designPoints": 100 },
+    "Twin Engine":           { "speedStart": 135, "speedMax": 500,  "accelStart": 35,  "accelMax": 60,  "loadStart": 42,   "loadMax": 5000,   "sig": 3,    "economyStart": 0.5,  "economyMax": 0.75, "fuelSize": 1500, "designPoints": 100 },
+    "Airliner":              { "speedStart": 150, "speedMax": 500,  "accelStart": 150, "accelMax": 1000,"loadStart": 35,   "loadMax": null,   "sig": 2,    "economyStart": 0.4,  "economyMax": 0.6,  "fuelSize": 5000, "designPoints": 1000 },
+    "Jet Fighter":           { "speedStart": 150, "speedMax": 2000, "accelStart": 150, "accelMax": 500, "loadStart": 250,  "loadMax": 7500,   "sig": 5,    "economyStart": 0.1,  "economyMax": 0.3,  "fuelSize": 7500, "designPoints": 2000 },
+    "Thunderbird (vector)":  { "speedStart": 150, "speedMax": 400,  "accelStart": 150, "accelMax": 750, "loadStart": 25,   "loadMax": 10000,  "sig": 5,    "economyStart": 0.05, "economyMax": 0.1,  "fuelSize": 7500, "designPoints": 2500 },
+    "Jump-Jet Fighter (vector)":{ "speedStart": 700,"speedMax": 2000,"accelStart": 25, "accelMax": 150,"loadStart": 2000,"loadMax": 9000,  "sig": 5,    "economyStart": 0.1,  "economyMax": 0.3,  "fuelSize": 2500, "designPoints": 2000 },
+    "Zeppelin":              { "speedStart": 120, "speedMax": 400,  "accelStart": 12,  "accelMax": 26,  "loadStart": 1250, "loadMax": 4500,   "sig": 1,    "economyStart": 0.5,  "economyMax": 0.75, "fuelSize": null, "designPoints": 450 }
+  },
+  "_sail_note": "From IMG_6438. Sailboats — no fuel/economy (wind-powered). Sport Cruiser/Yacht DP under shadow → flagged.",
+  "sail": {
+    "Skiff":         { "speedStart": 30, "speedMax": 40, "accelStart": 3, "accelMax": 7, "loadStart": 150, "loadMax": 750,  "sig": 6, "economyStart": null, "economyMax": null, "fuelSize": null, "designPoints": 50 },
+    "Sport Cruiser": { "speedStart": 30, "speedMax": 50, "accelStart": 3, "accelMax": 6, "loadStart": 250, "loadMax": 1000, "sig": 6, "economyStart": null, "economyMax": null, "fuelSize": null, "designPoints": null, "_note": "DP under shadow — verify" },
+    "Yacht":         { "speedStart": 30, "speedMax": 45, "accelStart": 3, "accelMax": 6, "loadStart": 350, "loadMax": 2500, "sig": 6, "economyStart": null, "economyMax": null, "fuelSize": null, "designPoints": null, "_note": "DP under shadow — verify" }
+  },
+  "_jetPropeller_note": "Jet Propeller (turboprop) engines are on IMG_6437 but its Design-Pts column was cut off at the page edge — NOT yet transcribed. Needs a re-shot with the right-hand DP column in frame."
 }
