@@ -1,6 +1,23 @@
 # Changelog
 
-## 0.0.1 (in development)
+## 0.1.0
+
+First release. The complete *Rigger 2* (FASA 7906) content as SR2E compendia —
+**133 items across 7 packs**, with every value verified against the book (the
+last open capture, the ECCM per-level cost, is now resolved). Adds the system's
+`quality` (Edge/Flaw) item type. The vehicle design-from-scratch engine is a
+separate, in-progress feature (see `docs/DESIGN-ENGINE.md`), not part of this
+content release.
+
+| Pack | Count |
+|---|---|
+| `r2-vehicles` | 21 |
+| `r2-vehicle-mods` | 66 |
+| `r2-vehicle-weapons` | 16 |
+| `r2-sensors` (Rigger Electronics) | 14 |
+| `r2-cyberware` | 10 |
+| `r2-qualities` (Edges & Flaws) | 5 |
+| `r2-contacts` | 1 |
 
 ### Capture-driven corrections (high-res book photos)
 - **Missiles (p.93):** the launcher is **Man-Portable** (weight 8, SI 4); Outlaw
