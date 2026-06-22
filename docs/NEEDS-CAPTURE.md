@@ -8,17 +8,20 @@ Format: **pack / item — field** — what's wrong, what was used as a placehold
 
 ## Open
 
-- **Design engine — STILL NEED: Mark-Up Factor.** Photos of the Chassis Table
-  (IMG_6429/6431) and the Power Plant Table (IMG_6432/6433) all arrived:
-  - ✅ **Chassis p.170** (bikes/cars/hovercraft/boats) fully transcribed in
-    `tools/data/chassis.json`; resolved the scan ambiguities (Tractor = 175 DP,
-    not 750). Two minor DP cells unread (Skimmer Large, Sport Cruiser) — flagged.
-  - 🔄 **Chassis p.171** (rotor/fixed-wing/vector-thrust/special) captured;
-    transcription pending (rotor-craft drone names need a closer read).
-  - 🔄 **Power Plant Table (p.168–169)** captured (IMG_6432/6433); transcription
-    pending.
-  - ❌ **Mark-Up Factor** rule/table — still not located/captured; needed for the
-    final-cost step.
+- **Design engine — STILL NEED: Electric + Methane power plants (likely p.167).**
+  The calculator and all the rules are done. Data status:
+  - ✅ **Mark-Up Factor** — found in the text (cost = DP × Mark-Up × 100, p.115).
+  - ✅ **Chassis p.170** — fully in `tools/data/chassis.json` (Tractor 175 fix).
+  - ✅ **Power Plant: gasoline + diesel** — in `tools/data/powerplants.json` from
+    close photos (IMG_6435/6436). Covers cars/bikes/trucks/transports/drones/
+    hovercraft/boats — the ground-vehicle designer works end-to-end.
+  - 🔄 **Chassis p.171** (rotor/fixed-wing) — clear close shot in hand (IMG_6439);
+    write-up pending. Vector-thrust/special still on the full-page shot.
+  - 🔄 **Power Plant: Jet Propeller / Jet Turbine / Sail** — captured
+    (IMG_6437/6438); careful read pending (aircraft/boat engines).
+  - ❌ **Power Plant: Electric + Methane** — NOT captured (they aren't on the
+    p.168/169 shots; likely on **book p.167**). Needed for electric/methane
+    vehicles & drones.
 
 ## Resolved
 
