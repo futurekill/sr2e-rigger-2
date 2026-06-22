@@ -8,6 +8,15 @@ Format: **pack / item — field** — what's wrong, what was used as a placehold
 
 ## Open
 
+- **Design engine / Chassis Table (p.170–171) & Power Plant Table (p.168–169)**
+  — the dense design-data tables. Bikes + cars (to Heavy Transport) transcribed
+  reliably from the scan and cross-checked (Sand Buggy 20 DP, Sports Car 110 DP
+  confirmed), but the lower-density rows read inconsistently between dpi passes
+  (e.g. Tractor DP 175 vs 750; ATV DP shows an improbable 445). These Design-
+  Point values drive every designed vehicle's cost, so the **transports/APCs/
+  crawlers/RPV, all aircraft chassis (p.171), and the entire Power Plant Table
+  (p.168–169)** need **clean straight-on photos** before transcription — same as
+  the missile/cyberware captures. Captured so far in `tools/data/chassis.json`.
 - **r2-vehicle-mods / Electronic Counter-Countermeasures (ECCM) — per-level
   cost** — the p.138 capture (IMG_6426) was at a steep angle, so the **cost**
   column sits on the page curve and still isn't legible. Availability/Street

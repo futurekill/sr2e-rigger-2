@@ -85,10 +85,13 @@ stored fields so a finished vehicle behaves like the existing compendium ones.
   Autonavigation System. The mod Design-Point costs live in their notes; Phase
   0b will promote them to structured fields. (The Vehicle Modifications index is
   on book p.119 — cross-checked.)
-- **Phase 0b — design data.** Transcribe the **Chassis Table** (p.170–171) and
-  **Power Plant Table** (p.168–169) into the new `vehicle_chassis` /
-  `vehicle_powerplant` types + module packs; promote mod Design-Point costs to
-  structured fields; capture the **Mark-Up Factor** table.
+- **Phase 0b — design data.** 🔄 **IN PROGRESS.** Transcribe the **Chassis
+  Table** (p.170–171) and **Power Plant Table** (p.168–169) into structured data
+  (`tools/data/chassis.json` started: bikes + cars done & cross-verified). The
+  dense lower rows + all aircraft + the whole power-plant grid read unreliably on
+  the scan → **awaiting clean book photos** (see NEEDS-CAPTURE). Then promote mod
+  Design-Point costs to structured fields; capture the **Mark-Up Factor** table;
+  add the `vehicle_chassis` / `vehicle_powerplant` system item types + packs.
 - **Phase 1 — calculator + tests.** `vehicleDesign()` in `sr2e-rules.mjs`, with
   unit tests asserting the validated reference DP totals.
 - **Phase 2 — Design tab UI** on the vehicle sheet + Finalize.
