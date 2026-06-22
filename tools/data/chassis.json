@@ -1,7 +1,7 @@
 {
   "_source": "Rigger 2 Chassis Table, book p.170-171. p.170 (bikes/cars/hovercraft/boats) transcribed from a clean book photo (IMG_6429), every Design-Point value verified; cross-checked against the worked examples (Sand Buggy 20, Sports Car 110). p.171 (aircraft) captured (IMG_6431) — transcription in progress.",
   "_columns": "handling, body, armor, cfStart, cfMax, autonav, pilot(NA=null), sensor, seating, designPoints, accessories. Seating codes: b=bucket, B=bench, e=ejection. The photo resolved the scan ambiguities: Tractor = 175 DP (the scan misread 750); ATV genuinely 445; APCs 750; Crawlers 220/115/215; RPV 350.",
-  "_status": "p.170 COMPLETE. p.171 (rotor/fixed-wing/vector-thrust/special) captured; pending transcription (rotor-craft drone names need a closer read). Power Plant Table (p.168-169), Mark-Up Factor, and the ECCM cost are still NOT captured.",
+  "_status": "COMPLETE — all chassis from p.170 (IMG_6429) and p.171 (rotor/fixed-wing from the close IMG_6439, vector-thrust/special from IMG_6431). A few cells under camera shadow are flagged with _note (Skimmer Large/Sport Cruiser DP, Airliner DP, Walker Micro Body).",
   "bikes": {
     "Scooter":            { "handling": "3/6",  "body": 2, "armor": 0, "cfStart": 0,   "cfMax": 1,   "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b",       "designPoints": 30 },
     "Racing Cycle":       { "handling": "3/6",  "body": 2, "armor": 0, "cfStart": 1,   "cfMax": 2,   "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b",       "designPoints": 10 },
@@ -42,5 +42,42 @@
     "Sport Cruiser": { "handling": "4", "body": 4, "armor": 0, "cfStart": 80, "cfMax": 100,"autonav": 0, "pilot": null, "sensor": 0, "seating": "1b", "designPoints": null, "accessories": "Living Amenities (Basic)", "_note": "DP not clearly legible in the photo — verify" },
     "Yacht":         { "handling": "4", "body": 4, "armor": 0, "cfStart": 80, "cfMax": 280,"autonav": 0, "pilot": null, "sensor": 1, "seating": "1b", "designPoints": 200, "accessories": "Living Amenities (Basic)" },
     "Minisub":       { "handling": "4", "body": 4, "armor": 0, "cfStart": 0,  "cfMax": 84, "autonav": 2, "pilot": null, "sensor": 1, "seating": "1b", "designPoints": 200 }
+  },
+  "_p171_note": "Rotor + fixed-wing from the close shot IMG_6439 (clear). Vector-thrust + special from the full-page IMG_6431 (some cells flagged).",
+  "rotorcraft": {
+    "Autogyro":            { "handling": "4", "body": 3, "armor": 0, "cfStart": 0,  "cfMax": 8,   "autonav": 0,    "pilot": null, "sensor": 0, "seating": "1b", "landingTakeoff": "VTOL", "designPoints": 20 },
+    "Utility Helicopter":  { "handling": "5", "body": 4, "armor": 0, "cfStart": 50, "cfMax": 75,  "autonav": 0,    "pilot": null, "sensor": 1, "seating": "2b", "landingTakeoff": "VTOL", "designPoints": 500 },
+    "Cargo Helicopter":    { "handling": "5", "body": 7, "armor": 0, "cfStart": 80, "cfMax": 600, "autonav": 0,    "pilot": null, "sensor": 1, "seating": "2b", "landingTakeoff": "VTOL", "designPoints": 1000 },
+    "Tilt-wing":           { "handling": "6", "body": 5, "armor": 0, "cfStart": 48, "cfMax": 96,  "autonav": 1,    "pilot": null, "sensor": 1, "seating": "2b", "landingTakeoff": "VTOL", "designPoints": 600 },
+    "Attack Helicopter":   { "handling": "5", "body": 5, "armor": 0, "cfStart": 4,  "cfMax": 64,  "autonav": 2,    "pilot": null, "sensor": 3, "seating": "1b", "landingTakeoff": "VTOL", "designPoints": 1000 },
+    "Rotary Wing UAV (S)": { "handling": "4", "body": 0, "armor": 0, "cfStart": 0,  "cfMax": 0,   "autonav": null, "pilot": 1, "sensor": 1, "seating": "0", "landingTakeoff": "VTOL", "designPoints": 510, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Rotary Wing UAV (M)": { "handling": "4", "body": 1, "armor": 0, "cfStart": 0,  "cfMax": 1,   "autonav": null, "pilot": 1, "sensor": 1, "seating": "0", "landingTakeoff": "VTOL", "designPoints": 710, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Rotary Wing UAV (L)": { "handling": "4", "body": 2, "armor": 0, "cfStart": 0,  "cfMax": 12,  "autonav": null, "pilot": 1, "sensor": 1, "seating": "0", "landingTakeoff": "VTOL", "designPoints": 1210, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Tilt-wing UAV (M)":   { "handling": "4", "body": 2, "armor": 0, "cfStart": 0,  "cfMax": 10,  "autonav": null, "pilot": 1, "sensor": 1, "seating": "0", "landingTakeoff": "VTOL", "designPoints": 1460, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Tilt-wing UAV (L)":   { "handling": "4", "body": 3, "armor": 0, "cfStart": 2,  "cfMax": 25,  "autonav": null, "pilot": 1, "sensor": 1, "seating": "0", "landingTakeoff": "VTOL", "designPoints": 2210, "accessories": "Remote control interface, Rigger Adaptation" }
+  },
+  "fixedWing": {
+    "Ultralight":          { "handling": "4", "body": 3, "armor": 0, "cfStart": 0,   "cfMax": 8,    "autonav": 0,    "pilot": null, "sensor": 0, "seating": "2b", "landingTakeoff": "Standard", "designPoints": 20 },
+    "Single Engine":       { "handling": "5", "body": 4, "armor": 0, "cfStart": 21,  "cfMax": 63,   "autonav": 0,    "pilot": null, "sensor": 1, "seating": "2b", "landingTakeoff": "Standard", "designPoints": 125 },
+    "Twin Engine":         { "handling": "5", "body": 4, "armor": 0, "cfStart": 48,  "cfMax": 600,  "autonav": 1,    "pilot": null, "sensor": 1, "seating": "2b", "landingTakeoff": "Standard", "designPoints": 2000 },
+    "Airliner":            { "handling": "6", "body": 5, "armor": 0, "cfStart": 500, "cfMax": 7500, "autonav": 3,    "pilot": null, "sensor": 3, "seating": "1e", "landingTakeoff": "Standard", "designPoints": null, "_note": "DP under shadow in the shot — verify" },
+    "Jet Fighter":         { "handling": "6", "body": 7, "armor": 0, "cfStart": 6,   "cfMax": 64,   "autonav": 3,    "pilot": null, "sensor": 5, "seating": "1e", "landingTakeoff": "Standard", "designPoints": 1460 },
+    "Fixed Wing UAV (S)":  { "handling": "3", "body": 1, "armor": 0, "cfStart": 0,   "cfMax": 0,    "autonav": null, "pilot": 1, "sensor": 0, "seating": "0", "landingTakeoff": "Standard", "designPoints": 2210, "accessories": "Remote control interface, Rigger Adaptation" }
+  },
+  "vectorThrust": {
+    "_note": "From the full-page IMG_6431 — DP and some cells less crisp than the rotor/fixed-wing close shot; verify against a close shot of the vector-thrust block if precision matters.",
+    "Thunderbird":             { "handling": "5", "body": 6, "armor": 0, "cfStart": 16, "cfMax": 96, "autonav": 2,    "pilot": null, "sensor": 1, "seating": "1a", "landingTakeoff": "VTOL", "designPoints": 1500 },
+    "Jump-Jet Fighter":        { "handling": "6", "body": 7, "armor": 0, "cfStart": 6,  "cfMax": 4,  "autonav": 3,    "pilot": null, "sensor": 5, "seating": "1e", "landingTakeoff": "VTOL", "designPoints": 2000 },
+    "Vectored-Thrust UAV (S)": { "handling": "6", "body": 2, "armor": 0, "cfStart": 1,  "cfMax": 12, "autonav": null, "pilot": 1, "sensor": 1, "seating": "0", "landingTakeoff": "VTOL", "designPoints": 1460, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Vectored-Thrust UAV (L)": { "handling": "4", "body": 3, "armor": 0, "cfStart": 2,  "cfMax": 25, "autonav": null, "pilot": 1, "sensor": 1, "seating": "0", "landingTakeoff": "VTOL", "designPoints": 2210, "accessories": "Remote control interface, Rigger Adaptation" }
+  },
+  "special": {
+    "_note": "From the full-page IMG_6431; Walker Body values + a couple of DP were small — flagged where unsure.",
+    "Zeppelin":    { "handling": "5", "body": 8, "armor": 0, "cfStart": 48, "cfMax": 96, "autonav": 1,    "pilot": null, "sensor": 1, "seating": "2b", "designPoints": 1600 },
+    "Mini Blimp":  { "handling": "4", "body": 2, "armor": 0, "cfStart": 1,  "cfMax": 6,  "autonav": null, "pilot": 1, "sensor": 1, "seating": "0", "designPoints": 240, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Anthroform":  { "handling": "3", "body": 2, "armor": 0, "cfStart": 0,  "cfMax": 0,  "autonav": null, "pilot": 1, "sensor": 0, "seating": "0", "designPoints": 400, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Walker, Micro": { "handling": "4", "body": null, "armor": 0, "cfStart": 0, "cfMax": 0, "autonav": null, "pilot": 1, "sensor": 0, "seating": "0", "designPoints": 205, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Walker, Small": { "handling": "4", "body": 1, "armor": 0, "cfStart": 0, "cfMax": 4, "autonav": null, "pilot": 1, "sensor": 0, "seating": "0", "designPoints": 165, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Walker, Large": { "handling": "4", "body": 2, "armor": 0, "cfStart": 1, "cfMax": 10, "autonav": null, "pilot": 1, "sensor": 0, "seating": "0", "designPoints": 240, "accessories": "Remote control interface, Rigger Adaptation" }
   }
 }
