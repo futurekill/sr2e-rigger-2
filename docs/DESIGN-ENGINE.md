@@ -6,7 +6,21 @@ UI) is **system-side** (`sr2e-foundryvtt`); the **data** (chassis, power plants,
 mod Design-Point costs) is **module content** (`sr2e-rigger-2`). System provides
 the capability, the module provides the catalog — same split as the qualities.
 
-Status: **scoped**. Data located and validated; no code yet.
+Status: **BUILT** (v1). Calculator, data tables, and the vehicle-sheet **Design
+tab** are all in. The system ships the UI + math (`module/rules/sr2e-rules.mjs`
+`resolveVehicleDesign`/`vehicleDesign`, `CONFIG.SR2E.registerVehicleDesignData`,
+the Design tab on the vehicle sheet); this module ships the tables (`data/`) and
+registers them at `setup` via `scripts/register-design-data.mjs`. Pick a chassis
++ power plant, buy improvements, set mod DP + Mark-Up → live Design Points + ¥
+cost, then **Apply to Vehicle**.
+
+Data note: `data/chassis.json` + `data/powerplants.json` are the SHIPPED copies
+(the release excludes `tools/`). `tools/data/` stays the transcription source;
+run `npm run sync-design-data` after editing it to refresh `data/`.
+
+v1 limits: mod DP is a manual total (not auto-summed from installed mods);
+drone chassis whose DP is a `×Body` formula are flagged unbuildable; a few
+camera-shadowed cells are nulled. See `docs/NEEDS-CAPTURE.md`.
 
 ---
 

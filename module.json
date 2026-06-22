@@ -3,6 +3,9 @@
   "title": "Shadowrun 2E: Rigger 2",
   "description": "Vehicles, drones, vehicle modifications, vehicle weapons, rigger cyberware, and sensors from Rigger 2 (FASA 7906) as compendia for the Shadowrun 2nd Edition system.",
   "version": "0.1.0",
+  "esmodules": [
+    "scripts/register-design-data.mjs"
+  ],
   "compatibility": {
     "minimum": "13",
     "verified": "13"

@@ -7,7 +7,8 @@
   "scripts": {
     "build-packs": "node tools/build-packs.mjs",
     "extract-packs": "node tools/extract-packs.mjs",
-    "validate": "node tools/validate-packs.mjs"
+    "validate": "node tools/validate-packs.mjs",
+    "sync-design-data": "cp tools/data/chassis.json tools/data/powerplants.json data/"
   },
   "devDependencies": {
     "classic-level": "^3.0.0"
