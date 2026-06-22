@@ -1,0 +1,32 @@
+{
+  "_id": "fd1482ec468fb24e",
+  "name": "Engine Customization",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "engine",
+    "rating": 0,
+    "cost": 0,
+    "installed": false,
+    "notes": "Radically re-tunes the engine to exceed the power plant's standard maxima. Each level adds +30 Speed OR +5 Acceleration OR +(Body × 50) kg Load (each rating bought separately); max = the power-plant maximum × 1.75. Design cost = power-plant Design-Point cost × 1.25 for the first level, +0.5 to the multiplier per added level; parts cost = original power-plant cost × the same multiplier; Avail 8/14 days; Street Index 2; Base Time 40 hrs/level. (Can stress the engine — see book.) Rigger 2 p.120."
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fd1482ec468fb24e"
+}

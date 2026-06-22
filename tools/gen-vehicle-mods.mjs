@@ -144,7 +144,26 @@ const MODS = [
   { name: "Tires", modType: "accessory", cost: 0,
     notes: "Replacement tires (spares take ½ Body CF). Cost each by type: Standard Body × 50¥ (halves suspension/Handling mod benefits), Performance Body × 75¥ (for improved suspension/drive-by-wire), Off-Road Body × 125¥ (required for off-road suspension), Dual-Purpose Body × 250¥ (on/off-road active suspension); Runflat = tire cost + 200¥ (5/3 armor protection). Rigger 2 p.146." },
   { name: "Winch", modType: "accessory", cost: 0,
-    notes: "A bumper winch for pulling/towing/lifting, with its own Load Rating up to the Winch Capacity Table max by Body: B0 5 kg, B1 25, B2 200, B3 750, B4 2,000, B5 5,000, B6 20,000, B7 30,000, B8 45,000, B9 60,000, B10+ Body²×750. Parts cost = Load Rating × 75¥; load −(Body × 2.5) kg; Avail 6/14 days; Street Index 1.5; Base Time 1 day. Rigger 2 p.146." }
+    notes: "A bumper winch for pulling/towing/lifting, with its own Load Rating up to the Winch Capacity Table max by Body: B0 5 kg, B1 25, B2 200, B3 750, B4 2,000, B5 5,000, B6 20,000, B7 30,000, B8 45,000, B9 60,000, B10+ Body²×750. Parts cost = Load Rating × 75¥; load −(Body × 2.5) kg; Avail 6/14 days; Street Index 1.5; Base Time 1 day. Rigger 2 p.146." },
+  // --- Engine & early customization mods (book p.118-123) — these were missed
+  //     when transcription started at p.124; they double as the design engine's
+  //     engine/control design options. ---
+  { name: "Structural Agility", modType: "control", cost: 0,
+    notes: "Requires the Drive-by-Wire System. Each level grants +1 Reaction to a character driving the vehicle (and to a rigger's Control Pool); max level = the vehicle's Drive-by-Wire level. Design cost 150 points per level. Rigger 2 p.118." },
+  { name: "Engine Customization", modType: "engine", cost: 0,
+    notes: "Radically re-tunes the engine to exceed the power plant's standard maxima. Each level adds +30 Speed OR +5 Acceleration OR +(Body × 50) kg Load (each rating bought separately); max = the power-plant maximum × 1.75. Design cost = power-plant Design-Point cost × 1.25 for the first level, +0.5 to the multiplier per added level; parts cost = original power-plant cost × the same multiplier; Avail 8/14 days; Street Index 2; Base Time 40 hrs/level. (Can stress the engine — see book.) Rigger 2 p.120." },
+  { name: "GridLink Power", modType: "engine", cost: 600,
+    notes: "Lets an electric ground vehicle draw power from a city's buried GridLink induction grid at normal traffic speeds (no battery drain). Monthly grid fee = Body × 100¥ (cars), × 25¥ (motorcycles), or × 250¥ (trucks/buses). Parts cost 600¥; 1 CF; Avail 3/96 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.121." },
+  { name: "Nitrous Oxide Injectors", modType: "engine", rating: 6, cost: 3500,
+    notes: "Injects nitrous into a gas/diesel engine for a short boost (gas-cylinder holds up to 20 charges, level charges/use). In an Accelerating/Braking Test add Rating extra dice, or push Speed to ×2.5 standard (then decelerate by the Accel Rate each turn until back under standard). Design 55 points/level; max Rating 6; parts cost 3,500¥/level (L1–3), 7,000¥/level (L4–5); Avail 4/48 hrs; Street Index 1; 2 CF; load −15 kg. Rigger 2 p.121." },
+  { name: "SurCell Power", modType: "engine", cost: 500,
+    notes: "Externally-mounted solar cells that feed an electric vehicle Body × 25 PF/hour on a sunny day (half in cloud, none at night/heavy overcast); not for motorcycles. Design 5 points; parts cost 500¥; Avail 3/72 hrs; Street Index 1; Base Time 8 hrs. Rigger 2 p.121." },
+  { name: "Turbocharging / Superconductive Drive", modType: "engine", cost: 0,
+    notes: "Turbine boost for methane/gas/diesel engines (the 'superconductive drive' does the same for electric). Each level adds +15 Speed and +10 Acceleration; new max Speed = initial max × 1.25. Design cost = power-plant Design-Point cost × 1.5 per level; parts cost = vehicle's original cost × 1.10 per level; Avail 6/12 days; Street Index 2; Base Time 8 hrs. Rigger 2 p.122." },
+  { name: "Adjusted Controls", modType: "control", cost: 2500,
+    notes: "Re-fits manual controls (wheel, pedals, dashboard) to a non-standard body — dwarfs, trolls, or any metahuman whose size/disability prevents using standard controls. Design 25 points; parts cost 2,500¥; Avail 3/72 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.122." },
+  { name: "Autonavigation System", modType: "control", rating: 4, cost: 500,
+    notes: "Onboard auto-pilot/navigation (the Autonav Rating adds dice to standard Driving Tests, but is ignored in vehicle combat). Rating 1 collision-avoidance (the only autonav fittable to a motorcycle), 500¥/5 DP/2/96 hrs/SI 1; Rating 2 route-following on mapped terrain, 4,000¥/10 DP/3/6 days/SI 2; Rating 3 rough-terrain + GPS, 5,000¥/50 DP/4/8 days/SI 3; Rating 4 urban off-road + re-routing, 15,000¥/150 DP/6/14 days/SI 3. Install TN = 8 − Handling. Rigger 2 p.122–123." }
 ];
 
 let n = 0;

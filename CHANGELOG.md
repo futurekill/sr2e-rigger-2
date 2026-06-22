@@ -52,7 +52,15 @@
   Victory/Vigilant Autocannons, Zapper rocket, and Jabberwocky jammer rocket/
   missile. Resolves the ranges item in `docs/NEEDS-CAPTURE.md`.
 
-### Vehicle modifications (`r2-vehicle-mods`, 58 — customization chapter complete)
+### Vehicle modifications (`r2-vehicle-mods`, 66 — full catalog p.118–146)
+- Added the 8 engine/early mods that were missed because transcription first
+  started at p.124 (the catalog actually begins at p.118): Structural Agility,
+  Engine Customization, GridLink Power, Nitrous Oxide Injectors, SurCell Power,
+  Turbocharging/Superconductive Drive, Adjusted Controls, Autonavigation System.
+  Cross-checked against the book's own modifications index (p.119). These also
+  serve as the design engine's engine/control design options.
+
+### Vehicle modifications (earlier batches, p.124–146)
 - Finished the Accessories section (book p.144–146): Crane (+capacity table),
   Drone Rack, External Cargo Mount, Floatation Package, Hovercraft Water Seals,
   Mechanical Arms, Motorcycle Sidecar, Spotlight, Tires (5 types), Winch
