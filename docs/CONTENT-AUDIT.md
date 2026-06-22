@@ -56,7 +56,15 @@ GM reference). Not compendium content.
 - **Drones and Robots (p.100–107)** — ✅ 21 in `r2-vehicles`.
 
 ## Vehicle Design & Customization (book p.108–146)
-- **Customization modifications (p.124–146)** — ✅ 58 in `r2-vehicle-mods`.
+- **Customization modifications** — ✅ 58 in `r2-vehicle-mods` for **p.124–146**.
+  ⚠️ **Correction (found during design-engine scoping):** the Vehicle
+  Customization catalog actually begins at **p.118**, not p.124, so mods on
+  **p.118–123** were missed — Structural Agility, Engine Customization/
+  Modifications, Turbocharging/Superconductive Drive, Adjusted Controls,
+  Autonavigation Systems, and the rating-improvement options (Speed, Accel,
+  Handling, Body, Armor, Cargo, Load). These will be transcribed in the design
+  engine's Phase 0a (they double as the engine's "design options"). See
+  `docs/DESIGN-ENGINE.md`.
 - **Design-from-scratch tables** (chassis / power plant / design-point costs,
   p.108–123) — ⏸ **deferred**: these become structured data for the planned
   vehicle-design engine (see the design discussion), not standalone items.
