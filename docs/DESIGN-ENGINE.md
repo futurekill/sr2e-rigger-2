@@ -92,14 +92,29 @@ stored fields so a finished vehicle behaves like the existing compendium ones.
   the scan → **awaiting clean book photos** (see NEEDS-CAPTURE). Then promote mod
   Design-Point costs to structured fields; capture the **Mark-Up Factor** table;
   add the `vehicle_chassis` / `vehicle_powerplant` system item types + packs.
-- **Phase 1 — calculator + tests.** 🔄 **CORE DONE.** `vehicleDesign()` (+
-  `engineCustomizationCost()`) landed in the system's `module/rules/sr2e-rules.mjs`
-  with 12 unit tests (npm test green) asserting the worked examples: Sand Buggy
-  20 DP, Sports Car 110 DP, Rich's build 599→659 DP, cost = DP × Mark-Up. It's a
-  pure accumulator — chassis/power-plant DP, per-point costs, mod DP, and the
-  Mark-Up Factor are passed in as DATA, so the still-to-capture tables just plug
-  in. Remaining: wire the real table data + a Mark-Up Factor lookup once the
-  Chassis/Power-Plant photos arrive.
+- **Phase 1 — calculator + tests.** ✅ **DONE.** `vehicleDesign()`,
+  `engineCustomizationCost()`, and `DESIGN_OPTION_COSTS` in
+  `module/rules/sr2e-rules.mjs`, with unit tests (npm test green, 81) asserting
+  the book's worked examples end-to-end:
+  - DP accumulation: Sand Buggy 20, Sports Car 110, Rich's build 599→659.
+  - Flat per-point costs (p.115-117): Handling 25, Speed 2, Accel 2, Armor 50,
+    Cargo 1/CF, Load 1/10 kg.
+  - **Cost formula (p.115): `DP × Mark-Up × 100¥`** — verified against Rich's
+    1,239-DP car at Mark-Up 2.5 = 309,750¥ and Steff's 154-DP Light Strike at
+    Mark-Up 2 = 30,800¥.
+  The engine's logic is complete and proven; it just needs the lookup DATA.
+
+### Remaining = data entry only
+All the rules are captured/coded. What's left is mechanical transcription:
+- **Power Plant Table (p.168-169)** → a `powerplants.json` of base DP + Speed/
+  Accel/Load/Economy ranges per power-plant × chassis. Captured (IMG_6432/6433)
+  but the photos' baked rotation defeats per-cell crops and the table packs each
+  rating as a start/max pair, so it needs a careful dedicated pass (or a clearer
+  per-section capture).
+- **Chassis p.171** (aircraft) → finish `chassis.json` (rotor-drone names need a
+  closer read).
+- Then wire `chassis.json` + `powerplants.json` into the engine and (Phase 2)
+  the Design tab UI.
 - **Phase 2 — Design tab UI** on the vehicle sheet + Finalize.
 
 ## Open items / to capture
