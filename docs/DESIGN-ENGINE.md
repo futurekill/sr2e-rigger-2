@@ -92,8 +92,14 @@ stored fields so a finished vehicle behaves like the existing compendium ones.
   the scan → **awaiting clean book photos** (see NEEDS-CAPTURE). Then promote mod
   Design-Point costs to structured fields; capture the **Mark-Up Factor** table;
   add the `vehicle_chassis` / `vehicle_powerplant` system item types + packs.
-- **Phase 1 — calculator + tests.** `vehicleDesign()` in `sr2e-rules.mjs`, with
-  unit tests asserting the validated reference DP totals.
+- **Phase 1 — calculator + tests.** 🔄 **CORE DONE.** `vehicleDesign()` (+
+  `engineCustomizationCost()`) landed in the system's `module/rules/sr2e-rules.mjs`
+  with 12 unit tests (npm test green) asserting the worked examples: Sand Buggy
+  20 DP, Sports Car 110 DP, Rich's build 599→659 DP, cost = DP × Mark-Up. It's a
+  pure accumulator — chassis/power-plant DP, per-point costs, mod DP, and the
+  Mark-Up Factor are passed in as DATA, so the still-to-capture tables just plug
+  in. Remaining: wire the real table data + a Mark-Up Factor lookup once the
+  Chassis/Power-Plant photos arrive.
 - **Phase 2 — Design tab UI** on the vehicle sheet + Finalize.
 
 ## Open items / to capture
