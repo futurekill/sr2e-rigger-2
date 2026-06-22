@@ -39,5 +39,20 @@
     "Minisub":                { "speedStart": 10,  "speedMax": 70,  "accelStart": 2, "accelMax": 4,  "loadStart": 400,  "loadMax": 2000,   "sig": 2,    "economyStart": 1,   "economyMax": 4,   "fuelSize": 300, "designPoints": 35 },
     "Walker":                 { "speedStart": 5,   "speedMax": 12,  "accelStart": 1, "accelMax": 1,  "loadStart": 10,   "loadMax": 30,     "sig": 4,    "economyStart": 0.1, "economyMax": 0.75,"fuelSize": 5,   "designPoints": 35 },
     "Armored Personnel Carrier":{ "speedStart": 40,"speedMax": 70,  "accelStart": 5, "accelMax": 8,  "loadStart": 3,    "loadMax": 0,      "sig": 2,    "economyStart": 2,   "economyMax": 4,   "fuelSize": 800, "designPoints": 35 }
+  },
+  "_methane_note": "Methane economy is in km/BAR and fuel size in BARS (not liters), per book p.167.",
+  "methane": {
+    "Bike":                   { "speedStart": 40,  "speedMax": 90,  "accelStart": 4, "accelMax": 9,  "loadStart": 60,  "loadMax": 120,   "sig": 4,    "economyStart": 1.25, "economyMax": 2,    "fuelSize": 300,  "designPoints": 5 },
+    "Subcompact/Sand Buggy":  { "speedStart": 90,  "speedMax": 100, "accelStart": 6, "accelMax": 10, "loadStart": 40,  "loadMax": 100,   "sig": 4,    "economyStart": 1.25, "economyMax": 2.5,  "fuelSize": 450,  "designPoints": 20 },
+    "Sedan/Limousine":        { "speedStart": 100, "speedMax": 140, "accelStart": 6, "accelMax": 10, "loadStart": 60,  "loadMax": 200,   "sig": 4,    "economyStart": 1,    "economyMax": 2.25, "fuelSize": 500,  "designPoints": 20 },
+    "Pickup/Van/RV":          { "speedStart": 80,  "speedMax": 120, "accelStart": 7, "accelMax": 12, "loadStart": 450, "loadMax": 1600,  "sig": 3,    "economyStart": 0.5,  "economyMax": 1.25, "fuelSize": 1000, "designPoints": 20 },
+    "Tracked Drone":          { "speedStart": 20,  "speedMax": 35,  "accelStart": 2, "accelMax": 6,  "loadStart": 10,  "loadMax": "500x8","sig": "6-8", "economyStart": 0.75, "economyMax": 1.25, "fuelSize": 150,  "designPoints": 20 },
+    "Wheeled Drone":          { "speedStart": 30,  "speedMax": 70,  "accelStart": 3, "accelMax": 7,  "loadStart": 10,  "loadMax": "400x8","sig": "6-8", "economyStart": 1,    "economyMax": 2,    "fuelSize": 150,  "designPoints": 20 },
+    "Hovercraft, Small":      { "speedStart": 100, "speedMax": 240, "accelStart": 2, "accelMax": 9,  "loadStart": 400, "loadMax": 1400,  "sig": 3,    "economyStart": 0.25, "economyMax": 1,    "fuelSize": 2500, "designPoints": 20 },
+    "Skimmer":                { "speedStart": 90,  "speedMax": 180, "accelStart": 5, "accelMax": 20, "loadStart": "10x8","loadMax": "300x8","sig": "7-8","economyStart": 0.25,"economyMax": 1,   "fuelSize": 2500, "designPoints": "10x8" },
+    "Skiff/Water Scooter":    { "speedStart": 20,  "speedMax": 50,  "accelStart": 3, "accelMax": 10, "loadStart": 50,  "loadMax": 250,   "sig": 4,    "economyStart": 1,    "economyMax": 2.25, "fuelSize": 250,  "designPoints": 20 },
+    "Sport Cruiser/Yacht":    { "speedStart": 20,  "speedMax": 40,  "accelStart": 3, "accelMax": 7,  "loadStart": 300, "loadMax": 1000,  "sig": 4,    "economyStart": 0.75, "economyMax": 1.5,  "fuelSize": 1000, "designPoints": 20 },
+    "Minisub":                { "speedStart": 5,   "speedMax": 30,  "accelStart": 1, "accelMax": 7,  "loadStart": 250, "loadMax": 800,   "sig": 7,    "economyStart": 0.25, "economyMax": 1,    "fuelSize": 2000, "designPoints": 20 },
+    "Rotary Wing UAV":        { "speedStart": 90,  "speedMax": 100, "accelStart": 3, "accelMax": 7,  "loadStart": 10,  "loadMax": 100,   "sig": 6,    "economyStart": 0.05, "economyMax": 0.25, "fuelSize": 400,  "designPoints": 20 }
   }
 }
