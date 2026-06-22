@@ -1,28 +1,46 @@
 {
-  "_source": "Rigger 2 Chassis Table, book p.170-171 (PDF pg-179-180). Transcribed at 300dpi with per-row verification. Design Points (the cost driver) cross-checked against the book's worked examples where possible (Sand Buggy 20, Sports Car 110 both confirmed).",
-  "_columns": "handling, body, armor, cfStart, cfMax, autonav, pilot(NA=null), sensor, seating, entry, designPoints, accessories. Seating codes: b=bucket, B=bench, e=ejection. Entry codes: o=open all directions, d=double door, g=gate, t=roof hatch, T=rear trunk door, r=rear ramp.",
-  "_status": "PARTIAL. Bikes + cars (down to Heavy Transport) verified. The dense lower rows (Tractor, APCs, Crawlers, RPV) and the entire facing page (hovercraft, boats, and all aircraft on p.171) plus the Power Plant Table (p.168-169) are NOT yet captured reliably — the scan is marginal and individual cells read inconsistently between dpi passes (e.g. Tractor DP read as 175 at 200dpi vs 750 at 300dpi). Awaiting clean book photos of p.168-171, like the missile/cyberware captures. See docs/NEEDS-CAPTURE.md.",
-  "_flags": {
-    "All-terrain Vehicle": "designPoints reads 445 at 300dpi — wildly out of line with other bikes (10-30); likely a book typo (maybe 45). Recorded as printed.",
-    "Tractor / APCs / Crawlers / RPV": "DP and autonav cells uncertain on the scan — pending a clean photo."
-  },
+  "_source": "Rigger 2 Chassis Table, book p.170-171. p.170 (bikes/cars/hovercraft/boats) transcribed from a clean book photo (IMG_6429), every Design-Point value verified; cross-checked against the worked examples (Sand Buggy 20, Sports Car 110). p.171 (aircraft) captured (IMG_6431) — transcription in progress.",
+  "_columns": "handling, body, armor, cfStart, cfMax, autonav, pilot(NA=null), sensor, seating, designPoints, accessories. Seating codes: b=bucket, B=bench, e=ejection. The photo resolved the scan ambiguities: Tractor = 175 DP (the scan misread 750); ATV genuinely 445; APCs 750; Crawlers 220/115/215; RPV 350.",
+  "_status": "p.170 COMPLETE. p.171 (rotor/fixed-wing/vector-thrust/special) captured; pending transcription (rotor-craft drone names need a closer read). Power Plant Table (p.168-169), Mark-Up Factor, and the ECCM cost are still NOT captured.",
   "bikes": {
-    "Scooter":            { "handling": "3/6",  "body": 2, "armor": 0, "cfStart": 0,   "cfMax": 1,   "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b",       "entry": "o",      "designPoints": 30 },
-    "Racing Cycle":       { "handling": "3/6",  "body": 2, "armor": 0, "cfStart": 1,   "cfMax": 2,   "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b",       "entry": "o",      "designPoints": 10 },
-    "Off-Road":           { "handling": "4/4",  "body": 2, "armor": 0, "cfStart": 1,   "cfMax": 8,   "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b",       "entry": "o",      "designPoints": 15 },
-    "Chopper":            { "handling": "4/6",  "body": 2, "armor": 0, "cfStart": 2,   "cfMax": 6,   "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b+1b",    "entry": "o",      "designPoints": 15 },
-    "All-terrain Vehicle":{ "handling": "4/4",  "body": 2, "armor": 0, "cfStart": 2,   "cfMax": 15,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b+1b",    "entry": "o",      "designPoints": 445 }
+    "Scooter":            { "handling": "3/6",  "body": 2, "armor": 0, "cfStart": 0,   "cfMax": 1,   "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b",       "designPoints": 30 },
+    "Racing Cycle":       { "handling": "3/6",  "body": 2, "armor": 0, "cfStart": 1,   "cfMax": 2,   "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b",       "designPoints": 10 },
+    "Off-Road":           { "handling": "4/4",  "body": 2, "armor": 0, "cfStart": 1,   "cfMax": 8,   "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b",       "designPoints": 15 },
+    "Chopper":            { "handling": "4/6",  "body": 2, "armor": 0, "cfStart": 2,   "cfMax": 6,   "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b+1b",    "designPoints": 15 },
+    "All-terrain Vehicle":{ "handling": "4/4",  "body": 2, "armor": 0, "cfStart": 2,   "cfMax": 15,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b+1b",    "designPoints": 445 }
   },
   "cars": {
-    "Commuter/Subcompact":{ "handling": "4/8",  "body": 3, "armor": 0, "cfStart": 1,   "cfMax": 16,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b",       "entry": "1",      "designPoints": 30 },
-    "Sedan":              { "handling": "4/8",  "body": 3, "armor": 0, "cfStart": 6,   "cfMax": 30,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b+2b",    "entry": "2+1t",   "designPoints": 50 },
-    "Sports Car":         { "handling": "4/8",  "body": 3, "armor": 0, "cfStart": 3,   "cfMax": 18,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b",       "entry": "2+1t",   "designPoints": 110 },
-    "Limousine":          { "handling": "4/8",  "body": 4, "armor": 0, "cfStart": 6,   "cfMax": 250, "autonav": 2, "pilot": null, "sensor": 0, "seating": "2b+2b+2B", "entry": "2+2+1t", "designPoints": 625 },
-    "Pickup":             { "handling": "4/6",  "body": 4, "armor": 0, "cfStart": 18,  "cfMax": 42,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b",       "entry": "2+1t",   "designPoints": 60 },
-    "Van":                { "handling": "4/10", "body": 4, "armor": 0, "cfStart": 48,  "cfMax": 250, "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b",       "entry": "2+1d+1g","designPoints": 60 },
-    "RV":                 { "handling": "4/4",  "body": 4, "armor": 0, "cfStart": 48,  "cfMax": 250, "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b+2b",    "entry": "2+1",    "designPoints": 250, "accessories": "Living Amenities (Basic)" },
-    "Sand Buggy":         { "handling": "4/4",  "body": 3, "armor": 0, "cfStart": 4,   "cfMax": 15,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b+2b",    "entry": "o",      "designPoints": 20 },
-    "Medium Transport":   { "handling": "5/12", "body": 5, "armor": 0, "cfStart": 80,  "cfMax": 400, "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b",       "entry": "2+1T",   "designPoints": 300 },
-    "Heavy Transport":    { "handling": "5/12", "body": 6, "armor": 0, "cfStart": 120, "cfMax": 800, "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b",       "entry": "2+1T",   "designPoints": 385 }
+    "Commuter/Subcompact":{ "handling": "4/8",  "body": 3, "armor": 0, "cfStart": 1,   "cfMax": 16,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b",       "designPoints": 30 },
+    "Sedan":              { "handling": "4/8",  "body": 3, "armor": 0, "cfStart": 6,   "cfMax": 30,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b+2b",    "designPoints": 50 },
+    "Sports Car":         { "handling": "4/8",  "body": 3, "armor": 0, "cfStart": 3,   "cfMax": 18,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b",       "designPoints": 110 },
+    "Limousine":          { "handling": "4/8",  "body": 4, "armor": 0, "cfStart": 6,   "cfMax": 250, "autonav": 2, "pilot": null, "sensor": 0, "seating": "2b+2b+2B", "designPoints": 625 },
+    "Pickup":             { "handling": "4/6",  "body": 4, "armor": 0, "cfStart": 18,  "cfMax": 42,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b",       "designPoints": 60 },
+    "Van":                { "handling": "4/10", "body": 4, "armor": 0, "cfStart": 48,  "cfMax": 250, "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b",       "designPoints": 60 },
+    "RV":                 { "handling": "4/4",  "body": 4, "armor": 0, "cfStart": 48,  "cfMax": 250, "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b+2b",    "designPoints": 250, "accessories": "Living Amenities (Basic)" },
+    "Sand Buggy":         { "handling": "4/4",  "body": 3, "armor": 0, "cfStart": 4,   "cfMax": 15,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b+2b",    "designPoints": 20 },
+    "Medium Transport":   { "handling": "5/12", "body": 5, "armor": 0, "cfStart": 80,  "cfMax": 400, "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b",       "designPoints": 300 },
+    "Heavy Transport":    { "handling": "5/12", "body": 6, "armor": 0, "cfStart": 120, "cfMax": 800, "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b",       "designPoints": 385 },
+    "Tractor":            { "handling": "5/12", "body": 5, "armor": 0, "cfStart": 6,   "cfMax": 52,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b",       "designPoints": 175 },
+    "APC, tracked":       { "handling": "5/5",  "body": 7, "armor": 0, "cfStart": 18,  "cfMax": 96,  "autonav": 0, "pilot": null, "sensor": 1, "seating": "1b",       "designPoints": 750 },
+    "APC, wheeled":       { "handling": "4/6",  "body": 7, "armor": 0, "cfStart": 18,  "cfMax": 98,  "autonav": 0, "pilot": null, "sensor": 1, "seating": "1b",       "designPoints": 750 },
+    "Crawler, Micro":     { "handling": "3/6",  "body": 2, "armor": 0, "cfStart": 0,   "cfMax": 0,   "autonav": null, "pilot": 1, "sensor": 1, "seating": "0",        "designPoints": 220, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Crawler, Small":     { "handling": "4/4",  "body": 2, "armor": 0, "cfStart": 0,   "cfMax": 6,   "autonav": null, "pilot": 1, "sensor": 1, "seating": "0",        "designPoints": 115, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Crawler, Large":     { "handling": "4/4",  "body": 2, "armor": 0, "cfStart": 2,   "cfMax": 12,  "autonav": null, "pilot": 1, "sensor": 1, "seating": "0",        "designPoints": 215, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Remote Patrol Vehicle (RPV)": { "handling": "3/6", "body": 2, "armor": 0, "cfStart": 0, "cfMax": 4, "autonav": null, "pilot": 1, "sensor": 1, "seating": "0", "designPoints": 350, "accessories": "Remote control interface, Rigger Adaptation" }
+  },
+  "hovercraft": {
+    "Hovercraft, Small":  { "handling": "3", "body": 3, "armor": 0, "cfStart": 12,  "cfMax": 30,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b", "designPoints": 70 },
+    "Hovercraft, Medium": { "handling": "3", "body": 4, "armor": 0, "cfStart": 40,  "cfMax": 240, "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b", "designPoints": 100 },
+    "Hovercraft, Large":  { "handling": "3", "body": 5, "armor": 0, "cfStart": 100, "cfMax": 480, "autonav": 0, "pilot": null, "sensor": 0, "seating": "2b", "designPoints": 250 },
+    "Skimmer, Small":     { "handling": "3", "body": 1, "armor": 0, "cfStart": 0,   "cfMax": 0,   "autonav": null, "pilot": 1, "sensor": 0, "seating": "0", "designPoints": 250, "accessories": "Remote control interface, Rigger Adaptation" },
+    "Skimmer, Large":     { "handling": "4", "body": 4, "armor": 0, "cfStart": 80,  "cfMax": 0,   "autonav": 2, "pilot": null, "sensor": 1, "seating": "1b", "designPoints": null, "_note": "DP not clearly legible in the photo — verify" }
+  },
+  "boats": {
+    "Skiff":         { "handling": "3", "body": 3, "armor": 0, "cfStart": 6,  "cfMax": 25, "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b", "designPoints": 75 },
+    "Water Scooter": { "handling": "3", "body": 3, "armor": 0, "cfStart": 0,  "cfMax": 0,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b", "designPoints": 100 },
+    "Speedboat":     { "handling": "3", "body": 3, "armor": 0, "cfStart": 30, "cfMax": 0,  "autonav": 0, "pilot": null, "sensor": 0, "seating": "1b", "designPoints": 125 },
+    "Sport Cruiser": { "handling": "4", "body": 4, "armor": 0, "cfStart": 80, "cfMax": 100,"autonav": 0, "pilot": null, "sensor": 0, "seating": "1b", "designPoints": null, "accessories": "Living Amenities (Basic)", "_note": "DP not clearly legible in the photo — verify" },
+    "Yacht":         { "handling": "4", "body": 4, "armor": 0, "cfStart": 80, "cfMax": 280,"autonav": 0, "pilot": null, "sensor": 1, "seating": "1b", "designPoints": 200, "accessories": "Living Amenities (Basic)" },
+    "Minisub":       { "handling": "4", "body": 4, "armor": 0, "cfStart": 0,  "cfMax": 84, "autonav": 2, "pilot": null, "sensor": 1, "seating": "1b", "designPoints": 200 }
   }
 }

@@ -8,15 +8,17 @@ Format: **pack / item — field** — what's wrong, what was used as a placehold
 
 ## Open
 
-- **Design engine / Chassis Table (p.170–171) & Power Plant Table (p.168–169)**
-  — the dense design-data tables. Bikes + cars (to Heavy Transport) transcribed
-  reliably from the scan and cross-checked (Sand Buggy 20 DP, Sports Car 110 DP
-  confirmed), but the lower-density rows read inconsistently between dpi passes
-  (e.g. Tractor DP 175 vs 750; ATV DP shows an improbable 445). These Design-
-  Point values drive every designed vehicle's cost, so the **transports/APCs/
-  crawlers/RPV, all aircraft chassis (p.171), and the entire Power Plant Table
-  (p.168–169)** need **clean straight-on photos** before transcription — same as
-  the missile/cyberware captures. Captured so far in `tools/data/chassis.json`.
+- **Design engine — STILL NEED: Power Plant Table (p.168–169) + Mark-Up Factor.**
+  Clean photos of the Chassis Table arrived (IMG_6429/6431):
+  - ✅ **Chassis p.170** (bikes/cars/hovercraft/boats) fully transcribed in
+    `tools/data/chassis.json`; resolved the scan ambiguities (Tractor = 175 DP,
+    not 750). Two minor DP cells unread (Skimmer Large, Sport Cruiser) — flagged.
+  - 🔄 **Chassis p.171** (rotor/fixed-wing/vector-thrust/special) captured;
+    transcription pending (rotor-craft drone names need a closer read).
+  - ❌ **Power Plant Table (p.168–169)** — NOT yet photographed; the calculator
+    needs power-plant base DP + per-point Speed/Accel/Load costs from it.
+  - ❌ **Mark-Up Factor** rule/table — NOT yet located/captured; needed for the
+    final-cost step.
 - **r2-vehicle-mods / Electronic Counter-Countermeasures (ECCM) — per-level
   cost** — the p.138 capture (IMG_6426) was at a steep angle, so the **cost**
   column sits on the page curve and still isn't legible. Availability/Street
