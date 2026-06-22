@@ -8,20 +8,16 @@ Format: **pack / item — field** — what's wrong, what was used as a placehold
 
 ## Open
 
-- **Design engine — STILL NEED: Electric + Methane power plants (likely p.167).**
-  The calculator and all the rules are done. Data status:
-  - ✅ **Mark-Up Factor** — found in the text (cost = DP × Mark-Up × 100, p.115).
-  - ✅ **Chassis p.170** — fully in `tools/data/chassis.json` (Tractor 175 fix).
-  - ✅ **Power Plant: gasoline + diesel** — in `tools/data/powerplants.json` from
-    close photos (IMG_6435/6436). Covers cars/bikes/trucks/transports/drones/
-    hovercraft/boats — the ground-vehicle designer works end-to-end.
-  - 🔄 **Chassis p.171** (rotor/fixed-wing) — clear close shot in hand (IMG_6439);
-    write-up pending. Vector-thrust/special still on the full-page shot.
-  - 🔄 **Power Plant: Jet Propeller / Jet Turbine / Sail** — captured
-    (IMG_6437/6438); careful read pending (aircraft/boat engines).
-  - ❌ **Power Plant: Electric + Methane** — NOT captured (they aren't on the
-    p.168/169 shots; likely on **book p.167**). Needed for electric/methane
-    vehicles & drones.
+- **Design engine — DATA COMPLETE; only a few shadowed cells to verify.** All
+  rules coded + tested; both tables transcribed from clean book photos:
+  - ✅ **Chassis Table** (p.170-171) — full `tools/data/chassis.json` (59 chassis).
+  - ✅ **Power Plant Table** (p.167-169) — full `tools/data/powerplants.json`
+    (all 7 engine types, 86 entries).
+  - ✅ **Mark-Up Factor** — `cost = DP × Mark-Up × 100` (p.115).
+  - Minor: a handful of camera-shadowed cells flagged with `_note` in the JSON
+    (Sport Cruiser/Yacht sail DP, Airliner chassis DP, Tilt-wing UAV M/L DP,
+    Walker Micro body). Verify off the book if exactness matters.
+  - The remaining engine work is the **Phase-2 Design-tab UI**, not data.
 
 ## Resolved
 
