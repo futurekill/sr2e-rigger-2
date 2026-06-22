@@ -8,27 +8,24 @@ Format: **pack / item — field** — what's wrong, what was used as a placehold
 
 ## Open
 
-- **Design engine — STILL NEED: Power Plant Table (p.168–169) + Mark-Up Factor.**
-  Clean photos of the Chassis Table arrived (IMG_6429/6431):
+- **Design engine — STILL NEED: Mark-Up Factor.** Photos of the Chassis Table
+  (IMG_6429/6431) and the Power Plant Table (IMG_6432/6433) all arrived:
   - ✅ **Chassis p.170** (bikes/cars/hovercraft/boats) fully transcribed in
     `tools/data/chassis.json`; resolved the scan ambiguities (Tractor = 175 DP,
     not 750). Two minor DP cells unread (Skimmer Large, Sport Cruiser) — flagged.
   - 🔄 **Chassis p.171** (rotor/fixed-wing/vector-thrust/special) captured;
     transcription pending (rotor-craft drone names need a closer read).
-  - ❌ **Power Plant Table (p.168–169)** — NOT yet photographed; the calculator
-    needs power-plant base DP + per-point Speed/Accel/Load costs from it.
-  - ❌ **Mark-Up Factor** rule/table — NOT yet located/captured; needed for the
+  - 🔄 **Power Plant Table (p.168–169)** captured (IMG_6432/6433); transcription
+    pending.
+  - ❌ **Mark-Up Factor** rule/table — still not located/captured; needed for the
     final-cost step.
-- **r2-vehicle-mods / Electronic Counter-Countermeasures (ECCM) — per-level
-  cost** — the p.138 capture (IMG_6426) was at a steep angle, so the **cost**
-  column sits on the page curve and still isn't legible. Availability/Street
-  Index ARE now confirmed (4/7 SI 2, 4/10 SI 2.5, 5/14 SI 3, 6/21 SI 3.5, then
-  8/30, 10/45, 12/60, 14/3 mo, 16/6 mo, 18/1 yr; SI — for L5+). Still need a
-  **straight-on reshoot of just the ECCM cost column** to fix L1–L4. Placeholder
-  L1 cost stays 10,000¥.
 
 ## Resolved
 
+- **r2-vehicle-mods / ECCM — per-level cost** — clean straight-on photo of p.138
+  (IMG_6434) read the cost column: L1 10,000¥, L2 30,000¥, L3 100,000¥,
+  L4 100,000¥, L5 150,000¥, L6 250,000¥, L7 750,000¥, L8 2.5M¥, L9 6M¥, L10 12M¥
+  (L3/L4 both list 100,000¥ in the book). Applied to the ECCM mod's notes.
 - **r2-vehicle-weapons / missiles — names & costs** — high-res p.93 capture
   (IMG_6423). Corrected: the launcher is **Man-Portable** (weight 8, SI 4, not
   "Non-Portable"/30); Outlaw variants are **Block I (ICM)** 15,000¥, **Block IA

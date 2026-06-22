@@ -8,7 +8,7 @@
     "rating": 10,
     "cost": 10000,
     "installed": false,
-    "notes": "Signal amplifiers and noise filters that nullify enemy ECM (generally more available than ECM). Leveled 1–10; weight 12 kg (L1) up to 250 kg (L10); Base Time 16 hrs/level; Avail 4/7 days (L1) up to 18/1 year (L10). NOTE: the per-level Customization Cost column is garbled in the scan (L1 reads 110,000¥, inconsistent with L2 30,000¥) — costs flagged in NEEDS-CAPTURE pending a clean capture; the 10,000¥ here is a placeholder. Rigger 2 p.138."
+    "notes": "Signal amplifiers and noise filters that nullify enemy ECM (generally more available than ECM). Leveled 1–10. Per-level Customization Cost: L1 10,000¥, L2 30,000¥, L3 100,000¥, L4 100,000¥, L5 150,000¥, L6 250,000¥, L7 750,000¥, L8 2.5M¥, L9 6M¥, L10 12M¥ (L3 and L4 both list 100,000¥ in the book). Weight 12 kg (L1) up to 250 kg (L10); Avail 4/7 days (L1) up to 18/1 year (L10); Base Time 16 hrs/level. Rigger 2 p.138."
   },
   "effects": [],
   "flags": {},
