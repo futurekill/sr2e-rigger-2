@@ -104,17 +104,22 @@ stored fields so a finished vehicle behaves like the existing compendium ones.
     Mark-Up 2 = 30,800¥.
   The engine's logic is complete and proven; it just needs the lookup DATA.
 
-### Remaining = data entry only
-All the rules are captured/coded. What's left is mechanical transcription:
-- **Power Plant Table (p.168-169)** → a `powerplants.json` of base DP + Speed/
-  Accel/Load/Economy ranges per power-plant × chassis. Captured (IMG_6432/6433)
-  but the photos' baked rotation defeats per-cell crops and the table packs each
-  rating as a start/max pair, so it needs a careful dedicated pass (or a clearer
-  per-section capture).
-- **Chassis p.171** (aircraft) → finish `chassis.json` (rotor-drone names need a
-  closer read).
-- Then wire `chassis.json` + `powerplants.json` into the engine and (Phase 2)
-  the Design tab UI.
+### Phase 0b — design data: ✅ ~95% done
+- **`tools/data/chassis.json`** — ✅ COMPLETE: full Chassis Table, both pages
+  (59 chassis: bikes/cars/hovercraft/boats/rotorcraft/fixed-wing/vector-thrust/
+  special), from close book photos.
+- **`tools/data/powerplants.json`** — ✅ 78 engine×chassis entries: electric,
+  methane, gasoline, diesel, jet turbine, sail. **Only Jet Propeller (turboprop)
+  remains** — its DP column was cut off the edge of the photo; needs one re-shot
+  of p.169 with the right-hand DP column in frame.
+- A handful of shadowed cells are flagged with `_note` for verification.
+
+### Remaining
+- Re-shot of the Jet Propeller DP column (p.169) → last engine.
+- Wire `chassis.json` + `powerplants.json` into the system (config or a small
+  loader) so `vehicleDesign()` can look them up.
+- **Phase 2: the Design tab UI** on the vehicle sheet — best done as a dedicated
+  session with live in-Foundry testing.
 - **Phase 2 — Design tab UI** on the vehicle sheet + Finalize.
 
 ## Open items / to capture
