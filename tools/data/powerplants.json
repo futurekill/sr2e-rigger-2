@@ -54,5 +54,24 @@
     "Sport Cruiser/Yacht":    { "speedStart": 20,  "speedMax": 40,  "accelStart": 3, "accelMax": 7,  "loadStart": 300, "loadMax": 1000,  "sig": 4,    "economyStart": 0.75, "economyMax": 1.5,  "fuelSize": 1000, "designPoints": 20 },
     "Minisub":                { "speedStart": 5,   "speedMax": 30,  "accelStart": 1, "accelMax": 7,  "loadStart": 250, "loadMax": 800,   "sig": 7,    "economyStart": 0.25, "economyMax": 1,    "fuelSize": 2000, "designPoints": 20 },
     "Rotary Wing UAV":        { "speedStart": 90,  "speedMax": 100, "accelStart": 3, "accelMax": 7,  "loadStart": 10,  "loadMax": 100,   "sig": 6,    "economyStart": 0.05, "economyMax": 0.25, "fuelSize": 400,  "designPoints": 20 }
+  },
+  "_electric_note": "Electric economy is in km/PF (Power Factor) and fuel size in PF, per book p.167. A few right-edge cells were under camera shadow (noted with null) — verify if needed.",
+  "electric": {
+    "Bike (all)":             { "speedStart": 60, "speedMax": 90,  "accelStart": 3, "accelMax": 6,   "loadStart": 15,  "loadMax": 40,    "sig": 5,    "economyStart": 0.5,  "economyMax": 2,   "fuelSize": 75,  "designPoints": 5 },
+    "Subcompact/Buggy/Sedan/Limo":{ "speedStart": 75, "speedMax": 100, "accelStart": 4, "accelMax": 8, "loadStart": 40, "loadMax": 160,  "sig": 5,    "economyStart": 0.5,  "economyMax": 2.5, "fuelSize": 150, "designPoints": 5 },
+    "Pickup/Van/RV":          { "speedStart": 40, "speedMax": 80,  "accelStart": 2, "accelMax": 5,   "loadStart": 350, "loadMax": 1250,  "sig": 5,    "economyStart": 0.25, "economyMax": 1,   "fuelSize": 200, "designPoints": 15 },
+    "Small Drone":            { "speedStart": 1,  "speedMax": 5,   "accelStart": null, "accelMax": null, "loadStart": 0, "loadMax": 0,  "sig": 16,   "economyStart": 0.1,  "economyMax": 0.5, "fuelSize": 5,   "designPoints": 5 },
+    "Tracked Drone":          { "speedStart": 10, "speedMax": 40,  "accelStart": 2, "accelMax": 4,   "loadStart": "5x8", "loadMax": "500x8","sig": "0-8","economyStart": 0.75,"economyMax": 1.5, "fuelSize": "10 + (30x8)", "designPoints": "5x8" },
+    "Wheeled Drone":          { "speedStart": 10, "speedMax": 50,  "accelStart": 2, "accelMax": 5,   "loadStart": "5x8", "loadMax": "400x8","sig": "0-8","economyStart": 1,   "economyMax": 2,   "fuelSize": "10 + (30x8)", "designPoints": "5x8" },
+    "Skimmer":                { "speedStart": 90, "speedMax": 180, "accelStart": 4, "accelMax": 10,  "loadStart": "5x8", "loadMax": "300x8","sig": 8,   "economyStart": 0.4,  "economyMax": 1.6, "fuelSize": 50,  "designPoints": "5x8" },
+    "Skiff/Water Scooter":    { "speedStart": 30, "speedMax": 60,  "accelStart": 3, "accelMax": 6,   "loadStart": 15,  "loadMax": 40,    "sig": 8,    "economyStart": 1,    "economyMax": 5,   "fuelSize": 75,  "designPoints": 20 },
+    "Speedboat":              { "speedStart": 35, "speedMax": null,"accelStart": 2, "accelMax": 5,   "loadStart": 40,  "loadMax": 100,   "sig": 8,    "economyStart": 1,    "economyMax": 5,   "fuelSize": 250, "designPoints": 10 },
+    "Ultralight":             { "speedStart": 15, "speedMax": 45,  "accelStart": 3, "accelMax": 6,   "loadStart": 0,   "loadMax": 200,   "sig": 4,    "economyStart": 0.25, "economyMax": 1,   "fuelSize": 50,  "designPoints": 50 },
+    "Fixed Wing UAV (Micro)": { "speedStart": 40, "speedMax": 60,  "accelStart": 2, "accelMax": 8,   "loadStart": 0,   "loadMax": 16,    "sig": 16,   "economyStart": "5 m/PF", "economyMax": "10 m/PF", "fuelSize": 10, "designPoints": 10 },
+    "Rotary Wing UAV (Micro)":{ "speedStart": 10, "speedMax": 25,  "accelStart": 0, "accelMax": 0,   "loadStart": 0,   "loadMax": 0,     "sig": 16,   "economyStart": 1,    "economyMax": 2,   "fuelSize": 10,  "designPoints": 10 },
+    "Rotary Wing UAV (S/M)":  { "speedStart": 35, "speedMax": null,"accelStart": 3, "accelMax": 12,  "loadStart": 5,   "loadMax": 75,    "sig": 8,    "economyStart": 0.25, "economyMax": 2.5, "fuelSize": 150, "designPoints": "5x8" },
+    "Zeppelin":               { "speedStart": 40, "speedMax": 125, "accelStart": 1, "accelMax": null,"loadStart": 1000,"loadMax": 4000,  "sig": 4,    "economyStart": 0.25, "economyMax": 1,   "fuelSize": 1000,"designPoints": 500 },
+    "Mini Blimp":             { "speedStart": 40, "speedMax": 75,  "accelStart": 1, "accelMax": 1,   "loadStart": 2,   "loadMax": 75,    "sig": 0,    "economyStart": 0.5,  "economyMax": 1,   "fuelSize": 40,  "designPoints": 10 },
+    "Walker":                 { "speedStart": 2,  "speedMax": 15,  "accelStart": 1, "accelMax": null,"loadStart": null,"loadMax": null,  "sig": null, "economyStart": 0.5,  "economyMax": 1,   "fuelSize": null,"designPoints": 10 }
   }
 }
