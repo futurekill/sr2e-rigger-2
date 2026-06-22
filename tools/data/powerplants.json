@@ -96,5 +96,15 @@
     "Sport Cruiser": { "speedStart": 30, "speedMax": 50, "accelStart": 3, "accelMax": 6, "loadStart": 250, "loadMax": 1000, "sig": 6, "economyStart": null, "economyMax": null, "fuelSize": null, "designPoints": null, "_note": "DP under shadow — verify" },
     "Yacht":         { "speedStart": 30, "speedMax": 45, "accelStart": 3, "accelMax": 6, "loadStart": 350, "loadMax": 2500, "sig": 6, "economyStart": null, "economyMax": null, "fuelSize": null, "designPoints": null, "_note": "DP under shadow — verify" }
   },
-  "_jetPropeller_note": "Jet Propeller (turboprop) engines are on IMG_6437 but its Design-Pts column was cut off at the page edge — NOT yet transcribed. Needs a re-shot with the right-hand DP column in frame."
+  "_jetPropeller_note": "From the re-shot IMG_6442 (DP column now in frame). Turboprop/prop engines. Drone load like '175x8' = ×Body.",
+  "jetPropeller": {
+    "Ultralight":            { "speedStart": 40,  "speedMax": 120, "accelStart": 17, "accelMax": 20, "loadStart": 15,   "loadMax": 150,    "sig": 6,    "economyStart": 1,    "economyMax": 3,   "fuelSize": 60,   "designPoints": 20 },
+    "Single Engine":         { "speedStart": 60,  "speedMax": 130, "accelStart": 20, "accelMax": 25, "loadStart": 175,  "loadMax": 750,    "sig": 4,    "economyStart": 1,    "economyMax": 3,   "fuelSize": 250,  "designPoints": 50 },
+    "Twin Engine":           { "speedStart": 135, "speedMax": 280, "accelStart": 20, "accelMax": 28, "loadStart": 350,  "loadMax": 2500,   "sig": 4,    "economyStart": 1,    "economyMax": 3,   "fuelSize": 500,  "designPoints": 75 },
+    "Airliner":              { "speedStart": 135, "speedMax": 320, "accelStart": 20, "accelMax": 35, "loadStart": 5000, "loadMax": 15000,  "sig": 3,    "economyStart": 0.75, "economyMax": 1.5, "fuelSize": 5000, "designPoints": 500 },
+    "Fixed Wing UAV":        { "speedStart": "20x8","speedMax": "20x8","accelStart": "20x8","accelMax": "175x8","loadStart": 10,"loadMax": 225,"sig": 6,"economyStart": 1,"economyMax": 3,"fuelSize": 60,"designPoints": 40 },
+    "Tilt-wing":             { "speedStart": 280, "speedMax": 500, "accelStart": 10, "accelMax": 20, "loadStart": 350,  "loadMax": 2500,   "sig": 4,    "economyStart": 0.6,  "economyMax": 1,   "fuelSize": 750,  "designPoints": 75 },
+    "Tilt-wing UAV (M/L)":   { "speedStart": "45x8","speedMax": "175x8","accelStart": 6,"accelMax": 18,"loadStart": 10,"loadMax": 450,"sig": 2,"economyStart": null,"economyMax": null,"fuelSize": 2000,"designPoints": null, "_note": "DP cut at row edge — verify" },
+    "Zeppelin":              { "speedStart": 70,  "speedMax": 250, "accelStart": 8,  "accelMax": 26, "loadStart": 1000, "loadMax": 4000,   "sig": 4,    "economyStart": 0.25, "economyMax": 0.4, "fuelSize": 250,  "designPoints": 25 }
+  }
 }
