@@ -10,8 +10,17 @@ per-world. Entirely separate from the system: its own repo, its own packs, no
 shared code — it just builds content against the system's item/actor types.
 
 ## Status
-Early scaffold. Content is transcribed from the source book into the `r2-*`
-packs, batched by category — see `docs/RIGGER2-PLAN.md`.
+**Released — v0.1.0.** Content complete: **133 items across 7 packs** — vehicles &
+drones (21), vehicle mods (66), vehicle weapons (16), rigger electronics (14),
+cyberware (10), edges & flaws (5), and the Mechanic contact (1) — every value
+verified against the book. Adds the system's `quality` (Edge/Flaw) item type.
+Batched by category; see `docs/RIGGER2-PLAN.md`.
+
+This module also powers the **vehicle design-from-scratch** feature (Rigger 2
+p.108–123): the `sr2e` system ships the vehicle-sheet **Design tab** + the
+point-buy math, and this module registers the Chassis & Power Plant tables
+(`data/` — 59 chassis, 86 power plants) into it at load. See
+`docs/DESIGN-ENGINE.md`.
 
 ## Development
 `packs-src/` (per-document JSON) is the source of truth; `packs/` is the LevelDB
