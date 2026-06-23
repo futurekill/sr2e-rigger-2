@@ -5,8 +5,31 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "electronics",
-    "rating": 6,
+    "rating": 1,
     "cost": 50000,
+    "designPoints": 0,
+    "dpPerLevel": 0,
+    "dpTable": [
+      150,
+      400,
+      1000,
+      2500,
+      10000,
+      20000
+    ],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [
+      2,
+      4,
+      4,
+      4,
+      6,
+      8
+    ],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
     "installed": false,
     "notes": "Feeds sensors false data about a target's range, position, and heading — subtler than ECM (a sensor isn't aware it's deceived). Cost & weight by Level: L1 50,000¥/35 kg/SI 3, L2 190,000¥/45/SI 3.5, L3 400,000¥/60/SI 4, L4 1M¥/60/SI 4.5, L5 4M¥/60/SI 5, L6 8M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6). Rigger 2 p.138."
   },

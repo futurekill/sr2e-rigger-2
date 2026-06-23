@@ -5,8 +5,17 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "engine",
-    "rating": 6,
+    "rating": 1,
     "cost": 3500,
+    "designPoints": 0,
+    "dpPerLevel": 55,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
     "installed": false,
     "notes": "Injects nitrous into a gas/diesel engine for a short boost (gas-cylinder holds up to 20 charges, level charges/use). In an Accelerating/Braking Test add Rating extra dice, or push Speed to ×2.5 standard (then decelerate by the Accel Rate each turn until back under standard). Design 55 points/level; max Rating 6; parts cost 3,500¥/level (L1–3), 7,000¥/level (L4–5); Avail 4/48 hrs; Street Index 1; 2 CF; load −15 kg. Rigger 2 p.121."
   },

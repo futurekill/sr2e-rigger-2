@@ -5,8 +5,25 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "accessory",
-    "rating": 3,
+    "rating": 1,
     "cost": 2500,
+    "designPoints": 0,
+    "dpPerLevel": 0,
+    "dpTable": [
+      25,
+      80,
+      200
+    ],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [
+      0,
+      0,
+      2
+    ],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
     "installed": false,
     "notes": "Modifies a ground vehicle to travel on/through water (needs watertight seals + life support + sealed power plant for full submersion). L1 (2,500¥, wheels propel at Speed 15, +2 Handling), L2 (7,500¥, propeller drive, Speed 30, no penalty, 2 CF), L3 (15,000¥, water-jet/impeller, Speed 45, no penalty, 2 CF); Avail 5/10–3/6 days; Street Index 1–1.5. Rigger 2 p.140–141."
   },

@@ -5,8 +5,17 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "weapon",
-    "rating": 0,
+    "rating": 1,
     "cost": 500,
+    "designPoints": 0,
+    "dpPerLevel": 10,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [],
+    "loadReduction": 24,
+    "loadPerLevel": 1,
+    "loadTable": [],
     "installed": false,
     "notes": "Precision micro-actuators in a weapon mount that compensate recoil; each level negates 1 point of recoil (not compatible with gyro-stabilization). Max level by mount: fixed firmpoint/micro-turret 3, mini-turret 6, small turret/fixed hardpoint 9, medium+ turret 12. Parts cost 500¥/level; Avail 6/48 hrs; Street Index 1.5; load −(Rating + 24) kg. Rigger 2 p.132."
   },

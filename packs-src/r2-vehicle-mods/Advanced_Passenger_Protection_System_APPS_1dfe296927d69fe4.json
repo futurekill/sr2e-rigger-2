@@ -5,8 +5,17 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "protection",
-    "rating": 0,
+    "rating": 1,
     "cost": 2500,
+    "designPoints": 0,
+    "dpPerLevel": 30,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
     "installed": false,
     "notes": "Secured seat belts, impact-activated airbags, and reinforced seat panels; allows a Strength (5) Test to reduce crash damage to occupants (not for motorcycles). Parts cost 2,500¥ per seat; Avail 3/6 days; Street Index 1; Base Time 40 hrs; Target Number 4. Rigger 2 p.128."
   },

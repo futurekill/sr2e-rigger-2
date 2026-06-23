@@ -5,8 +5,17 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "accessory",
-    "rating": 0,
+    "rating": 1,
     "cost": 0,
+    "designPoints": 0,
+    "dpPerLevel": 2,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
     "installed": false,
     "notes": "A hydraulic boom for lifting heavy loads (vehicle must be stationary and chocked; not available on Body-0 vehicles). The crane has its own Load Rating up to the Crane Capacity Table max by Body: B1 25 kg, B2 200, B3 750, B4 2,000, B5 5,000, B6 20,000, B7 30,000, B8 45,000, B9 60,000, B10+ Body²×750. Parts cost = Load Rating × 100¥; 35 CF; load −(Body × 80) kg; Avail 6/14 days; Street Index 2. Rigger 2 p.143–144."
   },

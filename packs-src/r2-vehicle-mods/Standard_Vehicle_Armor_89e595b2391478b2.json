@@ -5,8 +5,17 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "armor",
-    "rating": 0,
+    "rating": 1,
     "cost": 1250,
+    "designPoints": 0,
+    "dpPerLevel": 50,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
     "installed": false,
     "notes": "Hardened ceramic/metallic armor plating, priced per Armor Point (rating limited by the vehicle's Load Rating). Parts cost = 1,250¥ per Armor Point; load −(Body × Body × 5) kg/point; every 6 points worsens Handling by 1; Avail 6/12 days; Street Index 2.5; Base Time (armor × 8) hrs; Target Number = desired Armor + 3. Rigger 2 p.127."
   },

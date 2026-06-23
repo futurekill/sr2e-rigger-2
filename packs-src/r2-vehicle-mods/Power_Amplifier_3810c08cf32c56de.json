@@ -5,8 +5,17 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "electronics",
-    "rating": 10,
+    "rating": 1,
     "cost": 250,
+    "designPoints": 0,
+    "dpPerLevel": 5,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 0.25,
+    "cfTable": [],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
     "installed": false,
     "notes": "Boosts the Flux Rating of sensors, ECM/ECCM, and hardwired remote-control decks — extending remote-control range and EW resistance. Parts cost 250¥/rating (max Rating 10); load −1 kg/rating; Avail Rating + (Rating × 12) hrs; Street Index 1.5; Base Time 8 hrs. Rigger 2 p.139."
   },

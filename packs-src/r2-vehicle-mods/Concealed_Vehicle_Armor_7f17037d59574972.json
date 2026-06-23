@@ -5,8 +5,17 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "armor",
-    "rating": 0,
+    "rating": 1,
     "cost": 2000,
+    "designPoints": 0,
+    "dpPerLevel": 50,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 2,
+    "cfTable": [],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
     "installed": false,
     "notes": "Armor hidden inside the vehicle's interior/cargo space so it isn't obvious the vehicle is armored — not compatible with standard armor. Parts cost = 2,000¥ per Armor Point; 3 CF/point; load −(Body × Body × 5) kg/point; Avail 6/21 days; Street Index 3.5; Base Time (armor × 8) hrs. Rigger 2 p.127."
   },

@@ -2,7 +2,7 @@
   "id": "sr2e-rigger-2",
   "title": "Shadowrun 2E: Rigger 2",
   "description": "Vehicles, drones, vehicle modifications, vehicle weapons, rigger cyberware, and sensors from Rigger 2 (FASA 7906) as compendia for the Shadowrun 2nd Edition system.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "esmodules": [
     "scripts/register-design-data.mjs"
   ],
@@ -15,27 +15,109 @@
       {
         "id": "sr2e",
         "type": "system",
-        "compatibility": { "minimum": "0.9.0" }
+        "compatibility": {
+          "minimum": "0.9.0"
+        }
       }
     ]
   },
   "authors": [
-    { "name": "James Candalino" }
+    {
+      "name": "James Candalino"
+    }
   ],
   "packs": [
-    { "name": "r2-vehicles",        "label": "R2 Vehicles & Drones", "path": "packs/r2-vehicles",        "type": "Actor", "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "r2-vehicle-mods",     "label": "R2 Vehicle Mods",      "path": "packs/r2-vehicle-mods",     "type": "Item",  "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "r2-vehicle-weapons",  "label": "R2 Vehicle Weapons",   "path": "packs/r2-vehicle-weapons",  "type": "Item",  "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "r2-cyberware",        "label": "R2 Rigger Cyberware",  "path": "packs/r2-cyberware",        "type": "Item",  "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "r2-sensors",          "label": "R2 Rigger Electronics", "path": "packs/r2-sensors",          "type": "Item",  "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "r2-qualities",        "label": "R2 Edges & Flaws",     "path": "packs/r2-qualities",        "type": "Item",  "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "r2-contacts",         "label": "R2 Contacts",          "path": "packs/r2-contacts",         "type": "Item",  "system": "sr2e", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } }
+    {
+      "name": "r2-vehicles",
+      "label": "R2 Vehicles & Drones",
+      "path": "packs/r2-vehicles",
+      "type": "Actor",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r2-vehicle-mods",
+      "label": "R2 Vehicle Mods",
+      "path": "packs/r2-vehicle-mods",
+      "type": "Item",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r2-vehicle-weapons",
+      "label": "R2 Vehicle Weapons",
+      "path": "packs/r2-vehicle-weapons",
+      "type": "Item",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r2-cyberware",
+      "label": "R2 Rigger Cyberware",
+      "path": "packs/r2-cyberware",
+      "type": "Item",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r2-sensors",
+      "label": "R2 Rigger Electronics",
+      "path": "packs/r2-sensors",
+      "type": "Item",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r2-qualities",
+      "label": "R2 Edges & Flaws",
+      "path": "packs/r2-qualities",
+      "type": "Item",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r2-contacts",
+      "label": "R2 Contacts",
+      "path": "packs/r2-contacts",
+      "type": "Item",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
   ],
   "packFolders": [
     {
       "name": "Rigger 2",
       "sorting": "m",
-      "packs": ["r2-vehicles", "r2-vehicle-mods", "r2-vehicle-weapons", "r2-cyberware", "r2-sensors", "r2-qualities", "r2-contacts"]
+      "packs": [
+        "r2-vehicles",
+        "r2-vehicle-mods",
+        "r2-vehicle-weapons",
+        "r2-cyberware",
+        "r2-sensors",
+        "r2-qualities",
+        "r2-contacts"
+      ]
     }
   ],
   "flags": {}

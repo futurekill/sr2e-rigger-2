@@ -5,8 +5,17 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "protection",
-    "rating": 0,
+    "rating": 1,
     "cost": 500,
+    "designPoints": 5,
+    "dpPerLevel": 1,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
     "installed": false,
     "notes": "Provides oxygen and basic climate control inside a sealed vehicle, rated in man-hours of support. Parts cost = 500¥ + 100¥ per man-hour; load −(25 kg per 10 man-hours); Avail 8/14 days. Rigger 2 p.128."
   },

@@ -5,8 +5,17 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "armor",
-    "rating": 3,
+    "rating": 1,
     "cost": 700,
+    "designPoints": 0,
+    "dpPerLevel": 50,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 3,
+    "cfTable": [],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
     "installed": false,
     "notes": "Sacrificial ceramic-metallic plates (~10 cm each) that reduce damage and flake away; max added Armor equals the vehicle's Body. Customization-only (no Skill Test, 6 hrs to fit/replace), reduces Load by (Body × 100). Tier cost/availability: L1 700¥ 8/14 days, L2 1,500¥ 12/14 days, L3 2,500¥ 14/21 days; Street Index 2. Rigger 2 p.127."
   },

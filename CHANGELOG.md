@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.2.0 — Vehicle design-from-scratch
+
+Completes the Rigger 2 vehicle **design-from-scratch** system (book p.108–123).
+The `sr2e` system ships the Design-tab UI + point-buy math; this module ships the
+tables and registers them at load (`scripts/register-design-data.mjs`,
+`data/chassis.json`, `data/powerplants.json`).
+
+- **Design tables:** 59 chassis (Chassis Table, p.170–171) + 86 power-plant
+  entries across all 7 engine types (Power Plant Table, p.167–169).
+- **Mod Design Points:** 38 of the 66 vehicle mods carry a rating-aware Design
+  Cost (flat / per-level / table); the build-relative ones use the manual Extra DP.
+- **CF Consumed + Load Reduction** populated for the major consumers (p.115), so
+  the Design tab tracks Cargo Factor and Load against the chassis/power-plant caps.
+- **Design-option costs verified** against the worked walkthrough (Steffi's Light
+  Strike reconstructs to its published 154 DP): Acceleration 25/pt, Cargo 5/CF,
+  etc. — and the full minor-option set (Economy, Signature, Fuel, + flat options).
+- Mark-Up Factors Table (p.114) drives the cost calculation.
+
+Content is unchanged from v0.1.0 (133 items across 7 packs).
+
 ## 0.1.0
 
 First release. The complete *Rigger 2* (FASA 7906) content as SR2E compendia —

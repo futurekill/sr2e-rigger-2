@@ -1,6 +1,6 @@
 {
   "name": "sr2e-rigger-2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Rigger 2 content module for the SR2E FoundryVTT system",
   "type": "module",

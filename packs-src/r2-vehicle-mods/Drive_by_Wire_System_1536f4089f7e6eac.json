@@ -5,8 +5,17 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "control",
-    "rating": 3,
+    "rating": 1,
     "cost": 0,
+    "designPoints": 0,
+    "dpPerLevel": 0,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
     "installed": false,
     "notes": "Replaces mechanical linkages with computer-mediated controls (Levels 1–3), trading Handling for Acceleration/Speed. Design cost = chassis Design Point cost × 1.75 per level; max −3 Handling. Parts cost = vehicle's original cost × the level; Avail 8/16 days; Street Index 2; needs B/R, Computer & Electronics. Rigger 2 p.124."
   },
