@@ -32,23 +32,31 @@ they're per-rating-level, a non-linear table, or a power-plant formula — so th
 system computes them from the mod's Rating via `modDesignPoints()`:
 `dpTable` (by rating) > `dpPerLevel` (×rating) > `designPoints` (flat).
 
-Populated (verified off the page renders):
-- **Autonavigation** dpTable [5,10,50,150] (p.123)
-- **Electronic Counter-Deception** dpTable [100,300,800,3000,8000,20000] (p.139)
-- **Nitrous Oxide** 55/level (p.121); **Power Amplifier** 5/rating (p.139)
-- **Standard & Concealed Vehicle Armor** 50/Armor Point (p.127)
-- flat: **Pintle 1, SurCell 5, Electronics Port 10, Ring Mount 10** (Roll Bars /
-  GridLink 0)
+**Populated — the full catalog read (book p.118-146); 38 of 66 mods carry a DP
+rule** in `tools/gen-vehicle-mods.mjs`'s `DP_RULES` map. Examples:
+- **dpTable:** ECM [250,750,1250,2500,1250,1500,5000,7500,12500,25000], ECCM
+  [100,300,500,1000,500,750,2000,3500,5000,10000], ED [150,400,1000,2500,10000,
+  20000], ECD [100,300,800,3000,8000,20000], Sensors [50,150,250,500,250,300,
+  1000,1500,2500,5000], Autonav [5,10,50,150], CMC [35→1350], Anti-Theft [1→100],
+  Remote Pilot Adv Prog [0,50,250,1250,5000], Amphibious [25,80,200]
+- **dpPerLevel:** armor 50/Armor Point, Nitrous 55, RAM 50, Thermal Baffles 75,
+  Gyro 15, Gunnery Recoil 10, Power Amp 5, Crane 2, Winch 1, APPS 30/seat
+- **flat:** Smart Armor 250, Smartlink Kit 250, Weapon Turret 125, Remote Turret
+  100, Crash Cage 40, Datajack/Rigger Adapt/Secondary/Ejection 25-35, Sidecar 10,
+  Fixed Mount 25, Electronics Port 10, Ring 10, SurCell 5, Pintle/Firearm Kit 1
+- **additive:** Life Support 5 + 1/man-hour
 
-**Power-plant-relative exception:** Engine Customization / Turbocharging = power-
-plant DP × 1.25 (+0.5/level) depend on the *build's* power plant, not the mod
-alone — those use `engineCustomizationCost` entered via the design's manual
-"Extra DP" field.
-
-**Remaining (optional):** Design Costs for the un-read catalog mods (control,
-weapon-mount, other protective/electronic, misc — PDF p.133-155). Most are 0 or
-follow the same patterns; fill in `designPoints`/`dpPerLevel`/`dpTable` as needed.
-(Tesseract OCR returns 0 chars on these scans, so it's a manual page read.)
+**The 28 build-relative exceptions stay 0** (can't be a function of the mod
+alone) — entered via the manual "Extra DP":
+- power-plant ×factor: Engine Customization, Turbocharging, Active Thermal Masking
+  (use `engineCustomizationCost`)
+- chassis ×factor: Drive-by-Wire (1.75), Improved Control Surfaces (1.40),
+  Improved Suspension (1.25), Off-Road Suspension (1.50), Floatation (1.20)
+- Body ×N: Remote-Control Interface (25), EnviroSeal (3/10/15/75), Drone Rack
+  (12), Hovercraft Seals (5), Mechanical Arms (250)
+- Pilot ×N: BattleTac FDDM (350), IVIS (250)
+- other: Adjusted Controls (metatype 25/30/35); External Cargo Mount
+  (customization only, not a design option)
 
 Limits: drone chassis whose DP is a `×Body` formula are flagged unbuildable; a
 few camera-shadowed cells are nulled. See `docs/NEEDS-CAPTURE.md`.
