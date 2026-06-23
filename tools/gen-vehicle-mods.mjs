@@ -18,7 +18,9 @@ function mod(m) {
     _id, name: m.name, type: "vehicle_mod", img: m.img ?? "icons/svg/upgrade.svg",
     system: {
       modType: m.modType ?? "general", rating: m.rating ?? 0,
-      cost: m.cost ?? 0, designPoints: m.dp ?? 0, installed: false, notes: m.notes ?? ""
+      cost: m.cost ?? 0, designPoints: m.dp ?? 0,
+      dpPerLevel: m.dpPerLevel ?? 0, dpTable: m.dpTable ?? [],
+      installed: false, notes: m.notes ?? ""
     },
     effects: [], flags: {}, folder: null, sort: 0,
     _stats: { coreVersion: "13.351", systemId: "sr2e", systemVersion: "0.0.1", createdTime: 1781600000000, modifiedTime: 1781600000000, lastModifiedBy: null, compendiumSource: null, duplicateSource: null, exportSource: null },
@@ -49,9 +51,9 @@ const MODS = [
   { name: "Secondary Controls", modType: "control", cost: 400,
     notes: "A duplicate set of steering and operating controls for a co-pilot or driving instructor (not available for motorcycles). Parts cost 400¥; Avail 3/72 hrs; Street Index 1; Base Time 40 hrs; Target Number 4. Rigger 2 p.126." },
   // --- Protective system modifications (book p.127-128) ---
-  { name: "Standard Vehicle Armor", modType: "armor", cost: 1250,
+  { name: "Standard Vehicle Armor", modType: "armor", cost: 1250, dpPerLevel: 50,
     notes: "Hardened ceramic/metallic armor plating, priced per Armor Point (rating limited by the vehicle's Load Rating). Parts cost = 1,250¥ per Armor Point; load −(Body × Body × 5) kg/point; every 6 points worsens Handling by 1; Avail 6/12 days; Street Index 2.5; Base Time (armor × 8) hrs; Target Number = desired Armor + 3. Rigger 2 p.127." },
-  { name: "Concealed Vehicle Armor", modType: "armor", cost: 2000,
+  { name: "Concealed Vehicle Armor", modType: "armor", cost: 2000, dpPerLevel: 50,
     notes: "Armor hidden inside the vehicle's interior/cargo space so it isn't obvious the vehicle is armored — not compatible with standard armor. Parts cost = 2,000¥ per Armor Point; 3 CF/point; load −(Body × Body × 5) kg/point; Avail 6/21 days; Street Index 3.5; Base Time (armor × 8) hrs. Rigger 2 p.127." },
   { name: "Ablative Armor", modType: "armor", rating: 3, cost: 700,
     notes: "Sacrificial ceramic-metallic plates (~10 cm each) that reduce damage and flake away; max added Armor equals the vehicle's Body. Customization-only (no Skill Test, 6 hrs to fit/replace), reduces Load by (Body × 100). Tier cost/availability: L1 700¥ 8/14 days, L2 1,500¥ 12/14 days, L3 2,500¥ 14/21 days; Street Index 2. Rigger 2 p.127." },
@@ -105,11 +107,11 @@ const MODS = [
     notes: "Signal amplifiers and noise filters that nullify enemy ECM (generally more available than ECM). Leveled 1–10. Per-level Customization Cost: L1 10,000¥, L2 30,000¥, L3 100,000¥, L4 100,000¥, L5 150,000¥, L6 250,000¥, L7 750,000¥, L8 2.5M¥, L9 6M¥, L10 12M¥ (L3 and L4 both list 100,000¥ in the book). Weight 12 kg (L1) up to 250 kg (L10); Avail 4/7 days (L1) up to 18/1 year (L10); Base Time 16 hrs/level. Rigger 2 p.138." },
   { name: "Electronic Deception (ED)", modType: "electronics", rating: 6, cost: 50000,
     notes: "Feeds sensors false data about a target's range, position, and heading — subtler than ECM (a sensor isn't aware it's deceived). Cost & weight by Level: L1 50,000¥/35 kg/SI 3, L2 190,000¥/45/SI 3.5, L3 400,000¥/60/SI 4, L4 1M¥/60/SI 4.5, L5 4M¥/60/SI 5, L6 8M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6). Rigger 2 p.138." },
-  { name: "Electronic Counter-Deception (ECD)", modType: "electronics", rating: 6, cost: 25000,
+  { name: "Electronic Counter-Deception (ECD)", modType: "electronics", rating: 6, cost: 25000, dpTable: [100, 300, 800, 3000, 8000, 20000],
     notes: "Reality-checking components (inertial nav, flux-density monitors) that negate enemy Electronic Deception (security/military only). Cost & weight by Level: L1 25,000¥/35 kg/SI 3, L2 80,000¥/45/SI 3.5, L3 200,000¥/60/SI 4, L4 750,000¥/60/SI 4.5, L5 2M¥/60/SI 5, L6 5M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6); Base Time 10 hrs/level. Rigger 2 p.139." },
   { name: "Electronics Port", modType: "electronics", cost: 1000, dp: 10,
     notes: "A powered mount for electronics unrelated to driving (radios, cameras, surveillance gear, a remote-control deck); attached devices draw vehicle power and gain +½ the vehicle's Body (round up) to their Flux Rating. Parts cost = 1,000¥ + the equipment's cost; 1 CF per 0.1 m³ of equipment; Avail 3/6 days; Street Index 1; Base Time 8 hrs. Rigger 2 p.139." },
-  { name: "Power Amplifier", modType: "electronics", rating: 10, cost: 250,
+  { name: "Power Amplifier", modType: "electronics", rating: 10, cost: 250, dpPerLevel: 5,
     notes: "Boosts the Flux Rating of sensors, ECM/ECCM, and hardwired remote-control decks — extending remote-control range and EW resistance. Parts cost 250¥/rating (max Rating 10); load −1 kg/rating; Avail Rating + (Rating × 12) hrs; Street Index 1.5; Base Time 8 hrs. Rigger 2 p.139." },
   { name: "Sensors (Vehicle Sensor System)", modType: "electronics", rating: 10, cost: 5000,
     notes: "Standard-to-military sensor suites (audio/video, thermal, radar, ultrasound) with ID/recognition/tracking software; higher levels are restricted. Cost & weight by Level: L1 5,000¥/12 kg/SI 2, L2 15,000¥/25/SI 2.5, L3 25,000¥/35/SI 3, L4 50,000¥/50/SI 3.5, L5 75,000¥, L6 125,000¥, L7 375,000¥, L8 1.25M¥, L9 3M¥, L10 6M¥; Avail 4/7 days (L1) up to 18/1 year (L10); Base Time 16 hrs/level. Rigger 2 p.139–140." },
@@ -154,7 +156,7 @@ const MODS = [
     notes: "Radically re-tunes the engine to exceed the power plant's standard maxima. Each level adds +30 Speed OR +5 Acceleration OR +(Body × 50) kg Load (each rating bought separately); max = the power-plant maximum × 1.75. Design cost = power-plant Design-Point cost × 1.25 for the first level, +0.5 to the multiplier per added level; parts cost = original power-plant cost × the same multiplier; Avail 8/14 days; Street Index 2; Base Time 40 hrs/level. (Can stress the engine — see book.) Rigger 2 p.120." },
   { name: "GridLink Power", modType: "engine", cost: 600,
     notes: "Lets an electric ground vehicle draw power from a city's buried GridLink induction grid at normal traffic speeds (no battery drain). Monthly grid fee = Body × 100¥ (cars), × 25¥ (motorcycles), or × 250¥ (trucks/buses). Parts cost 600¥; 1 CF; Avail 3/96 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.121." },
-  { name: "Nitrous Oxide Injectors", modType: "engine", rating: 6, cost: 3500,
+  { name: "Nitrous Oxide Injectors", modType: "engine", rating: 6, cost: 3500, dpPerLevel: 55,
     notes: "Injects nitrous into a gas/diesel engine for a short boost (gas-cylinder holds up to 20 charges, level charges/use). In an Accelerating/Braking Test add Rating extra dice, or push Speed to ×2.5 standard (then decelerate by the Accel Rate each turn until back under standard). Design 55 points/level; max Rating 6; parts cost 3,500¥/level (L1–3), 7,000¥/level (L4–5); Avail 4/48 hrs; Street Index 1; 2 CF; load −15 kg. Rigger 2 p.121." },
   { name: "SurCell Power", modType: "engine", cost: 500, dp: 5,
     notes: "Externally-mounted solar cells that feed an electric vehicle Body × 25 PF/hour on a sunny day (half in cloud, none at night/heavy overcast); not for motorcycles. Design 5 points; parts cost 500¥; Avail 3/72 hrs; Street Index 1; Base Time 8 hrs. Rigger 2 p.121." },
@@ -162,7 +164,7 @@ const MODS = [
     notes: "Turbine boost for methane/gas/diesel engines (the 'superconductive drive' does the same for electric). Each level adds +15 Speed and +10 Acceleration; new max Speed = initial max × 1.25. Design cost = power-plant Design-Point cost × 1.5 per level; parts cost = vehicle's original cost × 1.10 per level; Avail 6/12 days; Street Index 2; Base Time 8 hrs. Rigger 2 p.122." },
   { name: "Adjusted Controls", modType: "control", cost: 2500,
     notes: "Re-fits manual controls (wheel, pedals, dashboard) to a non-standard body — dwarfs, trolls, or any metahuman whose size/disability prevents using standard controls. Design 25 points; parts cost 2,500¥; Avail 3/72 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.122." },
-  { name: "Autonavigation System", modType: "control", rating: 4, cost: 500,
+  { name: "Autonavigation System", modType: "control", rating: 4, cost: 500, dpTable: [5, 10, 50, 150],
     notes: "Onboard auto-pilot/navigation (the Autonav Rating adds dice to standard Driving Tests, but is ignored in vehicle combat). Rating 1 collision-avoidance (the only autonav fittable to a motorcycle), 500¥/5 DP/2/96 hrs/SI 1; Rating 2 route-following on mapped terrain, 4,000¥/10 DP/3/6 days/SI 2; Rating 3 rough-terrain + GPS, 5,000¥/50 DP/4/8 days/SI 3; Rating 4 urban off-road + re-routing, 15,000¥/150 DP/6/14 days/SI 3. Install TN = 8 − Handling. Rigger 2 p.122–123." }
 ];
 
