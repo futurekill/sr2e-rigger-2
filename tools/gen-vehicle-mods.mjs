@@ -168,10 +168,79 @@ const MODS = [
     notes: "Onboard auto-pilot/navigation (the Autonav Rating adds dice to standard Driving Tests, but is ignored in vehicle combat). Rating 1 collision-avoidance (the only autonav fittable to a motorcycle), 500¥/5 DP/2/96 hrs/SI 1; Rating 2 route-following on mapped terrain, 4,000¥/10 DP/3/6 days/SI 2; Rating 3 rough-terrain + GPS, 5,000¥/50 DP/4/8 days/SI 3; Rating 4 urban off-road + re-routing, 15,000¥/150 DP/6/14 days/SI 3. Install TN = 8 − Handling. Rigger 2 p.122–123." }
 ];
 
+// Design-Point cost of each mod as a design option (Rigger 2 "Design Cost",
+// book p.118-146), evaluated by the system against the mod's Rating:
+//   dpTable (by rating) | designPoints (flat base) + dpPerLevel (×rating).
+// This map is the single source of truth (it overrides any inline values).
+// "Exceptions" below depend on the build (power-plant/chassis/Body/Pilot) or are
+// metatype-specific, so they can't be a function of the mod alone — they stay 0
+// and are entered via the design's manual "Extra DP" (see DESIGN-ENGINE.md).
+const DP_RULES = {
+  // Engine
+  "SurCell Power":                  { designPoints: 5 },
+  "Nitrous Oxide Injectors":        { dpPerLevel: 55 },
+  "GridLink Power":                 { designPoints: 0 },
+  // Control
+  "Datajack Port":                  { designPoints: 25 },
+  "Rigger Adaptation":              { designPoints: 35 },
+  "Secondary Controls":             { designPoints: 35 },
+  "Contingency Maneuver Controls (CMC)": { dpTable: [35, 70, 105, 300, 375, 450, 1050, 1200, 1350] },
+  "Remote Pilot Advanced Programming":   { dpTable: [0, 50, 250, 1250, 5000] },
+  "Autonavigation System":         { dpTable: [5, 10, 50, 150] },
+  // Protective
+  "Standard Vehicle Armor":         { dpPerLevel: 50 },
+  "Concealed Vehicle Armor":        { dpPerLevel: 50 },
+  "Smart Armor System (SAS)":       { designPoints: 250 },
+  "Advanced Passenger Protection System (APPS)": { dpPerLevel: 30 },
+  "Crash Cage":                     { designPoints: 40 },
+  "Life Support System":            { designPoints: 5, dpPerLevel: 1 },
+  "Roll Bars":                      { designPoints: 0 },
+  "Thermal Baffles":                { dpPerLevel: 75 },
+  "Radar-Absorbent Materials (RAM)":{ dpPerLevel: 50 },
+  // Weapon mounts
+  "Firearm Conversion Kit":         { designPoints: 1 },
+  "Fixed Weapon Mount":             { designPoints: 25 },
+  "Gunnery Recoil Adjuster":        { dpPerLevel: 10 },
+  "Pintle Mount":                   { designPoints: 1 },
+  "Ring Mount":                     { designPoints: 10 },
+  "Smartlink Integration Kit":      { designPoints: 250 },
+  "Weapon Turret":                  { designPoints: 125 },
+  "Remote Weapon Turret":           { designPoints: 100 },
+  "Vehicle Gyroscopic Stabilizer":  { dpPerLevel: 15 },
+  // Electronic
+  "Electronic Countermeasures (ECM)":          { dpTable: [250, 750, 1250, 2500, 1250, 1500, 5000, 7500, 12500, 25000] },
+  "Electronic Counter-Countermeasures (ECCM)": { dpTable: [100, 300, 500, 1000, 500, 750, 2000, 3500, 5000, 10000] },
+  "Electronic Deception (ED)":      { dpTable: [150, 400, 1000, 2500, 10000, 20000] },
+  "Electronic Counter-Deception (ECD)": { dpTable: [100, 300, 800, 3000, 8000, 20000] },
+  "Electronics Port":               { designPoints: 10 },
+  "Power Amplifier":                { dpPerLevel: 5 },
+  "Sensors (Vehicle Sensor System)":{ dpTable: [50, 150, 250, 500, 250, 300, 1000, 1500, 2500, 5000] },
+  // Miscellaneous / accessories
+  "Amphibious Operation Package":   { dpTable: [25, 80, 200] },
+  "Anti-Theft System":              { dpTable: [1, 2, 3, 16, 20, 24, 70, 80, 90, 100] },
+  "Vehicle Seats (Bench/Bucket)":   { designPoints: 0 },
+  "Ejection Bucket Seat":           { designPoints: 35 },
+  "Convertible Top (Rag-Top)":      { designPoints: 0 },
+  "Crane":                          { dpPerLevel: 2 },
+  "Motorcycle Sidecar":             { designPoints: 10 },
+  "Spotlight":                      { designPoints: 0 },
+  "Tires":                          { designPoints: 0 },
+  "Winch":                          { dpPerLevel: 1 }
+};
+
 let n = 0;
 for (const m of MODS) {
+  // Reset any inline DP fields, then apply the authoritative rule (if any).
+  m.dp = 0; m.dpPerLevel = 0; m.dpTable = [];
+  const rule = DP_RULES[m.name];
+  if (rule) {
+    if (rule.designPoints != null) m.dp = rule.designPoints;
+    if (rule.dpPerLevel != null) m.dpPerLevel = rule.dpPerLevel;
+    if (rule.dpTable != null) m.dpTable = rule.dpTable;
+  }
   const safe = m.name.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_|_$/g, "");
   writeFileSync(`${DIR}/${safe}_${idFor(m.name)}.json`, JSON.stringify(mod(m), null, 2) + "\n");
   n++;
 }
-console.log(`wrote ${n} vehicle mods`);
+const withDp = MODS.filter(m => m.dp || m.dpPerLevel || (m.dpTable && m.dpTable.length)).length;
+console.log(`wrote ${n} vehicle mods (${withDp} with a Design-Point rule)`);
