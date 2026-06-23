@@ -190,6 +190,7 @@ const DP_RULES = {
   // Protective
   "Standard Vehicle Armor":         { dpPerLevel: 50 },
   "Concealed Vehicle Armor":        { dpPerLevel: 50 },
+  "Ablative Armor":                 { dpPerLevel: 50 },
   "Smart Armor System (SAS)":       { designPoints: 250 },
   "Advanced Passenger Protection System (APPS)": { dpPerLevel: 30 },
   "Crash Cage":                     { designPoints: 40 },
@@ -240,8 +241,10 @@ for (const m of MODS) {
   }
   // Rated mods default to Rating 1 (minimum) so dragging one onto a vehicle
   // doesn't slam the maximum DP/cost — the player dials it up on the sheet.
-  // (The full rating range stays in the mod's notes.)
-  if (m.dpPerLevel || (m.dpTable && m.dpTable.length)) m.rating = 1;
+  // (The full rating range stays in the mod's notes.) RATED_EXCEPTIONS are rated
+  // mods whose Design Cost is a build-relative formula (no flat DP rule).
+  const RATED_EXCEPTIONS = new Set(["Drive-by-Wire System"]);
+  if (m.dpPerLevel || (m.dpTable && m.dpTable.length) || RATED_EXCEPTIONS.has(m.name)) m.rating = 1;
   const safe = m.name.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_|_$/g, "");
   writeFileSync(`${DIR}/${safe}_${idFor(m.name)}.json`, JSON.stringify(mod(m), null, 2) + "\n");
   n++;
