@@ -238,6 +238,10 @@ for (const m of MODS) {
     if (rule.dpPerLevel != null) m.dpPerLevel = rule.dpPerLevel;
     if (rule.dpTable != null) m.dpTable = rule.dpTable;
   }
+  // Rated mods default to Rating 1 (minimum) so dragging one onto a vehicle
+  // doesn't slam the maximum DP/cost — the player dials it up on the sheet.
+  // (The full rating range stays in the mod's notes.)
+  if (m.dpPerLevel || (m.dpTable && m.dpTable.length)) m.rating = 1;
   const safe = m.name.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_|_$/g, "");
   writeFileSync(`${DIR}/${safe}_${idFor(m.name)}.json`, JSON.stringify(mod(m), null, 2) + "\n");
   n++;
