@@ -23,6 +23,19 @@ Design Points, and a ¥-priced mod's `cost` adds on top of the design price — 
 dragging a mod onto a vehicle moves the live DP/cost (the manual "Extra DP" field
 remains for design-option DP without a mod item).
 
+### Mark-Up + CF/Load budgets (book p.114-115)
+- **Mark-Up Factors Table (p.114):** the Design tab suggests the base Mark-Up from
+  the chosen chassis category (Bike .5 / Car 1 / Boat 1 / Hovercraft·Rotor·Fixed-
+  Wing·Vector 2.5 / Special 2.5) and shows the equipment-modifier and special-
+  design-multiplier reference. Cost = Design Points × Mark-Up × 100.
+- **CF / Load (p.115):** mods consume **Cargo Factor** (from the chassis' Cargo
+  Rating, `cfMax`) and **Load kg** (from the power plant's Load Rating, `loadMax`);
+  the Design tab shows "Cargo X / cap" and "Load X / cap" with a red over-capacity
+  warning. Per-mod CF/Load (`cfConsumed`/`cfPerLevel`/`cfTable` + `load…`) is
+  populated for the major consumers; **build-relative cells stay 0** — armor Load
+  = Body²×5/pt, EnviroSeal, Mechanical Arms, Life Support per-man-hour, plus the
+  Sensor CF table (not yet read) — a remaining population pass.
+
 ### Mod Design-Point population (rating-aware)
 Each Vehicle Customization entry (book p.118-146) lists a **Design Cost** — the DP
 used when the mod is installed *during design*, in place of its ¥ retrofit cost
