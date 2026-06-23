@@ -18,7 +18,7 @@ function mod(m) {
     _id, name: m.name, type: "vehicle_mod", img: m.img ?? "icons/svg/upgrade.svg",
     system: {
       modType: m.modType ?? "general", rating: m.rating ?? 0,
-      cost: m.cost ?? 0, installed: false, notes: m.notes ?? ""
+      cost: m.cost ?? 0, designPoints: m.dp ?? 0, installed: false, notes: m.notes ?? ""
     },
     effects: [], flags: {}, folder: null, sort: 0,
     _stats: { coreVersion: "13.351", systemId: "sr2e", systemVersion: "0.0.1", createdTime: 1781600000000, modifiedTime: 1781600000000, lastModifiedBy: null, compendiumSource: null, duplicateSource: null, exportSource: null },
@@ -83,9 +83,9 @@ const MODS = [
     notes: "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133." },
   { name: "Internal Missile/Rocket Mount", modType: "weapon", cost: 0,
     notes: "An internal firing system (one firmpoint) for missiles or rockets — does not reduce Signature and is protected by the vehicle's armor. Carries up to (Body × 3) rounds; the mounting actuators consume an extra 2 CF. Rigger 2 p.133." },
-  { name: "Pintle Mount", modType: "weapon", cost: 50,
+  { name: "Pintle Mount", modType: "weapon", cost: 50, dp: 1,
     notes: "The simplest mount — a reinforced swivel socket (one firmpoint) accepting any firmpoint-sized weapon; ~60° left/right and 30° up/down arc, and grants 2 points of recoil compensation. Cannot be operated remotely by a jacked-in rigger; mounting/removing is a Complex Action (+ Quickness (3) Test if moving). Parts cost 50¥; Avail 4/96 hrs; Street Index 1.5; Base Time 12 hrs. Rigger 2 p.133." },
-  { name: "Ring Mount", modType: "weapon", cost: 3000,
+  { name: "Ring Mount", modType: "weapon", cost: 3000, dp: 10,
     notes: "A freely-rotating ring with a tripod, a step up from a pintle mount (hardtop or roll-bar-equipped vehicles only); counts as a hardpoint, can be operated remotely by a jacked-in rigger, and grants 6 points of recoil compensation. Parts cost 3,000¥; Avail 8/14 days; Street Index 2; Base Time 8 hrs; 1 CF (16 CF for door-gun config); load −25 kg. Rigger 2 p.133–134." },
   { name: "Smartlink Integration Kit", modType: "weapon", cost: 650,
     notes: "Connects a smartgun-equipped weapon in a fixed mount or turret to the gunner. Level I (650¥, 4/48 hrs, SI 1) requires the gunner to be jacked into the vehicle; Level II (900¥, 6/48 hrs, SI 2) adds palm-induction links so the gunner needn't be jacked in. Not needed for pintle/ring mounts. Base Time 24 hrs. Rigger 2 p.134." },
@@ -107,7 +107,7 @@ const MODS = [
     notes: "Feeds sensors false data about a target's range, position, and heading — subtler than ECM (a sensor isn't aware it's deceived). Cost & weight by Level: L1 50,000¥/35 kg/SI 3, L2 190,000¥/45/SI 3.5, L3 400,000¥/60/SI 4, L4 1M¥/60/SI 4.5, L5 4M¥/60/SI 5, L6 8M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6). Rigger 2 p.138." },
   { name: "Electronic Counter-Deception (ECD)", modType: "electronics", rating: 6, cost: 25000,
     notes: "Reality-checking components (inertial nav, flux-density monitors) that negate enemy Electronic Deception (security/military only). Cost & weight by Level: L1 25,000¥/35 kg/SI 3, L2 80,000¥/45/SI 3.5, L3 200,000¥/60/SI 4, L4 750,000¥/60/SI 4.5, L5 2M¥/60/SI 5, L6 5M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6); Base Time 10 hrs/level. Rigger 2 p.139." },
-  { name: "Electronics Port", modType: "electronics", cost: 1000,
+  { name: "Electronics Port", modType: "electronics", cost: 1000, dp: 10,
     notes: "A powered mount for electronics unrelated to driving (radios, cameras, surveillance gear, a remote-control deck); attached devices draw vehicle power and gain +½ the vehicle's Body (round up) to their Flux Rating. Parts cost = 1,000¥ + the equipment's cost; 1 CF per 0.1 m³ of equipment; Avail 3/6 days; Street Index 1; Base Time 8 hrs. Rigger 2 p.139." },
   { name: "Power Amplifier", modType: "electronics", rating: 10, cost: 250,
     notes: "Boosts the Flux Rating of sensors, ECM/ECCM, and hardwired remote-control decks — extending remote-control range and EW resistance. Parts cost 250¥/rating (max Rating 10); load −1 kg/rating; Avail Rating + (Rating × 12) hrs; Street Index 1.5; Base Time 8 hrs. Rigger 2 p.139." },
@@ -156,7 +156,7 @@ const MODS = [
     notes: "Lets an electric ground vehicle draw power from a city's buried GridLink induction grid at normal traffic speeds (no battery drain). Monthly grid fee = Body × 100¥ (cars), × 25¥ (motorcycles), or × 250¥ (trucks/buses). Parts cost 600¥; 1 CF; Avail 3/96 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.121." },
   { name: "Nitrous Oxide Injectors", modType: "engine", rating: 6, cost: 3500,
     notes: "Injects nitrous into a gas/diesel engine for a short boost (gas-cylinder holds up to 20 charges, level charges/use). In an Accelerating/Braking Test add Rating extra dice, or push Speed to ×2.5 standard (then decelerate by the Accel Rate each turn until back under standard). Design 55 points/level; max Rating 6; parts cost 3,500¥/level (L1–3), 7,000¥/level (L4–5); Avail 4/48 hrs; Street Index 1; 2 CF; load −15 kg. Rigger 2 p.121." },
-  { name: "SurCell Power", modType: "engine", cost: 500,
+  { name: "SurCell Power", modType: "engine", cost: 500, dp: 5,
     notes: "Externally-mounted solar cells that feed an electric vehicle Body × 25 PF/hour on a sunny day (half in cloud, none at night/heavy overcast); not for motorcycles. Design 5 points; parts cost 500¥; Avail 3/72 hrs; Street Index 1; Base Time 8 hrs. Rigger 2 p.121." },
   { name: "Turbocharging / Superconductive Drive", modType: "engine", cost: 0,
     notes: "Turbine boost for methane/gas/diesel engines (the 'superconductive drive' does the same for electric). Each level adds +15 Speed and +10 Acceleration; new max Speed = initial max × 1.25. Design cost = power-plant Design-Point cost × 1.5 per level; parts cost = vehicle's original cost × 1.10 per level; Avail 6/12 days; Street Index 2; Base Time 8 hrs. Rigger 2 p.122." },

@@ -21,9 +21,29 @@ run `npm run sync-design-data` after editing it to refresh `data/`.
 Installed modifications fold into the build: a mod's `designPoints` adds to the
 Design Points, and a ¥-priced mod's `cost` adds on top of the design price — so
 dragging a mod onto a vehicle moves the live DP/cost (the manual "Extra DP" field
-remains for design-option DP without a mod item). Most r2 customization mods are
-¥-priced (designPoints 0); populating the design-option mods' DP values from the
-book's design-options table is a remaining data refinement.
+remains for design-option DP without a mod item).
+
+### Mod Design-Point population (partial)
+Each Vehicle Customization entry (book p.118-146) lists a **Design Cost** (the DP
+used when the mod is installed *during design*, in place of its ¥ retrofit cost;
+confirmed by the worked example p.113 — Steffi's Roll Bars 0 + Electronics Port
+10 + Ring Mount 10 + Pintle 1 = 21 DP). Populated so far (verified off the page
+renders): **Pintle Mount 1, SurCell Power 5, Electronics Port 10, Ring Mount 10**
+(Roll Bars / GridLink = 0).
+
+**Structural finding:** most mods' Design Cost is **0, a per-level value, or a
+formula** that a single flat `designPoints` field can't represent — e.g.
+Autonavigation 5/10/50/150 by Rating, Nitrous Oxide 55/level, Engine
+Customization / Turbocharging = power-plant DP × 1.25 (+0.5/level, see
+`engineCustomizationCost`), Adjusted Controls 25/30/35 by metatype, armor per
+Armor Point. A *complete* DP system would need rating/formula-aware computation
+(read the chosen mod's Rating), not just a flat field. The ¥-cost sum already
+makes those mods move the total cost.
+
+**Remaining flat-DP read:** the rest of the catalog (PDF p.133-155 = book p.124-
+146: control, protective, weapon-mount, electronic, misc) for any other flat
+Design Cost values. (Tesseract OCR returns 0 chars on these scans, so it's a
+manual page read.)
 
 Limits: drone chassis whose DP is a `×Body` formula are flagged unbuildable; a
 few camera-shadowed cells are nulled. See `docs/NEEDS-CAPTURE.md`.
