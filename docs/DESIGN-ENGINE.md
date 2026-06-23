@@ -23,27 +23,32 @@ Design Points, and a ¥-priced mod's `cost` adds on top of the design price — 
 dragging a mod onto a vehicle moves the live DP/cost (the manual "Extra DP" field
 remains for design-option DP without a mod item).
 
-### Mod Design-Point population (partial)
-Each Vehicle Customization entry (book p.118-146) lists a **Design Cost** (the DP
-used when the mod is installed *during design*, in place of its ¥ retrofit cost;
-confirmed by the worked example p.113 — Steffi's Roll Bars 0 + Electronics Port
-10 + Ring Mount 10 + Pintle 1 = 21 DP). Populated so far (verified off the page
-renders): **Pintle Mount 1, SurCell Power 5, Electronics Port 10, Ring Mount 10**
-(Roll Bars / GridLink = 0).
+### Mod Design-Point population (rating-aware)
+Each Vehicle Customization entry (book p.118-146) lists a **Design Cost** — the DP
+used when the mod is installed *during design*, in place of its ¥ retrofit cost
+(confirmed by the worked example p.113: Steffi's Roll Bars 0 + Electronics Port
+10 + Ring Mount 10 + Pintle 1 = 21 DP). Most Design Costs are **not flat** —
+they're per-rating-level, a non-linear table, or a power-plant formula — so the
+system computes them from the mod's Rating via `modDesignPoints()`:
+`dpTable` (by rating) > `dpPerLevel` (×rating) > `designPoints` (flat).
 
-**Structural finding:** most mods' Design Cost is **0, a per-level value, or a
-formula** that a single flat `designPoints` field can't represent — e.g.
-Autonavigation 5/10/50/150 by Rating, Nitrous Oxide 55/level, Engine
-Customization / Turbocharging = power-plant DP × 1.25 (+0.5/level, see
-`engineCustomizationCost`), Adjusted Controls 25/30/35 by metatype, armor per
-Armor Point. A *complete* DP system would need rating/formula-aware computation
-(read the chosen mod's Rating), not just a flat field. The ¥-cost sum already
-makes those mods move the total cost.
+Populated (verified off the page renders):
+- **Autonavigation** dpTable [5,10,50,150] (p.123)
+- **Electronic Counter-Deception** dpTable [100,300,800,3000,8000,20000] (p.139)
+- **Nitrous Oxide** 55/level (p.121); **Power Amplifier** 5/rating (p.139)
+- **Standard & Concealed Vehicle Armor** 50/Armor Point (p.127)
+- flat: **Pintle 1, SurCell 5, Electronics Port 10, Ring Mount 10** (Roll Bars /
+  GridLink 0)
 
-**Remaining flat-DP read:** the rest of the catalog (PDF p.133-155 = book p.124-
-146: control, protective, weapon-mount, electronic, misc) for any other flat
-Design Cost values. (Tesseract OCR returns 0 chars on these scans, so it's a
-manual page read.)
+**Power-plant-relative exception:** Engine Customization / Turbocharging = power-
+plant DP × 1.25 (+0.5/level) depend on the *build's* power plant, not the mod
+alone — those use `engineCustomizationCost` entered via the design's manual
+"Extra DP" field.
+
+**Remaining (optional):** Design Costs for the un-read catalog mods (control,
+weapon-mount, other protective/electronic, misc — PDF p.133-155). Most are 0 or
+follow the same patterns; fill in `designPoints`/`dpPerLevel`/`dpTable` as needed.
+(Tesseract OCR returns 0 chars on these scans, so it's a manual page read.)
 
 Limits: drone chassis whose DP is a `×Body` formula are flagged unbuildable; a
 few camera-shadowed cells are nulled. See `docs/NEEDS-CAPTURE.md`.
