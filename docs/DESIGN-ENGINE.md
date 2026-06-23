@@ -18,9 +18,15 @@ Data note: `data/chassis.json` + `data/powerplants.json` are the SHIPPED copies
 (the release excludes `tools/`). `tools/data/` stays the transcription source;
 run `npm run sync-design-data` after editing it to refresh `data/`.
 
-v1 limits: mod DP is a manual total (not auto-summed from installed mods);
-drone chassis whose DP is a `×Body` formula are flagged unbuildable; a few
-camera-shadowed cells are nulled. See `docs/NEEDS-CAPTURE.md`.
+Installed modifications fold into the build: a mod's `designPoints` adds to the
+Design Points, and a ¥-priced mod's `cost` adds on top of the design price — so
+dragging a mod onto a vehicle moves the live DP/cost (the manual "Extra DP" field
+remains for design-option DP without a mod item). Most r2 customization mods are
+¥-priced (designPoints 0); populating the design-option mods' DP values from the
+book's design-options table is a remaining data refinement.
+
+Limits: drone chassis whose DP is a `×Body` formula are flagged unbuildable; a
+few camera-shadowed cells are nulled. See `docs/NEEDS-CAPTURE.md`.
 
 ---
 
