@@ -20,6 +20,8 @@ function mod(m) {
       modType: m.modType ?? "general", rating: m.rating ?? 0,
       cost: m.cost ?? 0, designPoints: m.dp ?? 0,
       dpPerLevel: m.dpPerLevel ?? 0, dpTable: m.dpTable ?? [],
+      cfConsumed: m.cf ?? 0, cfPerLevel: m.cfPerLevel ?? 0, cfTable: m.cfTable ?? [],
+      loadReduction: m.load ?? 0, loadPerLevel: m.loadPerLevel ?? 0, loadTable: m.loadTable ?? [],
       installed: false, notes: m.notes ?? ""
     },
     effects: [], flags: {}, folder: null, sort: 0,
@@ -229,15 +231,47 @@ const DP_RULES = {
   "Winch":                          { dpPerLevel: 1 }
 };
 
+// CF Consumed (Cargo Factor) and Load Reduction (kg) per mod (book p.115),
+// evaluated against rating the same way as DP. Verified off the page renders;
+// EW tables use the DESIGN CF column (the "x/y" cells = design/customization).
+// Body-relative cells (armor Load = Body²×5/pt, EnviroSeal, Mechanical Arms,
+// Life Support per-man-hour) are left 0 — they depend on the build, not the mod.
+const CF_LOAD_RULES = {
+  "Electronics Port":               { cf: 0.5 },
+  "Ring Mount":                     { cf: 1, load: 25 },
+  "Concealed Vehicle Armor":        { cfPerLevel: 2 },
+  "Ablative Armor":                 { cfPerLevel: 3 },
+  "Weapon Turret":                  { cf: 8 },          // mini turret
+  "Power Amplifier":                { cfPerLevel: 0.25 },
+  "Crash Cage":                     { load: 25 },
+  "Gunnery Recoil Adjuster":        { load: 24, loadPerLevel: 1 },
+  "Vehicle Gyroscopic Stabilizer":  { load: 24, loadPerLevel: 1 },
+  "Electronic Countermeasures (ECM)":          { cfTable: [0, 1, 2, 3, 2, 4, 6, 10, 12, 16] },
+  "Electronic Counter-Countermeasures (ECCM)": { cfTable: [0, 1, 2, 3, 2, 4, 6, 10, 12, 16] },
+  "Electronic Deception (ED)":      { cfTable: [2, 4, 4, 4, 6, 8] },
+  "Electronic Counter-Deception (ECD)": { cf: 1 },
+  "Amphibious Operation Package":   { cfTable: [0, 0, 2] }
+};
+
 let n = 0;
 for (const m of MODS) {
   // Reset any inline DP fields, then apply the authoritative rule (if any).
   m.dp = 0; m.dpPerLevel = 0; m.dpTable = [];
+  m.cf = 0; m.cfPerLevel = 0; m.cfTable = []; m.load = 0; m.loadPerLevel = 0; m.loadTable = [];
   const rule = DP_RULES[m.name];
   if (rule) {
     if (rule.designPoints != null) m.dp = rule.designPoints;
     if (rule.dpPerLevel != null) m.dpPerLevel = rule.dpPerLevel;
     if (rule.dpTable != null) m.dpTable = rule.dpTable;
+  }
+  const cl = CF_LOAD_RULES[m.name];
+  if (cl) {
+    if (cl.cf != null) m.cf = cl.cf;
+    if (cl.cfPerLevel != null) m.cfPerLevel = cl.cfPerLevel;
+    if (cl.cfTable != null) m.cfTable = cl.cfTable;
+    if (cl.load != null) m.load = cl.load;
+    if (cl.loadPerLevel != null) m.loadPerLevel = cl.loadPerLevel;
+    if (cl.loadTable != null) m.loadTable = cl.loadTable;
   }
   // Rated mods default to Rating 1 (minimum) so dragging one onto a vehicle
   // doesn't slam the maximum DP/cost — the player dials it up on the sheet.
