@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.1
+
+### Fixes
+- Require **sr2e ≥ 0.10.0** (was 0.9.0). The vehicle design-from-scratch data is
+  registered via `CONFIG.SR2E.registerVehicleDesignData()`, which only exists in
+  system 0.10.0+; on older systems the registration silently no-ops and the
+  Design tab has no chassis/power-plant data. The pin now matches the requirement.
+
 ## 0.2.0 — Vehicle design-from-scratch
 
 Completes the Rigger 2 vehicle **design-from-scratch** system (book p.108–123).
