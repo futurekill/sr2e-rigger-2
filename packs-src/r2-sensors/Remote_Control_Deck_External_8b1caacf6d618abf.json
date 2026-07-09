@@ -2,7 +2,7 @@
   "_id": "8b1caacf6d618abf",
   "name": "Remote Control Deck (External)",
   "type": "gear",
-  "img": "icons/svg/chip.svg",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "category": "electronics",
     "rating": 1,

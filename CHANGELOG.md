@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.2
+
+### Fixes
+- **Fixed 2 broken icons.** 14 electronics/sensor items pointed at
+  `icons/svg/chip.svg` and the Mechanic contact at `icons/svg/wrench.svg` — both
+  core-Foundry paths that no longer exist (rendered as broken images). Repointed
+  to `icons/svg/upgrade.svg` and `icons/tools/hand/wrench-steel-grey.webp`.
+
 ## 0.2.1
 
 ### Fixes

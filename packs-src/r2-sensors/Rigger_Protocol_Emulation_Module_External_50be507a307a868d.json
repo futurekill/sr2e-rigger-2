@@ -2,7 +2,7 @@
   "_id": "50be507a307a868d",
   "name": "Rigger Protocol Emulation Module (External)",
   "type": "gear",
-  "img": "icons/svg/chip.svg",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "category": "electronics",
     "rating": 1,
