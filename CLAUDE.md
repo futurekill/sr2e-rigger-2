@@ -18,11 +18,20 @@ page render to verify every number** before transcribing. When a value is
 illegible/blank/uncertain, **stop and ask for a high-res capture of the physical
 book** rather than guessing (track open ones in `docs/NEEDS-CAPTURE.md`).
 
-## Packs are COMMITTED (not gitignored)
-Unlike the SSC module, `packs/` (the built LevelDB) is committed here. A
-gitignored build artifact can get wiped by a clean/fresh checkout and leave
-Foundry showing empty compendiums; committing keeps packs always present. Accept
-the LevelDB compaction churn in `git status`. Close Foundry before rebuilding
+## Packs are a build artifact (gitignored)
+`packs/` (the built LevelDB) is **gitignored**. Foundry recompacts it every
+session, so committing it churns the tree with meaningless diffs. `packs-src/` is
+the source of truth; the release workflow rebuilds `packs/` from it, so installed
+users always get built compendia.
+
+**A fresh clone has no `packs/` — run `npm run build-packs` before pointing
+Foundry at this folder, or the compendiums show up empty.** Likewise, after
+editing `packs-src/` (or re-running a generator), rebuild before testing: Foundry
+reads the LevelDB, not the JSON, and a stale build silently serves old data.
+Close Foundry before rebuilding (LevelDB locks).
+
+<!-- old note: 'accept the churn' — the churn is exactly why this changed. -->
+Close Foundry before rebuilding
 packs (LevelDB locks).
 
 ## Authoring conventions
@@ -39,7 +48,7 @@ packs (LevelDB locks).
 
 ## Build workflow
 `packs-src/` (per-document JSON) is the source of truth; `packs/` is the LevelDB
-build (committed). `node tools/gen-<category>.mjs` emits JSON, then
+build (gitignored). `node tools/gen-<category>.mjs` emits JSON, then
 `npm run build-packs [name]`. `npm run extract-packs` pulls Foundry edits back.
 
 ## Copyright
