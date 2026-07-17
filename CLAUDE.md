@@ -3,7 +3,7 @@
 A FoundryVTT **V13** content module adding *Rigger 2* (FASA 7906) content to the
 **Shadowrun 2nd Edition system** (`sr2e`). Separate package: own repo, own packs,
 no shared code. Depends on the system via `module.json` → `relationships.systems`
-(sr2e ≥ 0.9.0), so its items/actors use the system's data models (`vehicle`
+(sr2e ≥ 0.10.0), so its items/actors use the system's data models (`vehicle`
 Actor, `vehicle_mod`, `weapon`, `cyberware`, `gear`).
 
 The sibling system repo is `../sr2e-foundryvtt`; the SSC module
