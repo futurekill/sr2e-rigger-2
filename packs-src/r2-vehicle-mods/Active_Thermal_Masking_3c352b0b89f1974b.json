@@ -2,7 +2,7 @@
   "_id": "3c352b0b89f1974b",
   "name": "Active Thermal Masking",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/active-thermal-masking.webp",
   "system": {
     "modType": "signature",
     "rating": 0,

@@ -2,7 +2,7 @@
   "_id": "bf56bb5c0e2019d4",
   "name": "Contingency Maneuver Controls (CMC)",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/contingency-maneuver-controls-cmc.webp",
   "system": {
     "modType": "control",
     "rating": 1,

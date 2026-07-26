@@ -2,7 +2,7 @@
   "_id": "f94365525601975a",
   "name": "Simsense Vertigo",
   "type": "quality",
-  "img": "icons/svg/downgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/quality/simsense-vertigo.webp",
   "system": {
     "kind": "flaw",
     "category": "mental",

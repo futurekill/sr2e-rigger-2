@@ -2,7 +2,7 @@
   "_id": "c8020f0490652b53",
   "name": "Structural Agility",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/structural-agility.webp",
   "system": {
     "modType": "control",
     "rating": 0,

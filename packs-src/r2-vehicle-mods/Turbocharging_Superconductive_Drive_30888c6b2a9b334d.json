@@ -2,7 +2,7 @@
   "_id": "30888c6b2a9b334d",
   "name": "Turbocharging / Superconductive Drive",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/turbocharging-superconductive-drive.webp",
   "system": {
     "modType": "engine",
     "rating": 0,

@@ -2,7 +2,7 @@
   "_id": "7d87eb7b988f4d76",
   "name": "BattleTac IVIS Receiver Module",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/battletac-ivis-receiver-module.webp",
   "system": {
     "modType": "electronics",
     "rating": 0,

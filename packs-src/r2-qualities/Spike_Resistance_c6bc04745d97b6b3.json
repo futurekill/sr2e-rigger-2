@@ -2,7 +2,7 @@
   "_id": "c6bc04745d97b6b3",
   "name": "Spike Resistance",
   "type": "quality",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/quality/spike-resistance.webp",
   "system": {
     "kind": "edge",
     "category": "mental",

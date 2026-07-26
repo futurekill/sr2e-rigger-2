@@ -2,7 +2,7 @@
   "_id": "deeb7a3a4d1f7379",
   "name": "Winch",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/winch.webp",
   "system": {
     "modType": "accessory",
     "rating": 1,

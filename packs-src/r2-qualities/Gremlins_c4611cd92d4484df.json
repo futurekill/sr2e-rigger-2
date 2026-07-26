@@ -2,7 +2,7 @@
   "_id": "c4611cd92d4484df",
   "name": "Gremlins",
   "type": "quality",
-  "img": "icons/svg/downgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/quality/gremlins.webp",
   "system": {
     "kind": "flaw",
     "category": "other",

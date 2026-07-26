@@ -2,7 +2,7 @@
   "_id": "9bb79f6ecaa63087",
   "name": "Off-Road Suspension",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/off-road-suspension.webp",
   "system": {
     "modType": "handling",
     "rating": 0,

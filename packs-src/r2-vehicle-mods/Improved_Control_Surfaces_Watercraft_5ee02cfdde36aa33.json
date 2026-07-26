@@ -2,7 +2,7 @@
   "_id": "5ee02cfdde36aa33",
   "name": "Improved Control Surfaces (Watercraft)",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/improved-control-surfaces-watercraft.webp",
   "system": {
     "modType": "handling",
     "rating": 0,

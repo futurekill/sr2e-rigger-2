@@ -2,7 +2,7 @@
   "_id": "3810c08cf32c56de",
   "name": "Power Amplifier",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/power-amplifier.webp",
   "system": {
     "modType": "electronics",
     "rating": 1,

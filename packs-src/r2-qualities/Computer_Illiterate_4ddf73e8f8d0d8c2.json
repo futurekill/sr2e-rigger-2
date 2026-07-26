@@ -2,7 +2,7 @@
   "_id": "4ddf73e8f8d0d8c2",
   "name": "Computer Illiterate",
   "type": "quality",
-  "img": "icons/svg/downgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/quality/computer-illiterate.webp",
   "system": {
     "kind": "flaw",
     "category": "skill",

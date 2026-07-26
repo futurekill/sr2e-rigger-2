@@ -2,7 +2,7 @@
   "_id": "3a791cfd7c2a81a5",
   "name": "Vehicle Seats (Bench/Bucket)",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/vehicle-seats-bench-bucket.webp",
   "system": {
     "modType": "accessory",
     "rating": 0,

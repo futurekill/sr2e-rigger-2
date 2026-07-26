@@ -2,7 +2,7 @@
   "_id": "21e501ef4ae5752c",
   "name": "Firearm Conversion Kit",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/firearm-conversion-kit.webp",
   "system": {
     "modType": "weapon",
     "rating": 0,

@@ -2,7 +2,7 @@
   "_id": "1536f4089f7e6eac",
   "name": "Drive-by-Wire System",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/drive-by-wire-system.webp",
   "system": {
     "modType": "control",
     "rating": 1,

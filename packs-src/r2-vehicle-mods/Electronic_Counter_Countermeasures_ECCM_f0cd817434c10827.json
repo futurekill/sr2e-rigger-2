@@ -2,7 +2,7 @@
   "_id": "f0cd817434c10827",
   "name": "Electronic Counter-Countermeasures (ECCM)",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/electronic-counter-countermeasures-eccm.webp",
   "system": {
     "modType": "electronics",
     "rating": 1,

@@ -2,7 +2,7 @@
   "_id": "a2498bb1f169ea63",
   "name": "Aircraft Drop Tanks",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/aircraft-drop-tanks.webp",
   "system": {
     "modType": "accessory",
     "rating": 0,

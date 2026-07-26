@@ -2,7 +2,7 @@
   "_id": "89e595b2391478b2",
   "name": "Standard Vehicle Armor",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/standard-vehicle-armor.webp",
   "system": {
     "modType": "armor",
     "rating": 1,

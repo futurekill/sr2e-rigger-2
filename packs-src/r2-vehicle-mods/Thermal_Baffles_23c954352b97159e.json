@@ -2,7 +2,7 @@
   "_id": "23c954352b97159e",
   "name": "Thermal Baffles",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/thermal-baffles.webp",
   "system": {
     "modType": "signature",
     "rating": 1,

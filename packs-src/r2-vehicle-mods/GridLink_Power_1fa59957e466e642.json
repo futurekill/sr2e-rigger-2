@@ -2,7 +2,7 @@
   "_id": "1fa59957e466e642",
   "name": "GridLink Power",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/gridlink-power.webp",
   "system": {
     "modType": "engine",
     "rating": 0,

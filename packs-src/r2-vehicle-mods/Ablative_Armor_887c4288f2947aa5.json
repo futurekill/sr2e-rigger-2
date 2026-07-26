@@ -2,7 +2,7 @@
   "_id": "887c4288f2947aa5",
   "name": "Ablative Armor",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/ablative-armor.webp",
   "system": {
     "modType": "armor",
     "rating": 1,

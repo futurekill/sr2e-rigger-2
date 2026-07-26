@@ -2,7 +2,7 @@
   "_id": "ac65b5ab5f32ed6b",
   "name": "Mechanical Arms",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/mechanical-arms.webp",
   "system": {
     "modType": "accessory",
     "rating": 0,

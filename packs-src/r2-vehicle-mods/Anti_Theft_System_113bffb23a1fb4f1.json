@@ -2,7 +2,7 @@
   "_id": "113bffb23a1fb4f1",
   "name": "Anti-Theft System",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/anti-theft-system.webp",
   "system": {
     "modType": "accessory",
     "rating": 1,

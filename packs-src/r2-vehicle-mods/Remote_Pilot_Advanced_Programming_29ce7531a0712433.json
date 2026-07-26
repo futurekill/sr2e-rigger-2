@@ -2,7 +2,7 @@
   "_id": "29ce7531a0712433",
   "name": "Remote Pilot Advanced Programming",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/remote-pilot-advanced-programming.webp",
   "system": {
     "modType": "control",
     "rating": 1,

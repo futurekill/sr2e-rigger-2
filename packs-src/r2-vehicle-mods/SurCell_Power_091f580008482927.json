@@ -2,7 +2,7 @@
   "_id": "091f580008482927",
   "name": "SurCell Power",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/surcell-power.webp",
   "system": {
     "modType": "engine",
     "rating": 0,

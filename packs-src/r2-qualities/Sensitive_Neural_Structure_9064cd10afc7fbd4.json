@@ -2,7 +2,7 @@
   "_id": "9064cd10afc7fbd4",
   "name": "Sensitive Neural Structure",
   "type": "quality",
-  "img": "icons/svg/downgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/quality/sensitive-neural-structure.webp",
   "system": {
     "kind": "flaw",
     "category": "mental",

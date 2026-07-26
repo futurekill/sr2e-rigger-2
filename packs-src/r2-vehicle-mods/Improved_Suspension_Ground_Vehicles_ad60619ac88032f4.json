@@ -2,7 +2,7 @@
   "_id": "ad60619ac88032f4",
   "name": "Improved Suspension (Ground Vehicles)",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/improved-suspension-ground-vehicles.webp",
   "system": {
     "modType": "handling",
     "rating": 0,

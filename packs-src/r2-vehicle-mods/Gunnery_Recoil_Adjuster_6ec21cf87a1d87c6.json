@@ -2,7 +2,7 @@
   "_id": "6ec21cf87a1d87c6",
   "name": "Gunnery Recoil Adjuster",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/gunnery-recoil-adjuster.webp",
   "system": {
     "modType": "weapon",
     "rating": 1,

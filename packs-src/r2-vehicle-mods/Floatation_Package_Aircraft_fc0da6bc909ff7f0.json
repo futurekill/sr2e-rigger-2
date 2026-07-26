@@ -2,7 +2,7 @@
   "_id": "fc0da6bc909ff7f0",
   "name": "Floatation Package (Aircraft)",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/floatation-package-aircraft.webp",
   "system": {
     "modType": "accessory",
     "rating": 0,

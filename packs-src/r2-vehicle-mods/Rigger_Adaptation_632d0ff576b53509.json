@@ -2,7 +2,7 @@
   "_id": "632d0ff576b53509",
   "name": "Rigger Adaptation",
   "type": "vehicle_mod",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/rigger-adaptation.webp",
   "system": {
     "modType": "control",
     "rating": 0,
