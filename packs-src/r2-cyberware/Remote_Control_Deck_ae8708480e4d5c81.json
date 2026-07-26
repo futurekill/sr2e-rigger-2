@@ -2,7 +2,7 @@
   "_id": "ae8708480e4d5c81",
   "name": "Remote Control Deck",
   "type": "cyberware",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/cyberware/remote-control-deck.webp",
   "system": {
     "location": "headware",
     "grade": "standard",

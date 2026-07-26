@@ -21,3 +21,6 @@ _work/
 # tree with no content change. packs-src/ is the source; the release workflow
 # rebuilds packs/ from it.
 packs/
+
+# Scratch area for image-generation review/alpha checks.
+tmp/

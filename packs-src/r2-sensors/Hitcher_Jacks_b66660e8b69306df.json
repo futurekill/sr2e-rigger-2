@@ -2,7 +2,7 @@
   "_id": "b66660e8b69306df",
   "name": "Hitcher Jacks",
   "type": "gear",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/gear/hitcher-jacks.webp",
   "system": {
     "category": "electronics",
     "rating": 1,

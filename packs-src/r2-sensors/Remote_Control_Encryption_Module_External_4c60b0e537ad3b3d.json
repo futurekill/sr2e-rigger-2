@@ -2,7 +2,7 @@
   "_id": "4c60b0e537ad3b3d",
   "name": "Remote Control Encryption Module (External)",
   "type": "gear",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/gear/remote-control-encryption-module-external.webp",
   "system": {
     "category": "electronics",
     "rating": 1,

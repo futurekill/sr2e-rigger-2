@@ -2,7 +2,7 @@
   "_id": "4b5b045f8e6a960d",
   "name": "Remote Control ECCM",
   "type": "cyberware",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/cyberware/remote-control-eccm.webp",
   "system": {
     "location": "headware",
     "grade": "standard",

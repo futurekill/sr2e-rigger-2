@@ -2,7 +2,7 @@
   "_id": "ad5a3fa135029d67",
   "name": "TAPS Sharpshooter Autosoft",
   "type": "gear",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/gear/taps-sharpshooter-autosoft.webp",
   "system": {
     "category": "autosoft",
     "rating": 1,

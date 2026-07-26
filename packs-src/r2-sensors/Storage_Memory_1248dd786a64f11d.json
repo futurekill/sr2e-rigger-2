@@ -2,7 +2,7 @@
   "_id": "1248dd786a64f11d",
   "name": "Storage Memory",
   "type": "gear",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/gear/storage-memory.webp",
   "system": {
     "category": "electronics",
     "rating": 0,

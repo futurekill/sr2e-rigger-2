@@ -2,7 +2,7 @@
   "_id": "2d039bdb56fa1648",
   "name": "Snake-Eyes Remote Interface Link",
   "type": "cyberware",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/cyberware/snake-eyes-remote-interface-link.webp",
   "system": {
     "location": "headware",
     "grade": "standard",
