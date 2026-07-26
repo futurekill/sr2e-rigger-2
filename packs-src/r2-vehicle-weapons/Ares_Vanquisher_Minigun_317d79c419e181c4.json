@@ -2,7 +2,7 @@
   "_id": "317d79c419e181c4",
   "name": "Ares Vanquisher Minigun",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/ares-vanquisher-minigun.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",

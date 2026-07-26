@@ -2,7 +2,7 @@
   "_id": "6cf92e912b470915",
   "name": "RASCAM (Rocket-Assisted Smart Mines)",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/rascam-rocket-assisted-smart-mines.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",

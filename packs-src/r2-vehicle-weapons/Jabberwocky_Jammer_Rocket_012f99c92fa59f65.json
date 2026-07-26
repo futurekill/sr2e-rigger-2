@@ -2,7 +2,7 @@
   "_id": "012f99c92fa59f65",
   "name": "Jabberwocky Jammer Rocket",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/jabberwocky-jammer-rocket.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",

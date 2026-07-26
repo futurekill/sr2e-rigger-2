@@ -2,7 +2,7 @@
   "_id": "be3049e5662d827d",
   "name": "Vogeljäger Missile",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/vogeljager-missile.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",

@@ -2,7 +2,7 @@
   "_id": "20702711c30fefd9",
   "name": "Ares Vigilant Autocannon",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/ares-vigilant-autocannon.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",

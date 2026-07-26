@@ -2,7 +2,7 @@
   "_id": "31ae1ee0bbeff7ee",
   "name": "Man-Portable Missile Launcher",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/man-portable-missile-launcher.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",

@@ -2,7 +2,7 @@
   "_id": "cc2ffcfeb497845d",
   "name": "Outlaw Missile (Block IA, DP-ICM)",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/outlaw-missile-block-ia-dp-icm.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",

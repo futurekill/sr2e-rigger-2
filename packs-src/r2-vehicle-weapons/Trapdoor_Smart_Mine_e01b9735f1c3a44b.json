@@ -2,7 +2,7 @@
   "_id": "e01b9735f1c3a44b",
   "name": "Trapdoor Smart Mine",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/trapdoor-smart-mine.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",

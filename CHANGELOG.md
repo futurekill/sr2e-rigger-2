@@ -1,5 +1,18 @@
 # Changelog
 
+## Unreleased
+
+## 0.2.0 — 2026-07-26
+
+### Added
+- **Art for all 21 vehicles and drones, plus the 16 vehicle weapons.** The drones
+  get 1024×1024 **top-down tokens with transparent backgrounds** so they read on a
+  battle map — Wolfhound walker, Kanmushi crawler, Arachnoid mini-drone, the
+  Roto-Drone and the rest. The weapons and ordnance get 256×256 icons, with the
+  missiles and rockets distinguishable by nose, fins and banding rather than all
+  looking alike. *The vehicle mods, gear, cyberware and qualities are still on
+  stock icons and follow in the next release.*
+
 ## 0.2.2
 
 ### Fixes

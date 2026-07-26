@@ -8,7 +8,8 @@
     "build-packs": "node tools/build-packs.mjs",
     "extract-packs": "node tools/extract-packs.mjs",
     "validate": "node tools/validate-packs.mjs",
-    "sync-design-data": "cp tools/data/chassis.json tools/data/powerplants.json data/"
+    "sync-design-data": "cp tools/data/chassis.json tools/data/powerplants.json data/",
+    "art": "node tools/set-art.mjs"
   },
   "devDependencies": {
     "classic-level": "^3.0.0"

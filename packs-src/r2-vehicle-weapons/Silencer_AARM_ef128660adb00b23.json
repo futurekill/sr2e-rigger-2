@@ -2,7 +2,7 @@
   "_id": "ef128660adb00b23",
   "name": "Silencer AARM",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/silencer-aarm.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",

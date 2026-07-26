@@ -2,7 +2,7 @@
   "_id": "d998123df2320b4e",
   "name": "Outlaw Missile (Block II)",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/outlaw-missile-block-ii.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",

@@ -2,7 +2,7 @@
   "_id": "4c1e683238c1e2ae",
   "name": "Zapper Static-Discharge Rocket",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/zapper-static-discharge-rocket.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",

@@ -2,7 +2,7 @@
   "_id": "5872980ce5d219f6",
   "name": "Jabberwocky Jammer Missile",
   "type": "weapon",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/jabberwocky-jammer-missile.webp",
   "system": {
     "weaponType": "heavy",
     "skill": "gunnery",
