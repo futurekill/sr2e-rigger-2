@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-## 0.2.0 — 2026-07-26
+## 0.3.0 — 2026-07-26
 
 ### Added
 - **Art for all 21 vehicles and drones, plus the 16 vehicle weapons.** The drones
