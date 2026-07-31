@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.5.0 — 2026-07-28
+
+### Fixed
+- **Drone art rendered small, and drones drove backwards.** Three things, all
+  the same defects just fixed in the core system and the Rigger Black Book:
+  - The portraits were square 1024x1024 canvases that were mostly empty air
+    (median 66% used, the Kanmushi crawler 34%), and Foundry's `contain` scales
+    the whole canvas — so each drone rendered well under its own footprint.
+    All 21 are trimmed to the drone.
+  - Every drone shipped at **1x1**, which on a 1 m grid makes a cargo drone the
+    size of a dinner plate. Footprints now come from Body, matching the rule the
+    core system and Black Book use, with length from the trimmed art.
+  - Art pointed **nose-up**, but Foundry's token rotation 0 faces **south**, so
+    moving a drone rotated it to face backwards. All 21 now point south.
+- **`lockRotation` was never set**, so drones did not turn to face travel at all.
+  Now false, as vehicles should be.
+- **The generator would have wiped the art.** `gen-vehicles.mjs` fell back to a
+  placeholder icon, so re-running it would silently un-wire every portrait — the
+  exact regression that hit the Black Book at its 0.5.0. It now derives the art
+  path itself and reports anything missing.
+
+Requires sr2e >= 0.75.1.
+
 ## Unreleased
 
 ## 0.3.0 — 2026-07-26

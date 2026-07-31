@@ -2,16 +2,73 @@
 // "vehicle"). Stats from the New Toys "Drones and Robots" stat blocks (book
 // p.100-101, verified against the page renders). Descriptions are original
 // one-liners — no book prose. Re-run, then `npm run build-packs r2-vehicles`.
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 
 const DIR = "packs-src/r2-vehicles";
 mkdirSync(DIR, { recursive: true });
 const idFor = (s) => createHash("sha1").update("r2-vehicle:" + s).digest("hex").slice(0, 16);
 
+// This generator OVERWRITES packs-src wholesale, so anything it does not emit is
+// destroyed on re-run. `img` used to fall back to a placeholder icon, which
+// means a regeneration would silently un-wire every portrait `npm run art` had
+// set — exactly what happened to the Rigger Black Book at its 0.5.0. So the art
+// path is derived here, using the same slug rule as tools/set-art.mjs.
+const MODULE_ID = JSON.parse(readFileSync("module.json", "utf8")).id;
+const slugify = (name) => name
+  .toLowerCase()
+  .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  .replace(/[\u0027\u2019]/g, "")
+  .replace(/[^a-z0-9]+/g, "-")
+  .replace(/^-+|-+$/g, "");
+
+const missingArt = [];
+function artFor(name) {
+  const rel = `assets/vehicle_portraits/${slugify(name)}.webp`;
+  if (!existsSync(rel)) { missingArt.push(`${name} -> ${rel}`); return null; }
+  return `modules/${MODULE_ID}/${rel}`;
+}
+
+/** Canvas size from the WebP header — no ImageMagick dependency at generate time. */
+function webpSize(rel) {
+  const b = readFileSync(rel);
+  if (b.toString("ascii", 0, 4) !== "RIFF" || b.toString("ascii", 8, 12) !== "WEBP") return null;
+  switch (b.toString("ascii", 12, 16)) {
+    case "VP8X": return { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) };
+    case "VP8 ": return { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff };
+    default: return null;
+  }
+}
+
+/**
+ * Token footprint in grid squares. Scenes are 1 m per square, so these are
+ * metres. Everything shipped 1x1, which makes a cargo drone the size of a
+ * dinner plate; width comes from Body, matching the rule the core system and
+ * the Rigger Black Book use, and the length follows the (trimmed) art's aspect.
+ */
+function tokenSize(v, rel) {
+  const b = v.body ?? 0;
+  const type = v.vtype ?? "drone";
+  let w;
+  switch (type) {
+    case "drone":      w = b <= 2 ? 1 : b <= 4 ? 2 : 3; break;
+    case "ground":     w = b <= 4 ? 2 : b <= 6 ? 3 : 4; break;
+    case "rotor":      w = b <= 3 ? 8 : 12; break;
+    case "aircraft":   w = 8; break;
+    default:           w = b <= 2 ? 1 : 2;
+  }
+  const size = rel ? webpSize(rel.replace(/^modules\/[^/]+\//, "")) : null;
+  const h = size ? Math.max(1, Math.round(w * (size.h / size.w))) : w;
+  // Whole squares are a coarse ruler for a small drone, so only stretch when the
+  // box really matches the art; otherwise letterbox rather than distort.
+  const err = size ? Math.abs((size.w / size.h) - (w / h)) / (size.w / size.h) : 1;
+  return { width: w, height: h, fit: err <= 0.08 ? "fill" : "contain" };
+}
+
 function vehicle(v) {
   const _id = idFor(v.name);
-  const img = v.img ?? "icons/svg/explosion.svg";
+  const img = v.img ?? artFor(v.name) ?? "icons/svg/explosion.svg";
+  const { width, height, fit } = tokenSize(v, img.startsWith("modules/") ? img : null);
   return {
     _id, name: v.name, type: "vehicle", img,
     system: {
@@ -27,9 +84,10 @@ function vehicle(v) {
     items: [], effects: [], folder: null, sort: 0, flags: {},
     _stats: { coreVersion: "13.351", systemId: "sr2e", systemVersion: "0.0.1", createdTime: 1781600000000, modifiedTime: 1781600000000, lastModifiedBy: null, compendiumSource: null, duplicateSource: null, exportSource: null },
     prototypeToken: {
-      name: v.name, displayName: 0, actorLink: false, width: 1, height: 1,
-      texture: { src: img, anchorX: 0.5, anchorY: 0.5, scaleX: 1, scaleY: 1, fit: "contain", tint: "#ffffff" },
-      disposition: 0, displayBars: 0
+      name: v.name, displayName: 0, actorLink: false, width, height,
+      texture: { src: img, anchorX: 0.5, anchorY: 0.5, scaleX: 1, scaleY: 1, fit, tint: "#ffffff" },
+      // A drone token turns to face where it flies; the art points south.
+      lockRotation: false, disposition: 0, displayBars: 0
     },
     ownership: { default: 0 }, _key: `!actors!${_id}`
   };
@@ -88,3 +146,10 @@ for (const v of VEHICLES) {
   n++;
 }
 console.log(`wrote ${n} vehicles/drones`);
+
+if (missingArt.length) {
+  console.log(`\n⚠ ${missingArt.length} vehicle(s) fell back to the placeholder icon — no art file:`);
+  for (const m of missingArt) console.log(`   ${m}`);
+} else {
+  console.log("all wired to their portrait");
+}

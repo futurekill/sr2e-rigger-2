@@ -46,8 +46,8 @@
     "name": "Aeroquip Redball Express",
     "displayName": 0,
     "actorLink": false,
-    "width": 1,
-    "height": 1,
+    "width": 2,
+    "height": 2,
     "texture": {
       "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/aeroquip-redball-express.webp",
       "anchorX": 0.5,
@@ -57,9 +57,9 @@
       "fit": "contain",
       "tint": "#ffffff"
     },
+    "lockRotation": false,
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "ownership": {
     "default": 0

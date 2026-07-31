@@ -54,12 +54,12 @@
       "anchorY": 0.5,
       "scaleX": 1,
       "scaleY": 1,
-      "fit": "contain",
+      "fit": "fill",
       "tint": "#ffffff"
     },
+    "lockRotation": false,
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "ownership": {
     "default": 0
