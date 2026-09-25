@@ -20,7 +20,7 @@
  *
  * Requires ImageMagick (`magick`), same as the other art tooling.
  */
-import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { join } from "node:path";
 

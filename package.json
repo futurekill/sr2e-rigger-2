@@ -9,9 +9,13 @@
     "extract-packs": "node tools/extract-packs.mjs",
     "validate": "node tools/validate-packs.mjs",
     "sync-design-data": "cp tools/data/chassis.json tools/data/powerplants.json data/",
-    "art": "node tools/set-art.mjs"
+    "art": "node tools/set-art.mjs",
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "classic-level": "^3.0.0"
+    "@eslint/js": "^9.39.5",
+    "classic-level": "^3.0.0",
+    "eslint": "^9.39.5",
+    "globals": "^17.12.0"
   }
 }
