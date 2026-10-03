@@ -1,35 +1,53 @@
 # Shadowrun 2E: Rigger 2
 
-A FoundryVTT **content module** that adds material from *Rigger 2* (FASA 7906) —
-vehicles & drones, vehicle modifications, vehicle weapons, rigger cyberware, and
-sensors — as compendia for the [Shadowrun 2nd Edition system](../sr2e-foundryvtt)
-(`sr2e`).
+A Foundry VTT V13 module bringing *Rigger 2* (FASA 7906) to the [Shadowrun 2nd Edition system](https://github.com/futurekill/sr2e-foundryvtt) (`sr2e`). Vehicles and drones, vehicle modifications, vehicle weapons, rigger cyberware and electronics, edges and flaws, and the Mechanic contact.
 
-It **requires** the `sr2e` system (declared in `module.json`) and is enabled
-per-world. Entirely separate from the system: its own repo, its own packs, no
-shared code — it just builds content against the system's item/actor types.
+## Contents
 
-## Status
-**Released — v0.1.0.** Content complete: **133 items across 7 packs** — vehicles &
-drones (21), vehicle mods (66), vehicle weapons (16), rigger electronics (14),
-cyberware (10), edges & flaws (5), and the Mechanic contact (1) — every value
-verified against the book. Adds the system's `quality` (Edge/Flaw) item type.
-Batched by category; see `docs/RIGGER2-PLAN.md`.
+| Pack | Contents |
+|---|---|
+| R2 Vehicles & Drones | 21 actors |
+| R2 Vehicle Mods | 66 items |
+| R2 Vehicle Weapons | 16 items |
+| R2 Rigger Cyberware | 10 items |
+| R2 Rigger Electronics | 14 items |
+| R2 Edges & Flaws | 5 items |
+| R2 Contacts | 1 items |
 
-This module also powers the **vehicle design-from-scratch** feature (Rigger 2
-p.108–123): the `sr2e` system ships the vehicle-sheet **Design tab** + the
-point-buy math, and this module registers the Chassis & Power Plant tables
-(`data/` — 59 chassis, 86 power plants) into it at load. See
-`docs/DESIGN-ENGINE.md`.
+## Notes
+
+- **Vehicle design from scratch** (Rigger 2 p.108–123): the system ships the vehicle sheet's Design tab and its point-buy math; this module registers the Chassis and Power Plant tables (59 chassis, 86 power plants) into it when enabled. See `docs/DESIGN-ENGINE.md`.
+- `npm run sync-design-data` copies `tools/data/` to the shipped `data/` folder after editing the tables.
+
+## Requirements
+
+- Foundry VTT V13
+- The `sr2e` system, version 0.10.0 or later
+
+## Installation
+
+In Foundry, **Add-on Modules → Install Module**, and paste this manifest URL:
+
+```
+https://github.com/futurekill/sr2e-rigger-2/releases/latest/download/module.json
+```
+
+Then enable it in your world (**Game Settings → Manage Modules**).
 
 ## Development
-`packs-src/` (per-document JSON) is the source of truth; `packs/` is the LevelDB
-build (**committed** in this module). `npm run build-packs [name]` builds;
-`npm run extract-packs` pulls Foundry edits back to JSON. Close Foundry before
-rebuilding packs (LevelDB locks).
+
+`packs-src/` (one JSON file per document) is the source of truth. `packs/` is built from it, gitignored, and rebuilt by the release workflow.
+
+```bash
+npm install
+npm run build-packs     # packs-src/ JSON -> packs/ LevelDB (close Foundry first)
+npm run extract-packs   # pull edits made in Foundry back to packs-src/
+npm run validate        # pre-flight checks on the pack sources
+npm run lint
+```
+
+To release: add a `## X.Y.Z — date` section to `CHANGELOG.md` (the release notes come from it), bump `module.json`, then tag and push `vX.Y.Z`.
 
 ## Copyright
-*Rigger 2* and *Shadowrun* are © FASA / their rights holders. This module is for
-personal use at the owner's own table from a PDF they own, not for distribution.
-The `_work/` directory (OCR + page renders of the source PDF) is local-only and
-git-ignored.
+
+*Rigger 2* and *Shadowrun* are © FASA and their rights holders. This is a fan-made, non-commercial module for personal table use by owners of the book.
