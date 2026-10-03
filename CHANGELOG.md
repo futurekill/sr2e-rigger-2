@@ -1,5 +1,7 @@
 # Changelog
 
+## Unreleased
+
 ## 0.5.0 — 2026-07-28
 
 ### Fixed
@@ -23,7 +25,12 @@
 
 Requires sr2e >= 0.75.1.
 
-## Unreleased
+## 0.4.0 — 2026-07-26
+
+### Added
+- Custom art for the last 72 documents, completing the module at 133/133: 66
+  vehicle mods as bench renders of the component, the five edges and flaws as
+  emblems, and a bust for the Mechanic contact.
 
 ## 0.3.0 — 2026-07-26
 
