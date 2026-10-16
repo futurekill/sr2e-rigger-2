@@ -56,7 +56,7 @@ const WEAPONS = [
   // --- Mounted guns ---
   { name: "Ares Vengeance Minigun", dmg: "9S", mode: "FA", ammoType: "belt", wt: 30, avail: "18/28 days", cost: 50000, index: 3.5, range: "mmg", notes: "Vehicle-mounted minigun (MMG class), belt-fed full-auto. Rigger 2." },
   { name: "Ares Vanquisher Minigun", dmg: "10S", mode: "FA", ammoType: "belt", wt: 45, avail: "18/28 days", cost: 75000, index: 3.5, range: "hmg", notes: "Heavy vehicle minigun (HMG class), belt-fed full-auto. Rigger 2." },
-  { name: "Ares Vigilant Autocannon", dmg: "18D", mode: "SS/FA", ammoType: "belt", wt: 90, avail: "20/45 days", cost: 100000, index: 5, range: "autocannon", notes: "Belt-fed vehicle autocannon; single-shot or full-auto. Rigger 2." },
+  { name: "Ares Vigilant Autocannon", dmg: "18D", mode: "SS/FA", ammoType: "belt", wt: 90, avail: "20/45 days", cost: 90000, index: 5, range: "autocannon", notes: "Belt-fed vehicle autocannon; single-shot or full-auto. Rigger 2." },
   { name: "Ares Victory Autocannon", dmg: "20D", mode: "SS/FA", ammoType: "belt", wt: 105, avail: "20/45 days", cost: 125000, index: 5, range: "autocannon", notes: "Heavy belt-fed vehicle autocannon; single-shot or full-auto. Rigger 2." },
   // --- Missile launcher + missiles ---
   { name: "Man-Portable Missile Launcher", conceal: 6, dmg: "—", mode: "SS", ammo: 1, ammoType: "missile", wt: 8, avail: "18/28 days", cost: 12500, index: 4, range: "none", notes: "Shoulder-fired/hardpoint missile launcher; fires one missile per shot (load a missile below). Rigger 2 p.93." },

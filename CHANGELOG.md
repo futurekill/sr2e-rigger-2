@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+- **Ares Vigilant Autocannon** costs **90,000¥**, not 100,000¥ (p.92). Every other
+  weapon was checked against its stat table (pp.92–95) and the Weapon Ranges Table
+  (p.107) and already matched. Copies already in a world keep their old price; edit it
+  by hand if you want the book's.
+
 ## 0.5.1 — 2026-10-16
 
 ### Fixed
