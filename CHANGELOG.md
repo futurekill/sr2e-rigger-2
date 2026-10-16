@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.5.2 — 2026-10-16
 
 ### Fixed
 - **Ares Vigilant Autocannon** costs **90,000¥**, not 100,000¥ (p.92). Every other
