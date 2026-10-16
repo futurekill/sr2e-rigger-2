@@ -17,10 +17,12 @@ const modes = (s) => {
 // Range brackets store the upper bound (m) of each bracket. The autocannon,
 // zapper, and jabberwocky values are from the R2 Weapon Ranges Table (book
 // p.107). Miniguns have no R2-specific row — they fire like standard MMG/HMGs,
-// so they use a generic heavy preset. Guided munitions (missiles/mines) use no
+// so they use the core Weapon Range Table's MMG and HMG rows (core p.88). Guided
+// munitions (missiles/mines) use no
 // bracket table; their reach is set by guidance, so range is left at 0.
 const RANGE = {
-  gun:        { short: 50,  medium: 150,  long: 350,  extreme: 550 },
+  mmg:        { short: 40,  medium: 150,  long: 300,  extreme: 500 },
+  hmg:        { short: 40,  medium: 150,  long: 400,  extreme: 800 },
   autocannon: { short: 100, medium: 500,  long: 2500, extreme: 5000 },
   zapper:     { short: 70,  medium: 250,  long: 750,  extreme: 2000 },
   jabberwocky:{ short: 750, medium: 2000, long: 3500, extreme: 11000 },
@@ -52,8 +54,8 @@ function weapon(w) {
 
 const WEAPONS = [
   // --- Mounted guns ---
-  { name: "Ares Vengeance Minigun", dmg: "9S", mode: "FA", ammoType: "belt", wt: 30, avail: "18/28 days", cost: 50000, index: 3.5, range: "gun", notes: "Vehicle-mounted minigun (MMG class), belt-fed full-auto. Rigger 2." },
-  { name: "Ares Vanquisher Minigun", dmg: "10S", mode: "FA", ammoType: "belt", wt: 45, avail: "18/28 days", cost: 75000, index: 3.5, range: "gun", notes: "Heavy vehicle minigun (HMG class), belt-fed full-auto. Rigger 2." },
+  { name: "Ares Vengeance Minigun", dmg: "9S", mode: "FA", ammoType: "belt", wt: 30, avail: "18/28 days", cost: 50000, index: 3.5, range: "mmg", notes: "Vehicle-mounted minigun (MMG class), belt-fed full-auto. Rigger 2." },
+  { name: "Ares Vanquisher Minigun", dmg: "10S", mode: "FA", ammoType: "belt", wt: 45, avail: "18/28 days", cost: 75000, index: 3.5, range: "hmg", notes: "Heavy vehicle minigun (HMG class), belt-fed full-auto. Rigger 2." },
   { name: "Ares Vigilant Autocannon", dmg: "18D", mode: "SS/FA", ammoType: "belt", wt: 90, avail: "20/45 days", cost: 100000, index: 5, range: "autocannon", notes: "Belt-fed vehicle autocannon; single-shot or full-auto. Rigger 2." },
   { name: "Ares Victory Autocannon", dmg: "20D", mode: "SS/FA", ammoType: "belt", wt: 105, avail: "20/45 days", cost: 125000, index: 5, range: "autocannon", notes: "Heavy belt-fed vehicle autocannon; single-shot or full-auto. Rigger 2." },
   // --- Missile launcher + missiles ---
