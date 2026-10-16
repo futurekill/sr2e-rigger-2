@@ -1,14 +1,13 @@
 # Changelog
 
-## Unreleased
+## 0.5.1 — 2026-10-16
 
 ### Fixed
 - **The two miniguns had invented range brackets** (50/150/350/550 m, "a generic heavy
   preset"). Rigger 2's own Weapon Ranges Table (p.107) covers only the autocannons,
   Zapper and Jabberwocky, so they use the core Weapon Range Table (p.88): the Ares
   Vengeance as a medium machine gun, 40/150/300/500 m, and the Ares Vanquisher as a
-  heavy one, 40/150/400/800 m. Copies already on vehicles keep the old brackets; mount
-  the weapon again.
+  heavy one, 40/150/400/800 m. With sr2e 0.104.2 or later, copies already in your world's vehicles are corrected automatically when it loads (unless you edited the range by hand).
 
 ## 0.5.0 — 2026-07-28
 
