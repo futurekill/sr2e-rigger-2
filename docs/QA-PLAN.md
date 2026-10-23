@@ -122,3 +122,6 @@ These catch the cheap mistakes before opening Foundry. Run from the repo root.
 - [ ] §2 spot-checks pass for every pack.
 - [ ] Remaining `NEEDS-CAPTURE` items are either fixed or knowingly accepted as
       placeholders for the release (and noted in the release notes).
+
+## Implants arrive installed (2026-10-23)
+- [ ] In play (not character creation), drag one of this module's cyberware items onto a character: the Buy dialog shows the **Cybersurgery** section and Essence drops once it's bought.

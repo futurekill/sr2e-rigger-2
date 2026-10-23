@@ -19,7 +19,7 @@ function cyber(c) {
       location: c.location ?? "headware", grade: "standard",
       essenceCost: c.ess ?? 0, rating: c.rating ?? 0,
       cost: c.cost ?? 0, availability: c.avail ?? "", streetIndex: String(c.index ?? ""),
-      legality: c.legality ?? "Restricted", installed: false, combatTnMod: 0, isVcr: false,
+      legality: c.legality ?? "Restricted", installed: true   /* bought implants arrive installed (sr2e cybersurgery); a spare is unticked */, combatTnMod: 0, isVcr: false,
       attributeMods: { ...ZERO },
       notes: c.notes ?? ""
     },

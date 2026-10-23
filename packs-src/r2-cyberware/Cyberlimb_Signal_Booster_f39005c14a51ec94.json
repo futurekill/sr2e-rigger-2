@@ -12,7 +12,7 @@
     "availability": "6/72 hrs",
     "streetIndex": "1.5",
     "legality": "Restricted",
-    "installed": false,
+    "installed": true,
     "combatTnMod": 0,
     "isVcr": false,
     "attributeMods": {
