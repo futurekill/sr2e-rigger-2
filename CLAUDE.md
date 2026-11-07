@@ -48,8 +48,9 @@ packs (LevelDB locks).
 - **Vehicle design data** (system docs/PLAN-vehicle-builder.md): `tools/data/design-*.json` (Chassis / Power Plant /
   Fuel / Mark-Up tables; the power plants are GENERATED from `tools/transcribe/power-plants.py`) and the mods'
   `DESIGN` map in `tools/gen-vehicle-mods.mjs` are the single sources, checked as in `docs/DESIGN-DATA-CHECK.md`.
-  `npm run sync-design-data` copies them to `data/` (what ships); `npm run validate` fails if they drift. The old
-  `chassis.json` / `powerplants.json` feed only the legacy Design tab until the Workshop replaces it.
+  `npm run sync-design-data` copies them to `data/` (what ships); `npm run validate` fails if they drift.
+  `scripts/register-design-data.mjs` registers them for the system's Vehicle Workshop (system 0.143.0). Mods that
+  change stats in design carry `effects` formulas (DESIGN map; the validator checks keys and syntax).
 
 ## Build workflow
 `packs-src/` (per-document JSON) is the source of truth; `packs/` is the LevelDB

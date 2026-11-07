@@ -1,3 +1,6 @@
+> **Superseded (2026-11-07).** This was the plan for the old Design tab. The vehicle builder is now the system's
+> Vehicle Workshop (system docs/PLAN-vehicle-builder.md); the data is checked as in docs/DESIGN-DATA-CHECK.md.
+
 # Vehicle Design-from-Scratch Engine — Spec & Plan
 
 Implements *Rigger 2*'s Vehicle Design rules (book p.108–123) as a working

@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.6.1 — 2026-11-07
+
+Needs the SR2E system 0.143.0 or later (its Vehicle Workshop).
+
+### Added
+- **Modifications change a vehicle's stats in design** as Rigger 2 prints (p.122–145): turbocharging, drive-by-wire,
+  improved suspension and control surfaces, off-road suspension, standard/concealed armor, thermal baffles, RAM,
+  turrets, aircraft floats and sidecars. Ablative armor adds 2 × its level to Armor, at most the vehicle's Body (p.127).
+
+### Removed
+- The old Design tab's tables (`chassis.json`, `powerplants.json`); the Workshop uses the checked tables only.
+
 ## 0.6.0 — 2026-11-07
 
 Needs the SR2E system 0.142.1 or later (its vehicle design engine).

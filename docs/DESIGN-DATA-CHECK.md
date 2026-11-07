@@ -2,8 +2,7 @@
 
 The vehicle builder's tables (`tools/data/design-chassis.json`, `design-powerplants.json`, `design-rules.json`) were
 re-transcribed on 2026-11-07 for the vehicle-builder overhaul (system `docs/PLAN-vehicle-builder.md`, release 2).
-They replace the old `chassis.json` / `powerplants.json` for the new design engine; the old files stay only for the
-legacy Design tab until the Workshop replaces it.
+They replaced the old `chassis.json` / `powerplants.json`, which were deleted in module 0.6.1 with the old Design tab.
 
 ## Method
 1. Each table page rendered at 200 dpi (Rigger 2 PDF page = book page + 9), split into halves.
@@ -73,3 +72,14 @@ Nitrous 1.5 CF / 15 kg (old none); ECM/ECCM/Sensors weights (old none).
 ### Read but kept as the book prints, with a note
 - **Smart Armor System** Load: "Body × 50 kg per Armor Point" (SAS has no Armor Points of its own); counted once.
 - **Folding Bench Seat**: no design Load printed; uses the standard bench seat's 150 kg.
+
+## Stat effects in design (module 0.6.1; book p.122–145)
+Read from the rendered pages and stored as `effects` formulas in the `DESIGN` map: turbocharging (+15 Speed, +10
+Acceleration, −1 Signature, Economy ×0.95 per level; p.122), drive-by-wire (−1 Handling per level; the one-time +10%
+is the system's; p.124), improved control surfaces / suspension (−1 Handling per level; bikes both tracks; p.125),
+off-road suspension (off-road −1 / on-road +1 per level, Speed −15, Economy ×1.15 cars, ×1.30 bikes, ×1.40 transports;
+p.125), standard and concealed armor (+1 Armor per level; the system adds +1 Handling per 6; p.127), ablative armor
+(2 × level, at most Body; p.127), thermal baffles and RAM (+1 Signature per level; p.130), turrets and anti-aircraft
+turrets (−1 Signature; pop-up turrets don't while concealed; p.134), aircraft floats (Speed ×0.5, Economy ×1.20;
+helicopters Speed ×0.9 rounded down; p.144), sidecars (+4/8/12 CF, Handling +1/+1/+2, Speed −15, Economy ×0.9;
+p.145). Active thermal masking works only while running (p.130), so it has no design effect.

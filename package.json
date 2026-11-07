@@ -8,7 +8,7 @@
     "build-packs": "node tools/build-packs.mjs",
     "extract-packs": "node tools/extract-packs.mjs",
     "validate": "node tools/validate-packs.mjs",
-    "sync-design-data": "python3 tools/transcribe/power-plants.py tools/data/design-powerplants.json && cp tools/data/chassis.json tools/data/powerplants.json tools/data/design-chassis.json tools/data/design-powerplants.json tools/data/design-rules.json data/",
+    "sync-design-data": "python3 tools/transcribe/power-plants.py tools/data/design-powerplants.json && cp tools/data/design-chassis.json tools/data/design-powerplants.json tools/data/design-rules.json data/",
     "art": "node tools/set-art.mjs",
     "lint": "eslint ."
   },
