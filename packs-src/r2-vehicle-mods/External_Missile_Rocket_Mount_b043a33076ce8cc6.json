@@ -25,6 +25,7 @@
     "modKey": "",
     "maxRating": "",
     "restrictions": [],
+    "effects": {},
     "installed": false,
     "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)"
   },

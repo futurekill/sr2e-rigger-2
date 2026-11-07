@@ -28,6 +28,10 @@
       "only:bike,car",
       "notWith:drive-by-wire"
     ],
+    "effects": {
+      "handling": "-R",
+      "handlingOff@bike": "-R"
+    },
     "installed": false,
     "notes": "Upgraded suspension that improves on-road Handling (ground vehicles only). Parts cost = vehicle's original cost × 1.10 per 1-point Handling improvement; max −2 Handling; Avail 6/12 days; Street Index 2; Base Time (increment × 40) hrs. Rigger 2 p.125. (Design specifications p.125.)"
   },

@@ -27,6 +27,14 @@
     "restrictions": [
       "only:bike,car"
     ],
+    "effects": {
+      "handling": "R",
+      "handlingOff": "-R",
+      "speed": "-15",
+      "economyMult": "1.15",
+      "economyMult@bike": "1.30",
+      "economyMult@transport": "1.40"
+    },
     "installed": false,
     "notes": "Improves off-road Handling at the expense of fuel economy and on-road Handling. Parts cost = original cost × 1.35/point (cars), × 1.20/point (motorcycles), or × 1.50/point (medium/heavy transports & tractors); max +2/−2 Handling; economy ×1.15 (cars) / ×1.30 (bikes) / ×1.40 (transports); Avail 6/12 days; Street Index 2. Rigger 2 p.125. (Design specifications p.125.)"
   },

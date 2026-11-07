@@ -28,6 +28,7 @@
       "engine:electric",
       "not:bike"
     ],
+    "effects": {},
     "installed": false,
     "notes": "Externally-mounted solar cells that feed an electric vehicle Body × 25 PF/hour on a sunny day (half in cloud, none at night/heavy overcast); not for motorcycles. Design 5 points; parts cost 500¥; Avail 3/72 hrs; Street Index 1; Base Time 8 hrs. Rigger 2 p.121. (Design specifications p.121.)"
   },

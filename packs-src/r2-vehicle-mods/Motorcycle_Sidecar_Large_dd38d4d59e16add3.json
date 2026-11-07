@@ -27,6 +27,13 @@
     "restrictions": [
       "only:bike"
     ],
+    "effects": {
+      "cargo": "12",
+      "handling": "2",
+      "handlingOff": "2",
+      "speed": "-15",
+      "economyMult": "0.9"
+    },
     "installed": false,
     "notes": "A sidecar (Body = the cycle's): −15 Speed, +Handling, economy ×0.9. Sizes by cargo/Handling/cost: Small 4 CF/+1/1,000¥, Medium 8 CF/+1/2,000¥, Large 12 CF/+2/3,500¥ (seating eats the cargo CF). Mount/remove in 15 min; armor upgradeable per the standard rules. Rigger 2 p.145. (Design specifications p.145.)"
   },

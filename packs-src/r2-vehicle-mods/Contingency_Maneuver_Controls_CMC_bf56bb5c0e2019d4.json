@@ -35,6 +35,7 @@
     "modKey": "",
     "maxRating": "9",
     "restrictions": [],
+    "effects": {},
     "installed": false,
     "notes": "Redundant wiring, circuit breakers, and backup systems that let a vehicle ignore some crash damage up to the CMC Rating (deadly-level damage still applies normally). Parts cost = 2,500¥/rating (R1–3), 5,000¥/rating (R4–6); max Rating 9; Avail 6/14 days; Street Index 2; Base Time 60 hrs; load −30 kg. Rigger 2 p.124. (Design specifications p.124.)"
   },

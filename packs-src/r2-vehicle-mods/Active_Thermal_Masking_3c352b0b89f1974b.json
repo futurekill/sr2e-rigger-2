@@ -29,6 +29,7 @@
       "not:bike",
       "needsEngineCustom"
     ],
+    "effects": {},
     "installed": false,
     "notes": "A high-powered coolant system that actively absorbs engine heat; each active level masks +1 Signature but costs 15 m of Speed Rating while running. Cost = engine-customization cost × 2 for the first level, +0.25 to the multiplier per added level; max equals the engine-customization level; Avail 8/21 days; Street Index 2; load −100 kg. Rigger 2 p.130. Design: Needs engine customization; each level costs the engine customization's DP × 2, +0.25 per further level. (Design specifications p.130.)"
   },

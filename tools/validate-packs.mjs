@@ -104,6 +104,10 @@ function formulaSyntaxOk(v) {
       if (!/^(only|not|engine|notWith):[A-Za-z,-]+$|^(notDrone|needsEngineCustom|needsRemote|needsRiggerBase|notAircraftUnlessElectric)$|^minBody:\d+$/.test(t)) note(`${f}: unknown restriction "${t}"`);
     }
     if (typeof sys.designable !== "boolean") note(`${f}: designable must be true or false`);
+    for (const [k, v] of Object.entries(sys.effects ?? {})) {
+      if (!/^(handling|handlingOff|speed|acceleration|signature|armor|cargo|economyMult|speedMult)(@(bike|car|boat|fixedWing|rotor|vector|hovercraft|special|transport))?$/.test(k)) note(`${f}: unknown effect "${k}"`);
+      if (!formulaSyntaxOk(String(v))) note(`${f}: effect ${k} "${v}" isn't a valid formula`);
+    }
   }
   // The shipped copies (data/) must be the sources (tools/data/): the release excludes tools/.
   for (const f of ["design-chassis.json", "design-powerplants.json", "design-rules.json"]) {

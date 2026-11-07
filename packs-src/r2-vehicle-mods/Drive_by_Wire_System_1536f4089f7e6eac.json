@@ -27,6 +27,10 @@
     "restrictions": [
       "notWith:improved-control-surfaces,improved-suspension"
     ],
+    "effects": {
+      "handling": "-R",
+      "handlingOff": "-R"
+    },
     "installed": false,
     "notes": "Replaces mechanical linkages with computer-mediated controls (Levels 1–3), trading Handling for Acceleration/Speed. Design cost = chassis Design Point cost × 1.75 per level; max −3 Handling. Parts cost = vehicle's original cost × the level; Avail 8/16 days; Street Index 2; needs B/R, Computer & Electronics. Rigger 2 p.124. (Design specifications p.124.)"
   },
