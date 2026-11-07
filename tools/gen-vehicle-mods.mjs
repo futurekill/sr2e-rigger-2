@@ -22,6 +22,8 @@ function mod(m) {
       dpPerLevel: m.dpPerLevel ?? 0, dpTable: m.dpTable ?? [],
       cfConsumed: m.cf ?? 0, cfPerLevel: m.cfPerLevel ?? 0, cfTable: m.cfTable ?? [],
       loadReduction: m.load ?? 0, loadPerLevel: m.loadPerLevel ?? 0, loadTable: m.loadTable ?? [],
+      dpFormula: m.dpFormula ?? "", cfFormula: m.cfFormula ?? "", loadFormula: m.loadFormula ?? "",
+      designable: m.designable ?? true, designNuyen: !!m.designNuyen, mountPoints: m.mountPoints ?? 0, modKey: m.modKey ?? "",
       installed: false, notes: m.notes ?? ""
     },
     effects: [], flags: {}, folder: null, sort: 0,
@@ -170,115 +172,161 @@ const MODS = [
     notes: "Onboard auto-pilot/navigation (the Autonav Rating adds dice to standard Driving Tests, but is ignored in vehicle combat). Rating 1 collision-avoidance (the only autonav fittable to a motorcycle), 500¥/5 DP/2/96 hrs/SI 1; Rating 2 route-following on mapped terrain, 4,000¥/10 DP/3/6 days/SI 2; Rating 3 rough-terrain + GPS, 5,000¥/50 DP/4/8 days/SI 3; Rating 4 urban off-road + re-routing, 15,000¥/150 DP/6/14 days/SI 3. Install TN = 8 − Handling. Rigger 2 p.122–123." }
 ];
 
-// Design-Point cost of each mod as a design option (Rigger 2 "Design Cost",
-// book p.118-146), evaluated by the system against the mod's Rating:
-//   dpTable (by rating) | designPoints (flat base) + dpPerLevel (×rating).
-// This map is the single source of truth (it overrides any inline values).
-// "Exceptions" below depend on the build (power-plant/chassis/Body/Pilot) or are
-// metatype-specific, so they can't be a function of the mod alone — they stay 0
-// and are entered via the design's manual "Extra DP" (see DESIGN-ENGINE.md).
-const DP_RULES = {
-  // Engine
-  "SurCell Power":                  { designPoints: 5 },
-  "Nitrous Oxide Injectors":        { dpPerLevel: 55 },
-  "GridLink Power":                 { designPoints: 0 },
-  // Control
-  "Datajack Port":                  { designPoints: 25 },
-  "Rigger Adaptation":              { designPoints: 35 },
-  "Secondary Controls":             { designPoints: 35 },
-  "Contingency Maneuver Controls (CMC)": { dpTable: [35, 70, 105, 300, 375, 450, 1050, 1200, 1350] },
-  "Remote Pilot Advanced Programming":   { dpTable: [0, 50, 250, 1250, 5000] },
-  "Autonavigation System":         { dpTable: [5, 10, 50, 150] },
-  // Protective
-  "Standard Vehicle Armor":         { dpPerLevel: 50 },
-  "Concealed Vehicle Armor":        { dpPerLevel: 50 },
-  "Ablative Armor":                 { dpPerLevel: 50 },
-  "Smart Armor System (SAS)":       { designPoints: 250 },
-  "Advanced Passenger Protection System (APPS)": { dpPerLevel: 30 },
-  "Crash Cage":                     { designPoints: 40 },
-  "Life Support System":            { designPoints: 5, dpPerLevel: 1 },
-  "Roll Bars":                      { designPoints: 0 },
-  "Thermal Baffles":                { dpPerLevel: 75 },
-  "Radar-Absorbent Materials (RAM)":{ dpPerLevel: 50 },
-  // Weapon mounts
-  "Firearm Conversion Kit":         { designPoints: 1 },
-  "Fixed Weapon Mount":             { designPoints: 25 },
-  "Gunnery Recoil Adjuster":        { dpPerLevel: 10 },
-  "Pintle Mount":                   { designPoints: 1 },
-  "Ring Mount":                     { designPoints: 10 },
-  "Smartlink Integration Kit":      { designPoints: 250 },
-  "Weapon Turret":                  { designPoints: 125 },
-  "Remote Weapon Turret":           { designPoints: 100 },
-  "Vehicle Gyroscopic Stabilizer":  { dpPerLevel: 15 },
-  // Electronic
-  "Electronic Countermeasures (ECM)":          { dpTable: [250, 750, 1250, 2500, 1250, 1500, 5000, 7500, 12500, 25000] },
-  "Electronic Counter-Countermeasures (ECCM)": { dpTable: [100, 300, 500, 1000, 500, 750, 2000, 3500, 5000, 10000] },
-  "Electronic Deception (ED)":      { dpTable: [150, 400, 1000, 2500, 10000, 20000] },
-  "Electronic Counter-Deception (ECD)": { dpTable: [100, 300, 800, 3000, 8000, 20000] },
-  "Electronics Port":               { designPoints: 10 },
-  "Power Amplifier":                { dpPerLevel: 5 },
-  "Sensors (Vehicle Sensor System)":{ dpTable: [50, 150, 250, 500, 250, 300, 1000, 1500, 2500, 5000] },
-  // Miscellaneous / accessories
-  "Amphibious Operation Package":   { dpTable: [25, 80, 200] },
-  "Anti-Theft System":              { dpTable: [1, 2, 3, 16, 20, 24, 70, 80, 90, 100] },
-  "Vehicle Seats (Bench/Bucket)":   { designPoints: 0 },
-  "Ejection Bucket Seat":           { designPoints: 35 },
-  "Convertible Top (Rag-Top)":      { designPoints: 0 },
-  "Crane":                          { dpPerLevel: 2 },
-  "Motorcycle Sidecar":             { designPoints: 10 },
-  "Spotlight":                      { designPoints: 0 },
-  "Tires":                          { designPoints: 0 },
-  "Winch":                          { dpPerLevel: 1 }
+// ── Design Specifications, read from the rendered pages (book p.118–146) on 2026-11-07 and cross-checked by an
+// independent pass (docs/DESIGN-DATA-CHECK.md). The SINGLE source of truth for a mod's Design Cost, CF Consumed and
+// Load Reduction IN DESIGN. Fields (system VehicleModData): dp / dpPerLevel / dpTable (rated), dpFormula (added; over
+// R rating, B Body, P Pilot, C chassis DP, E power-plant DP, K engine-customization DP), cf / cfPerLevel / cfTable /
+// cfFormula, load / loadPerLevel / loadTable / loadFormula, designable:false (customization only), designNuyen (its ¥
+// cost is added to the design's price), mountPoints (hardpoint 2, firmpoint 1, p.131), modKey, page.
+const DESIGN = {
+  // Engine (p.120–122)
+  "Engine Customization":          { designable: false, page: "p.120", note: "In design, take it as the Engine Customization design OPTION (the Workshop's power-plant step)." },
+  "GridLink Power":                { dp: 0, page: "p.121" },
+  "Nitrous Oxide Injectors":       { dpPerLevel: 55, cf: 1.5, load: 15, page: "p.121" },
+  "SunCell Power":                 { dp: 5, page: "p.121" },
+  "Turbocharging / Superconductive Drive": { dpFormula: "E x 1.75 x R", page: "p.122" },
+  "Adjusted Controls (Dwarf)":     { dp: 25, page: "p.122" },
+  "Adjusted Controls (Troll)":     { dp: 35, page: "p.122" },
+  "Adjusted Controls (Other)":     { dp: 30, page: "p.122", note: "Normally not available as a design option (p.122)." },
+  "Autonavigation System":         { dpTable: [5, 10, 50, 150], modKey: "autonav", page: "p.123" },
+  // Control (p.124–126)
+  "Contingency Maneuver Controls (CMC)": { dpTable: [35, 70, 105, 300, 375, 450, 1050, 1200, 1350], load: 25, page: "p.124" },
+  "Datajack Port":                 { dp: 25, load: 10, page: "p.124" },
+  "Drive-by-Wire System":          { dpFormula: "C x 1.75 x R", modKey: "drive-by-wire", page: "p.124" },
+  "Improved Control Surfaces (Watercraft)": { dpFormula: "C x 1.40 x R", page: "p.125" },
+  "Improved Suspension (Ground Vehicles)":  { dpFormula: "C x 1.25 x R", page: "p.125" },
+  "Off-Road Suspension":           { dpFormula: "C x 1.50 x R", page: "p.125" },
+  "Remote-Control Interface":      { dpFormula: "25 x B", page: "p.125" },
+  "Remote Pilot Advanced Programming": { dpTable: [0, 50, 250, 1250, 5000], page: "p.126" },
+  "Rigger Adaptation":             { dp: 35, modKey: "rigger-adaptation", page: "p.126" },
+  "Secondary Controls":            { dp: 5, cf: 1, page: "p.126" },
+  // Protective (p.127–129)
+  "Standard Vehicle Armor":        { dpPerLevel: 50, loadFormula: "B x B x 5 x R", page: "p.127" },
+  "Concealed Vehicle Armor":       { dpPerLevel: 50, cfPerLevel: 2, loadFormula: "B x B x 5 x R", page: "p.127" },
+  "Ablative Armor":                { designable: false, loadFormula: "B x 100", page: "p.127" },
+  "Advanced Passenger Protection System (APPS)": { dpPerLevel: 30, page: "p.128", note: "Rating = seats." },
+  "Crash Cage":                    { dp: 40, load: 10, page: "p.128" },
+  "EnviroSeal (Gas Seal)":         { dpFormula: "B x 3", page: "p.128" },
+  "EnviroSeal (Water Seal)":       { dpFormula: "B x 10", page: "p.128" },
+  "EnviroSeal (Engine Seal)":      { dpFormula: "B x 15", page: "p.128" },
+  "EnviroSeal (Cabin Overpressurization)": { dpFormula: "B x 75", cf: 1, load: 10, page: "p.128" },
+  "Life Support System":           { dp: 5, dpPerLevel: 1, cfFormula: "R / 10", loadFormula: "R / 10 x 25", page: "p.128", note: "Rating = man-hours of support." },
+  "Roll Bars":                     { dp: 0, page: "p.129" },
+  "Smart Armor System (SAS)":      { dp: 250, cf: 2, loadFormula: "B x 50", page: "p.129", note: "Load prints as Body × 50 kg 'per Armor Point'; counted once here. Military-grade if taken in design." },
+  // Signature (p.130)
+  "Thermal Baffles":               { dpPerLevel: 75, loadFormula: "B x 50 x R", page: "p.130" },
+  "Active Thermal Masking":        { dpFormula: "K x (2 x R + 0.125 x R x (R - 1))", cf: 3, load: 100, page: "p.130", note: "Needs engine customization; each level costs the engine customization's DP × 2, +0.25 per further level." },
+  "Radar-Absorbent Materials (RAM)": { dpFormula: "R^3 x 50", page: "p.130", note: "Military-grade if taken in design." },
+  // Weapon mounts (p.131–136)
+  "Firearm Conversion Kit (Pistol)":            { dp: 1, load: 0, page: "p.131" },
+  "Firearm Conversion Kit (SMG)":               { dp: 1, load: 0.25, page: "p.131" },
+  "Firearm Conversion Kit (Rifle/Shotgun/LMG)": { dp: 2, load: 0.5, page: "p.131" },
+  "Firearm Conversion Kit (Heavy Weapon)":      { dp: 3, load: 1, page: "p.131" },
+  "Fixed Mount (External Hardpoint)":  { dp: 25, cf: 1, load: 10, mountPoints: 2, page: "p.132", note: "Plus the weapon's weight." },
+  "Fixed Mount (External Firmpoint)":  { dp: 10, cf: 0.5, load: 10, mountPoints: 1, page: "p.132", note: "Plus the weapon's weight." },
+  "Fixed Mount (Internal Hardpoint)":  { dp: 35, cf: 4, load: 10, mountPoints: 2, page: "p.132", note: "Plus the weapon's weight." },
+  "Fixed Mount (Internal Firmpoint)":  { dp: 20, cf: 3, load: 10, mountPoints: 1, page: "p.132", note: "Plus the weapon's weight." },
+  "Gunnery Recoil Adjuster":       { dpPerLevel: 10, page: "p.132" },
+  "External Missile/Rocket Mount": { designable: false, mountPoints: 1, page: "p.133" },
+  "Internal Missile/Rocket Mount": { designable: false, mountPoints: 1, page: "p.133" },
+  "Pintle Mount":                  { dp: 1, mountPoints: 1, page: "p.133" },
+  "Ring Mount":                    { dp: 10, cf: 1, load: 25, mountPoints: 2, page: "p.134", note: "16 CF as a helicopter door gun." },
+  "Smartlink Integration Kit (Level I)":  { dp: 250, page: "p.134" },
+  "Smartlink Integration Kit (Level II)": { dp: 350, page: "p.134" },
+  "Turret (Mini)":                 { dp: 125, cf: 6, load: 25, mountPoints: 2, page: "p.135" },
+  "Turret (Small)":                { dp: 250, cf: 7, load: 100, mountPoints: 4, page: "p.135" },
+  "Turret (Medium)":               { dp: 500, cf: 16, load: 1000, mountPoints: 6, page: "p.135" },
+  "Anti-Aircraft Turret (Mini)":   { dp: 187.5, cf: 7, load: 25, mountPoints: 2, page: "p.134", note: "Turret cost × 1.5, +1 CF (p.134)." },
+  "Anti-Aircraft Turret (Small)":  { dp: 375, cf: 8, load: 100, mountPoints: 4, page: "p.134", note: "Turret cost × 1.5, +1 CF (p.134)." },
+  "Anti-Aircraft Turret (Medium)": { dp: 750, cf: 17, load: 1000, mountPoints: 6, page: "p.134", note: "Turret cost × 1.5, +1 CF (p.134)." },
+  "Pop-Up Turret (Mini)":          { dp: 125, cf: 12, load: 25, mountPoints: 2, page: "p.135", note: "Double CF; weapon value 1 lower (p.135)." },
+  "Pop-Up Turret (Small)":         { dp: 250, cf: 14, load: 100, mountPoints: 4, page: "p.135", note: "Double CF; weapon value 1 lower (p.135)." },
+  "Pop-Up Turret (Medium)":        { dp: 500, cf: 32, load: 1000, mountPoints: 6, page: "p.135", note: "Double CF; weapon value 1 lower (p.135)." },
+  "Remote Turret (Micro)":         { dp: 100, cf: 0, load: 10, mountPoints: 1, page: "p.135" },
+  "Remote Turret (Mini)":          { dp: 175, cf: 3, load: 25, mountPoints: 2, page: "p.135" },
+  "Remote Turret (Small)":         { dp: 350, cf: 4, load: 100, mountPoints: 4, page: "p.135" },
+  "Remote Turret (Medium)":        { dp: 600, cf: 4, load: 1000, mountPoints: 6, page: "p.135" },
+  "Vehicle Gyroscopic Stabilizer": { dpPerLevel: 15, cf: 1, loadFormula: "R + 24", page: "p.136" },
+  "BattleTac FDDM Receiver Module": { dpFormula: "P x 350", page: "p.136" },
+  "BattleTac IVIS Receiver Module": { dpFormula: "P x 250", page: "p.136" },
+  // Electronic (p.137–140): the tables' DESIGN CF column
+  "Electronic Countermeasures (ECM)":          { dpTable: [250, 750, 1250, 2500, 1250, 1500, 5000, 7500, 12500, 25000], cfTable: [0, 1, 2, 3, 2, 4, 6, 10, 12, 16], loadTable: [12, 25, 35, 50, 35, 75, 110, 150, 200, 250], page: "p.137" },
+  "Electronic Counter-Countermeasures (ECCM)": { dpTable: [100, 300, 500, 1000, 500, 750, 2000, 3500, 5000, 10000], cfTable: [0, 1, 2, 3, 2, 4, 6, 10, 12, 16], loadTable: [12, 25, 35, 50, 35, 75, 110, 150, 200, 250], page: "p.138" },
+  "Electronic Deception (ED)":     { dpTable: [150, 400, 1000, 2500, 10000, 20000], cfTable: [2, 4, 6, 4, 6, 8], loadTable: [35, 45, 60, 45, 60, 110], page: "p.138" },
+  "Electronic Counter-Deception (ECD)": { dpTable: [100, 300, 800, 3000, 8000, 20000], cfTable: [2, 4, 6, 4, 6, 8], loadTable: [35, 45, 60, 45, 60, 110], page: "p.139" },
+  "Electronics Port":              { dp: 10, cfPerLevel: 0.5, page: "p.139", note: "Rating = tenths of a cubic meter of equipment (0.5 CF each); add the equipment's weight and cost." },
+  "Power Amplifier":               { dpPerLevel: 5, cfFormula: "floor(0.25 x R)", loadPerLevel: 1, page: "p.139" },
+  "Sensors (Vehicle Sensor System)": { dpTable: [50, 150, 250, 500, 250, 300, 1000, 1500, 2500, 5000], cfTable: [0, 1, 2, 3, 2, 4, 6, 10, 12, 16], loadTable: [12, 25, 35, 50, 35, 75, 110, 150, 200, 250], page: "p.140" },
+  // Accessories (p.140–146)
+  "Aircraft Drop Tanks":           { designable: false, page: "p.140" },
+  "Amphibious Operation Package (Level 1)": { dp: 25, page: "p.140" },
+  "Amphibious Operation Package (Level 2)": { dp: 80, page: "p.140" },
+  "Amphibious Operation Package (Level 3)": { dp: 200, cf: 2, page: "p.141" },
+  "Anti-Theft System":             { dpTable: [1, 2, 3, 16, 20, 24, 70, 80, 90, 500], page: "p.141" },
+  "Anti-Theft Shock System":       { dp: 20, page: "p.141" },
+  "Bench Seat":                    { dp: 0, cf: 6, load: 150, page: "p.143" },
+  "Folding Bench Seat":            { dp: 0, cf: 6, load: 150, page: "p.143", note: "Design load not printed; the standard bench seat's 150 kg." },
+  "Reinforced Bench Seat":         { dp: 5, cf: 8, load: 300, page: "p.143" },
+  "Bucket Seat":                   { dp: 0, cf: 6, load: 150, page: "p.143" },
+  "Reinforced Bucket Seat":        { dp: 5, cf: 8, load: 250, page: "p.143" },
+  "Ejection Bucket Seat":          { dp: 35, cf: 6, load: 100, page: "p.142" },
+  "Reinforced Ejection Bucket Seat": { dp: 70, cf: 6, load: 250, page: "p.142" },
+  "Convertible Top (Rag-Top)":     { dp: 0, page: "p.143" },
+  "Crane":                         { dpPerLevel: 2, cf: 15, loadFormula: "B x 80", page: "p.143", note: "Rating = the crane's Load Rating in kg (Crane Capacity Table)." },
+  "Drone Rack":                    { dpFormula: "B x 12", cfPerLevel: 1, load: 45, page: "p.144", note: "Rating = the CF needed to store the drone." },
+  "External Cargo Mount":          { designable: false, page: "p.144" },
+  "Floatation Package (Aircraft)": { dpFormula: "C x 1.20", page: "p.144" },
+  "Hovercraft Water Seals":        { dpFormula: "B x 5", page: "p.145" },
+  "Mechanical Arms":               { dpFormula: "B x 250", dpTable: [8000, 16000, 24000, 40000, 50000, 60000, 70000, 80000, 90000, 100000], cf: 2, loadFormula: "(B x B + R) x 25", page: "p.145", note: "Rating = Strength enhancement points (8,000 DP each for 1–3, 10,000 each for 4+). Strength = Body² + enhancement." },
+  "Motorcycle Sidecar (Small)":    { dp: 10, page: "p.145" },
+  "Motorcycle Sidecar (Medium)":   { dp: 20, page: "p.145" },
+  "Motorcycle Sidecar (Large)":    { dp: 35, page: "p.145" },
+  "Spotlight":                     { dp: 6, page: "p.146" },
+  "Tires":                         { designNuyen: true, page: "p.146", note: "Standard tires come free; special tires' ¥ cost is added to the design's price (p.115 example)." },
+  "Winch":                         { dpPerLevel: 1, loadFormula: "B x 2.5", page: "p.146", note: "Rating = the winch's Load Rating in kg (Winch Capacity Table)." },
+  "Structural Agility":            { designable: false, page: "p.118", note: "A design OPTION (the Workshop's options step), not a mod." }
 };
-
-// CF Consumed (Cargo Factor) and Load Reduction (kg) per mod (book p.115),
-// evaluated against rating the same way as DP. Verified off the page renders;
-// EW tables use the DESIGN CF column (the "x/y" cells = design/customization).
-// Body-relative cells (armor Load = Body²×5/pt, EnviroSeal, Mechanical Arms,
-// Life Support per-man-hour) are left 0 — they depend on the build, not the mod.
-const CF_LOAD_RULES = {
-  "Electronics Port":               { cf: 0.5 },
-  "Ring Mount":                     { cf: 1, load: 25 },
-  "Concealed Vehicle Armor":        { cfPerLevel: 2 },
-  "Ablative Armor":                 { cfPerLevel: 3 },
-  "Weapon Turret":                  { cf: 8 },          // mini turret
-  "Power Amplifier":                { cfPerLevel: 0.25 },
-  "Crash Cage":                     { load: 25 },
-  "Gunnery Recoil Adjuster":        { load: 24, loadPerLevel: 1 },
-  "Vehicle Gyroscopic Stabilizer":  { load: 24, loadPerLevel: 1 },
-  "Electronic Countermeasures (ECM)":          { cfTable: [0, 1, 2, 3, 2, 4, 6, 10, 12, 16] },
-  "Electronic Counter-Countermeasures (ECCM)": { cfTable: [0, 1, 2, 3, 2, 4, 6, 10, 12, 16] },
-  "Electronic Deception (ED)":      { cfTable: [2, 4, 4, 4, 6, 8] },
-  "Electronic Counter-Deception (ECD)": { cf: 1 },
-  "Amphibious Operation Package":   { cfTable: [0, 0, 2] }
+// Items whose variants are separate entries above: the old combined item is replaced by them.
+const VARIANTS = {
+  "Adjusted Controls": ["Adjusted Controls (Dwarf)", "Adjusted Controls (Troll)", "Adjusted Controls (Other)"],
+  "EnviroSeal System": ["EnviroSeal (Gas Seal)", "EnviroSeal (Water Seal)", "EnviroSeal (Engine Seal)", "EnviroSeal (Cabin Overpressurization)"],
+  "Firearm Conversion Kit": ["Firearm Conversion Kit (Pistol)", "Firearm Conversion Kit (SMG)", "Firearm Conversion Kit (Rifle/Shotgun/LMG)", "Firearm Conversion Kit (Heavy Weapon)"],
+  "Fixed Weapon Mount": ["Fixed Mount (External Hardpoint)", "Fixed Mount (External Firmpoint)", "Fixed Mount (Internal Hardpoint)", "Fixed Mount (Internal Firmpoint)"],
+  "Smartlink Integration Kit": ["Smartlink Integration Kit (Level I)", "Smartlink Integration Kit (Level II)"],
+  "Weapon Turret": ["Turret (Mini)", "Turret (Small)", "Turret (Medium)", "Anti-Aircraft Turret (Mini)", "Anti-Aircraft Turret (Small)", "Anti-Aircraft Turret (Medium)", "Pop-Up Turret (Mini)", "Pop-Up Turret (Small)", "Pop-Up Turret (Medium)"],
+  "Remote Weapon Turret": ["Remote Turret (Micro)", "Remote Turret (Mini)", "Remote Turret (Small)", "Remote Turret (Medium)"],
+  "Amphibious Operation Package": ["Amphibious Operation Package (Level 1)", "Amphibious Operation Package (Level 2)", "Amphibious Operation Package (Level 3)"],
+  "Vehicle Seats (Bench/Bucket)": ["Bench Seat", "Folding Bench Seat", "Reinforced Bench Seat", "Bucket Seat", "Reinforced Bucket Seat"],
+  "Ejection Bucket Seat": ["Ejection Bucket Seat", "Reinforced Ejection Bucket Seat"],
+  "Motorcycle Sidecar": ["Motorcycle Sidecar (Small)", "Motorcycle Sidecar (Medium)", "Motorcycle Sidecar (Large)"],
+  "Anti-Theft System": ["Anti-Theft System", "Anti-Theft Shock System"]
 };
+// "SurCell" was a misreading of SunCell (p.121).
+for (const m of MODS) if (m.name === "SurCell Power") m.name = "SunCell Power";
+const expanded = [];
+for (const m of MODS) {
+  const vs = VARIANTS[m.name];
+  if (!vs) { expanded.push(m); continue; }
+  for (const v of vs) expanded.push({ ...m, name: v });
+}
+MODS.length = 0; MODS.push(...expanded);
+const missing = MODS.filter(m => !DESIGN[m.name]).map(m => m.name);
+if (missing.length) throw new Error(`No Design Specifications for: ${missing.join(", ")}`);
+const unused = Object.keys(DESIGN).filter(k => !MODS.some(m => m.name === k));
+if (unused.length) throw new Error(`DESIGN entries with no item: ${unused.join(", ")}`);
 
 let n = 0;
 for (const m of MODS) {
-  // Reset any inline DP fields, then apply the authoritative rule (if any).
-  m.dp = 0; m.dpPerLevel = 0; m.dpTable = [];
-  m.cf = 0; m.cfPerLevel = 0; m.cfTable = []; m.load = 0; m.loadPerLevel = 0; m.loadTable = [];
-  const rule = DP_RULES[m.name];
-  if (rule) {
-    if (rule.designPoints != null) m.dp = rule.designPoints;
-    if (rule.dpPerLevel != null) m.dpPerLevel = rule.dpPerLevel;
-    if (rule.dpTable != null) m.dpTable = rule.dpTable;
-  }
-  const cl = CF_LOAD_RULES[m.name];
-  if (cl) {
-    if (cl.cf != null) m.cf = cl.cf;
-    if (cl.cfPerLevel != null) m.cfPerLevel = cl.cfPerLevel;
-    if (cl.cfTable != null) m.cfTable = cl.cfTable;
-    if (cl.load != null) m.load = cl.load;
-    if (cl.loadPerLevel != null) m.loadPerLevel = cl.loadPerLevel;
-    if (cl.loadTable != null) m.loadTable = cl.loadTable;
-  }
-  // Rated mods default to Rating 1 (minimum) so dragging one onto a vehicle
-  // doesn't slam the maximum DP/cost — the player dials it up on the sheet.
-  // (The full rating range stays in the mod's notes.) RATED_EXCEPTIONS are rated
-  // mods whose Design Cost is a build-relative formula (no flat DP rule).
-  const RATED_EXCEPTIONS = new Set(["Drive-by-Wire System"]);
-  if (m.dpPerLevel || (m.dpTable && m.dpTable.length) || RATED_EXCEPTIONS.has(m.name)) m.rating = 1;
+  const d = DESIGN[m.name];
+  Object.assign(m, { dp: d.dp ?? 0, dpPerLevel: d.dpPerLevel ?? 0, dpTable: d.dpTable ?? [], dpFormula: d.dpFormula ?? "",
+    cf: d.cf ?? 0, cfPerLevel: d.cfPerLevel ?? 0, cfTable: d.cfTable ?? [], cfFormula: d.cfFormula ?? "",
+    load: d.load ?? 0, loadPerLevel: d.loadPerLevel ?? 0, loadTable: d.loadTable ?? [], loadFormula: d.loadFormula ?? "",
+    designable: d.designable ?? true, designNuyen: !!d.designNuyen, mountPoints: d.mountPoints ?? 0, modKey: d.modKey ?? "" });
+  if (d.note) m.notes = `${m.notes ?? ""} Design: ${d.note}`.trim();
+  if (d.page && !String(m.notes ?? "").includes(`Design specifications ${d.page}`)) m.notes = `${m.notes ?? ""} (Design specifications ${d.page}.)`.trim();
+  // Rated mods start at Rating 1 so dragging one on doesn't slam the maximum DP; R-based formulas count as rated.
+  const rated = m.dpPerLevel || m.dpTable.length || /R/.test(m.dpFormula + m.cfFormula + m.loadFormula) || m.cfPerLevel;
+  if (rated) m.rating = 1;
   const safe = m.name.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_|_$/g, "");
   writeFileSync(`${DIR}/${safe}_${idFor(m.name)}.json`, JSON.stringify(mod(m), null, 2) + "\n");
   n++;

@@ -1,13 +1,13 @@
 {
-  "_id": "3a791cfd7c2a81a5",
-  "name": "Vehicle Seats (Bench/Bucket)",
+  "_id": "dd38d4d59e16add3",
+  "name": "Motorcycle Sidecar (Large)",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/vehicle-seats-bench-bucket.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "accessory",
     "rating": 0,
-    "cost": 700,
-    "designPoints": 0,
+    "cost": 1000,
+    "designPoints": 35,
     "dpPerLevel": 0,
     "dpTable": [],
     "cfConsumed": 0,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Replacement seating. Parts cost: standard bucket 700¥, standard bench 750¥, folding bench 0¥, reinforced bench 1,500¥, reinforced bucket 1,500¥ (+100¥ per 25 kg of support over 250 kg); 6–8 CF; Avail 3/48 hrs; Street Index 1; Base Time 4 hrs. Bench-seat armor costs 1,250¥/point. Rigger 2 p.142–143."
+    "notes": "A sidecar (Body = the cycle's): −15 Speed, +Handling, economy ×0.9. Sizes by cargo/Handling/cost: Small 4 CF/+1/1,000¥, Medium 8 CF/+1/2,000¥, Large 12 CF/+2/3,500¥ (seating eats the cargo CF). Mount/remove in 15 min; armor upgradeable per the standard rules. Rigger 2 p.145. (Design specifications p.145.)"
   },
   "effects": [],
   "flags": {},
@@ -37,5 +44,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!3a791cfd7c2a81a5"
+  "_key": "!items!dd38d4d59e16add3"
 }

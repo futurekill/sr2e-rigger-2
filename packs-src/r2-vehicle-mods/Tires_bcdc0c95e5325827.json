@@ -2,7 +2,7 @@
   "_id": "bcdc0c95e5325827",
   "name": "Tires",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/tires.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "accessory",
     "rating": 0,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": true,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Replacement tires (spares take ½ Body CF). Cost each by type: Standard Body × 50¥ (halves suspension/Handling mod benefits), Performance Body × 75¥ (for improved suspension/drive-by-wire), Off-Road Body × 125¥ (required for off-road suspension), Dual-Purpose Body × 250¥ (on/off-road active suspension); Runflat = tire cost + 200¥ (5/3 armor protection). Rigger 2 p.146."
+    "notes": "Replacement tires (spares take ½ Body CF). Cost each by type: Standard Body × 50¥ (halves suspension/Handling mod benefits), Performance Body × 75¥ (for improved suspension/drive-by-wire), Off-Road Body × 125¥ (required for off-road suspension), Dual-Purpose Body × 250¥ (on/off-road active suspension); Runflat = tire cost + 200¥ (5/3 armor protection). Rigger 2 p.146. Design: Standard tires come free; special tires' ¥ cost is added to the design's price (p.115 example). (Design specifications p.146.)"
   },
   "effects": [],
   "flags": {},

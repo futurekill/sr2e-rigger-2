@@ -1,0 +1,48 @@
+{
+  "_id": "2da2bdef3e9f797f",
+  "name": "Firearm Conversion Kit (Heavy Weapon)",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "weapon",
+    "rating": 0,
+    "cost": 150,
+    "designPoints": 3,
+    "dpPerLevel": 0,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [],
+    "loadReduction": 1,
+    "loadPerLevel": 0,
+    "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
+    "installed": false,
+    "notes": "Required to mount a personal firearm on a vehicle weapon mount. Cost/availability by class: Pistol 150¥ 4/36 hrs (SI 2); SMG 150¥ 5/48 hrs (SI 2, −0.25 kg); Rifle/Shotgun/LMG 750¥ 6/72 hrs (SI 2.5, −0.5 kg); Heavy Weapons 1,000¥ 16/14 days (SI 2.5, −1 kg). Rigger 2 p.131. (Design specifications p.131.)"
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2da2bdef3e9f797f"
+}

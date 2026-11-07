@@ -1,8 +1,8 @@
 {
-  "_id": "091f580008482927",
-  "name": "SurCell Power",
+  "_id": "063180a43cf2b945",
+  "name": "SunCell Power",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/surcell-power.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "engine",
     "rating": 0,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Externally-mounted solar cells that feed an electric vehicle Body × 25 PF/hour on a sunny day (half in cloud, none at night/heavy overcast); not for motorcycles. Design 5 points; parts cost 500¥; Avail 3/72 hrs; Street Index 1; Base Time 8 hrs. Rigger 2 p.121."
+    "notes": "Externally-mounted solar cells that feed an electric vehicle Body × 25 PF/hour on a sunny day (half in cloud, none at night/heavy overcast); not for motorcycles. Design 5 points; parts cost 500¥; Avail 3/72 hrs; Street Index 1; Base Time 8 hrs. Rigger 2 p.121. (Design specifications p.121.)"
   },
   "effects": [],
   "flags": {},
@@ -37,5 +44,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!091f580008482927"
+  "_key": "!items!063180a43cf2b945"
 }

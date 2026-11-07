@@ -2,7 +2,7 @@
   "_id": "8097e5f8a6a30541",
   "name": "Electronic Counter-Deception (ECD)",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/electronic-counter-deception-ecd.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "electronics",
     "rating": 1,
@@ -17,14 +17,35 @@
       8000,
       20000
     ],
-    "cfConsumed": 1,
+    "cfConsumed": 0,
     "cfPerLevel": 0,
-    "cfTable": [],
+    "cfTable": [
+      2,
+      4,
+      6,
+      4,
+      6,
+      8
+    ],
     "loadReduction": 0,
     "loadPerLevel": 0,
-    "loadTable": [],
+    "loadTable": [
+      35,
+      45,
+      60,
+      45,
+      60,
+      110
+    ],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Reality-checking components (inertial nav, flux-density monitors) that negate enemy Electronic Deception (security/military only). Cost & weight by Level: L1 25,000¥/35 kg/SI 3, L2 80,000¥/45/SI 3.5, L3 200,000¥/60/SI 4, L4 750,000¥/60/SI 4.5, L5 2M¥/60/SI 5, L6 5M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6); Base Time 10 hrs/level. Rigger 2 p.139."
+    "notes": "Reality-checking components (inertial nav, flux-density monitors) that negate enemy Electronic Deception (security/military only). Cost & weight by Level: L1 25,000¥/35 kg/SI 3, L2 80,000¥/45/SI 3.5, L3 200,000¥/60/SI 4, L4 750,000¥/60/SI 4.5, L5 2M¥/60/SI 5, L6 5M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6); Base Time 10 hrs/level. Rigger 2 p.139. (Design specifications p.139.)"
   },
   "effects": [],
   "flags": {},

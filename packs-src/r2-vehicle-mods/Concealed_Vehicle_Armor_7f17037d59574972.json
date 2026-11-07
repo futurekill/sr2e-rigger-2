@@ -2,7 +2,7 @@
   "_id": "7f17037d59574972",
   "name": "Concealed Vehicle Armor",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/concealed-vehicle-armor.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "armor",
     "rating": 1,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "B x B x 5 x R",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Armor hidden inside the vehicle's interior/cargo space so it isn't obvious the vehicle is armored — not compatible with standard armor. Parts cost = 2,000¥ per Armor Point; 3 CF/point; load −(Body × Body × 5) kg/point; Avail 6/21 days; Street Index 3.5; Base Time (armor × 8) hrs. Rigger 2 p.127."
+    "notes": "Armor hidden inside the vehicle's interior/cargo space so it isn't obvious the vehicle is armored — not compatible with standard armor. Parts cost = 2,000¥ per Armor Point; 3 CF/point; load −(Body × Body × 5) kg/point; Avail 6/21 days; Street Index 3.5; Base Time (armor × 8) hrs. Rigger 2 p.127. (Design specifications p.127.)"
   },
   "effects": [],
   "flags": {},

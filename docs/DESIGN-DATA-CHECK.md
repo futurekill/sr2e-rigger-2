@@ -44,3 +44,32 @@ legacy Design tab until the Workshop replaces it.
 - **All-terrain Vehicle: 445 DP** (other bikes 10–30); confirmed against the user's book photo when first transcribed.
 - **Limousine: max Cargo 250 CF** (Sedan 30, Pickup 42).
 - Jet-propeller **Tilt-wing UAV (M/L): Signature blank**.
+
+## Vehicle modifications (book p.118–146)
+- Every entry's **Design Specifications** (Design Cost, Maximum, CF Consumed, Load Reduction) was transcribed twice:
+  once by Codex from the page images (pages 118–146 in three batches), once by Claude reading every page; the two
+  agreed on every design value. The one Codex slip: it marked anti-aircraft turrets customization-only, but p.134
+  allows them in design at the turret's cost × 1.5 and +1 CF.
+- They live in `tools/gen-vehicle-mods.mjs` → `DESIGN` (one entry per item, with its page), the single source of
+  truth for the generated `r2-vehicle-mods` pack. 66 items became **99**: variants with their own design values are
+  separate items (turret sizes, anti-aircraft and pop-up turrets, remote turrets, fixed-mount kinds, firearm kits,
+  seats, ejection seats, sidecars, EnviroSeal options, Smartlink I/II, amphibious levels, adjusted controls, the
+  anti-theft shock system). "SurCell" was a misreading of **SunCell** (p.121).
+- **Build-relative costs are formulas** (system VehicleModData `dpFormula`/`cfFormula`/`loadFormula` over R B P C E K):
+  Drive-by-Wire C × 1.75 × R, suspensions/control surfaces C × 1.25/1.40/1.50 × R, flotation C × 1.20, turbocharging
+  E × 1.75 × R, Remote-Control Interface 25 × B, EnviroSeal B × 3/10/15/75, drone rack B × 12, hovercraft seals
+  B × 5, mechanical arms B × 250, BattleTac P × 350 / 250, RAM R³ × 50, active thermal masking from the build's
+  engine customization, armor Load B × B × 5 per point, baffles B × 50 per point, life support per 10 man-hours.
+- **Customization only** (not in design): ablative armor, missile/rocket mounts, drop tanks, external cargo mounts;
+  engine customization and structural agility are design OPTIONS instead. Special **tires** are paid in ¥ in design.
+- **Weapon-mount points** (hardpoint 2, firmpoint 1, p.131) are recorded, so the engine holds them to the Body.
+
+### Errors in the old mod data that this fixes (examples)
+Secondary Controls 5 DP / 1 CF (old 35 DP); Crash Cage 10 kg (old 25); Gunnery Recoil Adjuster 0 kg (old 24+1/level);
+Ablative Armor customization-only (old 50 DP/level); RAM R³ × 50 (old 50/level); ED level 3 CF 6 (old 4); ECD CF by
+level 2–8 (old flat 1); anti-theft Rating 10 = 500 DP (old 100); Spotlight 6 DP (old 0); Datajack Port 10 kg and
+Nitrous 1.5 CF / 15 kg (old none); ECM/ECCM/Sensors weights (old none).
+
+### Read but kept as the book prints, with a note
+- **Smart Armor System** Load: "Body × 50 kg per Armor Point" (SAS has no Armor Points of its own); counted once.
+- **Folding Bench Seat**: no design Load printed; uses the standard bench seat's 150 kg.

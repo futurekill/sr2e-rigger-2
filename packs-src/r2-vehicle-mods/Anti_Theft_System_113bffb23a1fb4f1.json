@@ -2,7 +2,7 @@
   "_id": "113bffb23a1fb4f1",
   "name": "Anti-Theft System",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/anti-theft-system.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "accessory",
     "rating": 1,
@@ -19,7 +19,7 @@
       70,
       80,
       90,
-      100
+      500
     ],
     "cfConsumed": 0,
     "cfPerLevel": 0,
@@ -27,8 +27,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Rated 1–10 (the rating = dice in an opposed test vs an intruder's Electronics/Maglocks). Parts cost by tier: R1–3 100¥/rating (SI 1), R4–6 400¥ (SI 1.25), R7–9 1,000¥ (SI 1.5), R10+ 5,000¥ (SI 2). Optional responses: automated security call; standard shock system +2,000¥ (10S Stun); or an explosive self-destruct (plastic explosive, Power = Body²). Base Time 40 hrs. Rigger 2 p.141."
+    "notes": "Rated 1–10 (the rating = dice in an opposed test vs an intruder's Electronics/Maglocks). Parts cost by tier: R1–3 100¥/rating (SI 1), R4–6 400¥ (SI 1.25), R7–9 1,000¥ (SI 1.5), R10+ 5,000¥ (SI 2). Optional responses: automated security call; standard shock system +2,000¥ (10S Stun); or an explosive self-destruct (plastic explosive, Power = Body²). Base Time 40 hrs. Rigger 2 p.141. (Design specifications p.141.)"
   },
   "effects": [],
   "flags": {},

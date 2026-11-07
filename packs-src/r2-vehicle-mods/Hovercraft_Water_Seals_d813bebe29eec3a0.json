@@ -2,7 +2,7 @@
   "_id": "d813bebe29eec3a0",
   "name": "Hovercraft Water Seals",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/hovercraft-water-seals.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "accessory",
     "rating": 0,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "B x 5",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Watertight chassis seals so a powered-down hovercraft floats instead of sinking (a normal hovercraft sinks within 30 min over water). Parts cost = Body × 500¥; design = Body × 5 points; Avail 4/96 hrs; Street Index 1; Base Time 32 hrs. Rigger 2 p.145."
+    "notes": "Watertight chassis seals so a powered-down hovercraft floats instead of sinking (a normal hovercraft sinks within 30 min over water). Parts cost = Body × 500¥; design = Body × 5 points; Avail 4/96 hrs; Street Index 1; Base Time 32 hrs. Rigger 2 p.145. (Design specifications p.145.)"
   },
   "effects": [],
   "flags": {},

@@ -2,7 +2,7 @@
   "_id": "a2498bb1f169ea63",
   "name": "Aircraft Drop Tanks",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/aircraft-drop-tanks.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "accessory",
     "rating": 0,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": false,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "A jettisonable pair of external fuel tanks (1,000 L each) fitted in place of two external mounts; adds 2,000 L fuel and −1 Signature, but each extra pair costs −15 Speed (every two pairs +1 Handling). Body 1, Armor 3; a pair costs 8,000¥ (install parts 2,500¥); Avail 5/10 days; Street Index 1.25; Base Time 32 hrs. Rigger 2 p.140."
+    "notes": "A jettisonable pair of external fuel tanks (1,000 L each) fitted in place of two external mounts; adds 2,000 L fuel and −1 Signature, but each extra pair costs −15 Speed (every two pairs +1 Handling). Body 1, Armor 3; a pair costs 8,000¥ (install parts 2,500¥); Avail 5/10 days; Street Index 1.25; Base Time 32 hrs. Rigger 2 p.140. (Design specifications p.140.)"
   },
   "effects": [],
   "flags": {},

@@ -2,7 +2,7 @@
   "_id": "53a3ae4e60eb6fbb",
   "name": "External Cargo Mount",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/external-cargo-mount.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "accessory",
     "rating": 0,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": false,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Roof racks or motorcycle side cargo-boxes — no CF cost, but Handling worsens by 1 while loaded; capacity up to the vehicle's internal cargo space. Customization-only. Parts cost 250¥ per CF held; Avail 3/24 hrs; Street Index 1; Base Time 8 hrs; load −45 kg. Rigger 2 p.144."
+    "notes": "Roof racks or motorcycle side cargo-boxes — no CF cost, but Handling worsens by 1 while loaded; capacity up to the vehicle's internal cargo space. Customization-only. Parts cost 250¥ per CF held; Avail 3/24 hrs; Street Index 1; Base Time 8 hrs; load −45 kg. Rigger 2 p.144. (Design specifications p.144.)"
   },
   "effects": [],
   "flags": {},

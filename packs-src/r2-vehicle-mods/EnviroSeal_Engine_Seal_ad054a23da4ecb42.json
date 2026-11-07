@@ -1,8 +1,8 @@
 {
-  "_id": "30401b915b4f8eee",
-  "name": "EnviroSeal System",
+  "_id": "ad054a23da4ecb42",
+  "name": "EnviroSeal (Engine Seal)",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/enviroseal-system.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "protection",
     "rating": 0,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "B x 15",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128."
+    "notes": "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128. (Design specifications p.128.)"
   },
   "effects": [],
   "flags": {},
@@ -37,5 +44,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!30401b915b4f8eee"
+  "_key": "!items!ad054a23da4ecb42"
 }

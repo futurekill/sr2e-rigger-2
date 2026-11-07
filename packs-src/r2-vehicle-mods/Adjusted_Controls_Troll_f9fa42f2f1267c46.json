@@ -1,13 +1,13 @@
 {
-  "_id": "3bacb271729c73ff",
-  "name": "Adjusted Controls",
+  "_id": "f9fa42f2f1267c46",
+  "name": "Adjusted Controls (Troll)",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/adjusted-controls.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "control",
     "rating": 0,
     "cost": 2500,
-    "designPoints": 0,
+    "designPoints": 35,
     "dpPerLevel": 0,
     "dpTable": [],
     "cfConsumed": 0,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Re-fits manual controls (wheel, pedals, dashboard) to a non-standard body — dwarfs, trolls, or any metahuman whose size/disability prevents using standard controls. Design 25 points; parts cost 2,500¥; Avail 3/72 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.122."
+    "notes": "Re-fits manual controls (wheel, pedals, dashboard) to a non-standard body — dwarfs, trolls, or any metahuman whose size/disability prevents using standard controls. Design 25 points; parts cost 2,500¥; Avail 3/72 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.122. (Design specifications p.122.)"
   },
   "effects": [],
   "flags": {},
@@ -37,5 +44,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!3bacb271729c73ff"
+  "_key": "!items!f9fa42f2f1267c46"
 }

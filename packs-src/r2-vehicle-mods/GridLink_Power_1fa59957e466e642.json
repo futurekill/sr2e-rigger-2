@@ -2,7 +2,7 @@
   "_id": "1fa59957e466e642",
   "name": "GridLink Power",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/gridlink-power.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "engine",
     "rating": 0,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Lets an electric ground vehicle draw power from a city's buried GridLink induction grid at normal traffic speeds (no battery drain). Monthly grid fee = Body × 100¥ (cars), × 25¥ (motorcycles), or × 250¥ (trucks/buses). Parts cost 600¥; 1 CF; Avail 3/96 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.121."
+    "notes": "Lets an electric ground vehicle draw power from a city's buried GridLink induction grid at normal traffic speeds (no battery drain). Monthly grid fee = Body × 100¥ (cars), × 25¥ (motorcycles), or × 250¥ (trucks/buses). Parts cost 600¥; 1 CF; Avail 3/96 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.121. (Design specifications p.121.)"
   },
   "effects": [],
   "flags": {},

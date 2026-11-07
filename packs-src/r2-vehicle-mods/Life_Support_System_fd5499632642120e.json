@@ -2,7 +2,7 @@
   "_id": "fd5499632642120e",
   "name": "Life Support System",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/life-support-system.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "protection",
     "rating": 1,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "R / 10",
+    "loadFormula": "R / 10 x 25",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Provides oxygen and basic climate control inside a sealed vehicle, rated in man-hours of support. Parts cost = 500¥ + 100¥ per man-hour; load −(25 kg per 10 man-hours); Avail 8/14 days. Rigger 2 p.128."
+    "notes": "Provides oxygen and basic climate control inside a sealed vehicle, rated in man-hours of support. Parts cost = 500¥ + 100¥ per man-hour; load −(25 kg per 10 man-hours); Avail 8/14 days. Rigger 2 p.128. Design: Rating = man-hours of support. (Design specifications p.128.)"
   },
   "effects": [],
   "flags": {},

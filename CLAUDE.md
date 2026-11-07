@@ -42,9 +42,14 @@ packs (LevelDB locks).
 - Match the system data-model fields exactly (vehicle: handling/speed/accel/body/
   armor/signature/pilot/sensor/cargo/load/seating/cost/availability/autonav;
   vehicle_mod / weapon / cyberware / gear per their schemas).
-- The back-of-book **Vehicle List** reprints many core-book vehicles (each has a
-  source reference) — transcribe **Rigger-2-new** entries, skip core reprints
-  already in the system's `vehicles` pack.
+- The back-of-book **Vehicle List** restates many earlier vehicles under the new design rules. User ruling
+  (2026-11-07): with this module active its stats supersede the core book's, so the WHOLE list ships here (vehicle
+  builder release 4; system docs/PLAN-vehicle-builder.md).
+- **Vehicle design data** (system docs/PLAN-vehicle-builder.md): `tools/data/design-*.json` (Chassis / Power Plant /
+  Fuel / Mark-Up tables; the power plants are GENERATED from `tools/transcribe/power-plants.py`) and the mods'
+  `DESIGN` map in `tools/gen-vehicle-mods.mjs` are the single sources, checked as in `docs/DESIGN-DATA-CHECK.md`.
+  `npm run sync-design-data` copies them to `data/` (what ships); `npm run validate` fails if they drift. The old
+  `chassis.json` / `powerplants.json` feed only the legacy Design tab until the Workshop replaces it.
 
 ## Build workflow
 `packs-src/` (per-document JSON) is the source of truth; `packs/` is the LevelDB

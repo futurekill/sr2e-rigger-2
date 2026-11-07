@@ -76,6 +76,16 @@ for (const pack of packs.sort()) {
     if (p.engine !== "sail" && !rules.fuel[p.engine]) note(`plant ${p.key}: no Fuel Tank Capacity row for ${p.engine}`);
   }
   for (const k of keys) if (!used.has(k)) note(`chassis ${k}: no power plant lists it`);
+  // Every vehicle mod's formulas use only R B P C E K, numbers, + - x / ^ ( ) and floor/ceil.
+  const modDir = join(ROOT, "r2-vehicle-mods");
+  for (const f of readdirSync(modDir).filter(x => x.endsWith(".json"))) {
+    const sys = JSON.parse(readFileSync(join(modDir, f), "utf8")).system ?? {};
+    for (const k of ["dpFormula", "cfFormula", "loadFormula"]) {
+      const v = sys[k] ?? "";
+      if (v && !/^([\d\s.RBPCEK+\-x/^()]|floor|ceil)+$/.test(v)) note(`${f}: ${k} "${v}" has something other than R B P C E K, numbers and + - x / ^ ( ) floor ceil`);
+    }
+    if (typeof sys.designable !== "boolean") note(`${f}: designable must be true or false`);
+  }
   // The shipped copies (data/) must be the sources (tools/data/): the release excludes tools/.
   for (const f of ["design-chassis.json", "design-powerplants.json", "design-rules.json"]) {
     let shipped = null;

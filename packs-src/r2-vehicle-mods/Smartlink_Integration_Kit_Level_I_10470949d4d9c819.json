@@ -1,8 +1,8 @@
 {
-  "_id": "d1cf2756af399a42",
-  "name": "Smartlink Integration Kit",
+  "_id": "10470949d4d9c819",
+  "name": "Smartlink Integration Kit (Level I)",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/smartlink-integration-kit.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "weapon",
     "rating": 0,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Connects a smartgun-equipped weapon in a fixed mount or turret to the gunner. Level I (650¥, 4/48 hrs, SI 1) requires the gunner to be jacked into the vehicle; Level II (900¥, 6/48 hrs, SI 2) adds palm-induction links so the gunner needn't be jacked in. Not needed for pintle/ring mounts. Base Time 24 hrs. Rigger 2 p.134."
+    "notes": "Connects a smartgun-equipped weapon in a fixed mount or turret to the gunner. Level I (650¥, 4/48 hrs, SI 1) requires the gunner to be jacked into the vehicle; Level II (900¥, 6/48 hrs, SI 2) adds palm-induction links so the gunner needn't be jacked in. Not needed for pintle/ring mounts. Base Time 24 hrs. Rigger 2 p.134. (Design specifications p.134.)"
   },
   "effects": [],
   "flags": {},
@@ -37,5 +44,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!d1cf2756af399a42"
+  "_key": "!items!10470949d4d9c819"
 }

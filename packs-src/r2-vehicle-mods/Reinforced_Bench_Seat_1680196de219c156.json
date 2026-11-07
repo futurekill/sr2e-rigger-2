@@ -1,0 +1,48 @@
+{
+  "_id": "1680196de219c156",
+  "name": "Reinforced Bench Seat",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "accessory",
+    "rating": 0,
+    "cost": 700,
+    "designPoints": 5,
+    "dpPerLevel": 0,
+    "dpTable": [],
+    "cfConsumed": 8,
+    "cfPerLevel": 0,
+    "cfTable": [],
+    "loadReduction": 300,
+    "loadPerLevel": 0,
+    "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": true,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
+    "installed": false,
+    "notes": "Replacement seating. Parts cost: standard bucket 700¥, standard bench 750¥, folding bench 0¥, reinforced bench 1,500¥, reinforced bucket 1,500¥ (+100¥ per 25 kg of support over 250 kg); 6–8 CF; Avail 3/48 hrs; Street Index 1; Base Time 4 hrs. Bench-seat armor costs 1,250¥/point. Rigger 2 p.142–143. (Design specifications p.143.)"
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1680196de219c156"
+}

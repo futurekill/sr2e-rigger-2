@@ -2,7 +2,7 @@
   "_id": "c8020f0490652b53",
   "name": "Structural Agility",
   "type": "vehicle_mod",
-  "img": "modules/sr2e-rigger-2/assets/item_icons/vehicle_mod/structural-agility.webp",
+  "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "control",
     "rating": 0,
@@ -16,8 +16,15 @@
     "loadReduction": 0,
     "loadPerLevel": 0,
     "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": false,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "",
     "installed": false,
-    "notes": "Requires the Drive-by-Wire System. Each level grants +1 Reaction to a character driving the vehicle (and to a rigger's Control Pool); max level = the vehicle's Drive-by-Wire level. Design cost 150 points per level. Rigger 2 p.118."
+    "notes": "Requires the Drive-by-Wire System. Each level grants +1 Reaction to a character driving the vehicle (and to a rigger's Control Pool); max level = the vehicle's Drive-by-Wire level. Design cost 150 points per level. Rigger 2 p.118. Design: A design OPTION (the Workshop's options step), not a mod. (Design specifications p.118.)"
   },
   "effects": [],
   "flags": {},
