@@ -23,7 +23,7 @@
     "designNuyen": false,
     "mountPoints": 0,
     "modKey": "",
-    "maxRating": "2",
+    "maxRating": "min(2, L)",
     "restrictions": [
       "engine:methane,gasoline,diesel,jetPropeller,jetTurbine",
       "not:bike",

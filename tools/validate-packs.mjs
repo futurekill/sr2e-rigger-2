@@ -43,7 +43,7 @@ for (const pack of packs.sort()) {
 
 /** The system evaluator's grammar, as a structural check: tokens, balanced parentheses, operand/operator alternation. */
 function formulaSyntaxOk(v) {
-  const toks = v.replace(/\s+/g, "").match(/floor\(|ceil\(|min\(|max\(|\d+(\.\d+)?|[RBPCEK]|[+\-x/^(),]/g);
+  const toks = v.replace(/\s+/g, "").match(/floor\(|ceil\(|min\(|max\(|\d+(\.\d+)?|[RBPCEKL]|[+\-x/^(),]/g);
   if (!toks || toks.join("") !== v.replace(/\s+/g, "")) return false;
   let depth = 0, wantOperand = true;
   for (const t of toks) {
@@ -92,13 +92,13 @@ function formulaSyntaxOk(v) {
     if (p.engine !== "sail" && !rules.fuel[p.engine]) note(`plant ${p.key}: no Fuel Tank Capacity row for ${p.engine}`);
   }
   for (const k of keys) if (!used.has(k)) note(`chassis ${k}: no power plant lists it`);
-  // Every vehicle mod's formulas use only R B P C E K, numbers, + - x / ^ ( ) and floor/ceil.
+  // Every vehicle mod's formulas use only R B P C E K L, numbers, + - x / ^ ( ) and floor/ceil.
   const modDir = join(ROOT, "r2-vehicle-mods");
   for (const f of readdirSync(modDir).filter(x => x.endsWith(".json"))) {
     const sys = JSON.parse(readFileSync(join(modDir, f), "utf8")).system ?? {};
     for (const k of ["dpFormula", "cfFormula", "loadFormula", "maxRating"]) {
       const v = sys[k] ?? "";
-      if (v && !formulaSyntaxOk(v)) note(`${f}: ${k} "${v}" isn't a valid formula (R B P C E K, numbers, + - x / ^ ( ) , floor ceil min max)`);
+      if (v && !formulaSyntaxOk(v)) note(`${f}: ${k} "${v}" isn't a valid formula (R B P C E K L, numbers, + - x / ^ ( ) , floor ceil min max)`);
     }
     for (const t of sys.restrictions ?? []) {
       if (!/^(only|not|engine|notWith):[A-Za-z,-]+$|^(notDrone|needsEngineCustom|needsRemote|needsRiggerBase|notAircraftUnlessElectric)$|^minBody:\d+$/.test(t)) note(`${f}: unknown restriction "${t}"`);

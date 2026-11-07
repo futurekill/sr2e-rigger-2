@@ -176,7 +176,7 @@ const MODS = [
 // ── Design Specifications, read from the rendered pages (book p.118–146) on 2026-11-07 and cross-checked by an
 // independent pass (docs/DESIGN-DATA-CHECK.md). The SINGLE source of truth for a mod's Design Cost, CF Consumed and
 // Load Reduction IN DESIGN. Fields (system VehicleModData): dp / dpPerLevel / dpTable (rated), dpFormula (added; over
-// R rating, B Body, P Pilot, C chassis DP, E power-plant DP, K engine-customization DP), cf / cfPerLevel / cfTable /
+// R rating, B Body, P Pilot, C chassis DP, E power-plant DP, K engine-customization DP, L its levels), cf / cfPerLevel / cfTable /
 // cfFormula, load / loadPerLevel / loadTable / loadFormula, designable:false (customization only), designNuyen (its ¥
 // cost is added to the design's price), mountPoints (hardpoint 2, firmpoint 1, p.131), modKey, page.
 const DESIGN = {
@@ -216,7 +216,7 @@ const DESIGN = {
   "Smart Armor System (SAS)":      { dp: 250, cf: 2, loadFormula: "B x 50", restrictions: ["minBody:4"], page: "p.129", note: "Load prints as Body × 50 kg 'per Armor Point'; counted once here. Military-grade if taken in design." },
   // Signature (p.130)
   "Thermal Baffles":               { dpPerLevel: 75, loadFormula: "B x 50 x R", maxRating: "2", restrictions: ["engine:methane,gasoline,diesel,jetPropeller,jetTurbine"], page: "p.130" },
-  "Active Thermal Masking":        { dpFormula: "K x (2 x R + 0.125 x R x (R - 1))", cf: 3, load: 100, maxRating: "2", restrictions: ["engine:methane,gasoline,diesel,jetPropeller,jetTurbine", "not:bike", "needsEngineCustom"], page: "p.130", note: "Needs engine customization; each level costs the engine customization's DP × 2, +0.25 per further level." },
+  "Active Thermal Masking":        { dpFormula: "K x (2 x R + 0.125 x R x (R - 1))", cf: 3, load: 100, maxRating: "min(2, L)", restrictions: ["engine:methane,gasoline,diesel,jetPropeller,jetTurbine", "not:bike", "needsEngineCustom"], page: "p.130", note: "Needs engine customization; each level costs the engine customization's DP × 2, +0.25 per further level." },
   "Radar-Absorbent Materials (RAM)": { dpFormula: "R^3 x 50", maxRating: "3", page: "p.130", note: "Military-grade if taken in design." },
   // Weapon mounts (p.131–136)
   "Firearm Conversion Kit (Pistol)":            { dp: 1, load: 0, page: "p.131" },
