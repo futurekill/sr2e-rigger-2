@@ -1,0 +1,17 @@
+{
+  "_source": "Rigger 2, Fuel Tank Capacity Table (book p.116) and Mark-Up Factors Table (book p.114), transcribed 2026-11-07 from the rendered pages.",
+  "fuel": {
+    "electric":     { "increase": 5,  "unit": "PF",     "dp": 2, "cf": 0 },
+    "methane":      { "increase": 5,  "unit": "bars",   "dp": 2, "cf": 0.5 },
+    "gasoline":     { "increase": 1,  "unit": "liters", "dp": 2, "cf": 1, "cfPer": 50 },
+    "diesel":       { "increase": 1,  "unit": "liters", "dp": 2, "cf": 1, "cfPer": 50 },
+    "jetPropeller": { "increase": 10, "unit": "liters", "dp": 1, "cf": 1, "cfPer": 50 },
+    "jetTurbine":   { "increase": 10, "unit": "liters", "dp": 1, "cf": 1, "cfPer": 50 }
+  },
+  "_fuelNote": "Methane's 0.5 CF is read as per 5-bar increment; liquid fuels consume 1 CF per 50 liters added; electric none. Sails have no fuel (p.169: NA).",
+  "markUp": {
+    "base": { "bike": 0.5, "car": 1, "fixedWing": 2.5, "hovercraft": 2.5, "boat": 1, "rotor": 2.5, "vector": 2.5, "special": [1, 2.5] },
+    "features": { "smartMaterials": 0.5, "ambulance": 1, "nonCombat": [0.25, 2.5], "unusual": [0.2, 1.2] },
+    "multipliers": { "luxury": [1.5, 2.5], "security": [2, 3], "military": [3, 5], "drone": 0.1 }
+  }
+}

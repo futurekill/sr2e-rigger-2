@@ -1,0 +1,3130 @@
+{
+ "_source": "Rigger 2 Power Plant Table, book p.167-169, transcribed 2026-11-07 from 200-dpi renders (tools/transcribe/power-plants.py is the transcription; this file is generated). Second pass: docs/DESIGN-DATA-CHECK.md.",
+ "powerPlants": [
+  {
+   "key": "electric-bikes-all",
+   "label": "Bikes (all)",
+   "engine": "electric",
+   "chassis": [
+    "scooter",
+    "racingCycle",
+    "offRoadBike",
+    "chopper",
+    "atv"
+   ],
+   "speed": {
+    "start": 60,
+    "max": 90
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 6
+   },
+   "load": {
+    "start": 15,
+    "max": 40
+   },
+   "signature": 5,
+   "economy": {
+    "start": 0.5,
+    "max": 2,
+    "unit": "km/PF"
+   },
+   "fuel": {
+    "size": 75,
+    "unit": "PF"
+   },
+   "dp": 5,
+   "page": "p.167"
+  },
+  {
+   "key": "electric-cars-subcompact-sand-buggy-sedan-and-limo",
+   "label": "Cars: Subcompact, Sand Buggy, Sedan and Limo",
+   "engine": "electric",
+   "chassis": [
+    "subcompact",
+    "sandBuggy",
+    "sedan",
+    "limousine"
+   ],
+   "speed": {
+    "start": 75,
+    "max": 100
+   },
+   "acceleration": {
+    "start": 4,
+    "max": 9
+   },
+   "load": {
+    "start": 40,
+    "max": 160
+   },
+   "signature": 5,
+   "economy": {
+    "start": 0.5,
+    "max": 2.5,
+    "unit": "km/PF"
+   },
+   "fuel": {
+    "size": 150,
+    "unit": "PF"
+   },
+   "dp": 10,
+   "page": "p.167"
+  },
+  {
+   "key": "electric-cars-pickup-van-and-rv",
+   "label": "Cars: Pickup, Van and RV",
+   "engine": "electric",
+   "chassis": [
+    "pickup",
+    "van",
+    "rv"
+   ],
+   "speed": {
+    "start": 40,
+    "max": 80
+   },
+   "acceleration": {
+    "start": 2,
+    "max": 5
+   },
+   "load": {
+    "start": 350,
+    "max": 1250
+   },
+   "signature": 5,
+   "economy": {
+    "start": 0.25,
+    "max": 1,
+    "unit": "km/PF"
+   },
+   "fuel": {
+    "size": 200,
+    "unit": "PF"
+   },
+   "dp": 15,
+   "page": "p.167"
+  },
+  {
+   "key": "electric-body-0-drone",
+   "label": "Body 0 Drone",
+   "engine": "electric",
+   "chassis": [
+    "crawlerMicro",
+    "walkerMicro",
+    "rotaryUavS"
+   ],
+   "speed": {
+    "start": 1,
+    "max": 5
+   },
+   "acceleration": null,
+   "load": {
+    "start": 0,
+    "max": 0
+   },
+   "signature": 16,
+   "economy": {
+    "start": 0.1,
+    "max": 0.5,
+    "unit": "km/PF"
+   },
+   "fuel": {
+    "size": 1,
+    "unit": "PF"
+   },
+   "dp": 10,
+   "page": "p.167",
+   "_note": "Every Body-0 drone chassis (Crawler Micro, Walker Micro, Rotary Wing UAV (S))."
+  },
+  {
+   "key": "electric-tracked-drone",
+   "label": "Tracked Drone",
+   "engine": "electric",
+   "chassis": [
+    "crawlerSmall",
+    "crawlerLarge",
+    "rpv"
+   ],
+   "speed": {
+    "start": 10,
+    "max": 40
+   },
+   "acceleration": {
+    "start": 2,
+    "max": 4
+   },
+   "load": {
+    "start": "5 x B",
+    "max": "500 x B"
+   },
+   "signature": "9 - B",
+   "economy": {
+    "start": 0.75,
+    "max": 1.5,
+    "unit": "km/PF",
+    "idle": {
+     "start": "2 min/PF",
+     "max": "10 min/PF"
+    }
+   },
+   "fuel": {
+    "size": "10 + (30 x B)",
+    "unit": "PF"
+   },
+   "dp": "5 x B",
+   "page": "p.167"
+  },
+  {
+   "key": "electric-wheeled-drone",
+   "label": "Wheeled Drone",
+   "engine": "electric",
+   "chassis": [
+    "crawlerSmall",
+    "crawlerLarge",
+    "rpv"
+   ],
+   "speed": {
+    "start": 10,
+    "max": 50
+   },
+   "acceleration": {
+    "start": 2,
+    "max": 5
+   },
+   "load": {
+    "start": "5 x B",
+    "max": "400 x B"
+   },
+   "signature": "9 - B",
+   "economy": {
+    "start": 1,
+    "max": 2,
+    "unit": "km/PF",
+    "idle": {
+     "start": "2 min/PF",
+     "max": "10 min/PF"
+    }
+   },
+   "fuel": {
+    "size": "10 + (30 x B)",
+    "unit": "PF"
+   },
+   "dp": "5 x B",
+   "page": "p.167"
+  },
+  {
+   "key": "electric-hovercraft-skimmer",
+   "label": "Hovercraft: Skimmer",
+   "engine": "electric",
+   "chassis": [
+    "skimmerSmall",
+    "skimmerLarge"
+   ],
+   "speed": {
+    "start": 90,
+    "max": 180
+   },
+   "acceleration": {
+    "start": 4,
+    "max": 10
+   },
+   "load": {
+    "start": "5 x B",
+    "max": "300 x B"
+   },
+   "signature": "8 - B",
+   "economy": {
+    "start": 0.4,
+    "max": 1.6,
+    "unit": "km/PF",
+    "idle": {
+     "start": "1 min/PF",
+     "max": "5 min/PF"
+    }
+   },
+   "fuel": {
+    "size": 50,
+    "unit": "PF"
+   },
+   "dp": "5 x B",
+   "page": "p.167"
+  },
+  {
+   "key": "electric-motorboats-skiff-and-water-scooter",
+   "label": "Motorboats: Skiff and Water Scooter",
+   "engine": "electric",
+   "chassis": [
+    "skiff",
+    "waterScooter"
+   ],
+   "speed": {
+    "start": 30,
+    "max": 60
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 6
+   },
+   "load": {
+    "start": 15,
+    "max": 40
+   },
+   "signature": 5,
+   "economy": {
+    "start": 1,
+    "max": 5,
+    "unit": "km/PF"
+   },
+   "fuel": {
+    "size": 75,
+    "unit": "PF"
+   },
+   "dp": 20,
+   "page": "p.167"
+  },
+  {
+   "key": "electric-motorboats-minisub",
+   "label": "Motorboats: Minisub",
+   "engine": "electric",
+   "chassis": [
+    "minisub"
+   ],
+   "speed": {
+    "start": 5,
+    "max": 15
+   },
+   "acceleration": {
+    "start": 2,
+    "max": 5
+   },
+   "load": {
+    "start": 40,
+    "max": 160
+   },
+   "signature": 8,
+   "economy": {
+    "start": 1,
+    "max": 5,
+    "unit": "km/PF"
+   },
+   "fuel": {
+    "size": 250,
+    "unit": "PF"
+   },
+   "dp": 10,
+   "page": "p.167"
+  },
+  {
+   "key": "electric-fixed-wing-ultralight",
+   "label": "Fixed Wing: Ultralight",
+   "engine": "electric",
+   "chassis": [
+    "ultralight"
+   ],
+   "speed": {
+    "stall": 15,
+    "start": 45,
+    "max": 75
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 6
+   },
+   "load": {
+    "start": 0,
+    "max": 200
+   },
+   "signature": 9,
+   "economy": {
+    "start": 0.25,
+    "max": 1,
+    "unit": "km/PF"
+   },
+   "fuel": {
+    "size": 50,
+    "unit": "PF"
+   },
+   "dp": 100,
+   "page": "p.167"
+  },
+  {
+   "key": "electric-fixed-wing-uav-micro",
+   "label": "Fixed Wing UAV, Micro",
+   "engine": "electric",
+   "chassis": [
+    "fixedUavS"
+   ],
+   "speed": {
+    "stall": 40,
+    "start": 60,
+    "max": 125
+   },
+   "acceleration": {
+    "start": 5,
+    "max": 8
+   },
+   "load": {
+    "start": 2,
+    "max": 8
+   },
+   "signature": 10,
+   "economy": {
+    "start": 5,
+    "max": 10,
+    "unit": "km/PF"
+   },
+   "fuel": {
+    "size": 40,
+    "unit": "PF"
+   },
+   "dp": 10,
+   "page": "p.167",
+   "_note": "The book's UAVs come in small/medium/large (p.110); 'Micro' is mapped to the Small chassis."
+  },
+  {
+   "key": "electric-rotary-wing-uav-micro",
+   "label": "Rotary Wing UAV, Micro",
+   "engine": "electric",
+   "chassis": [
+    "rotaryUavS"
+   ],
+   "speed": {
+    "start": 10,
+    "max": 25
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 8
+   },
+   "load": {
+    "start": 0,
+    "max": 0
+   },
+   "signature": 16,
+   "economy": {
+    "start": 5,
+    "max": 10,
+    "unit": "m/PF",
+    "idle": {
+     "start": "1 min/PF",
+     "max": "5 min/PF"
+    }
+   },
+   "fuel": {
+    "size": 10,
+    "unit": "PF"
+   },
+   "dp": 10,
+   "page": "p.167",
+   "_note": "Mapped to the Small chassis (palm-sized, p.110). Economy is in meters/PF."
+  },
+  {
+   "key": "electric-rotary-wing-uav-small-and-medium",
+   "label": "Rotary Wing UAV, Small and Medium",
+   "engine": "electric",
+   "chassis": [
+    "rotaryUavS",
+    "rotaryUavM"
+   ],
+   "speed": {
+    "start": 35,
+    "max": 90
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 12
+   },
+   "load": {
+    "start": 5,
+    "max": 75
+   },
+   "signature": "8 - B",
+   "economy": {
+    "start": 1,
+    "max": 2.5,
+    "unit": "km/PF",
+    "idle": {
+     "start": "2 min/PF",
+     "max": "5 min/PF"
+    }
+   },
+   "fuel": {
+    "size": 150,
+    "unit": "PF"
+   },
+   "dp": "5 x B",
+   "page": "p.167"
+  },
+  {
+   "key": "electric-special-zeppelin",
+   "label": "Special: Zeppelin",
+   "engine": "electric",
+   "chassis": [
+    "zeppelin"
+   ],
+   "speed": {
+    "start": 40,
+    "max": 125
+   },
+   "acceleration": {
+    "start": 1,
+    "max": 9
+   },
+   "load": {
+    "start": 1000,
+    "max": 4000
+   },
+   "signature": 4,
+   "economy": {
+    "start": 0.25,
+    "max": 1,
+    "unit": "km/PF"
+   },
+   "fuel": {
+    "size": 1000,
+    "unit": "PF"
+   },
+   "dp": 500,
+   "page": "p.167"
+  },
+  {
+   "key": "electric-special-mini-blimp",
+   "label": "Special: Mini-blimp",
+   "engine": "electric",
+   "chassis": [
+    "miniBlimp"
+   ],
+   "speed": {
+    "start": 40,
+    "max": 75
+   },
+   "acceleration": {
+    "start": 1,
+    "max": 5
+   },
+   "load": {
+    "start": 2,
+    "max": 75
+   },
+   "signature": 9,
+   "economy": {
+    "start": 5,
+    "max": 10,
+    "unit": "km/PF",
+    "idle": {
+     "start": "2 hrs/PF",
+     "max": "5 hrs/PF"
+    }
+   },
+   "fuel": {
+    "size": 10,
+    "unit": "PF"
+   },
+   "dp": 10,
+   "page": "p.167"
+  },
+  {
+   "key": "electric-special-walker",
+   "label": "Special: Walker",
+   "engine": "electric",
+   "chassis": [
+    "walkerMicro",
+    "walkerSmall",
+    "walkerLarge",
+    "anthroform"
+   ],
+   "speed": {
+    "start": 2,
+    "max": 15
+   },
+   "acceleration": {
+    "start": 1,
+    "max": 1
+   },
+   "load": {
+    "start": 5,
+    "max": 15
+   },
+   "signature": 8,
+   "economy": {
+    "start": 0.5,
+    "max": 1,
+    "unit": "km/PF",
+    "idle": {
+     "start": "2 min/PF",
+     "max": "10 min/PF"
+    }
+   },
+   "fuel": {
+    "size": 40,
+    "unit": "PF"
+   },
+   "dp": 10,
+   "page": "p.167"
+  },
+  {
+   "key": "methane-bikes",
+   "label": "Bikes",
+   "engine": "methane",
+   "chassis": [
+    "scooter",
+    "racingCycle",
+    "offRoadBike",
+    "chopper",
+    "atv"
+   ],
+   "speed": {
+    "start": 40,
+    "max": 90
+   },
+   "acceleration": {
+    "start": 4,
+    "max": 9
+   },
+   "load": {
+    "start": 60,
+    "max": 120
+   },
+   "signature": 4,
+   "economy": {
+    "start": 1.25,
+    "max": 2,
+    "unit": "km/bar"
+   },
+   "fuel": {
+    "size": 300,
+    "unit": "bars"
+   },
+   "dp": 5,
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-cars-subcompact-and-sand-buggy",
+   "label": "Cars: Subcompact and Sand Buggy",
+   "engine": "methane",
+   "chassis": [
+    "subcompact",
+    "sandBuggy"
+   ],
+   "speed": {
+    "start": 90,
+    "max": 100
+   },
+   "acceleration": {
+    "start": 6,
+    "max": 10
+   },
+   "load": {
+    "start": 40,
+    "max": 160
+   },
+   "signature": 4,
+   "economy": {
+    "start": 1.25,
+    "max": 2.5,
+    "unit": "km/bar"
+   },
+   "fuel": {
+    "size": 450,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-cars-sedan-and-limousine",
+   "label": "Cars: Sedan and Limousine",
+   "engine": "methane",
+   "chassis": [
+    "sedan",
+    "limousine"
+   ],
+   "speed": {
+    "start": 100,
+    "max": 140
+   },
+   "acceleration": {
+    "start": 6,
+    "max": 10
+   },
+   "load": {
+    "start": 60,
+    "max": 200
+   },
+   "signature": 4,
+   "economy": {
+    "start": 1,
+    "max": 2.25,
+    "unit": "km/bar"
+   },
+   "fuel": {
+    "size": 500,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-cars-pickup-van-and-rv",
+   "label": "Cars: Pickup, Van and RV",
+   "engine": "methane",
+   "chassis": [
+    "pickup",
+    "van",
+    "rv"
+   ],
+   "speed": {
+    "start": 80,
+    "max": 120
+   },
+   "acceleration": {
+    "start": 2,
+    "max": 5
+   },
+   "load": {
+    "start": 350,
+    "max": 1600
+   },
+   "signature": 3,
+   "economy": {
+    "start": 0.5,
+    "max": 1.5,
+    "unit": "km/bar"
+   },
+   "fuel": {
+    "size": 1000,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-tracked-drone",
+   "label": "Tracked Drone",
+   "engine": "methane",
+   "chassis": [
+    "crawlerSmall",
+    "crawlerLarge",
+    "rpv"
+   ],
+   "speed": {
+    "start": 20,
+    "max": 35
+   },
+   "acceleration": {
+    "start": 2,
+    "max": 6
+   },
+   "load": {
+    "start": "10 x B",
+    "max": "500 x B"
+   },
+   "signature": "8 - B",
+   "economy": {
+    "start": 0.75,
+    "max": 1.25,
+    "unit": "km/bar",
+    "idle": {
+     "start": "1 hr/bar",
+     "max": "3 hrs/bar"
+    }
+   },
+   "fuel": {
+    "size": 150,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-wheeled-drone",
+   "label": "Wheeled Drone",
+   "engine": "methane",
+   "chassis": [
+    "crawlerSmall",
+    "crawlerLarge",
+    "rpv"
+   ],
+   "speed": {
+    "start": 30,
+    "max": 70
+   },
+   "acceleration": {
+    "start": 2,
+    "max": 7
+   },
+   "load": {
+    "start": "10 x B",
+    "max": "400 x B"
+   },
+   "signature": "8 - B",
+   "economy": {
+    "start": 1,
+    "max": 2,
+    "unit": "km/bar",
+    "idle": {
+     "start": "1 hr/bar",
+     "max": "3 hrs/bar"
+    }
+   },
+   "fuel": {
+    "size": 150,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-hovercraft-small",
+   "label": "Hovercraft, Small",
+   "engine": "methane",
+   "chassis": [
+    "hovercraftSmall"
+   ],
+   "speed": {
+    "start": 100,
+    "max": 240
+   },
+   "acceleration": {
+    "start": 2,
+    "max": 9
+   },
+   "load": {
+    "start": 400,
+    "max": 1400
+   },
+   "signature": 3,
+   "economy": {
+    "start": 0.25,
+    "max": 1,
+    "unit": "km/bar"
+   },
+   "fuel": {
+    "size": 2500,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-hovercraft-skimmer",
+   "label": "Hovercraft: Skimmer",
+   "engine": "methane",
+   "chassis": [
+    "skimmerSmall",
+    "skimmerLarge"
+   ],
+   "speed": {
+    "start": 90,
+    "max": 180
+   },
+   "acceleration": {
+    "start": 5,
+    "max": 20
+   },
+   "load": {
+    "start": "10 x B",
+    "max": "300 x B"
+   },
+   "signature": "7 - B",
+   "economy": {
+    "start": 0.25,
+    "max": 1,
+    "unit": "km/bar",
+    "idle": {
+     "start": "12 min/bar",
+     "max": "30 min/bar"
+    }
+   },
+   "fuel": {
+    "size": 2500,
+    "unit": "bars"
+   },
+   "dp": "10 x B",
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-motorboats-skiff-and-water-scooter",
+   "label": "Motorboats: Skiff and Water Scooter",
+   "engine": "methane",
+   "chassis": [
+    "skiff",
+    "waterScooter"
+   ],
+   "speed": {
+    "start": 20,
+    "max": 50
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 10
+   },
+   "load": {
+    "start": 50,
+    "max": 250
+   },
+   "signature": 4,
+   "economy": {
+    "start": 1,
+    "max": 2.25,
+    "unit": "km/bar"
+   },
+   "fuel": {
+    "size": 250,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-motorboats-sport-cruiser-and-yacht",
+   "label": "Motorboats: Sport Cruiser and Yacht",
+   "engine": "methane",
+   "chassis": [
+    "sportCruiser",
+    "yacht"
+   ],
+   "speed": {
+    "start": 20,
+    "max": 40
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 10
+   },
+   "load": {
+    "start": 300,
+    "max": 1000
+   },
+   "signature": 4,
+   "economy": {
+    "start": 0.75,
+    "max": 1.5,
+    "unit": "km/bar"
+   },
+   "fuel": {
+    "size": 1000,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-motorboats-minisub",
+   "label": "Motorboats: Minisub",
+   "engine": "methane",
+   "chassis": [
+    "minisub"
+   ],
+   "speed": {
+    "start": 5,
+    "max": 20
+   },
+   "acceleration": {
+    "start": 1,
+    "max": 7
+   },
+   "load": {
+    "start": 250,
+    "max": 800
+   },
+   "signature": 7,
+   "economy": {
+    "start": 0.25,
+    "max": 1,
+    "unit": "km/bar"
+   },
+   "fuel": {
+    "size": 2000,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-rotary-wing-uav-small",
+   "label": "Rotary Wing UAV, Small",
+   "engine": "methane",
+   "chassis": [
+    "rotaryUavS"
+   ],
+   "speed": {
+    "start": 50,
+    "max": 100
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 7
+   },
+   "load": {
+    "start": 10,
+    "max": 500
+   },
+   "signature": 6,
+   "economy": {
+    "start": 0.05,
+    "max": 0.25,
+    "unit": "km/bar",
+    "idle": {
+     "start": "12 min/bar",
+     "max": "30 min/bar"
+    }
+   },
+   "fuel": {
+    "size": 400,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168"
+  },
+  {
+   "key": "methane-fixed-wing-uav-micro",
+   "label": "Fixed Wing UAV, Micro",
+   "engine": "methane",
+   "chassis": [
+    "fixedUavS"
+   ],
+   "speed": {
+    "stall": 40,
+    "start": 80,
+    "max": 150
+   },
+   "acceleration": {
+    "start": 11,
+    "max": 14
+   },
+   "load": {
+    "start": 10,
+    "max": 500
+   },
+   "signature": 5,
+   "economy": {
+    "start": 0.75,
+    "max": 1.25,
+    "unit": "km/bar"
+   },
+   "fuel": {
+    "size": 400,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168",
+   "_note": "Mapped to the Small chassis (p.110)."
+  },
+  {
+   "key": "methane-special-walkers",
+   "label": "Special: Walkers",
+   "engine": "methane",
+   "chassis": [
+    "walkerMicro",
+    "walkerSmall",
+    "walkerLarge",
+    "anthroform"
+   ],
+   "speed": {
+    "start": 3,
+    "max": 9
+   },
+   "acceleration": {
+    "start": 1,
+    "max": 1
+   },
+   "load": {
+    "start": 5,
+    "max": 15
+   },
+   "signature": "8 - B",
+   "economy": {
+    "start": 0.5,
+    "max": 1,
+    "unit": "km/bar",
+    "idle": {
+     "start": "1 hr/bar",
+     "max": "3 hrs/bar"
+    }
+   },
+   "fuel": {
+    "size": 150,
+    "unit": "bars"
+   },
+   "dp": 20,
+   "page": "p.167-168"
+  },
+  {
+   "key": "gasoline-bikes-racing-bike",
+   "label": "Bikes: Racing Bike",
+   "engine": "gasoline",
+   "chassis": [
+    "racingCycle"
+   ],
+   "speed": {
+    "start": 120,
+    "max": 240
+   },
+   "acceleration": {
+    "start": 10,
+    "max": 18
+   },
+   "load": {
+    "start": 50,
+    "max": 100
+   },
+   "signature": 2,
+   "economy": {
+    "start": 8,
+    "max": 16,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 15,
+    "unit": "liters"
+   },
+   "dp": 5,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-bikes-all-others",
+   "label": "Bikes: All Others",
+   "engine": "gasoline",
+   "chassis": [
+    "scooter",
+    "offRoadBike",
+    "chopper",
+    "atv"
+   ],
+   "speed": {
+    "start": 60,
+    "max": 150
+   },
+   "acceleration": {
+    "start": 4,
+    "max": 10
+   },
+   "load": {
+    "start": 80,
+    "max": 140
+   },
+   "signature": 2,
+   "economy": {
+    "start": 10,
+    "max": 14,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 20,
+    "unit": "liters"
+   },
+   "dp": 5,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-cars-subcompact-and-sand-buggy",
+   "label": "Cars: Subcompact and Sand Buggy",
+   "engine": "gasoline",
+   "chassis": [
+    "subcompact",
+    "sandBuggy"
+   ],
+   "speed": {
+    "start": 90,
+    "max": 100
+   },
+   "acceleration": {
+    "start": 6,
+    "max": 10
+   },
+   "load": {
+    "start": 40,
+    "max": 160
+   },
+   "signature": 2,
+   "economy": {
+    "start": 8,
+    "max": 12,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 40,
+    "unit": "liters"
+   },
+   "dp": 25,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-cars-sedan",
+   "label": "Cars: Sedan",
+   "engine": "gasoline",
+   "chassis": [
+    "sedan"
+   ],
+   "speed": {
+    "start": 100,
+    "max": 160
+   },
+   "acceleration": {
+    "start": 8,
+    "max": 14
+   },
+   "load": {
+    "start": 60,
+    "max": 300
+   },
+   "signature": 2,
+   "economy": {
+    "start": 8,
+    "max": 14,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 60,
+    "unit": "liters"
+   },
+   "dp": 25,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-cars-limousine",
+   "label": "Cars: Limousine",
+   "engine": "gasoline",
+   "chassis": [
+    "limousine"
+   ],
+   "speed": {
+    "start": 100,
+    "max": 160
+   },
+   "acceleration": {
+    "start": 8,
+    "max": 14
+   },
+   "load": {
+    "start": 60,
+    "max": 400
+   },
+   "signature": 2,
+   "economy": {
+    "start": 8,
+    "max": 14,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 60,
+    "unit": "liters"
+   },
+   "dp": 50,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-cars-sports-car",
+   "label": "Cars: Sports Car",
+   "engine": "gasoline",
+   "chassis": [
+    "sportsCar"
+   ],
+   "speed": {
+    "start": 160,
+    "max": 270
+   },
+   "acceleration": {
+    "start": 10,
+    "max": 18
+   },
+   "load": {
+    "start": 40,
+    "max": 200
+   },
+   "signature": 2,
+   "economy": {
+    "start": 6,
+    "max": 10,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 60,
+    "unit": "liters"
+   },
+   "dp": 65,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-cars-pickup",
+   "label": "Cars: Pickup",
+   "engine": "gasoline",
+   "chassis": [
+    "pickup"
+   ],
+   "speed": {
+    "start": 100,
+    "max": 140
+   },
+   "acceleration": {
+    "start": 7,
+    "max": 12
+   },
+   "load": {
+    "start": 250,
+    "max": 1600
+   },
+   "signature": 2,
+   "economy": {
+    "start": 6,
+    "max": 10,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 80,
+    "unit": "liters"
+   },
+   "dp": 30,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-cars-van-and-rv",
+   "label": "Cars: Van and RV",
+   "engine": "gasoline",
+   "chassis": [
+    "van",
+    "rv"
+   ],
+   "speed": {
+    "start": 80,
+    "max": 120
+   },
+   "acceleration": {
+    "start": 5,
+    "max": 8
+   },
+   "load": {
+    "start": 350,
+    "max": 2500
+   },
+   "signature": 2,
+   "economy": {
+    "start": 5,
+    "max": 9,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 95,
+    "unit": "liters"
+   },
+   "dp": 40,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-tracked-drone",
+   "label": "Tracked Drone",
+   "engine": "gasoline",
+   "chassis": [
+    "crawlerSmall",
+    "crawlerLarge",
+    "rpv"
+   ],
+   "speed": {
+    "start": 25,
+    "max": 55
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 9
+   },
+   "load": {
+    "start": 10,
+    "max": "550 x B"
+   },
+   "signature": "6 - B",
+   "economy": {
+    "start": 1.5,
+    "max": 5,
+    "unit": "km/liter",
+    "idle": {
+     "start": "1 hr/liter",
+     "max": "1.5 hrs/liter"
+    }
+   },
+   "fuel": {
+    "size": 5,
+    "unit": "liters"
+   },
+   "dp": 25,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-wheeled-drone",
+   "label": "Wheeled Drone",
+   "engine": "gasoline",
+   "chassis": [
+    "crawlerSmall",
+    "crawlerLarge",
+    "rpv"
+   ],
+   "speed": {
+    "start": 35,
+    "max": 100
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 12
+   },
+   "load": {
+    "start": 10,
+    "max": "450 x B"
+   },
+   "signature": "6 - B",
+   "economy": {
+    "start": 4,
+    "max": 8,
+    "unit": "km/liter",
+    "idle": {
+     "start": "1 hr/liter",
+     "max": "1.5 hrs/liter"
+    }
+   },
+   "fuel": {
+    "size": 5,
+    "unit": "liters"
+   },
+   "dp": 25,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-hovercraft-small",
+   "label": "Hovercraft, Small",
+   "engine": "gasoline",
+   "chassis": [
+    "hovercraftSmall"
+   ],
+   "speed": {
+    "start": 90,
+    "max": 130
+   },
+   "acceleration": {
+    "start": 5,
+    "max": 10
+   },
+   "load": {
+    "start": 600,
+    "max": 1500
+   },
+   "signature": 2,
+   "economy": {
+    "start": 0.5,
+    "max": 3,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 400,
+    "unit": "liters"
+   },
+   "dp": 50,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-hovercraft-skimmer",
+   "label": "Hovercraft: Skimmer",
+   "engine": "gasoline",
+   "chassis": [
+    "skimmerSmall",
+    "skimmerLarge"
+   ],
+   "speed": {
+    "start": 90,
+    "max": 180
+   },
+   "acceleration": {
+    "start": 5,
+    "max": 20
+   },
+   "load": {
+    "start": "10 x B",
+    "max": "300 x B"
+   },
+   "signature": "7 - B",
+   "economy": {
+    "start": 0.5,
+    "max": 1,
+    "unit": "km/liter",
+    "idle": {
+     "start": "25 min/liter",
+     "max": "45 min/liter"
+    }
+   },
+   "fuel": {
+    "size": 25,
+    "unit": "liters"
+   },
+   "dp": "20 x B",
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-motorboats-skiff-and-water-scooter",
+   "label": "Motorboats: Skiff and Water Scooter",
+   "engine": "gasoline",
+   "chassis": [
+    "skiff",
+    "waterScooter"
+   ],
+   "speed": {
+    "start": 45,
+    "max": 90
+   },
+   "acceleration": {
+    "start": 6,
+    "max": 10
+   },
+   "load": {
+    "start": 50,
+    "max": 250
+   },
+   "signature": 3,
+   "economy": {
+    "start": 7,
+    "max": 10,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 20,
+    "unit": "liters"
+   },
+   "dp": 25,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-motorboats-speedboat",
+   "label": "Motorboats: Speedboat",
+   "engine": "gasoline",
+   "chassis": [
+    "speedboat"
+   ],
+   "speed": {
+    "start": 75,
+    "max": 240
+   },
+   "acceleration": {
+    "start": 10,
+    "max": 18
+   },
+   "load": {
+    "start": 40,
+    "max": 400
+   },
+   "signature": 2,
+   "economy": {
+    "start": 3,
+    "max": 6,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 100,
+    "unit": "liters"
+   },
+   "dp": 30,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-motorboats-sport-cruiser",
+   "label": "Motorboats: Sport Cruiser",
+   "engine": "gasoline",
+   "chassis": [
+    "sportCruiser"
+   ],
+   "speed": {
+    "start": 30,
+    "max": 100
+   },
+   "acceleration": {
+    "start": 5,
+    "max": 9
+   },
+   "load": {
+    "start": 350,
+    "max": 1500
+   },
+   "signature": 3,
+   "economy": {
+    "start": 4,
+    "max": 8,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 200,
+    "unit": "liters"
+   },
+   "dp": 35,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-motorboats-yacht",
+   "label": "Motorboats: Yacht",
+   "engine": "gasoline",
+   "chassis": [
+    "yacht"
+   ],
+   "speed": {
+    "start": 30,
+    "max": 100
+   },
+   "acceleration": {
+    "start": 5,
+    "max": 9
+   },
+   "load": {
+    "start": 350,
+    "max": 2500
+   },
+   "signature": 3,
+   "economy": {
+    "start": 4,
+    "max": 8,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 200,
+    "unit": "liters"
+   },
+   "dp": 35,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-motorboats-minisub",
+   "label": "Motorboats: Minisub",
+   "engine": "gasoline",
+   "chassis": [
+    "minisub"
+   ],
+   "speed": {
+    "start": 5,
+    "max": 30
+   },
+   "acceleration": {
+    "start": 2,
+    "max": 5
+   },
+   "load": {
+    "start": 250,
+    "max": 1000
+   },
+   "signature": 6,
+   "economy": {
+    "start": 1,
+    "max": 4,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 300,
+    "unit": "liters"
+   },
+   "dp": 25,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-rotary-wing-uav-small",
+   "label": "Rotary Wing UAV, Small",
+   "engine": "gasoline",
+   "chassis": [
+    "rotaryUavS"
+   ],
+   "speed": {
+    "start": 40,
+    "max": 90
+   },
+   "acceleration": {
+    "start": 4,
+    "max": 8
+   },
+   "load": {
+    "start": 4,
+    "max": 10
+   },
+   "signature": 4,
+   "economy": {
+    "start": 0.25,
+    "max": 0.4,
+    "unit": "km/liter",
+    "idle": {
+     "start": "10 min/liter",
+     "max": "15 min/liter"
+    }
+   },
+   "fuel": {
+    "size": 60,
+    "unit": "liters"
+   },
+   "dp": 25,
+   "page": "p.168"
+  },
+  {
+   "key": "gasoline-fixed-wing-uav-micro",
+   "label": "Fixed Wing UAV, Micro",
+   "engine": "gasoline",
+   "chassis": [
+    "fixedUavS"
+   ],
+   "speed": {
+    "stall": 40,
+    "start": 90,
+    "max": 200
+   },
+   "acceleration": {
+    "start": 7,
+    "max": 10
+   },
+   "load": {
+    "start": 4,
+    "max": 10
+   },
+   "signature": 4,
+   "economy": {
+    "start": 0.5,
+    "max": 0.75,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 60,
+    "unit": "liters"
+   },
+   "dp": 25,
+   "page": "p.168",
+   "_note": "Mapped to the Small chassis (p.110)."
+  },
+  {
+   "key": "gasoline-special-walkers",
+   "label": "Special: Walkers",
+   "engine": "gasoline",
+   "chassis": [
+    "walkerMicro",
+    "walkerSmall",
+    "walkerLarge",
+    "anthroform"
+   ],
+   "speed": {
+    "start": 5,
+    "max": 12
+   },
+   "acceleration": {
+    "start": 1,
+    "max": 1
+   },
+   "load": {
+    "start": 6,
+    "max": 18
+   },
+   "signature": "6 - B",
+   "economy": {
+    "start": 0.25,
+    "max": 1,
+    "unit": "km/liter",
+    "idle": {
+     "start": "1 hr/liter",
+     "max": "2.5 hrs/liter"
+    }
+   },
+   "fuel": {
+    "size": 5,
+    "unit": "liters"
+   },
+   "dp": 25,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-cars-limousine",
+   "label": "Cars: Limousine",
+   "engine": "diesel",
+   "chassis": [
+    "limousine"
+   ],
+   "speed": {
+    "start": 80,
+    "max": 140
+   },
+   "acceleration": {
+    "start": 8,
+    "max": 12
+   },
+   "load": {
+    "start": 180,
+    "max": 800
+   },
+   "signature": 2,
+   "economy": {
+    "start": 6,
+    "max": 10,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 60,
+    "unit": "liters"
+   },
+   "dp": 65,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-cars-pickup",
+   "label": "Cars: Pickup",
+   "engine": "diesel",
+   "chassis": [
+    "pickup"
+   ],
+   "speed": {
+    "start": 120,
+    "max": 200
+   },
+   "acceleration": {
+    "start": 7,
+    "max": 12
+   },
+   "load": {
+    "start": 1000,
+    "max": 2000
+   },
+   "signature": 2,
+   "economy": {
+    "start": 5,
+    "max": 9,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 80,
+    "unit": "liters"
+   },
+   "dp": 35,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-cars-van-and-rv",
+   "label": "Cars: Van and RV",
+   "engine": "diesel",
+   "chassis": [
+    "van",
+    "rv"
+   ],
+   "speed": {
+    "start": 80,
+    "max": 150
+   },
+   "acceleration": {
+    "start": 4,
+    "max": 9
+   },
+   "load": {
+    "start": 1000,
+    "max": 3000
+   },
+   "signature": 2,
+   "economy": {
+    "start": 4,
+    "max": 8,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 95,
+    "unit": "liters"
+   },
+   "dp": 35,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-cars-medium-transport",
+   "label": "Cars: Medium Transport",
+   "engine": "diesel",
+   "chassis": [
+    "mediumTransport"
+   ],
+   "speed": {
+    "start": 65,
+    "max": 130
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 6
+   },
+   "load": {
+    "start": 2000,
+    "max": 5000
+   },
+   "signature": 2,
+   "economy": {
+    "start": 4,
+    "max": 8,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 250,
+    "unit": "liters"
+   },
+   "dp": 35,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-cars-heavy-transport",
+   "label": "Cars: Heavy Transport",
+   "engine": "diesel",
+   "chassis": [
+    "heavyTransport"
+   ],
+   "speed": {
+    "start": 60,
+    "max": 120
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 5
+   },
+   "load": {
+    "start": 6000,
+    "max": 12000
+   },
+   "signature": 2,
+   "economy": {
+    "start": 3,
+    "max": 6,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 500,
+    "unit": "liters"
+   },
+   "dp": 35,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-cars-tractors",
+   "label": "Cars: Tractors",
+   "engine": "diesel",
+   "chassis": [
+    "tractor"
+   ],
+   "speed": {
+    "start": 60,
+    "max": 120
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 4
+   },
+   "load": {
+    "start": 7500,
+    "max": 18000
+   },
+   "signature": 2,
+   "economy": {
+    "start": 3,
+    "max": 6,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 750,
+    "unit": "liters"
+   },
+   "dp": 35,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-tracked-drones",
+   "label": "Tracked Drones",
+   "engine": "diesel",
+   "chassis": [
+    "crawlerSmall",
+    "crawlerLarge",
+    "rpv"
+   ],
+   "speed": {
+    "start": 25,
+    "max": 50
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 7
+   },
+   "load": {
+    "start": 10,
+    "max": "750 x B"
+   },
+   "signature": "6 - B",
+   "economy": {
+    "start": 1,
+    "max": 4,
+    "unit": "km/liter",
+    "idle": {
+     "start": "1 hr/ltr",
+     "max": "1.5 hrs/ltr"
+    }
+   },
+   "fuel": {
+    "size": 5,
+    "unit": "liters"
+   },
+   "dp": "25 + (10 x B)",
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-wheeled-drones",
+   "label": "Wheeled Drones",
+   "engine": "diesel",
+   "chassis": [
+    "crawlerSmall",
+    "crawlerLarge",
+    "rpv"
+   ],
+   "speed": {
+    "start": 35,
+    "max": 90
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 10
+   },
+   "load": {
+    "start": 10,
+    "max": "600 x B"
+   },
+   "signature": "6 - B",
+   "economy": {
+    "start": 2,
+    "max": 6,
+    "unit": "km/liter",
+    "idle": {
+     "start": "1 hr/ltr",
+     "max": "1.5 hrs/ltr"
+    }
+   },
+   "fuel": {
+    "size": 5,
+    "unit": "liters"
+   },
+   "dp": "25 + (10 x B)",
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-hovercraft-medium",
+   "label": "Hovercraft, Medium",
+   "engine": "diesel",
+   "chassis": [
+    "hovercraftMedium"
+   ],
+   "speed": {
+    "start": 90,
+    "max": 150
+   },
+   "acceleration": {
+    "start": 5,
+    "max": 10
+   },
+   "load": {
+    "start": 750,
+    "max": 2500
+   },
+   "signature": 2,
+   "economy": {
+    "start": 0.5,
+    "max": 2.5,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 400,
+    "unit": "liters"
+   },
+   "dp": 75,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-hovercraft-large",
+   "label": "Hovercraft, Large",
+   "engine": "diesel",
+   "chassis": [
+    "hovercraftLarge"
+   ],
+   "speed": {
+    "start": 90,
+    "max": 150
+   },
+   "acceleration": {
+    "start": 5,
+    "max": 10
+   },
+   "load": {
+    "start": 1000,
+    "max": 5000
+   },
+   "signature": 2,
+   "economy": {
+    "start": 0.5,
+    "max": 2.5,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 400,
+    "unit": "liters"
+   },
+   "dp": 75,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-hovercraft-skimmer",
+   "label": "Hovercraft: Skimmer",
+   "engine": "diesel",
+   "chassis": [
+    "skimmerSmall",
+    "skimmerLarge"
+   ],
+   "speed": {
+    "start": 90,
+    "max": 180
+   },
+   "acceleration": {
+    "start": 5,
+    "max": 20
+   },
+   "load": {
+    "start": "10 x B",
+    "max": "500 x B"
+   },
+   "signature": "7 - B",
+   "economy": {
+    "start": 0.25,
+    "max": 1,
+    "unit": "km/liter",
+    "idle": {
+     "start": "20 min/ltr",
+     "max": "30 min/ltr"
+    }
+   },
+   "fuel": {
+    "size": 25,
+    "unit": "liters"
+   },
+   "dp": "20 + (10 x B)",
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-motorboats-sport-cruiser",
+   "label": "Motorboats: Sport Cruiser",
+   "engine": "diesel",
+   "chassis": [
+    "sportCruiser"
+   ],
+   "speed": {
+    "start": 30,
+    "max": 100
+   },
+   "acceleration": {
+    "start": 4,
+    "max": 6
+   },
+   "load": {
+    "start": 500,
+    "max": 2500
+   },
+   "signature": 2,
+   "economy": {
+    "start": 2,
+    "max": 6,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 200,
+    "unit": "liters"
+   },
+   "dp": 35,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-motorboats-yacht",
+   "label": "Motorboats: Yacht",
+   "engine": "diesel",
+   "chassis": [
+    "yacht"
+   ],
+   "speed": {
+    "start": 30,
+    "max": 100
+   },
+   "acceleration": {
+    "start": 4,
+    "max": 6
+   },
+   "load": {
+    "start": 600,
+    "max": 3500
+   },
+   "signature": 2,
+   "economy": {
+    "start": 2,
+    "max": 6,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 200,
+    "unit": "liters"
+   },
+   "dp": 40,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-motorboats-minisub",
+   "label": "Motorboats: Minisub",
+   "engine": "diesel",
+   "chassis": [
+    "minisub"
+   ],
+   "speed": {
+    "start": 10,
+    "max": 70
+   },
+   "acceleration": {
+    "start": 2,
+    "max": 4
+   },
+   "load": {
+    "start": 400,
+    "max": 2000
+   },
+   "signature": 6,
+   "economy": {
+    "start": 1,
+    "max": 4,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 300,
+    "unit": "liters"
+   },
+   "dp": 35,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-special-walkers",
+   "label": "Special: Walkers",
+   "engine": "diesel",
+   "chassis": [
+    "walkerMicro",
+    "walkerSmall",
+    "walkerLarge",
+    "anthroform"
+   ],
+   "speed": {
+    "start": 5,
+    "max": 12
+   },
+   "acceleration": {
+    "start": 1,
+    "max": 1
+   },
+   "load": {
+    "start": 10,
+    "max": 30
+   },
+   "signature": 4,
+   "economy": {
+    "start": 0.1,
+    "max": 0.75,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 5,
+    "unit": "liters"
+   },
+   "dp": 35,
+   "page": "p.168"
+  },
+  {
+   "key": "diesel-armored-personnel-carriers",
+   "label": "Armored Personnel Carriers",
+   "engine": "diesel",
+   "chassis": [
+    "apcTracked",
+    "apcWheeled"
+   ],
+   "speed": {
+    "start": 40,
+    "max": 70
+   },
+   "acceleration": {
+    "start": 5,
+    "max": 8
+   },
+   "load": {
+    "start": 3,
+    "max": 6
+   },
+   "signature": 2,
+   "economy": {
+    "start": 2,
+    "max": 4,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 800,
+    "unit": "liters"
+   },
+   "dp": 35,
+   "page": "p.168",
+   "_note": "Load prints as 3 / 6 (kg) - almost certainly 3,000 / 6,000 with the thousands lost; kept as printed, flagged for the user."
+  },
+  {
+   "key": "jetPropeller-fixed-wing-ultralight",
+   "label": "Fixed Wing: Ultralight",
+   "engine": "jetPropeller",
+   "chassis": [
+    "ultralight"
+   ],
+   "speed": {
+    "stall": 40,
+    "start": 120,
+    "max": 250
+   },
+   "acceleration": {
+    "start": 17,
+    "max": 20
+   },
+   "load": {
+    "start": 15,
+    "max": 150
+   },
+   "signature": 6,
+   "economy": {
+    "start": 1,
+    "max": 3,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 60,
+    "unit": "liters"
+   },
+   "dp": 20,
+   "page": "p.169"
+  },
+  {
+   "key": "jetPropeller-fixed-wing-single-engine",
+   "label": "Fixed Wing: Single Engine",
+   "engine": "jetPropeller",
+   "chassis": [
+    "singleEngine"
+   ],
+   "speed": {
+    "stall": 60,
+    "start": 130,
+    "max": 450
+   },
+   "acceleration": {
+    "start": 20,
+    "max": 25
+   },
+   "load": {
+    "start": 175,
+    "max": 750
+   },
+   "signature": 4,
+   "economy": {
+    "start": 1,
+    "max": 3,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 250,
+    "unit": "liters"
+   },
+   "dp": 50,
+   "page": "p.169"
+  },
+  {
+   "key": "jetPropeller-fixed-wing-twin-engine",
+   "label": "Fixed Wing: Twin Engine",
+   "engine": "jetPropeller",
+   "chassis": [
+    "twinEngine"
+   ],
+   "speed": {
+    "stall": 135,
+    "start": 280,
+    "max": 500
+   },
+   "acceleration": {
+    "start": 20,
+    "max": 28
+   },
+   "load": {
+    "start": 350,
+    "max": 2500
+   },
+   "signature": 4,
+   "economy": {
+    "start": 1,
+    "max": 3,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 500,
+    "unit": "liters"
+   },
+   "dp": 75,
+   "page": "p.169"
+  },
+  {
+   "key": "jetPropeller-fixed-wing-airliner",
+   "label": "Fixed Wing: Airliner",
+   "engine": "jetPropeller",
+   "chassis": [
+    "airliner"
+   ],
+   "speed": {
+    "stall": 135,
+    "start": 320,
+    "max": 500
+   },
+   "acceleration": {
+    "start": 22,
+    "max": 35
+   },
+   "load": {
+    "start": 5000,
+    "max": 15000
+   },
+   "signature": 3,
+   "economy": {
+    "start": 0.75,
+    "max": 1.5,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 5000,
+    "unit": "liters"
+   },
+   "dp": 500,
+   "page": "p.169"
+  },
+  {
+   "key": "jetPropeller-fixed-wing-uav",
+   "label": "Fixed Wing UAV",
+   "engine": "jetPropeller",
+   "chassis": [
+    "fixedUavS",
+    "fixedUavM",
+    "fixedUavL"
+   ],
+   "speed": {
+    "stall": "20 x B",
+    "start": "45 x B",
+    "max": "175 x B"
+   },
+   "acceleration": {
+    "start": 30,
+    "max": 75
+   },
+   "load": {
+    "start": 10,
+    "max": 225
+   },
+   "signature": 6,
+   "economy": {
+    "start": 1,
+    "max": 3,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 60,
+    "unit": "liters"
+   },
+   "dp": 40,
+   "page": "p.169"
+  },
+  {
+   "key": "jetPropeller-rotor-tilt-wing",
+   "label": "Rotor: Tilt-wing",
+   "engine": "jetPropeller",
+   "chassis": [
+    "tiltWing"
+   ],
+   "speed": {
+    "start": 280,
+    "max": 500
+   },
+   "acceleration": {
+    "start": 10,
+    "max": 20
+   },
+   "load": {
+    "start": 350,
+    "max": 2500
+   },
+   "signature": 4,
+   "economy": {
+    "start": 0.6,
+    "max": 1,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 750,
+    "unit": "liters"
+   },
+   "dp": 75,
+   "page": "p.169"
+  },
+  {
+   "key": "jetPropeller-tilt-wing-uav-medium-and-large",
+   "label": "Tilt-wing UAV, Medium and Large",
+   "engine": "jetPropeller",
+   "chassis": [
+    "tiltWingUavM",
+    "tiltWingUavL"
+   ],
+   "speed": {
+    "start": "45 x B",
+    "max": "175 x B"
+   },
+   "acceleration": {
+    "start": 6,
+    "max": 18
+   },
+   "load": {
+    "start": 10,
+    "max": 450
+   },
+   "signature": null,
+   "economy": {
+    "start": 0.6,
+    "max": 1,
+    "unit": "km/liter",
+    "idle": {
+     "start": "5 min/liter",
+     "max": "15 min/liter"
+    }
+   },
+   "fuel": {
+    "size": 60,
+    "unit": "liters"
+   },
+   "dp": 50,
+   "page": "p.169",
+   "_note": "Signature cell is blank in print."
+  },
+  {
+   "key": "jetPropeller-special-zeppelin",
+   "label": "Special: Zeppelin",
+   "engine": "jetPropeller",
+   "chassis": [
+    "zeppelin"
+   ],
+   "speed": {
+    "start": 70,
+    "max": 250
+   },
+   "acceleration": {
+    "start": 8,
+    "max": 26
+   },
+   "load": {
+    "start": 1000,
+    "max": 4000
+   },
+   "signature": 2,
+   "economy": {
+    "start": 1,
+    "max": 3,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 2000,
+    "unit": "liters"
+   },
+   "dp": 300,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-rotor-autogyro",
+   "label": "Rotor: Autogyro",
+   "engine": "jetTurbine",
+   "chassis": [
+    "autogyro"
+   ],
+   "speed": {
+    "start": 60,
+    "max": 200
+   },
+   "acceleration": {
+    "start": 10,
+    "max": 20
+   },
+   "load": {
+    "start": 15,
+    "max": 155
+   },
+   "signature": 4,
+   "economy": {
+    "start": 0.25,
+    "max": 0.4,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 250,
+    "unit": "liters"
+   },
+   "dp": 25,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-rotor-utility-helicopter-standard",
+   "label": "Rotor: Utility Helicopter, standard",
+   "engine": "jetTurbine",
+   "chassis": [
+    "utilityHelicopter"
+   ],
+   "speed": {
+    "start": 120,
+    "max": 350
+   },
+   "acceleration": {
+    "start": 10,
+    "max": 25
+   },
+   "load": {
+    "start": 850,
+    "max": 3600
+   },
+   "signature": 3,
+   "economy": {
+    "start": 0.2,
+    "max": 0.35,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 1000,
+    "unit": "liters"
+   },
+   "dp": 50,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-rotor-utility-helicopter-supercharged",
+   "label": "Rotor: Utility Helicopter, supercharged",
+   "engine": "jetTurbine",
+   "chassis": [
+    "utilityHelicopter"
+   ],
+   "speed": {
+    "start": 360,
+    "max": 500
+   },
+   "acceleration": {
+    "start": 15,
+    "max": 40
+   },
+   "load": {
+    "start": 400,
+    "max": 900
+   },
+   "signature": 2,
+   "economy": {
+    "start": 0.1,
+    "max": 0.3,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 1500,
+    "unit": "liters"
+   },
+   "dp": 100,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-rotor-cargo-helicopter",
+   "label": "Rotor: Cargo Helicopter",
+   "engine": "jetTurbine",
+   "chassis": [
+    "cargoHelicopter"
+   ],
+   "speed": {
+    "start": 120,
+    "max": 350
+   },
+   "acceleration": {
+    "start": 10,
+    "max": 25
+   },
+   "load": {
+    "start": 850,
+    "max": 12000
+   },
+   "signature": 3,
+   "economy": {
+    "start": 0.2,
+    "max": 0.35,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 1000,
+    "unit": "liters"
+   },
+   "dp": 150,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-rotor-attack-helicopter",
+   "label": "Rotor: Attack Helicopter",
+   "engine": "jetTurbine",
+   "chassis": [
+    "attackHelicopter"
+   ],
+   "speed": {
+    "start": 250,
+    "max": 350
+   },
+   "acceleration": {
+    "start": 20,
+    "max": 35
+   },
+   "load": {
+    "start": 1500,
+    "max": 5000
+   },
+   "signature": 4,
+   "economy": {
+    "start": 0.1,
+    "max": 0.3,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 3000,
+    "unit": "liters"
+   },
+   "dp": 1500,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-rotary-wing-uav-all",
+   "label": "Rotary Wing UAV, all",
+   "engine": "jetTurbine",
+   "chassis": [
+    "rotaryUavS",
+    "rotaryUavM",
+    "rotaryUavL"
+   ],
+   "speed": {
+    "start": 60,
+    "max": 200
+   },
+   "acceleration": {
+    "start": 6,
+    "max": 18
+   },
+   "load": {
+    "start": "10 x B",
+    "max": "450 x B"
+   },
+   "signature": "6 - B",
+   "economy": {
+    "start": 0.25,
+    "max": 0.4,
+    "unit": "km/liter",
+    "idle": {
+     "start": "5 min/liter",
+     "max": "15 min/liter"
+    }
+   },
+   "fuel": {
+    "size": 120,
+    "unit": "liters"
+   },
+   "dp": "30 + (10 x B)",
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-fixed-wing-single-engine",
+   "label": "Fixed Wing: Single Engine",
+   "engine": "jetTurbine",
+   "chassis": [
+    "singleEngine"
+   ],
+   "speed": {
+    "stall": 60,
+    "start": 320,
+    "max": 400
+   },
+   "acceleration": {
+    "start": 20,
+    "max": 35
+   },
+   "load": {
+    "start": 250,
+    "max": 2000
+   },
+   "signature": 3,
+   "economy": {
+    "start": 0.5,
+    "max": 0.75,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 750,
+    "unit": "liters"
+   },
+   "dp": 100,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-fixed-wing-twin-engine",
+   "label": "Fixed Wing: Twin Engine",
+   "engine": "jetTurbine",
+   "chassis": [
+    "twinEngine"
+   ],
+   "speed": {
+    "stall": 135,
+    "start": 500,
+    "max": 800
+   },
+   "acceleration": {
+    "start": 30,
+    "max": 42
+   },
+   "load": {
+    "start": 500,
+    "max": 5000
+   },
+   "signature": 3,
+   "economy": {
+    "start": 0.5,
+    "max": 0.75,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 1500,
+    "unit": "liters"
+   },
+   "dp": 150,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-fixed-wing-airliner",
+   "label": "Fixed Wing: Airliner",
+   "engine": "jetTurbine",
+   "chassis": [
+    "airliner"
+   ],
+   "speed": {
+    "stall": 150,
+    "start": 600,
+    "max": 1000
+   },
+   "acceleration": {
+    "start": 35,
+    "max": 60
+   },
+   "load": {
+    "start": 10000,
+    "max": 75000
+   },
+   "signature": 2,
+   "economy": {
+    "start": 0.4,
+    "max": 0.6,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 5000,
+    "unit": "liters"
+   },
+   "dp": 1000,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-fixed-wing-jet-fighter",
+   "label": "Fixed Wing: Jet Fighter",
+   "engine": "jetTurbine",
+   "chassis": [
+    "jetFighter"
+   ],
+   "speed": {
+    "stall": 150,
+    "start": 2000,
+    "max": 5000
+   },
+   "acceleration": {
+    "start": 80,
+    "max": 250
+   },
+   "load": {
+    "start": 7500,
+    "max": 12500
+   },
+   "signature": 5,
+   "economy": {
+    "start": 0.1,
+    "max": 0.3,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 7500,
+    "unit": "liters"
+   },
+   "dp": 2000,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-fixed-wing-uav-medium-large",
+   "label": "Fixed Wing UAV, Medium, Large",
+   "engine": "jetTurbine",
+   "chassis": [
+    "fixedUavM",
+    "fixedUavL"
+   ],
+   "speed": {
+    "stall": "20 x B",
+    "start": "100 x B",
+    "max": "60 x B^3"
+   },
+   "acceleration": {
+    "start": "10 + (10 x B)",
+    "max": "30 + (60 x B^2)"
+   },
+   "load": {
+    "start": 10,
+    "max": "500 x B^2"
+   },
+   "signature": 6,
+   "economy": {
+    "start": 0.5,
+    "max": 0.75,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 120,
+    "unit": "liters"
+   },
+   "dp": 80,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-vector-thunderbird",
+   "label": "Vector: Thunderbird",
+   "engine": "jetTurbine",
+   "chassis": [
+    "thunderbird"
+   ],
+   "speed": {
+    "stall": 150,
+    "start": 400,
+    "max": 750
+   },
+   "acceleration": {
+    "start": 25,
+    "max": 60
+   },
+   "load": {
+    "start": 10000,
+    "max": 20000
+   },
+   "signature": 3,
+   "economy": {
+    "start": 0.05,
+    "max": 0.3,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 7500,
+    "unit": "liters"
+   },
+   "dp": 2500,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-vector-jump-jet-fighter",
+   "label": "Vector: Jump-jet Fighter",
+   "engine": "jetTurbine",
+   "chassis": [
+    "jumpJet"
+   ],
+   "speed": {
+    "start": 700,
+    "max": 2000
+   },
+   "acceleration": {
+    "start": 50,
+    "max": 150
+   },
+   "load": {
+    "start": 2000,
+    "max": 9600
+   },
+   "signature": 5,
+   "economy": {
+    "start": 0.1,
+    "max": 0.3,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 2500,
+    "unit": "liters"
+   },
+   "dp": 2000,
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-vector-thrust-uav-small-large",
+   "label": "Vector Thrust UAV, Small, Large",
+   "engine": "jetTurbine",
+   "chassis": [
+    "vectorUavS",
+    "vectorUavL"
+   ],
+   "speed": {
+    "start": "60 x B",
+    "max": "200 x B"
+   },
+   "acceleration": {
+    "start": 10,
+    "max": 25
+   },
+   "load": {
+    "start": 10,
+    "max": 500
+   },
+   "signature": "6 - B",
+   "economy": {
+    "start": 0.25,
+    "max": 0.4,
+    "unit": "km/liter",
+    "idle": {
+     "start": "5 min/liter",
+     "max": "15 min/liter"
+    }
+   },
+   "fuel": {
+    "size": 120,
+    "unit": "liters"
+   },
+   "dp": "30 + (15 x B)",
+   "page": "p.169"
+  },
+  {
+   "key": "jetTurbine-special-zeppelin",
+   "label": "Special: Zeppelin",
+   "engine": "jetTurbine",
+   "chassis": [
+    "zeppelin"
+   ],
+   "speed": {
+    "start": 120,
+    "max": 400
+   },
+   "acceleration": {
+    "start": 12,
+    "max": 26
+   },
+   "load": {
+    "start": 1250,
+    "max": 4500
+   },
+   "signature": 1,
+   "economy": {
+    "start": 0.5,
+    "max": 0.75,
+    "unit": "km/liter"
+   },
+   "fuel": {
+    "size": 2000,
+    "unit": "liters"
+   },
+   "dp": 450,
+   "page": "p.169"
+  },
+  {
+   "key": "sail-sailboats-skiff",
+   "label": "Sailboats: Skiff",
+   "engine": "sail",
+   "chassis": [
+    "skiff"
+   ],
+   "speed": {
+    "start": 30,
+    "max": 60
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 7
+   },
+   "load": {
+    "start": 150,
+    "max": 750
+   },
+   "signature": 6,
+   "economy": {
+    "start": null,
+    "max": null,
+    "unit": ""
+   },
+   "fuel": {
+    "size": null,
+    "unit": ""
+   },
+   "dp": 10,
+   "page": "p.169"
+  },
+  {
+   "key": "sail-sailboats-sport-cruiser",
+   "label": "Sailboats: Sport Cruiser",
+   "engine": "sail",
+   "chassis": [
+    "sportCruiser"
+   ],
+   "speed": {
+    "start": 30,
+    "max": 50
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 6
+   },
+   "load": {
+    "start": 250,
+    "max": 1000
+   },
+   "signature": 6,
+   "economy": {
+    "start": null,
+    "max": null,
+    "unit": ""
+   },
+   "fuel": {
+    "size": null,
+    "unit": ""
+   },
+   "dp": 10,
+   "page": "p.169"
+  },
+  {
+   "key": "sail-sailboats-yacht",
+   "label": "Sailboats: Yacht",
+   "engine": "sail",
+   "chassis": [
+    "yacht"
+   ],
+   "speed": {
+    "start": 30,
+    "max": 45
+   },
+   "acceleration": {
+    "start": 3,
+    "max": 6
+   },
+   "load": {
+    "start": 350,
+    "max": 2500
+   },
+   "signature": 6,
+   "economy": {
+    "start": null,
+    "max": null,
+    "unit": ""
+   },
+   "fuel": {
+    "size": null,
+    "unit": ""
+   },
+   "dp": 10,
+   "page": "p.169"
+  }
+ ]
+}

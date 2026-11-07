@@ -103,6 +103,12 @@ if (typeof Hooks !== "undefined") Hooks.once("setup", async () => {
     const chassis = normalizeChassis(chassisRaw);
     const powerPlants = normalizePowerPlants(powerRaw);
     CONFIG.SR2E.registerVehicleDesignData({ chassis, powerPlants });
+    // The re-transcribed tables for the design engine (docs/DESIGN-DATA-CHECK.md); older systems lack the registry.
+    if (CONFIG.SR2E.registerVehicleDesignTables) {
+      const [c2, p2, rules] = await Promise.all([loadJson("design-chassis.json"), loadJson("design-powerplants.json"), loadJson("design-rules.json")]);
+      CONFIG.SR2E.registerVehicleDesignTables({ chassis: c2.chassis, powerPlants: p2.powerPlants, fuel: rules.fuel, markUp: rules.markUp });
+      console.log(`${MODULE_ID} | Registered design tables: ${c2.chassis.length} chassis, ${p2.powerPlants.length} power plants.`);
+    }
     console.log(`${MODULE_ID} | Registered vehicle design data: `
       + `${Object.keys(chassis).length} chassis, ${Object.keys(powerPlants).length} power plants.`);
   } catch (err) {
