@@ -204,7 +204,7 @@ const DESIGN = {
   // Protective (p.127–129)
   "Standard Vehicle Armor":        { dpPerLevel: 50, effects: { armor: "R" }, loadFormula: "B x B x 5 x R", modKey: "standard-armor", restrictions: ["notWith:concealed-armor"], page: "p.127" },
   "Concealed Vehicle Armor":       { dpPerLevel: 50, effects: { armor: "R" }, cfPerLevel: 2, loadFormula: "B x B x 5 x R", modKey: "concealed-armor", restrictions: ["notWith:standard-armor"], page: "p.127" },
-  "Ablative Armor":                { designable: false, loadFormula: "B x 100", page: "p.127" },
+  "Ablative Armor":                { effects: { armor: "min(2 x R, B)" }, designable: false, loadFormula: "B x 100", page: "p.127" },
   "Advanced Passenger Protection System (APPS)": { dpPerLevel: 30, restrictions: ["not:bike"], page: "p.128", note: "Rating = seats." },
   "Crash Cage":                    { dp: 40, load: 10, restrictions: ["not:bike"], page: "p.128" },
   "EnviroSeal (Gas Seal)":         { dpFormula: "B x 3", restrictions: ["not:bike"], page: "p.128" },
