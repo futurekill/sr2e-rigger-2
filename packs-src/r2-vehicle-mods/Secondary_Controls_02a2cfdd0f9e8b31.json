@@ -23,6 +23,10 @@
     "designNuyen": false,
     "mountPoints": 0,
     "modKey": "",
+    "maxRating": "",
+    "restrictions": [
+      "not:bike"
+    ],
     "installed": false,
     "notes": "A duplicate set of steering and operating controls for a co-pilot or driving instructor (not available for motorcycles). Parts cost 400¥; Avail 3/72 hrs; Street Index 1; Base Time 40 hrs; Target Number 4. Rigger 2 p.126. (Design specifications p.126.)"
   },

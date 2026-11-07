@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.6.0 — 2026-11-07
+
+Needs the SR2E system 0.142.1 or later (its vehicle design engine).
+
+### Fixed
+- **The vehicle design tables are re-transcribed and checked** (Chassis Table p.170–171, Power Plant Table
+  p.167–169, Fuel Tank Capacity p.116, Mark-Up Factors p.114). Two independent readings of the pages agreed on every
+  cell (docs/DESIGN-DATA-CHECK.md). The old data had errors, e.g. the gasoline Sports Car engine started at Speed 100
+  (book: 160), Fixed Wing UAV (S) cost 2,210 DP (book: 710), Rotary Wing UAV (S) 510 (book: 310), Walker (Micro) 205
+  (book: 265). Economy, idle rates, fuel size and aircraft stall speeds are now there, every power plant lists the
+  chassis it fits, and the drone engines priced by Body work.
+- **Every vehicle modification's design cost, CF and Load is re-read** (p.118–146, two passes). Many were wrong or
+  missing: Secondary Controls 5 DP / 1 CF (was 35 DP), Crash Cage 10 kg (was 25), RAM costs levels³ × 50, ablative
+  armor isn't a design option, ED/ECD cargo by level, the ECM/ECCM/Sensor weights, anti-theft Rating 10 = 500 DP,
+  Spotlight 6 DP. "SurCell" is **SunCell**.
+
+### Changed
+- **Variants are separate items** (66 → 99 modifications): turret sizes plus anti-aircraft and pop-up turrets, remote
+  turrets, the four fixed-mount kinds, firearm conversion kits, seats, ejection seats, sidecars, the EnviroSeal
+  options, Smartlink I/II, the amphibious levels, adjusted controls by metatype, and the anti-theft shock system.
+  Each has its own book values. Vehicles you already have keep their copies.
+- Costs that depend on the vehicle are now exact formulas (e.g. Drive-by-Wire = chassis DP × 1.75 per level,
+  Remote-Control Interface = 25 × Body, armor weighs Body × Body × 5 kg per point), worked out by the system.
+
 ## 0.5.3 — 2026-10-23
 
 ### Fixed

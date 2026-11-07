@@ -23,6 +23,8 @@
     "designNuyen": false,
     "mountPoints": 0,
     "modKey": "",
+    "maxRating": "",
+    "restrictions": [],
     "installed": false,
     "notes": "Adds rigidity that mitigates roll-over damage: negates the doubled Damage Resistance penalty for hard-tops and grants +3 dice to the occupant's Damage Resistance Test in a roll. Also required to mount some weapons on civilian vehicles. Parts cost 2,000¥; Avail 3/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.129. (Design specifications p.129.)"
   },

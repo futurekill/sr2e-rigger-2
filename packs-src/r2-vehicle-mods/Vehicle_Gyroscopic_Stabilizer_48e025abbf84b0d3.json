@@ -22,7 +22,11 @@
     "designable": true,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "gyro",
+    "maxRating": "2 x B",
+    "restrictions": [
+      "notWith:recoil-adjuster"
+    ],
     "installed": false,
     "notes": "Stabilizes weapons in fixed mounts/turrets — each level negates 1 point of combined recoil + movement modifiers (not compatible with gunnery recoil adjusters). If total active rating exceeds the vehicle's Body, Handling worsens by 1 per point over Body. Parts cost 1,000¥/level; max 2 × Body; load −(Rating × 24) kg; Avail 8/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.136. (Design specifications p.136.)"
   },

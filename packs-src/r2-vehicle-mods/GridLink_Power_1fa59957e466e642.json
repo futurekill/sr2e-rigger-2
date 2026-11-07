@@ -23,6 +23,12 @@
     "designNuyen": false,
     "mountPoints": 0,
     "modKey": "",
+    "maxRating": "",
+    "restrictions": [
+      "only:bike,car",
+      "notDrone",
+      "engine:electric"
+    ],
     "installed": false,
     "notes": "Lets an electric ground vehicle draw power from a city's buried GridLink induction grid at normal traffic speeds (no battery drain). Monthly grid fee = Body × 100¥ (cars), × 25¥ (motorcycles), or × 250¥ (trucks/buses). Parts cost 600¥; 1 CF; Avail 3/96 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.121. (Design specifications p.121.)"
   },

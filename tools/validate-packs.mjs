@@ -41,6 +41,22 @@ for (const pack of packs.sort()) {
   }
 }
 
+/** The system evaluator's grammar, as a structural check: tokens, balanced parentheses, operand/operator alternation. */
+function formulaSyntaxOk(v) {
+  const toks = v.replace(/\s+/g, "").match(/floor\(|ceil\(|min\(|max\(|\d+(\.\d+)?|[RBPCEK]|[+\-x/^(),]/g);
+  if (!toks || toks.join("") !== v.replace(/\s+/g, "")) return false;
+  let depth = 0, wantOperand = true;
+  for (const t of toks) {
+    if (t.endsWith("(")) { if (!wantOperand) return false; depth++; continue; }
+    if (t === ")") { if (wantOperand) return false; if (--depth < 0) return false; continue; }
+    if (t === ",") { if (wantOperand || depth < 1) return false; wantOperand = true; continue; }
+    if ("+-x/^".includes(t)) { if (wantOperand && t !== "-") return false; wantOperand = true; continue; }
+    if (!wantOperand) return false;
+    wantOperand = false;
+  }
+  return depth === 0 && !wantOperand;
+}
+
 // ── Vehicle design tables (docs/DESIGN-DATA-CHECK.md) ─────────────────────────────────────────────────────
 {
   const load = (f) => JSON.parse(readFileSync(join("tools/data", f), "utf8"));
@@ -80,9 +96,12 @@ for (const pack of packs.sort()) {
   const modDir = join(ROOT, "r2-vehicle-mods");
   for (const f of readdirSync(modDir).filter(x => x.endsWith(".json"))) {
     const sys = JSON.parse(readFileSync(join(modDir, f), "utf8")).system ?? {};
-    for (const k of ["dpFormula", "cfFormula", "loadFormula"]) {
+    for (const k of ["dpFormula", "cfFormula", "loadFormula", "maxRating"]) {
       const v = sys[k] ?? "";
-      if (v && !/^([\d\s.RBPCEK+\-x/^()]|floor|ceil)+$/.test(v)) note(`${f}: ${k} "${v}" has something other than R B P C E K, numbers and + - x / ^ ( ) floor ceil`);
+      if (v && !formulaSyntaxOk(v)) note(`${f}: ${k} "${v}" isn't a valid formula (R B P C E K, numbers, + - x / ^ ( ) , floor ceil min max)`);
+    }
+    for (const t of sys.restrictions ?? []) {
+      if (!/^(only|not|engine|notWith):[A-Za-z,-]+$|^(notDrone|needsEngineCustom|needsRemote|needsRiggerBase|notAircraftUnlessElectric)$|^minBody:\d+$/.test(t)) note(`${f}: unknown restriction "${t}"`);
     }
     if (typeof sys.designable !== "boolean") note(`${f}: designable must be true or false`);
   }

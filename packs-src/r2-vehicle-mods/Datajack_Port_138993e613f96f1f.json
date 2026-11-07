@@ -22,7 +22,9 @@
     "designable": true,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "datajack-port",
+    "maxRating": "",
+    "restrictions": [],
     "installed": false,
     "notes": "Lets a rigger control the vehicle directly through a datajack — rudimentary cybernetic control without the Reaction/Initiative bonuses of a VCR. Parts cost 2,500¥ (5,000¥ on motorcycles); Avail 3/72 hrs; Street Index 1.5; Base Time 56 hrs (112 on bikes); load −15 kg. Rigger 2 p.124. (Design specifications p.124.)"
   },

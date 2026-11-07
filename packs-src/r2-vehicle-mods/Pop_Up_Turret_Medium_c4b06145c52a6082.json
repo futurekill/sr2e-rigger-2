@@ -23,6 +23,8 @@
     "designNuyen": false,
     "mountPoints": 6,
     "modKey": "",
+    "maxRating": "",
+    "restrictions": [],
     "installed": false,
     "notes": "A motorized, armored ring mount that protects its weapon (−1 to the vehicle's Signature). Sizes by max Weapon Value / hardpoints / parts cost: Mini (WV 2, 1 hp, 5,000¥, 7 CF, −25 kg), Small (WV 3, 2 hp, 7,500¥, 8 CF, −100 kg), Medium (WV 6, 3 hp, 15,000¥, 16 CF, −1,000 kg); Large (WV 8, 4 hp) and Extra-Large (WV 10, 6 hp) are custom-built. Anti-aircraft variant ×1.5 cost +1 CF; pop-up variant ×2 cost, doubled CF. Avail by formula; SI 2–3. Rigger 2 p.134–135. Design: Double CF; weapon value 1 lower (p.135). (Design specifications p.135.)"
   },

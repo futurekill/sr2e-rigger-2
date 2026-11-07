@@ -23,6 +23,8 @@
     "designNuyen": false,
     "mountPoints": 1,
     "modKey": "",
+    "maxRating": "",
+    "restrictions": [],
     "installed": false,
     "notes": "The simplest mount — a reinforced swivel socket (one firmpoint) accepting any firmpoint-sized weapon; ~60° left/right and 30° up/down arc, and grants 2 points of recoil compensation. Cannot be operated remotely by a jacked-in rigger; mounting/removing is a Complex Action (+ Quickness (3) Test if moving). Parts cost 50¥; Avail 4/96 hrs; Street Index 1.5; Base Time 12 hrs. Rigger 2 p.133. (Design specifications p.133.)"
   },

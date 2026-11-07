@@ -22,7 +22,12 @@
     "designable": true,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "improved-control-surfaces",
+    "maxRating": "2",
+    "restrictions": [
+      "only:boat",
+      "notWith:drive-by-wire"
+    ],
     "installed": false,
     "notes": "Reshaped rudders and control surfaces that improve a boat's Handling (watercraft only). Parts cost = vehicle's original cost × 1.15 per 1-point Handling improvement; max −2 Handling; Avail 6/12 days; Street Index 2; Base Time (levels × 40) hrs. Rigger 2 p.125. (Design specifications p.125.)"
   },

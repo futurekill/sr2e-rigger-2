@@ -125,3 +125,10 @@ These catch the cheap mistakes before opening Foundry. Run from the repo root.
 
 ## Implants arrive installed (2026-10-23)
 - [ ] In play (not character creation), drag one of this module's cyberware items onto a character: the Buy dialog shows the **Cybersurgery** section and Essence drops once it's bought.
+
+## Design data and modifications (0.6.0; docs/DESIGN-DATA-CHECK.md)
+- [ ] `npm run validate`: 61 chassis, 92 power plants, every mod formula valid, `data/` in step with `tools/data/`.
+- [ ] In Foundry (system ≥ 0.142.1): `CONFIG.SR2E.vehicleDesignTables` has 61 chassis / 92 power plants / 6 fuel rows;
+      the Vehicle Modifications compendium has 99 items, including Turret (Mini/Small/Medium) and SunCell Power.
+- [ ] Drop Standard Vehicle Armor (rating 2) on a Body 3 vehicle with Load 200: the sheet shows 110 kg free.
+

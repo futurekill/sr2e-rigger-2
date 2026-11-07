@@ -23,6 +23,10 @@
     "designNuyen": false,
     "mountPoints": 0,
     "modKey": "",
+    "maxRating": "",
+    "restrictions": [
+      "not:bike"
+    ],
     "installed": false,
     "notes": "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128. (Design specifications p.128.)"
   },
