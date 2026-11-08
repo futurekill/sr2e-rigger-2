@@ -1,0 +1,2 @@
+effect note: External fixed mounts -1 Signature; internal mounts -1 only while armed (p.131)
+seats p.142: bench/bucket armor 1,250¥ per point in customization (12 DP in design), up to 2 points; reinforced bucket +100¥ per extra 25 kg; metahuman-adjusted production variants +1,200¥ per seat
