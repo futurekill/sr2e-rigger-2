@@ -196,7 +196,7 @@ const DESIGN = {
   "Drive-by-Wire System":          { dpFormula: "C x 1.75 x R", effects: { handling: "-R", handlingOff: "-R" }, modKey: "drive-by-wire", maxRating: "3", restrictions: ["notWith:improved-control-surfaces,improved-suspension"], page: "p.124" },
   "Improved Control Surfaces (Watercraft)": { dpFormula: "C x 1.40 x R", effects: { handling: "-R" }, modKey: "improved-control-surfaces", maxRating: "2", restrictions: ["only:boat", "notWith:drive-by-wire"], page: "p.125" },
   "Improved Suspension (Ground Vehicles)":  { dpFormula: "C x 1.25 x R", effects: { handling: "-R", "handlingOff@bike": "-R" }, modKey: "improved-suspension", maxRating: "2", restrictions: ["only:bike,car", "notWith:drive-by-wire"], page: "p.125" },
-  "Off-Road Suspension":           { dpFormula: "C x 1.50 x R", effects: { handling: "R", handlingOff: "-R", speed: "-15", economyMult: "1.15", "economyMult@bike": "1.30", "economyMult@transport": "1.40" }, maxRating: "2", restrictions: ["only:bike,car"], page: "p.125" },
+  "Off-Road Suspension":           { dpFormula: "C x 1.50 x R", modKey: "off-road-suspension", effects: { handling: "R", handlingOff: "-R", speed: "-15", economyMult: "1.15", "economyMult@bike": "1.30", "economyMult@transport": "1.40" }, maxRating: "2", restrictions: ["only:bike,car"], page: "p.125" },
   "Remote-Control Interface":      { dpFormula: "25 x B", modKey: "remote-control-interface", restrictions: ["notDrone"], page: "p.125" },
   "Remote Pilot Advanced Programming": { dpTable: [0, 50, 250, 1250, 5000], modKey: "remote-pilot", maxRating: "5", restrictions: ["needsRemote"], page: "p.126" },
   "Rigger Adaptation":             { dp: 35, modKey: "rigger-adaptation", restrictions: ["needsRiggerBase"], page: "p.126" },

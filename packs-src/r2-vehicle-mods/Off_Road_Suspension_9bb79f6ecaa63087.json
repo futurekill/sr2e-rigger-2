@@ -22,7 +22,7 @@
     "designable": true,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "off-road-suspension",
     "maxRating": "2",
     "restrictions": [
       "only:bike,car"
