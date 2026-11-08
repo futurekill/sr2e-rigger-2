@@ -26,6 +26,35 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "3000",
+        "baseTime": "8",
+        "tn": "3",
+        "cf": "1",
+        "cf@rotor": "16",
+        "load": "25"
+      },
+      "market": [
+        {
+          "availability": "8/14 days",
+          "streetIndex": 2
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle shop",
+      "pageCust": "p.134",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "A freely-rotating ring with a tripod, a step up from a pintle mount (hardtop or roll-bar-equipped vehicles only); counts as a hardpoint, can be operated remotely by a jacked-in rigger, and grants 6 points of recoil compensation. Parts cost 3,000¥; Avail 8/14 days; Street Index 2; Base Time 8 hrs; 1 CF (16 CF for door-gun config); load −25 kg. Rigger 2 p.133–134. Design: 16 CF as a helicopter door gun. (Design specifications p.134.)"
   },

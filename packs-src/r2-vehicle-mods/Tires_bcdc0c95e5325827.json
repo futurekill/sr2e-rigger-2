@@ -26,6 +26,8 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {},
     "installed": false,
     "notes": "Replacement tires (spares take ½ Body CF). Cost each by type: Standard Body × 50¥ (halves suspension/Handling mod benefits), Performance Body × 75¥ (for improved suspension/drive-by-wire), Off-Road Body × 125¥ (required for off-road suspension), Dual-Purpose Body × 250¥ (on/off-road active suspension); Runflat = tire cost + 200¥ (5/3 armor protection). Rigger 2 p.146. Design: Standard tires come free; special tires' ¥ cost is added to the design's price (p.115 example). (Design specifications p.146.)"
   },

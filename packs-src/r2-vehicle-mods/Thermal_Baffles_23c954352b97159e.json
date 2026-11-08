@@ -22,13 +22,51 @@
     "designable": true,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "thermal-baffles",
     "maxRating": "2",
     "restrictions": [
       "engine:methane,gasoline,diesel,jetPropeller,jetTurbine"
     ],
     "effects": {
       "signature": "R"
+    },
+    "stack": "levels",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "B x 5000 x R",
+        "partsCost@bike": "B x 6000 x R",
+        "partsCost@truck": "B x 7500 x R",
+        "partsCost@fixedWing": "B x 7500 x R",
+        "partsCost@tractor": "B x 10000 x R",
+        "partsCost@rotor": "B x 10000 x R",
+        "partsCost@hovercraft": "B x 3750 x R",
+        "partsCost@boat": "B x 2500 x R",
+        "partsCost@zeppelin": "B x 2500 x R",
+        "baseTime": "R x 8",
+        "tn": "4",
+        "cf": "3 x R",
+        "load": "B x 50 x R"
+      },
+      "market": [
+        {
+          "availability": "6/14 days",
+          "streetIndex": 2
+        }
+      ],
+      "max": {
+        "value": "2"
+      },
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.130",
+      "state": "",
+      "choice": {}
     },
     "installed": false,
     "notes": "Heat-blocking baffles that mask a vehicle's thermographic signature (gasoline/methane/diesel/jet engines). Parts cost per +1 Signature: ground Body × 5,000¥, motorcycles Body × 6,000¥, trucks/fixed-wing Body × 7,500¥, tractors/helicopters Body × 10,000¥, hovercraft Body × 3,750¥, watercraft/zeppelins Body × 2,500¥; max +2; load −(Body × 50) kg/level; Avail 6/14 days; Street Index 3. Rigger 2 p.130. (Design specifications p.130.)"

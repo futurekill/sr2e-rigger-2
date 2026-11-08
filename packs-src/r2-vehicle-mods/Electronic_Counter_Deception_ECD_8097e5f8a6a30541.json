@@ -43,10 +43,80 @@
     "designable": true,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "ecd",
     "maxRating": "6",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "baseTime": "16 x R",
+        "tn": "4",
+        "set": "1"
+      },
+      "market": [
+        {
+          "cost": 25000,
+          "cf": 3,
+          "load": 35,
+          "availability": "8/30 days",
+          "streetIndex": 3,
+          "restricted": ""
+        },
+        {
+          "cost": 80000,
+          "cf": 5,
+          "load": 45,
+          "availability": "8/45 days",
+          "streetIndex": 3.5,
+          "restricted": ""
+        },
+        {
+          "cost": 200000,
+          "cf": 7,
+          "load": 60,
+          "availability": "8/60 days",
+          "streetIndex": 4,
+          "restricted": ""
+        },
+        {
+          "cost": 750000,
+          "cf": 4,
+          "load": 45,
+          "availability": "10/3 months",
+          "streetIndex": 4.5,
+          "restricted": ""
+        },
+        {
+          "cost": 2000000,
+          "cf": 6,
+          "load": 60,
+          "availability": "12/6 months",
+          "streetIndex": 5,
+          "restricted": ""
+        },
+        {
+          "cost": 5000000,
+          "cf": 8,
+          "load": 110,
+          "availability": "16/1 year",
+          "streetIndex": null,
+          "restricted": "military"
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "electronicsBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.138-139",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Reality-checking components (inertial nav, flux-density monitors) that negate enemy Electronic Deception (security/military only). Cost & weight by Level: L1 25,000¥/35 kg/SI 3, L2 80,000¥/45/SI 3.5, L3 200,000¥/60/SI 4, L4 750,000¥/60/SI 4.5, L5 2M¥/60/SI 5, L6 5M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6); Base Time 10 hrs/level. Rigger 2 p.139. (Design specifications p.139.)"
   },

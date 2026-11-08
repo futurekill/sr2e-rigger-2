@@ -26,6 +26,34 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "50",
+        "baseTime": "12",
+        "tn": "2",
+        "cf": "0",
+        "load": "0"
+      },
+      "market": [
+        {
+          "availability": "4/96 hours",
+          "streetIndex": 1.5
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle shop",
+      "pageCust": "p.133",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "The simplest mount — a reinforced swivel socket (one firmpoint) accepting any firmpoint-sized weapon; ~60° left/right and 30° up/down arc, and grants 2 points of recoil compensation. Cannot be operated remotely by a jacked-in rigger; mounting/removing is a Complex Action (+ Quickness (3) Test if moving). Parts cost 50¥; Avail 4/96 hrs; Street Index 1.5; Base Time 12 hrs. Rigger 2 p.133. (Design specifications p.133.)"
   },

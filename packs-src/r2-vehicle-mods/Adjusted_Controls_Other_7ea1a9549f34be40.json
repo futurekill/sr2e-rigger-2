@@ -26,6 +26,32 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "3000",
+        "baseTime": "40",
+        "tn": "4"
+      },
+      "market": [
+        {
+          "availability": "3/72 hours",
+          "streetIndex": 1
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.122",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Re-fits manual controls (wheel, pedals, dashboard) to a non-standard body — dwarfs, trolls, or any metahuman whose size/disability prevents using standard controls. Design 25 points; parts cost 2,500¥; Avail 3/72 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.122. Design: Normally not available as a design option (p.122). (Design specifications p.122.)"
   },

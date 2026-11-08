@@ -26,6 +26,35 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "600",
+        "baseTime": "1",
+        "tn": "3",
+        "cf": "0",
+        "load": "0",
+        "baseUnit": "days"
+      },
+      "market": [
+        {
+          "availability": "4/96 hours",
+          "streetIndex": 1.5
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle shop",
+      "pageCust": "p.145-146",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "A concentrated beam (effective range 600 m; spot ~0.5 m at the source widening to ~5 m at max), controllable manually or remotely from inside; also available in invisible medium-range infrared. Parts cost 600¥; Avail 4/96 hrs; Street Index 1.5; Base Time 1 day. Rigger 2 p.145–146. (Design specifications p.146.)"
   },

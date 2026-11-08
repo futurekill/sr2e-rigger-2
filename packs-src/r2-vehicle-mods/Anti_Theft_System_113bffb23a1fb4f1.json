@@ -33,10 +33,76 @@
     "designable": true,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "anti-theft",
     "maxRating": "10",
     "restrictions": [],
     "effects": {},
+    "stack": "levels",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "100 x (min(max(R1, 0), 3) - min(max(R0, 0), 3)) + 400 x (min(max(R1, 3), 6) - min(max(R0, 3), 6)) + 1000 x (min(max(R1, 6), 9) - min(max(R0, 6), 9)) + 5000 x (max(R1, 9) - max(R0, 9))",
+        "baseTime": "40",
+        "tn": "4",
+        "cf": "0",
+        "load": "0"
+      },
+      "market": [
+        {
+          "availability": "3/6 days",
+          "streetIndex": 1
+        },
+        {
+          "availability": "3/6 days",
+          "streetIndex": 1
+        },
+        {
+          "availability": "3/6 days",
+          "streetIndex": 1
+        },
+        {
+          "availability": "4/7 days",
+          "streetIndex": 1.25
+        },
+        {
+          "availability": "4/7 days",
+          "streetIndex": 1.25
+        },
+        {
+          "availability": "4/7 days",
+          "streetIndex": 1.25
+        },
+        {
+          "availability": "5/10 days",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "5/10 days",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "5/10 days",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "6/14 days",
+          "streetIndex": 2
+        }
+      ],
+      "max": {
+        "value": "10"
+      },
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.141",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Rated 1–10 (the rating = dice in an opposed test vs an intruder's Electronics/Maglocks). Parts cost by tier: R1–3 100¥/rating (SI 1), R4–6 400¥ (SI 1.25), R7–9 1,000¥ (SI 1.5), R10+ 5,000¥ (SI 2). Optional responses: automated security call; standard shock system +2,000¥ (10S Stun); or an explosive self-destruct (plastic explosive, Power = Body²). Base Time 40 hrs. Rigger 2 p.141. (Design specifications p.141.)"
   },

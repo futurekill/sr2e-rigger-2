@@ -26,6 +26,37 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "2500",
+        "partsCost@bike": "5000",
+        "baseTime": "56",
+        "baseTime@bike": "112",
+        "tn": "4",
+        "tn@bike": "8",
+        "cf": "1",
+        "load": "15"
+      },
+      "market": [
+        {
+          "availability": "3/72 hours",
+          "streetIndex": 1.5
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.124",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Lets a rigger control the vehicle directly through a datajack — rudimentary cybernetic control without the Reaction/Initiative bonuses of a VCR. Parts cost 2,500¥ (5,000¥ on motorcycles); Avail 3/72 hrs; Street Index 1.5; Base Time 56 hrs (112 on bikes); load −15 kg. Rigger 2 p.124. (Design specifications p.124.)"
   },

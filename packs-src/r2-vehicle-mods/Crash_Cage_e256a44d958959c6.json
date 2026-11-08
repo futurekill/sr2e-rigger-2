@@ -28,6 +28,34 @@
       "not:bike"
     ],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "3500",
+        "baseTime": "16",
+        "tn": "4",
+        "cf": "2",
+        "load": "25"
+      },
+      "market": [
+        {
+          "availability": "4/96 hours",
+          "streetIndex": 2
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle shop",
+      "pageCust": "p.128",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "A padded, hydraulically-cushioned passenger cage that protects occupants in a crash (grants a Damage Resistance Test); not for motorcycles. Parts cost 3,500¥; Avail 6/96 hrs; Street Index 2; Base Time 16 hrs; load −25 kg. Rigger 2 p.128. (Design specifications p.128.)"
   },

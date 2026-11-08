@@ -22,11 +22,46 @@
     "designable": false,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "ablative-armor",
     "maxRating": "",
     "restrictions": [],
     "effects": {
       "armor": "min(2 x R, B)"
+    },
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "load": "B x 100",
+        "cf": "0",
+        "set": "1"
+      },
+      "market": [
+        {
+          "cost": 700,
+          "availability": "8/14 days",
+          "streetIndex": 2
+        },
+        {
+          "cost": 1600,
+          "availability": "12/14 days",
+          "streetIndex": 2
+        },
+        {
+          "cost": 2500,
+          "availability": "14/21 days",
+          "streetIndex": 2
+        }
+      ],
+      "max": {},
+      "procedure": "fixed",
+      "fixedHours": 6,
+      "skills": [],
+      "combine": "lowest",
+      "equipment": "",
+      "pageCust": "p.127",
+      "state": "",
+      "choice": {}
     },
     "installed": false,
     "notes": "Sacrificial ceramic-metallic plates (~10 cm each) that reduce damage and flake away; max added Armor equals the vehicle's Body. Customization-only (no Skill Test, 6 hrs to fit/replace), reduces Load by (Body × 100). Tier cost/availability: L1 700¥ 8/14 days, L2 1,500¥ 12/14 days, L3 2,500¥ 14/21 days; Street Index 2. Rigger 2 p.127. (Design specifications p.127.)"

@@ -34,6 +34,25 @@
       "speed": "-15",
       "economyMult": "0.9"
     },
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "2000"
+      },
+      "market": [
+        {}
+      ],
+      "max": {},
+      "procedure": "fixed",
+      "fixedHours": 0.25,
+      "skills": [],
+      "combine": "lowest",
+      "equipment": "",
+      "pageCust": "p.145",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "A sidecar (Body = the cycle's): −15 Speed, +Handling, economy ×0.9. Sizes by cargo/Handling/cost: Small 4 CF/+1/1,000¥, Medium 8 CF/+1/2,000¥, Large 12 CF/+2/3,500¥ (seating eats the cargo CF). Mount/remove in 15 min; armor upgradeable per the standard rules. Rigger 2 p.145. (Design specifications p.145.)"
   },

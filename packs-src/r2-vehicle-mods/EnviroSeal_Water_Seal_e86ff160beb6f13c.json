@@ -28,6 +28,34 @@
       "not:bike"
     ],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "750 x B",
+        "baseTime": "12",
+        "tn": "3",
+        "cf": "1",
+        "load": "0"
+      },
+      "market": [
+        {
+          "availability": "8/14 days",
+          "streetIndex": 2.5
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.128",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128. (Design specifications p.128.)"
   },

@@ -26,6 +26,34 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "V x 0.1 + 2500",
+        "baseTime": "B x 8",
+        "tn": "4",
+        "cf": "R + 2",
+        "load": "45"
+      },
+      "market": [
+        {
+          "availability": "4/96 hours",
+          "streetIndex": 2
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.144",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "A cradle that launches and recovers airborne drones from a moving vehicle and stores them as an armored mini-hangar (same Armor as the vehicle, ½ its Body). Launching takes two actions; recovery needs Handling Tests from both drivers. Design cost = Body × 12 points; parts cost scales per Body point; CF = drone storage + 2 CF; Avail 6/14 days; Street Index 2. Rigger 2 p.144. Design: Rating = the CF needed to store the drone. (Design specifications p.144.)"
   },

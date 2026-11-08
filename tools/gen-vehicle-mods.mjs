@@ -7,6 +7,7 @@
 // notes }. Re-run, then `npm run build-packs r2-vehicle-mods`.
 import { writeFileSync, mkdirSync } from "node:fs";
 import { createHash } from "node:crypto";
+import { CUSTOM } from "./data/custom-specs.mjs";
 
 const DIR = "packs-src/r2-vehicle-mods";
 mkdirSync(DIR, { recursive: true });
@@ -25,6 +26,7 @@ function mod(m) {
       dpFormula: m.dpFormula ?? "", cfFormula: m.cfFormula ?? "", loadFormula: m.loadFormula ?? "",
       designable: m.designable ?? true, designNuyen: !!m.designNuyen, mountPoints: m.mountPoints ?? 0, modKey: m.modKey ?? "",
       maxRating: m.maxRating ?? "", restrictions: m.restrictions ?? [], effects: m.effects ?? {},
+      stack: m.stack ?? "", custom: m.custom ?? {},
       installed: false, notes: m.notes ?? ""
     },
     effects: [], flags: {}, folder: null, sort: 0,
@@ -181,7 +183,9 @@ const MODS = [
 // cost is added to the design's price), mountPoints (hardpoint 2, firmpoint 1, p.131), modKey, page.
 const DESIGN = {
   // Engine (p.120–122)
-  "Engine Customization":          { designable: false, page: "p.120", note: "In design, take it as the Engine Customization design OPTION (the Workshop's power-plant step)." },
+  "Engine Customization (Speed)":  { designable: false, modKey: "engine-custom-speed", effects: { speed: "30 x R" }, page: "p.120", note: "In design, take it as the Engine Customization design OPTION (the Workshop's options step)." },
+  "Engine Customization (Acceleration)": { designable: false, modKey: "engine-custom-acceleration", effects: { acceleration: "2 x R" }, page: "p.120", note: "In design, take it as the Engine Customization design OPTION (the Workshop's options step)." },
+  "Engine Customization (Load)":   { designable: false, modKey: "engine-custom-load", effects: { load: "B x 50 x R" }, page: "p.120", note: "In design, take it as the Engine Customization design OPTION (the Workshop's options step)." },
   "GridLink Power":                { dp: 0, restrictions: ["only:bike,car", "notDrone", "engine:electric"], page: "p.121" },
   "Nitrous Oxide Injectors":       { dpPerLevel: 55, cf: 1.5, load: 15, maxRating: "6", restrictions: ["engine:gasoline,diesel"], page: "p.121" },
   "SunCell Power":                 { dp: 5, restrictions: ["engine:electric", "not:bike"], page: "p.121" },
@@ -289,6 +293,7 @@ const DESIGN = {
 };
 // Items whose variants are separate entries above: the old combined item is replaced by them.
 const VARIANTS = {
+  "Engine Customization": ["Engine Customization (Speed)", "Engine Customization (Acceleration)", "Engine Customization (Load)"],
   "Adjusted Controls": ["Adjusted Controls (Dwarf)", "Adjusted Controls (Troll)", "Adjusted Controls (Other)"],
   "EnviroSeal System": ["EnviroSeal (Gas Seal)", "EnviroSeal (Water Seal)", "EnviroSeal (Engine Seal)", "EnviroSeal (Cabin Overpressurization)"],
   "Firearm Conversion Kit": ["Firearm Conversion Kit (Pistol)", "Firearm Conversion Kit (SMG)", "Firearm Conversion Kit (Rifle/Shotgun/LMG)", "Firearm Conversion Kit (Heavy Weapon)"],
@@ -316,6 +321,11 @@ if (missing.length) throw new Error(`No Design Specifications for: ${missing.joi
 const unused = Object.keys(DESIGN).filter(k => !MODS.some(m => m.name === k));
 if (unused.length) throw new Error(`DESIGN entries with no item: ${unused.join(", ")}`);
 
+// Printed without a customization specification block (the rules are in their text; GM prices them).
+const NO_CUSTOM_SPECS = new Set(["External Missile/Rocket Mount", "Internal Missile/Rocket Mount", "Aircraft Drop Tanks", "Tires"]);
+const strayCustom = Object.keys(CUSTOM).filter(k => !MODS.some(m => m.name === k));
+if (strayCustom.length) throw new Error(`CUSTOM entries with no item: ${strayCustom.join(", ")}`);
+
 let n = 0;
 for (const m of MODS) {
   const d = DESIGN[m.name];
@@ -324,6 +334,17 @@ for (const m of MODS) {
     load: d.load ?? 0, loadPerLevel: d.loadPerLevel ?? 0, loadTable: d.loadTable ?? [], loadFormula: d.loadFormula ?? "",
     designable: d.designable ?? true, designNuyen: !!d.designNuyen, mountPoints: d.mountPoints ?? 0, modKey: d.modKey ?? "",
     maxRating: d.maxRating ?? "", restrictions: d.restrictions ?? [], effects: d.effects ?? {} });
+  // Customization Specifications (tools/data/custom-specs.mjs; system docs/PLAN-vehicle-customization.md C2).
+  const c = CUSTOM[m.name];
+  if (c) {
+    if (c.key && !m.modKey) m.modKey = c.key;
+    m.stack = c.stack ?? "";
+    m.effects = { ...m.effects, ...(c.effects ?? {}) };
+    m.custom = { customizable: c.customizable ?? true, formulas: Object.fromEntries(Object.entries(c.f ?? {}).filter(([, v]) => v != null)), market: c.rows ?? [], max: c.max ?? {},
+      procedure: c.procedure ?? "test", fixedHours: c.fixedHours ?? 0, skills: c.skills ?? [], combine: c.combine ?? "lowest",
+      equipment: c.equipment ?? "", pageCust: c.page ?? "", state: "", choice: {} };
+    if (c.set) m.custom.formulas.set = "1";   // rating tables: the item's rating IS the system's rating (absolute)
+  } else if (!NO_CUSTOM_SPECS.has(m.name)) throw new Error(`No Customization Specifications for ${m.name}`);
   if (d.note) m.notes = `${m.notes ?? ""} Design: ${d.note}`.trim();
   if (d.page && !String(m.notes ?? "").includes(`Design specifications ${d.page}`)) m.notes = `${m.notes ?? ""} (Design specifications ${d.page}.)`.trim();
   // Rated mods start at Rating 1 so dragging one on doesn't slam the maximum DP; R-based formulas count as rated.

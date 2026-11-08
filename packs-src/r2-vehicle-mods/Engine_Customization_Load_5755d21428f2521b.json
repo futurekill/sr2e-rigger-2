@@ -1,0 +1,84 @@
+{
+  "_id": "5755d21428f2521b",
+  "name": "Engine Customization (Load)",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "engine",
+    "rating": 0,
+    "cost": 0,
+    "designPoints": 0,
+    "dpPerLevel": 0,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": false,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "engine-custom-load",
+    "maxRating": "",
+    "restrictions": [],
+    "effects": {
+      "load": "B x 50 x R"
+    },
+    "stack": "levels",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "N x (1.25 x R + 0.15 x R x (R0 + R1 - 1) / 2)",
+        "baseTime": "40 x R",
+        "tn": "R1 + 3",
+        "tn@drone": "R1 + 4",
+        "tn@hovercraft": "R1 + 4",
+        "tn@fixedWing": "R1 + 5",
+        "tn@rotor": "R1 + 5",
+        "tn@vector": "R1 + 5"
+      },
+      "market": [
+        {
+          "availability": "8/14 days",
+          "streetIndex": 2
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.120-121",
+      "state": "",
+      "choice": {}
+    },
+    "installed": false,
+    "notes": "Radically re-tunes the engine to exceed the power plant's standard maxima. Each level adds +30 Speed OR +5 Acceleration OR +(Body × 50) kg Load (each rating bought separately); max = the power-plant maximum × 1.75. Design cost = power-plant Design-Point cost × 1.25 for the first level, +0.5 to the multiplier per added level; parts cost = original power-plant cost × the same multiplier; Avail 8/14 days; Street Index 2; Base Time 40 hrs/level. (Can stress the engine — see book.) Rigger 2 p.120. Design: In design, take it as the Engine Customization design OPTION (the Workshop's options step). (Design specifications p.120.)"
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5755d21428f2521b"
+}

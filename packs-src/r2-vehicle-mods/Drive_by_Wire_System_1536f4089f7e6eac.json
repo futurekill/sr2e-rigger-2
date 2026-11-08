@@ -31,6 +31,38 @@
       "handling": "-R",
       "handlingOff": "-R"
     },
+    "stack": "levels",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "V x 1.25 x R",
+        "baseTime": "B x 160",
+        "tn": "10 - H",
+        "cf": "0",
+        "load": "0"
+      },
+      "market": [
+        {
+          "availability": "8/16 days",
+          "streetIndex": 2.5
+        }
+      ],
+      "max": {
+        "value": "3"
+      },
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR",
+        "computer",
+        "electronics"
+      ],
+      "combine": "sum",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.124",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Replaces mechanical linkages with computer-mediated controls (Levels 1–3), trading Handling for Acceleration/Speed. Design cost = chassis Design Point cost × 1.75 per level; max −3 Handling. Parts cost = vehicle's original cost × the level; Avail 8/16 days; Street Index 2; needs B/R, Computer & Electronics. Rigger 2 p.124. (Design specifications p.124.)"
   },

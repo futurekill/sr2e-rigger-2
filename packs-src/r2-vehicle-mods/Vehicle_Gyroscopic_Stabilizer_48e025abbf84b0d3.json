@@ -28,6 +28,36 @@
       "notWith:recoil-adjuster"
     ],
     "effects": {},
+    "stack": "levels",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "1000 x R",
+        "baseTime": "24",
+        "tn": "4",
+        "cf": "1",
+        "load": "R + 24"
+      },
+      "market": [
+        {
+          "availability": "8/72 hours",
+          "streetIndex": 1.5
+        }
+      ],
+      "max": {
+        "value": "2 x B"
+      },
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle kit",
+      "pageCust": "p.136",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Stabilizes weapons in fixed mounts/turrets — each level negates 1 point of combined recoil + movement modifiers (not compatible with gunnery recoil adjusters). If total active rating exceeds the vehicle's Body, Handling worsens by 1 per point over Body. Parts cost 1,000¥/level; max 2 × Body; load −(Rating × 24) kg; Avail 8/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.136. (Design specifications p.136.)"
   },

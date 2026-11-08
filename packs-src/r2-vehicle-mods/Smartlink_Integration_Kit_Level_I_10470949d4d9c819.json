@@ -26,6 +26,34 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "650",
+        "baseTime": "24",
+        "tn": "4",
+        "cf": "1",
+        "load": "0"
+      },
+      "market": [
+        {
+          "availability": "4/48 hours",
+          "streetIndex": 1
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle kit",
+      "pageCust": "p.134",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Connects a smartgun-equipped weapon in a fixed mount or turret to the gunner. Level I (650¥, 4/48 hrs, SI 1) requires the gunner to be jacked into the vehicle; Level II (900¥, 6/48 hrs, SI 2) adds palm-induction links so the gunner needn't be jacked in. Not needed for pintle/ring mounts. Base Time 24 hrs. Rigger 2 p.134. (Design specifications p.134.)"
   },

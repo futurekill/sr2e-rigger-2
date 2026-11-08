@@ -43,7 +43,7 @@ for (const pack of packs.sort()) {
 
 /** The system evaluator's grammar, as a structural check: tokens, balanced parentheses, operand/operator alternation. */
 function formulaSyntaxOk(v) {
-  const toks = v.replace(/\s+/g, "").match(/floor\(|ceil\(|min\(|max\(|\d+(\.\d+)?|[RBPCEKL]|[+\-x/^(),]/g);
+  const toks = v.replace(/\s+/g, "").match(/floor\(|ceil\(|min\(|max\(|\d+(\.\d+)?|EDP|EY|R0|R1|HO|A0|A1|S0|STR|[RBPCEKLVNHS]|[+\-x/^(),]/g);
   if (!toks || toks.join("") !== v.replace(/\s+/g, "")) return false;
   let depth = 0, wantOperand = true;
   for (const t of toks) {
@@ -104,8 +104,17 @@ function formulaSyntaxOk(v) {
       if (!/^(only|not|engine|notWith):[A-Za-z,-]+$|^(notDrone|needsEngineCustom|needsRemote|needsRiggerBase|notAircraftUnlessElectric)$|^minBody:\d+$/.test(t)) note(`${f}: unknown restriction "${t}"`);
     }
     if (typeof sys.designable !== "boolean") note(`${f}: designable must be true or false`);
+    // Customization Specifications (system docs/PLAN-vehicle-customization.md C2).
+    const cu = sys.custom ?? {};
+    for (const [k, v] of Object.entries(cu.formulas ?? {})) {
+      if (k === "baseUnit" || k === "set") continue;
+      if (!/^(partsCost|tn|baseTime|cf|load)(@(bike|car|boat|fixedWing|rotor|vector|hovercraft|special|drone|transport|tractor|truck|zeppelin|electricAircraft))?$/.test(k)) note(`${f}: unknown customization formula "${k}"`);
+      if (!formulaSyntaxOk(String(v))) note(`${f}: customization ${k} "${v}" isn't a valid formula`);
+    }
+    if (cu.max?.value != null && !formulaSyntaxOk(String(cu.max.value))) note(`${f}: customization maximum "${cu.max.value}" isn't a valid formula`);
+    for (const r of cu.market ?? []) if (r.restricted && !["military", "unavailable"].includes(r.restricted)) note(`${f}: unknown market restriction "${r.restricted}"`);
     for (const [k, v] of Object.entries(sys.effects ?? {})) {
-      if (!/^(handling|handlingOff|speed|acceleration|signature|armor|cargo|economyMult|speedMult)(@(bike|car|boat|fixedWing|rotor|vector|hovercraft|special|transport))?$/.test(k)) note(`${f}: unknown effect "${k}"`);
+      if (!/^(handling|handlingOff|speed|acceleration|load|signature|armor|cargo|economyMult|speedMult|sensorSet|autonavSet|pilotSet)(@(bike|car|boat|fixedWing|rotor|vector|hovercraft|special|transport))?$/.test(k)) note(`${f}: unknown effect "${k}"`);
       if (!formulaSyntaxOk(String(v))) note(`${f}: effect ${k} "${v}" isn't a valid formula`);
     }
   }

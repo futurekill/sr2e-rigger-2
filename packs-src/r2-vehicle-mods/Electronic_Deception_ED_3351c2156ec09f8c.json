@@ -43,10 +43,80 @@
     "designable": true,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "ed",
     "maxRating": "6",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "baseTime": "16 x R",
+        "tn": "4",
+        "set": "1"
+      },
+      "market": [
+        {
+          "cost": 50000,
+          "cf": 3,
+          "load": 35,
+          "availability": "8/30 days",
+          "streetIndex": 3,
+          "restricted": ""
+        },
+        {
+          "cost": 150000,
+          "cf": 5,
+          "load": 45,
+          "availability": "8/45 days",
+          "streetIndex": 3.5,
+          "restricted": ""
+        },
+        {
+          "cost": 400000,
+          "cf": 7,
+          "load": 60,
+          "availability": "8/60 days",
+          "streetIndex": 4,
+          "restricted": ""
+        },
+        {
+          "cost": 1000000,
+          "cf": 5,
+          "load": 45,
+          "availability": "10/3 months",
+          "streetIndex": 4.5,
+          "restricted": ""
+        },
+        {
+          "cost": 4000000,
+          "cf": 7,
+          "load": 60,
+          "availability": "12/6 months",
+          "streetIndex": 5,
+          "restricted": ""
+        },
+        {
+          "cost": 8000000,
+          "cf": 9,
+          "load": 110,
+          "availability": "16/1 year",
+          "streetIndex": null,
+          "restricted": "military"
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "electronicsBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.138",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Feeds sensors false data about a target's range, position, and heading — subtler than ECM (a sensor isn't aware it's deceived). Cost & weight by Level: L1 50,000¥/35 kg/SI 3, L2 190,000¥/45/SI 3.5, L3 400,000¥/60/SI 4, L4 1M¥/60/SI 4.5, L5 4M¥/60/SI 5, L6 8M¥/110; Avail 8/30 days (L1) up to 16/1 year (L6). Rigger 2 p.138. (Design specifications p.138.)"
   },

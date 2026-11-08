@@ -26,6 +26,34 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "3000",
+        "baseTime": "16",
+        "tn": "4",
+        "cf": "7",
+        "load": "110"
+      },
+      "market": [
+        {
+          "availability": "5/10 days",
+          "streetIndex": 2
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.142",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "A bucket seat with a small solid-fuel rocket, stabilization, and a para-raft that deploys to lower a strapped-in occupant safely; activation controls sited at install. Parts cost 3,000¥ (reinforced 6,000¥; double for reinforced ejection); design 35/60 points; 6 CF; load −100 kg (−250+ reinforced); Avail 5/10 days; Street Index 2. Rigger 2 p.142. (Design specifications p.142.)"
   },

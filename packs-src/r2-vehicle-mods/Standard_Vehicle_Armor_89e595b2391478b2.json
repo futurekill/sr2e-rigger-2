@@ -30,6 +30,34 @@
     "effects": {
       "armor": "R"
     },
+    "stack": "levels",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "1250 x R",
+        "baseTime": "R x 8",
+        "tn": "ceil(A1 / 3)",
+        "cf": "0",
+        "load": "B x B x 5 x R"
+      },
+      "market": [
+        {
+          "availability": "6/12 days",
+          "streetIndex": 2.5
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.127",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Hardened ceramic/metallic armor plating, priced per Armor Point (rating limited by the vehicle's Load Rating). Parts cost = 1,250¥ per Armor Point; load −(Body × Body × 5) kg/point; every 6 points worsens Handling by 1; Avail 6/12 days; Street Index 2.5; Base Time (armor × 8) hrs; Target Number = desired Armor + 3. Rigger 2 p.127. (Design specifications p.127.)"
   },

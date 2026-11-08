@@ -31,6 +31,36 @@
     "effects": {
       "handling": "-R"
     },
+    "stack": "levels",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "V x 1.15 x R",
+        "baseTime": "R x 40",
+        "tn": "4",
+        "cf": "0",
+        "load": "0"
+      },
+      "market": [
+        {
+          "availability": "6/12 days",
+          "streetIndex": 2
+        }
+      ],
+      "max": {
+        "value": "2"
+      },
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.125",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Reshaped rudders and control surfaces that improve a boat's Handling (watercraft only). Parts cost = vehicle's original cost × 1.15 per 1-point Handling improvement; max −2 Handling; Avail 6/12 days; Street Index 2; Base Time (levels × 40) hrs. Rigger 2 p.125. (Design specifications p.125.)"
   },

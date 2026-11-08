@@ -28,6 +28,34 @@
       "not:bike"
     ],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "400",
+        "baseTime": "40",
+        "tn": "4",
+        "cf": "2",
+        "load": "0"
+      },
+      "market": [
+        {
+          "availability": "3/72 hours",
+          "streetIndex": 1
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.126-127",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "A duplicate set of steering and operating controls for a co-pilot or driving instructor (not available for motorcycles). Parts cost 400¥; Avail 3/72 hrs; Street Index 1; Base Time 40 hrs; Target Number 4. Rigger 2 p.126. (Design specifications p.126.)"
   },

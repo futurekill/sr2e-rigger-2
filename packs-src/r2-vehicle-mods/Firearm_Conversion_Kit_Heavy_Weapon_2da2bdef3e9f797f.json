@@ -26,6 +26,34 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "1000",
+        "baseTime": "12",
+        "tn": "4",
+        "cf": "0",
+        "load": "1"
+      },
+      "market": [
+        {
+          "availability": "16/14 days",
+          "streetIndex": 2.5
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "weaponsBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Weapons kit",
+      "pageCust": "p.131",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Required to mount a personal firearm on a vehicle weapon mount. Cost/availability by class: Pistol 150¥ 4/36 hrs (SI 2); SMG 150¥ 5/48 hrs (SI 2, −0.25 kg); Rifle/Shotgun/LMG 750¥ 6/72 hrs (SI 2.5, −0.5 kg); Heavy Weapons 1,000¥ 16/14 days (SI 2.5, −1 kg). Rigger 2 p.131. (Design specifications p.131.)"
   },

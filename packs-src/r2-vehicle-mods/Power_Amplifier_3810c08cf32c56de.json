@@ -22,10 +22,76 @@
     "designable": true,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "power-amplifier",
     "maxRating": "10",
     "restrictions": [],
     "effects": {},
+    "stack": "levels",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "250 x R",
+        "baseTime": "8",
+        "tn": "3",
+        "cf": "ceil(0.5 x R)",
+        "load": "R"
+      },
+      "market": [
+        {
+          "availability": "1/12 hours",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "2/24 hours",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "3/36 hours",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "4/48 hours",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "5/60 hours",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "6/72 hours",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "7/84 hours",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "8/96 hours",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "9/108 hours",
+          "streetIndex": 1.5
+        },
+        {
+          "availability": "10/120 hours",
+          "streetIndex": 1.5
+        }
+      ],
+      "max": {
+        "value": "10"
+      },
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "electronicsBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle shop",
+      "pageCust": "p.139",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Boosts the Flux Rating of sensors, ECM/ECCM, and hardwired remote-control decks — extending remote-control range and EW resistance. Parts cost 250¥/rating (max Rating 10); load −1 kg/rating; Avail Rating + (Rating × 12) hrs; Street Index 1.5; Base Time 8 hrs. Rigger 2 p.139. (Design specifications p.139.)"
   },

@@ -30,7 +30,55 @@
     "modKey": "autonav",
     "maxRating": "4",
     "restrictions": [],
-    "effects": {},
+    "effects": {
+      "autonavSet": "R"
+    },
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "tn": "8 - H",
+        "set": "1"
+      },
+      "market": [
+        {
+          "cost": 500,
+          "availability": "2/96 hours",
+          "streetIndex": 1,
+          "baseTime": 16
+        },
+        {
+          "cost": 1000,
+          "availability": "3/6 days",
+          "streetIndex": 1,
+          "baseTime": 32
+        },
+        {
+          "cost": 5000,
+          "availability": "4/8 days",
+          "streetIndex": 1.5,
+          "baseTime": 4,
+          "baseUnit": "days"
+        },
+        {
+          "cost": 15000,
+          "availability": "6/14 days",
+          "streetIndex": 2,
+          "baseTime": 48
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.123",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Onboard auto-pilot/navigation (the Autonav Rating adds dice to standard Driving Tests, but is ignored in vehicle combat). Rating 1 collision-avoidance (the only autonav fittable to a motorcycle), 500¥/5 DP/2/96 hrs/SI 1; Rating 2 route-following on mapped terrain, 4,000¥/10 DP/3/6 days/SI 2; Rating 3 rough-terrain + GPS, 5,000¥/50 DP/4/8 days/SI 3; Rating 4 urban off-road + re-routing, 15,000¥/150 DP/6/14 days/SI 3. Install TN = 8 − Handling. Rigger 2 p.122–123. (Design specifications p.123.)"
   },

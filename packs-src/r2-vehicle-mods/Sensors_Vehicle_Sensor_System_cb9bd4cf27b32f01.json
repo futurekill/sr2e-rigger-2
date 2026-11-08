@@ -58,7 +58,111 @@
     "modKey": "sensors",
     "maxRating": "10",
     "restrictions": [],
-    "effects": {},
+    "effects": {
+      "sensorSet": "R"
+    },
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "baseTime": "16 x R",
+        "tn": "4",
+        "set": "1"
+      },
+      "market": [
+        {
+          "cost": 5000,
+          "cf": 1,
+          "load": 12,
+          "availability": "4/7 days",
+          "streetIndex": 2,
+          "restricted": ""
+        },
+        {
+          "cost": 15000,
+          "cf": 2,
+          "load": 25,
+          "availability": "4/10 days",
+          "streetIndex": 2.5,
+          "restricted": ""
+        },
+        {
+          "cost": 25000,
+          "cf": 3,
+          "load": 35,
+          "availability": "5/14 days",
+          "streetIndex": 3,
+          "restricted": ""
+        },
+        {
+          "cost": 50000,
+          "cf": 6,
+          "load": 50,
+          "availability": "6/21 days",
+          "streetIndex": 3.5,
+          "restricted": ""
+        },
+        {
+          "cost": 75000,
+          "cf": 3,
+          "load": 35,
+          "availability": "8/30 days",
+          "streetIndex": null,
+          "restricted": "military"
+        },
+        {
+          "cost": 125000,
+          "cf": 8,
+          "load": 75,
+          "availability": "10/45 days",
+          "streetIndex": null,
+          "restricted": "military"
+        },
+        {
+          "cost": 375000,
+          "cf": 9,
+          "load": 110,
+          "availability": "12/60 days",
+          "streetIndex": null,
+          "restricted": "military"
+        },
+        {
+          "cost": 1250000,
+          "cf": 12,
+          "load": 150,
+          "availability": "14/3 months",
+          "streetIndex": null,
+          "restricted": "military"
+        },
+        {
+          "cost": 3000000,
+          "cf": 16,
+          "load": 200,
+          "availability": "16/6 months",
+          "streetIndex": null,
+          "restricted": "military"
+        },
+        {
+          "cost": 6000000,
+          "cf": 20,
+          "load": 250,
+          "availability": "18/1 year",
+          "streetIndex": null,
+          "restricted": "military"
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "electronicsBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.139-140",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Standard-to-military sensor suites (audio/video, thermal, radar, ultrasound) with ID/recognition/tracking software; higher levels are restricted. Cost & weight by Level: L1 5,000¥/12 kg/SI 2, L2 15,000¥/25/SI 2.5, L3 25,000¥/35/SI 3, L4 50,000¥/50/SI 3.5, L5 75,000¥, L6 125,000¥, L7 375,000¥, L8 1.25M¥, L9 3M¥, L10 6M¥; Avail 4/7 days (L1) up to 18/1 year (L10); Base Time 16 hrs/level. Rigger 2 p.139–140. (Design specifications p.140.)"
   },

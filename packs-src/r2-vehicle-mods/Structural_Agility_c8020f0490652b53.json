@@ -26,6 +26,21 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": false,
+      "formulas": {},
+      "market": [],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [],
+      "combine": "lowest",
+      "equipment": "",
+      "pageCust": "p.118",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Requires the Drive-by-Wire System. Each level grants +1 Reaction to a character driving the vehicle (and to a rigger's Control Pool); max level = the vehicle's Drive-by-Wire level. Design cost 150 points per level. Rigger 2 p.118. Design: A design OPTION (the Workshop's options step), not a mod. (Design specifications p.118.)"
   },

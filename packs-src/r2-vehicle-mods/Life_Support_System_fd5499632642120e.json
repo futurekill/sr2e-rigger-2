@@ -26,6 +26,34 @@
     "maxRating": "",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "500 + 100 x R",
+        "baseTime": "8",
+        "tn": "3",
+        "cf": "R / 10",
+        "load": "R / 10 x 25"
+      },
+      "market": [
+        {
+          "availability": "8/14 days",
+          "streetIndex": 2.5
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "vehicleBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle shop",
+      "pageCust": "p.128-129",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Provides oxygen and basic climate control inside a sealed vehicle, rated in man-hours of support. Parts cost = 500¥ + 100¥ per man-hour; load −(25 kg per 10 man-hours); Avail 8/14 days. Rigger 2 p.128. Design: Rating = man-hours of support. (Design specifications p.128.)"
   },

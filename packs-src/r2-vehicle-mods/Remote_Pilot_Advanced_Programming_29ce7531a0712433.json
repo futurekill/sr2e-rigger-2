@@ -33,7 +33,57 @@
     "restrictions": [
       "needsRemote"
     ],
-    "effects": {},
+    "effects": {
+      "pilotSet": "R"
+    },
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "baseTime": "64",
+        "tn": "8 - H",
+        "set": "1"
+      },
+      "market": [
+        {
+          "cost": 0,
+          "availability": "6/14 days",
+          "streetIndex": 2
+        },
+        {
+          "cost": 5000,
+          "availability": "6/14 days",
+          "streetIndex": 2
+        },
+        {
+          "cost": 25000,
+          "availability": "6/14 days",
+          "streetIndex": 2
+        },
+        {
+          "cost": 500000,
+          "availability": "10/35 days",
+          "streetIndex": 4
+        },
+        {
+          "cost": 2500000,
+          "availability": "14/70 days",
+          "streetIndex": null,
+          "restricted": "military"
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "computerBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.126",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Upgrades a remote-control interface's onboard Pilot Rating (up to Pilot 5). Parts cost by level: P2 5,000¥, P3 25,000¥, P4 125,000¥, P5 500,000¥; Avail 6/14 days (P2–3), 10/35 (P4), 14/70 (P5); Street Index 2 (P2–3), 4 (P4); Base Time 64 hrs. Rigger 2 p.126. (Design specifications p.126.)"
   },

@@ -55,10 +55,112 @@
     "designable": true,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "eccm",
     "maxRating": "10",
     "restrictions": [],
     "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "baseTime": "16 x R",
+        "tn": "4",
+        "set": "1"
+      },
+      "market": [
+        {
+          "cost": 110000,
+          "cf": 1,
+          "load": 12,
+          "availability": "4/7 days",
+          "streetIndex": 2,
+          "restricted": ""
+        },
+        {
+          "cost": 30000,
+          "cf": 2,
+          "load": 25,
+          "availability": "4/10 days",
+          "streetIndex": 2.5,
+          "restricted": ""
+        },
+        {
+          "cost": 350000,
+          "cf": 3,
+          "load": 35,
+          "availability": "5/14 days",
+          "streetIndex": 3,
+          "restricted": ""
+        },
+        {
+          "cost": 100000,
+          "cf": 6,
+          "load": 50,
+          "availability": "6/21 days",
+          "streetIndex": 3.5,
+          "restricted": ""
+        },
+        {
+          "cost": 150000,
+          "cf": 3,
+          "load": 35,
+          "availability": "8/30 days",
+          "streetIndex": null,
+          "restricted": "military"
+        },
+        {
+          "cost": 250000,
+          "cf": 8,
+          "load": 75,
+          "availability": "10/45 days",
+          "streetIndex": null,
+          "restricted": "military"
+        },
+        {
+          "cost": 750000,
+          "cf": 9,
+          "load": 110,
+          "availability": "12/60 days",
+          "streetIndex": null,
+          "restricted": "military"
+        },
+        {
+          "cost": 2500000,
+          "cf": 12,
+          "load": 150,
+          "availability": "14/3 months",
+          "streetIndex": null,
+          "restricted": "military"
+        },
+        {
+          "cost": 6000000,
+          "cf": 16,
+          "load": 200,
+          "availability": "16/6 months",
+          "streetIndex": null,
+          "restricted": "military"
+        },
+        {
+          "cost": 12000000,
+          "cf": 20,
+          "load": 250,
+          "availability": "18/1 year",
+          "streetIndex": null,
+          "restricted": "military"
+        }
+      ],
+      "max": {},
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "electronicsBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.137-138",
+      "state": "",
+      "choice": {}
+    },
     "installed": false,
     "notes": "Signal amplifiers and noise filters that nullify enemy ECM (generally more available than ECM). Leveled 1–10. Per-level Customization Cost: L1 10,000¥, L2 30,000¥, L3 100,000¥, L4 100,000¥, L5 150,000¥, L6 250,000¥, L7 750,000¥, L8 2.5M¥, L9 6M¥, L10 12M¥ (L3 and L4 both list 100,000¥ in the book). Weight 12 kg (L1) up to 250 kg (L10); Avail 4/7 days (L1) up to 18/1 year (L10); Base Time 16 hrs/level. Rigger 2 p.138. (Design specifications p.138.)"
   },
