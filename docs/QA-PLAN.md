@@ -140,3 +140,8 @@ These catch the cheap mistakes before opening Foundry. Run from the repo root.
 - [ ] Workshop → new vehicle on each of Sports Car, ATV, Zeppelin, Anthroform: the portrait and token match the
       chassis, nose pointing down, rotation locked, token sized by Body (Sports Car 2×4 squares).
 - [ ] Give one of them a custom picture, redesign it on another chassis: the custom picture stays.
+
+## Vehicle List (0.8.0; system ≥ 0.145.0)
+- [ ] `node tools/gen-vehicle-list.mjs --check` and `npm run validate` pass (169 rows; identity map resolves).
+- [ ] R2 Vehicles compendium: 169 entries; Chrysler Nissan Patrol-1 shows Turbocharging (2), Thermal Baffles (1) and
+      two Pintle Mounts as factory equipment; Aztechnology Halcón has Stall 150 / Speed 1,800.
