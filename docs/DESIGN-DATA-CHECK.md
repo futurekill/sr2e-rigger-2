@@ -97,3 +97,15 @@ p.145). Active thermal masking works only while running (p.130), so it has no de
   stray "2,500¥" line (ruling 13); remote-control interface Availability "4/72 days"; the turret Availability formula;
   power amplifier Availability "Rating ÷ (rating × 12) hours" read as Rating / (Rating × 12) hours.
 - The data the system uses is `tools/data/custom-specs.mjs`, written from pass 1.
+
+## Vehicle List (book p.148–166, PDF 157–175; vehicle builder release 4)
+- **Pass 1 (Claude)** from the 200 dpi renders: `tools/transcribe/vehicle-list-pass1.jsonl` (169 rows: one per vehicle
+  or variant row). **Pass 2 (Codex, independent)**, given only the page images: `tools/transcribe/vehicle-list-pass2-codex.jsonl`.
+- **Compared field by field:** both passes have the same 169 rows, and every stat-line value (Handling, Speed, Accel,
+  Body, Armor, Sig, Autonav, Pilot, Sensor, Cargo, Load), Point Value, Cost, Landing/Takeoff, Setup/Breakdown and
+  Reference agrees. The 52 text differences were all one choice: where a value is printed once for several variants
+  ("1/2/8 reinforced folding bench", "2 + o/2 + 1d + 1g", "Gasoline (200 liters)/Electric (200 PF)"), Codex gave each
+  variant its part and pass 1 kept the printed string. The data takes Codex's per-variant parts (variant tags such as
+  "(LW)" dropped) and pass 1's economy units where a split lost them ("6 km/5.5 km per ltr" → "6 km per ltr").
+- Printed spellings "Zepplin" and "accomodations" are corrected in the data; nothing else is changed.
+- The Vehicle List ends on p.166 (the Power Plant Table starts p.167). The data is `tools/data/vehicle-list.json`.
