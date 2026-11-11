@@ -1,5 +1,23 @@
 # Changelog
 
+## Unreleased
+
+Needs the SR2E system 0.144.0 or later (customizing existing vehicles).
+
+### Added
+- **Customization Specifications for every modification** (p.120–146): parts price, Availability and Street Index by
+  rating, base time, Installation Test TN and skills, CF and Load, and the printed maxima (crane and winch Load
+  Rating by Body, p.144/p.146), so the system's **Customize** window can sell and install them on existing vehicles.
+  Two independent transcriptions agreed on every value (docs/DESIGN-DATA-CHECK.md).
+- **Default artwork for every Workshop chassis:** 43 chassis use the closest existing vehicle portrait, and 18 new
+  top-down portraits cover the rest (off-road bike, ATV, RV, sand buggy, medium/heavy transport, tractor, tracked APC,
+  water scooter, yacht, minisub, autogyro, ultralight, single-engine plane, zeppelin, mini-blimp, anthroform, large
+  walker).
+
+### Changed
+- **Engine Customization is three items** — Speed, Acceleration and Load — each its own family with its own maximum.
+- External fixed weapon mounts take 1 off Signature (p.131).
+
 ## 0.6.1 — 2026-11-07
 
 Needs the SR2E system 0.143.0 or later (its Vehicle Workshop).

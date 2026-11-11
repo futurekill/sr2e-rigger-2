@@ -132,3 +132,11 @@ These catch the cheap mistakes before opening Foundry. Run from the repo root.
       the Vehicle Modifications compendium has 99 items, including Turret (Mini/Small/Medium) and SunCell Power.
 - [ ] Drop Standard Vehicle Armor (rating 2) on a Body 3 vehicle with Load 200: the sheet shows 110 kg free.
 
+
+## Customization specs and chassis art (0.7.0; system ≥ 0.144.0)
+- [ ] `npm run validate`: every customization formula and effect key valid (custom-specs.mjs), 101 mods.
+- [ ] Vehicle Modifications compendium: Engine Customization is three items (Speed / Acceleration / Load); a crane's
+      Customize row on a Body 1 vehicle refuses a rating over the p.144 maximum.
+- [ ] Workshop → new vehicle on each of Sports Car, ATV, Zeppelin, Anthroform: the portrait and token match the
+      chassis, nose pointing down, rotation locked, token sized by Body (Sports Car 2×4 squares).
+- [ ] Give one of them a custom picture, redesign it on another chassis: the custom picture stays.
