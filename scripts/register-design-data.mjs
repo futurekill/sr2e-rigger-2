@@ -28,4 +28,13 @@ if (typeof Hooks !== "undefined") Hooks.once("setup", async () => {
   } catch (err) {
     console.error(`${MODULE_ID} | Failed to register vehicle design tables:`, err);
   }
+  // The Vehicle List (book p.148–166): with this module active its stats supersede the others (system 0.145.0+).
+  if (!CONFIG.SR2E.registerVehicleList) return console.warn(`${MODULE_ID} | SR2E system too old for the Vehicle List (needs 0.145.0+).`);
+  try {
+    const vl = await loadJson("vehicle-list.json");
+    CONFIG.SR2E.registerVehicleList({ rows: vl.rows, identity: vl.identity });
+    console.log(`${MODULE_ID} | Registered the Vehicle List: ${Object.keys(vl.rows).length} vehicles.`);
+  } catch (err) {
+    console.error(`${MODULE_ID} | Failed to register the Vehicle List:`, err);
+  }
 });
