@@ -110,8 +110,9 @@ export const CUSTOM = {
   "Firearm Conversion Kit (SMG)": simple(350, "5/48 hours", 2, 12, 4, "Weapons kit", { skills: ["weaponsBR"], f: { cf: "0", load: "0.25" }, page: "p.131" }),
   "Firearm Conversion Kit (Rifle/Shotgun/LMG)": simple(750, "6/72 hours", 2.5, 12, 4, "Weapons kit", { skills: ["weaponsBR"], f: { cf: "0", load: "0.5" }, page: "p.131" }),
   "Firearm Conversion Kit (Heavy Weapon)": simple(1000, "16/14 days", 2.5, 12, 4, "Weapons kit", { skills: ["weaponsBR"], f: { cf: "0", load: "1" }, page: "p.131" }),
-  "Fixed Mount (External Hardpoint)": simple(2000, "6/7 days", 2, 24, 4, "Vehicle facility", { f: { cf: "2", load: "10" }, page: "p.131-132" }),
-  "Fixed Mount (External Firmpoint)": simple(750, "6/7 days", 2, 24, 4, "Vehicle facility", { f: { cf: "1", load: "10" }, page: "p.131-132" }),
+  // External mounts are seen and unprotected: Signature −1 (p.131); internal ones only while armed (in play).
+  "Fixed Mount (External Hardpoint)": simple(2000, "6/7 days", 2, 24, 4, "Vehicle facility", { f: { cf: "2", load: "10" }, effects: { signature: "-1" }, page: "p.131-132" }),
+  "Fixed Mount (External Firmpoint)": simple(750, "6/7 days", 2, 24, 4, "Vehicle facility", { f: { cf: "1", load: "10" }, effects: { signature: "-1" }, page: "p.131-132" }),
   "Fixed Mount (Internal Hardpoint)": simple(3000, "6/7 days", 2, 24, 4, "Vehicle facility", { f: { cf: "7", load: "10" }, page: "p.131-132" }),
   "Fixed Mount (Internal Firmpoint)": simple(1500, "6/7 days", 2, 24, 4, "Vehicle facility", { f: { cf: "5", load: "10" }, page: "p.131-132" }),
   "Gunnery Recoil Adjuster": { key: "recoil-adjuster", stack: "levels", page: "p.132", max: { value: "12" },
@@ -176,7 +177,9 @@ Object.assign(CUSTOM, {
   "Ejection Bucket Seat": simple(3000, "5/10 days", 2, 16, 4, "Vehicle facility", { f: { cf: "7", load: "110" }, page: "p.142" }),
   "Reinforced Ejection Bucket Seat": simple(6000, "5/10 days", 2, 16, 4, "Vehicle facility", { f: { cf: "7", load: "260" }, page: "p.142" }),
   "Convertible Top (Rag-Top)": simple("V x 0.1 + 2500", "4/72 hours", 1, 24, 3, "Vehicle shop", { f: { cf: "0", load: "0" }, page: "p.143" }),
-  "Crane": simple("R x 100", "6/14 days", 2, "B x 16", 4, "Vehicle facility", { f: { cf: "35", load: "B x 80" }, page: "p.143-144" }),
+  // Crane / winch Load Rating maxima: the Capacity Tables by Body (p.144, p.146); Body 10+ = Body × Body × 750 kg.
+  "Crane": simple("R x 100", "6/14 days", 2, "B x 16", 4, "Vehicle facility", { f: { cf: "35", load: "B x 80" }, page: "p.143-144",
+    max: { byBody: [0, 25, 200, 750, 2000, 5000, 20000, 30000, 45000, 60000], beyond: "B x B x 750" } }),
   "Drone Rack": simple("V x 0.1 + 2500", "4/96 hours", 2, "B x 8", 4, "Vehicle facility", { f: { cf: "R + 2", load: "45" }, page: "p.144" }),
   "External Cargo Mount": simple("250 x R", "3/24 hours", 1, 8, 2, "Vehicle shop", { f: { cf: "0", load: "0" }, page: "p.144" }),
   "Floatation Package (Aircraft)": simple("V x 0.1 + 2500", "4/7 days", 2, 32, 3, "Vehicle facility", { f: { cf: "0", load: "100" }, page: "p.144-145" }),
@@ -187,6 +190,7 @@ Object.assign(CUSTOM, {
   "Motorcycle Sidecar (Medium)": { f: { partsCost: "2000" }, procedure: "fixed", fixedHours: 0.25, rows: [{}], page: "p.145" },
   "Motorcycle Sidecar (Large)": { f: { partsCost: "3500" }, procedure: "fixed", fixedHours: 0.25, rows: [{}], page: "p.145" },
   "Spotlight": simple(600, "4/96 hours", 1.5, 1, 3, "Vehicle shop", { f: { cf: "0", load: "0", baseUnit: "days" }, page: "p.145-146" }),
-  "Winch": simple("R x 75", "6/14 days", 2, "B x 16", 4, "Vehicle facility", { f: { cf: "1", load: "B x 2.5" }, page: "p.146" }),
+  "Winch": simple("R x 75", "6/14 days", 2, "B x 16", 4, "Vehicle facility", { f: { cf: "1", load: "B x 2.5" }, page: "p.146",
+    max: { byBody: [5, 25, 200, 750, 2000, 5000, 20000, 30000, 45000, 60000], beyond: "B x B x 750" } }),
   "Structural Agility": { customizable: false, page: "p.118" },
 });

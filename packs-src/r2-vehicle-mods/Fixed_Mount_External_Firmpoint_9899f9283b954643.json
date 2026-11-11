@@ -25,7 +25,9 @@
     "modKey": "",
     "maxRating": "",
     "restrictions": [],
-    "effects": {},
+    "effects": {
+      "signature": "-1"
+    },
     "stack": "",
     "custom": {
       "customizable": true,

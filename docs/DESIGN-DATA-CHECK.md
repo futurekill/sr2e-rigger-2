@@ -83,3 +83,17 @@ p.125), standard and concealed armor (+1 Armor per level; the system adds +1 Han
 turrets (−1 Signature; pop-up turrets don't while concealed; p.134), aircraft floats (Speed ×0.5, Economy ×1.20;
 helicopters Speed ×0.9 rounded down; p.144), sidecars (+4/8/12 CF, Handling +1/+1/+2, Speed −15, Economy ×0.9;
 p.145). Active thermal masking works only while running (p.130), so it has no design effect.
+
+## Customization Specifications (system docs/PLAN-vehicle-customization.md C2; 2026-11-07 / 2026-11-11)
+- **Pass 1 (Claude):** every mod's Customization Specifications and the customization-cost tables, book p.120–146,
+  read from the 200 dpi renders: `tools/transcribe/custom-specs-pass1.jsonl` (70 entries). Doubtful glyphs re-read at
+  600 dpi: nitrous's base time "(Level + 47) hours" and the recoil adjuster / gyro Load "Rating + 24 kg" print a plus.
+- **Pass 2 (Codex, independent):** given only the page images: `tools/transcribe/custom-specs-pass2-codex.jsonl`.
+- **Compared field by field and every table cell:** the two passes agree on every value. The differences the script
+  reported were wording (Codex split the seats, autonav ratings and amphibious levels into separate entries) and
+  thousands separators.
+- Printed oddities kept as printed, per user rulings: level-8 ECM / ECCM / Sensor costs "7.5¥ / 2.5¥ / 1.25¥" read as
+  millions (ruling 11); ECCM levels 1 and 3 above their neighbours (ruling 12); rigger adaptation 2,800¥, not the
+  stray "2,500¥" line (ruling 13); remote-control interface Availability "4/72 days"; the turret Availability formula;
+  power amplifier Availability "Rating ÷ (rating × 12) hours" read as Rating / (Rating × 12) hours.
+- The data the system uses is `tools/data/custom-specs.mjs`, written from pass 1.

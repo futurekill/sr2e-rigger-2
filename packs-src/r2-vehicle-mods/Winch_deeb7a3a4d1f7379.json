@@ -42,7 +42,21 @@
           "streetIndex": 2
         }
       ],
-      "max": {},
+      "max": {
+        "byBody": [
+          5,
+          25,
+          200,
+          750,
+          2000,
+          5000,
+          20000,
+          30000,
+          45000,
+          60000
+        ],
+        "beyond": "B x B x 750"
+      },
       "procedure": "test",
       "fixedHours": 0,
       "skills": [
