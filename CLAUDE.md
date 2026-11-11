@@ -51,6 +51,11 @@ packs (LevelDB locks).
   `npm run sync-design-data` copies them to `data/` (what ships); `npm run validate` fails if they drift.
   `scripts/register-design-data.mjs` registers them for the system's Vehicle Workshop (system 0.143.0). Mods that
   change stats in design carry `effects` formulas (DESIGN map; the validator checks keys and syntax).
+- **Customization specs** (system 0.144.0 Customize window): `tools/data/custom-specs.mjs` (CUSTOM map: formulas,
+  market rows per rating, maxima, procedure, skills) is merged by `gen-vehicle-mods.mjs`; two transcription passes agree
+  (docs/DESIGN-DATA-CHECK.md). **Chassis art**: `tools/chassis-art.mjs` maps every chassis to a portrait (existing, or
+  `assets/vehicle_portraits/chassis/<key>.webp`: top-down, nose DOWN, trimmed) and `--write`s `art {img, aspect}`
+  into the chassis table; then `npm run sync-design-data`.
 
 ## Build workflow
 `packs-src/` (per-document JSON) is the source of truth; `packs/` is the LevelDB

@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.7.0 — 2026-11-11
 
 Needs the SR2E system 0.144.0 or later (customizing existing vehicles).
 
