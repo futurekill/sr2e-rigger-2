@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.8.0 — 2026-11-11
 
 Needs the SR2E system 0.145.0 or later.
 
@@ -8,7 +8,8 @@ Needs the SR2E system 0.145.0 or later.
 - **The whole Vehicle List** (book p.148–166): 169 vehicles and variants with their full stat lines (on/off-road
   Handling, stall speed, Economy, fuel, entry points, landing/takeoff, Design Point value, cost) and factory equipment.
   Two independent transcriptions agreed on every stat (docs/DESIGN-DATA-CHECK.md). The 21 drones already in the
-  compendium keep their ids, so links to them still work.
+  compendium keep their ids, so links to them still work. Weapons the book includes come with the vehicle (the
+  Liebre's and Harpy Scout's Vanquisher minigun).
 - With this module active, those stats supersede the core book's and the other modules' (the system's import rule and
   "Rigger 2 stats" window).
 
