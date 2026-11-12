@@ -147,19 +147,19 @@ function formulaSyntaxOk(v) {
     for (const k of ["handling", "speed", "acceleration", "body", "armor", "signature", "cargo", "load", "cost"]) if (!(Number(s[k]) >= 0)) note(`vehicle list ${vid}: ${k} ${s[k]}`);
     for (const i of row.factory) if (i.type === "weapon" ? !weaponNames.has(i.name) : !modNames.has(i.name) || i.system.custom?.state !== "factory") note(`vehicle list ${vid}: factory item "${i.name}"`);
   }
-  const shipped = {};
+  const shipped = {}, found = new Set();   // found: the packages whose repo is checked out beside this one
   for (const dir of readdirSync("..").filter(d => d.startsWith("sr2e-"))) {
     let packsDir; try { packsDir = readdirSync(join("..", dir, "packs-src")); } catch { continue; }
     let pkg; try { pkg = JSON.parse(readFileSync(join("..", dir, existsSync(join("..", dir, "system.json")) ? "system.json" : "module.json"), "utf8")).id; } catch { continue; }
+    found.add(pkg);
     for (const pack of packsDir) {
       let files; try { files = readdirSync(join("..", dir, "packs-src", pack)).filter(f => f.endsWith(".json")); } catch { continue; }
       for (const f of files) { try { const d = JSON.parse(readFileSync(join("..", dir, "packs-src", pack, f), "utf8")); if (d.type === "vehicle") shipped[`Compendium.${pkg}.${pack}.Actor.${d._id}`] = true; } catch { /* not a doc */ } }
     }
   }
-  const siblings = Object.keys(shipped).length > 0;
   for (const [uuid, e] of Object.entries(list.identity)) {
     if (!list.rows[e.vehicleId]) note(`identity ${uuid}: unknown vehicleId ${e.vehicleId}`);
-    if (siblings && !shipped[uuid]) note(`identity ${uuid} (${e.name}) doesn't resolve to a shipped vehicle`);
+    if (found.has(uuid.split(".")[1]) && !shipped[uuid]) note(`identity ${uuid} (${e.name}) doesn't resolve to a shipped vehicle`);
   }
 }
 
