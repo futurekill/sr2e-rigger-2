@@ -577,6 +577,60 @@
       "_key": "!actors.items!43121a325896ff27.8037484642b78f1d"
     },
     {
+      "_id": "67d591405b7ee4dc",
+      "name": "Ares Vanquisher Minigun",
+      "type": "weapon",
+      "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/ares-vanquisher-minigun.webp",
+      "system": {
+        "weaponType": "heavy",
+        "skill": "gunnery",
+        "damageCode": "10S",
+        "damageType": "physical",
+        "concealability": 99,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": true
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": "belt"
+        },
+        "recoilComp": 0,
+        "smartgunCompatible": false,
+        "ranges": {
+          "short": 40,
+          "medium": 150,
+          "long": 400,
+          "extreme": 800
+        },
+        "strengthMin": 0,
+        "weight": 45,
+        "cost": 75000,
+        "availability": "18/28 days",
+        "legality": "Forbidden",
+        "streetIndex": "3.5",
+        "equipped": false,
+        "accessories": [],
+        "notes": "Heavy vehicle minigun (HMG class), belt-fed full-auto. Rigger 2."
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-weapons.Item.317d79c419e181c4"
+      },
+      "_key": "!actors.items!43121a325896ff27.67d591405b7ee4dc"
+    },
+    {
       "_id": "dfec32979ea01b9a",
       "name": "Turret (Small)",
       "type": "vehicle_mod",

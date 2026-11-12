@@ -48,6 +48,60 @@
   },
   "items": [
     {
+      "_id": "b4c6c4ac8142b983",
+      "name": "Ares Vanquisher Minigun",
+      "type": "weapon",
+      "img": "modules/sr2e-rigger-2/assets/item_icons/weapon/ares-vanquisher-minigun.webp",
+      "system": {
+        "weaponType": "heavy",
+        "skill": "gunnery",
+        "damageCode": "10S",
+        "damageType": "physical",
+        "concealability": 99,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": true
+        },
+        "ammo": {
+          "current": 1000,
+          "max": 1000,
+          "type": "belt"
+        },
+        "recoilComp": 0,
+        "smartgunCompatible": false,
+        "ranges": {
+          "short": 40,
+          "medium": 150,
+          "long": 400,
+          "extreme": 800
+        },
+        "strengthMin": 0,
+        "weight": 45,
+        "cost": 75000,
+        "availability": "18/28 days",
+        "legality": "Forbidden",
+        "streetIndex": "3.5",
+        "equipped": false,
+        "accessories": [],
+        "notes": "Heavy vehicle minigun (HMG class), belt-fed full-auto. Rigger 2."
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-weapons.Item.317d79c419e181c4"
+      },
+      "_key": "!actors.items!4ead5193f5201f3e.b4c6c4ac8142b983"
+    },
+    {
       "_id": "443d763a9e23c34e",
       "name": "Fixed Mount (External Hardpoint)",
       "type": "vehicle_mod",

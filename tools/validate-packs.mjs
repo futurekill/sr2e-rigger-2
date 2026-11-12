@@ -134,6 +134,7 @@ function formulaSyntaxOk(v) {
   const CATS = new Set(["bike", "car", "hovercraft", "boat", "rotor", "fixedWing", "vector", "special"]);
   const TRAITS = new Set(["zeppelin", "tractor", "truck", "drone", "electricAircraft"]);
   const ENGINES = new Set(["gasoline", "diesel", "electric", "methane", "jetPropeller", "jetTurbine", "sail"]);
+  const weaponNames = new Set(readdirSync(join(ROOT, "r2-vehicle-weapons")).filter(f => f.endsWith(".json")).map(f => JSON.parse(readFileSync(join(ROOT, "r2-vehicle-weapons", f), "utf8")).name));
   const modNames = new Set(readdirSync(join(ROOT, "r2-vehicle-mods")).filter(f => f.endsWith(".json")).map(f => JSON.parse(readFileSync(join(ROOT, "r2-vehicle-mods", f), "utf8")).name));
   const list = JSON.parse(readFileSync("data/vehicle-list.json", "utf8"));
   for (const [vid, row] of Object.entries(list.rows)) {
@@ -144,7 +145,7 @@ function formulaSyntaxOk(v) {
     for (const t of s.design.traits) if (!TRAITS.has(t)) note(`vehicle list ${vid}: trait "${t}"`);
     if (s.fuelType && !ENGINES.has(s.fuelType)) note(`vehicle list ${vid}: engine "${s.fuelType}"`);
     for (const k of ["handling", "speed", "acceleration", "body", "armor", "signature", "cargo", "load", "cost"]) if (!(Number(s[k]) >= 0)) note(`vehicle list ${vid}: ${k} ${s[k]}`);
-    for (const i of row.factory) if (!modNames.has(i.name) || i.system.custom?.state !== "factory") note(`vehicle list ${vid}: factory item "${i.name}"`);
+    for (const i of row.factory) if (i.type === "weapon" ? !weaponNames.has(i.name) : !modNames.has(i.name) || i.system.custom?.state !== "factory") note(`vehicle list ${vid}: factory item "${i.name}"`);
   }
   const shipped = {};
   for (const dir of readdirSync("..").filter(d => d.startsWith("sr2e-"))) {

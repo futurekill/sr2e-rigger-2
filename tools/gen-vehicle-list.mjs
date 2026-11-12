@@ -208,6 +208,10 @@ const FEATURES = [ // [regex on one phrase, catalog item name, "level" | "set" |
   [/^battletac fddm/i, "BattleTac FDDM Receiver Module", "instance"],
   [/^amphibious operation/i, "amphibious", "amphibious"],
 ];
+// Weapons a feature includes ("hardpoint (with Vanquisher minigun and 1,000 rounds ammo)"); "not included" ones aren't created.
+const WEAPONS = [[/vanquisher minigun/i, "Ares Vanquisher Minigun"]];
+const WEAPON = Object.fromEntries(readdirSync("packs-src/r2-vehicle-weapons").filter(f => f.endsWith(".json"))
+  .map(f => JSON.parse(readFileSync(`packs-src/r2-vehicle-weapons/${f}`, "utf8"))).map(d => [d.name, d]));
 /** Split "Other Features" on commas outside parentheses. */
 export function phrases(text) {
   const out = []; let depth = 0, cur = "";
@@ -229,6 +233,12 @@ export function factoryFor(r, system) {
     if (only && !r.variant) continue;
     const count = Number(p.match(/^(\d+)\s+(?!km|kg)/)?.[1] ?? 1);
     const body = p.replace(/^\d+\s+/, "");
+    const w = /\(with ([^)]*)\)/i.exec(body)?.[1];
+    const wf = w && WEAPONS.find(([re]) => re.test(w));
+    if (wf) {
+      if (!WEAPON[wf[1]]) throw new Error(`${vehicleIdOf(r)}: weapon catalog has no "${wf[1]}"`);
+      out.push({ name: wf[1], weapon: true, rating: 1, count: 1, rounds: Number(w.match(/([\d,]+) rounds/)?.[1].replace(/,/g, "") ?? 0) });
+    }
     const f = FEATURES.find(([re]) => re.test(body));
     if (!f) { unmapped.push(p); continue; }
     let [, name, kind] = f;
@@ -243,14 +253,15 @@ export function factoryFor(r, system) {
 }
 function factoryItems(list, vid) {
   const items = [];
-  for (const { name, rating, count } of list) for (let k = 0; k < count; k++) {
-    const src = MOD[name];
+  for (const { name, rating, count, weapon, rounds } of list) for (let k = 0; k < count; k++) {
+    const src = weapon ? WEAPON[name] : MOD[name];
     const system = structuredClone(src.system);
-    system.rating = rating;
-    system.custom = { ...(system.custom ?? {}), state: "factory" };
+    if (weapon) { if (rounds) system.ammo = { ...system.ammo, current: rounds, max: rounds }; }
+    else { system.rating = rating; system.custom = { ...(system.custom ?? {}), state: "factory" }; }
     const _id = createHash("sha1").update(`r2-factory:${vid}:${name}:${k}`).digest("hex").slice(0, 16);
-    items.push({ _id, name: src.name, type: "vehicle_mod", img: src.img, system, effects: [], folder: null, sort: 0, flags: { sr2e: { factory: true } },
-      _stats: { compendiumSource: `Compendium.${MODULE_ID}.r2-vehicle-mods.Item.${src._id}` }, _key: `!actors.items!ACTOR!${_id}` });
+    items.push({ _id, name: src.name, type: weapon ? "weapon" : "vehicle_mod", img: src.img, system, effects: [], folder: null, sort: 0,
+      flags: { sr2e: { factory: true } }, _stats: { compendiumSource: `Compendium.${MODULE_ID}.${weapon ? "r2-vehicle-weapons" : "r2-vehicle-mods"}.Item.${src._id}` },
+      _key: `!actors.items!ACTOR!${_id}` });
   }
   return items;
 }
@@ -294,6 +305,10 @@ function check() {
   const halF = factoryFor(by("aztechnology-halcon-ground-attack-aircraft"), {}).items;
   assert.deepEqual(halF.map(i => `${i.name}×${i.count}@${i.rating}`).sort(), ["EnviroSeal (Gas Seal)×1@1", "Electronic Counter-Countermeasures (ECCM)×1@9",
     "Electronic Countermeasures (ECM)×1@9", "External Missile/Rocket Mount×7@1", "Fixed Mount (External Hardpoint)×2@1"].sort());
+  const liebre = factoryFor(by("aztechnology-liebre-surveillance-pursuit-rpv"), {}).items;
+  assert.deepEqual(liebre.filter(i => i.weapon).map(i => `${i.name}:${i.rounds}`), ["Ares Vanquisher Minigun:1000"]);
+  assert.ok(factoryFor(by("gmc-harpy-scout-lav"), {}).items.some(i => i.weapon));
+  assert.ok(!halF.some(i => i.weapon));   // "weapons not included"
   for (const r of ROWS) { const m = mapRow(r); factoryFor(r, m.system); }   // every row maps without throwing
   console.log(`check ok: ${ROWS.length} rows`);
 }
