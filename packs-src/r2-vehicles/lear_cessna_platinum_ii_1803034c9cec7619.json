@@ -1,0 +1,90 @@
+{
+  "_id": "1803034c9cec7619",
+  "name": "Lear-Cessna Platinum II",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/cessna-c750.webp",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "winged",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 800,
+    "stallSpeed": 135,
+    "acceleration": 40,
+    "body": 6,
+    "armor": 0,
+    "signature": 3,
+    "autonav": 4,
+    "pilot": 0,
+    "sensor": 2,
+    "cargo": 25,
+    "load": 1000,
+    "seating": "2 folding bucket, 2 reinforced folding bench (x2)",
+    "entryPoints": "2 + 1t",
+    "ltProfile": "STOL",
+    "setupTime": "NA",
+    "fuelType": "jetTurbine",
+    "fuelSize": 1500,
+    "fuelUnit": "liters",
+    "economy": 0.5,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 1375,
+    "cost": 860000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "fixedWing",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.160 (originally RBB1). Cargo printed 5/20 (two spaces; 25 CF in all).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "lear-cessna-platinum-ii"
+    }
+  },
+  "prototypeToken": {
+    "name": "Lear-Cessna Platinum II",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 8,
+    "height": 8,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/cessna-c750.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!1803034c9cec7619"
+}

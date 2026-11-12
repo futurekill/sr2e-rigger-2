@@ -1,0 +1,696 @@
+{
+  "_id": "43121a325896ff27",
+  "name": "GMC \"Harpy Scout\" LAV",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/gmc-banshee.webp",
+  "system": {
+    "vehicleType": "vectored_thrust",
+    "skill": "vectorThrust",
+    "handling": 3,
+    "handlingOffRoad": null,
+    "speed": 850,
+    "stallSpeed": 250,
+    "acceleration": 45,
+    "body": 6,
+    "armor": 15,
+    "signature": 6,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 5,
+    "cargo": 25,
+    "load": 600,
+    "seating": "1 ejection + 2 ejection",
+    "entryPoints": "2h",
+    "ltProfile": "VSTOL",
+    "setupTime": "NA",
+    "fuelType": "jetTurbine",
+    "fuelSize": 7500,
+    "fuelUnit": "liters",
+    "economy": 0.05,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 12790,
+    "cost": 9600000,
+    "otherFeatures": "ECM 3, ECCM 3, 2 external missile mounts (each holds 2 Landshark missiles), Radar Absorbent Materials 2 (factored in), small turret (with Vanquisher minigun)",
+    "design": {
+      "category": "vector",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.157 (originally LS).</p>"
+  },
+  "items": [
+    {
+      "_id": "eab2ad867d4769e3",
+      "name": "Electronic Countermeasures (ECM)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "electronics",
+        "rating": 3,
+        "cost": 25000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [
+          250,
+          750,
+          1250,
+          2500,
+          1250,
+          1500,
+          5000,
+          7500,
+          12500,
+          25000
+        ],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          6,
+          10,
+          12,
+          16
+        ],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [
+          12,
+          25,
+          35,
+          50,
+          35,
+          75,
+          110,
+          150,
+          200,
+          250
+        ],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "ecm",
+        "maxRating": "10",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "baseTime": "16 x R",
+            "tn": "4",
+            "set": "1"
+          },
+          "market": [
+            {
+              "cost": 25000,
+              "cf": 1,
+              "load": 12,
+              "availability": "5/7 days",
+              "streetIndex": 2.5,
+              "restricted": ""
+            },
+            {
+              "cost": 75000,
+              "cf": 2,
+              "load": 25,
+              "availability": "6/10 days",
+              "streetIndex": 3,
+              "restricted": ""
+            },
+            {
+              "cost": 125000,
+              "cf": 3,
+              "load": 35,
+              "availability": "7/14 days",
+              "streetIndex": 3.5,
+              "restricted": ""
+            },
+            {
+              "cost": 250000,
+              "cf": 6,
+              "load": 50,
+              "availability": "8/21 days",
+              "streetIndex": 4,
+              "restricted": ""
+            },
+            {
+              "cost": 375000,
+              "cf": 3,
+              "load": 35,
+              "availability": "10/30 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 750000,
+              "cf": 8,
+              "load": 75,
+              "availability": "12/45 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 1500000,
+              "cf": 9,
+              "load": 110,
+              "availability": "14/60 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 7500000,
+              "cf": 12,
+              "load": 150,
+              "availability": "16/3 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 15000000,
+              "cf": 16,
+              "load": 200,
+              "availability": "18/6 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 30000000,
+              "cf": 20,
+              "load": 250,
+              "availability": "20/1 year",
+              "streetIndex": null,
+              "restricted": "military"
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.137",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Active jamming — barrage radio/infrared jammers, chaff, flare dispensers, harmonic disrupters — that foul enemy sensors and remote-control comms (security/military only). Cost & weight by Level: L1 25,000¥/12 kg/SI 2.5, L2 75,000¥/25, L3 125,000¥/35, L4 250,000¥/50, L5 375,000¥, L6 750,000¥, L7 1.5M¥, L8 7.5M¥, L9 15M¥, L10 30M¥; Avail 5/7 days (L1) up to 20/1 year (L10). Rigger 2 p.137. (Design specifications p.137.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.9defe09e44a05121"
+      },
+      "_key": "!actors.items!43121a325896ff27.eab2ad867d4769e3"
+    },
+    {
+      "_id": "21f214d62ec88429",
+      "name": "Electronic Counter-Countermeasures (ECCM)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "electronics",
+        "rating": 3,
+        "cost": 10000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [
+          100,
+          300,
+          500,
+          1000,
+          500,
+          750,
+          2000,
+          3500,
+          5000,
+          10000
+        ],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          6,
+          10,
+          12,
+          16
+        ],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [
+          12,
+          25,
+          35,
+          50,
+          35,
+          75,
+          110,
+          150,
+          200,
+          250
+        ],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "eccm",
+        "maxRating": "10",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "baseTime": "16 x R",
+            "tn": "4",
+            "set": "1"
+          },
+          "market": [
+            {
+              "cost": 110000,
+              "cf": 1,
+              "load": 12,
+              "availability": "4/7 days",
+              "streetIndex": 2,
+              "restricted": ""
+            },
+            {
+              "cost": 30000,
+              "cf": 2,
+              "load": 25,
+              "availability": "4/10 days",
+              "streetIndex": 2.5,
+              "restricted": ""
+            },
+            {
+              "cost": 350000,
+              "cf": 3,
+              "load": 35,
+              "availability": "5/14 days",
+              "streetIndex": 3,
+              "restricted": ""
+            },
+            {
+              "cost": 100000,
+              "cf": 6,
+              "load": 50,
+              "availability": "6/21 days",
+              "streetIndex": 3.5,
+              "restricted": ""
+            },
+            {
+              "cost": 150000,
+              "cf": 3,
+              "load": 35,
+              "availability": "8/30 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 250000,
+              "cf": 8,
+              "load": 75,
+              "availability": "10/45 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 750000,
+              "cf": 9,
+              "load": 110,
+              "availability": "12/60 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 2500000,
+              "cf": 12,
+              "load": 150,
+              "availability": "14/3 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 6000000,
+              "cf": 16,
+              "load": 200,
+              "availability": "16/6 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 12000000,
+              "cf": 20,
+              "load": 250,
+              "availability": "18/1 year",
+              "streetIndex": null,
+              "restricted": "military"
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.137-138",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Signal amplifiers and noise filters that nullify enemy ECM (generally more available than ECM). Leveled 1–10. Per-level Customization Cost: L1 10,000¥, L2 30,000¥, L3 100,000¥, L4 100,000¥, L5 150,000¥, L6 250,000¥, L7 750,000¥, L8 2.5M¥, L9 6M¥, L10 12M¥ (L3 and L4 both list 100,000¥ in the book). Weight 12 kg (L1) up to 250 kg (L10); Avail 4/7 days (L1) up to 18/1 year (L10); Base Time 16 hrs/level. Rigger 2 p.138. (Design specifications p.138.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.f0cd817434c10827"
+      },
+      "_key": "!actors.items!43121a325896ff27.21f214d62ec88429"
+    },
+    {
+      "_id": "ac6987b35adac7f3",
+      "name": "External Missile/Rocket Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": false,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "state": "factory"
+        },
+        "installed": false,
+        "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.b043a33076ce8cc6"
+      },
+      "_key": "!actors.items!43121a325896ff27.ac6987b35adac7f3"
+    },
+    {
+      "_id": "ebda86537c5d4c0d",
+      "name": "External Missile/Rocket Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": false,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "state": "factory"
+        },
+        "installed": false,
+        "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.b043a33076ce8cc6"
+      },
+      "_key": "!actors.items!43121a325896ff27.ebda86537c5d4c0d"
+    },
+    {
+      "_id": "8037484642b78f1d",
+      "name": "Radar-Absorbent Materials (RAM)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "signature",
+        "rating": 2,
+        "cost": 25000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "R^3 x 50",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "ram",
+        "maxRating": "3",
+        "restrictions": [],
+        "effects": {
+          "signature": "R"
+        },
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "(R1^3 - R0^3) x 25000",
+            "baseTime": "12",
+            "tn": "4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "18/30 days",
+              "streetIndex": null,
+              "restricted": "military"
+            }
+          ],
+          "max": {
+            "value": "3"
+          },
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.130-131",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Radar-absorbing coatings/enamels that mask a vehicle's radar signature; each level adds +1 (max +3). Automatically makes the vehicle military-grade — very hard to obtain. Design cost = levels × 50 points; parts cost = levels × 25,000¥; Avail 18/30 days; Street Index military only. Rigger 2 p.130. Design: Military-grade if taken in design. (Design specifications p.130.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.9f61660a81af5193"
+      },
+      "_key": "!actors.items!43121a325896ff27.8037484642b78f1d"
+    },
+    {
+      "_id": "dfec32979ea01b9a",
+      "name": "Turret (Small)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 5000,
+        "designPoints": 250,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 7,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 100,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 4,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "7500",
+            "baseTime": "72",
+            "tn": "4",
+            "cf": "8",
+            "load": "100"
+          },
+          "market": [
+            {
+              "availability": "([Vehicle Cost ÷ 25] ÷ 6) × (Vehicle Cost ÷ 25) × 14 days (p.135)",
+              "streetIndex": 3
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.134-136",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A motorized, armored ring mount that protects its weapon (−1 to the vehicle's Signature). Sizes by max Weapon Value / hardpoints / parts cost: Mini (WV 2, 1 hp, 5,000¥, 7 CF, −25 kg), Small (WV 3, 2 hp, 7,500¥, 8 CF, −100 kg), Medium (WV 6, 3 hp, 15,000¥, 16 CF, −1,000 kg); Large (WV 8, 4 hp) and Extra-Large (WV 10, 6 hp) are custom-built. Anti-aircraft variant ×1.5 cost +1 CF; pop-up variant ×2 cost, doubled CF. Avail by formula; SI 2–3. Rigger 2 p.134–135. (Design specifications p.135.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.dd515e90c45ebe46"
+      },
+      "_key": "!actors.items!43121a325896ff27.dfec32979ea01b9a"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "gmc-harpy-scout-lav"
+    }
+  },
+  "prototypeToken": {
+    "name": "GMC \"Harpy Scout\" LAV",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 8,
+    "height": 13,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/gmc-banshee.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!43121a325896ff27"
+}

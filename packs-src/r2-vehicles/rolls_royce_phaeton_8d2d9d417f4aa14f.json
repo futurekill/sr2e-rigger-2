@@ -1,0 +1,387 @@
+{
+  "_id": "8d2d9d417f4aa14f",
+  "name": "Rolls-Royce Phaeton",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/mitsubishi-nightsky.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 4,
+    "speed": 140,
+    "stallSpeed": 0,
+    "acceleration": 8,
+    "body": 4,
+    "armor": 4,
+    "signature": 2,
+    "autonav": 4,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 6,
+    "load": 30,
+    "seating": "2 bucket + 3 bucket + 3 folding bucket + 3 bucket",
+    "entryPoints": "2 + 2 + 2 + 1t",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 250,
+    "fuelUnit": "liters",
+    "economy": 6,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 2252,
+    "cost": 507000,
+    "otherFeatures": "APPS, concealed armor, roll bars, enviroseal (gas), satellite uplink (connected by electronics port)",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.164 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "da2eb61d6481a1eb",
+      "name": "Advanced Passenger Protection System (APPS)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 2500,
+        "designPoints": 0,
+        "dpPerLevel": 30,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "not:bike"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500 x R",
+            "baseTime": "40",
+            "tn": "4",
+            "cf": "1",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.128",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Secured seat belts, impact-activated airbags, and reinforced seat panels; allows a Strength (5) Test to reduce crash damage to occupants (not for motorcycles). Parts cost 2,500¥ per seat; Avail 3/6 days; Street Index 1; Base Time 40 hrs; Target Number 4. Rigger 2 p.128. Design: Rating = seats. (Design specifications p.128.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.1dfe296927d69fe4"
+      },
+      "_key": "!actors.items!8d2d9d417f4aa14f.da2eb61d6481a1eb"
+    },
+    {
+      "_id": "991eec0311134a53",
+      "name": "Concealed Vehicle Armor",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "armor",
+        "rating": 4,
+        "cost": 2000,
+        "designPoints": 0,
+        "dpPerLevel": 50,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 2,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "B x B x 5 x R",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "concealed-armor",
+        "maxRating": "",
+        "restrictions": [
+          "notWith:standard-armor"
+        ],
+        "effects": {
+          "armor": "R"
+        },
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000 x R",
+            "baseTime": "R x 8",
+            "tn": "ceil(A1 / 3)",
+            "cf": "3 x R",
+            "load": "B x B x 5 x R"
+          },
+          "market": [
+            {
+              "availability": "8/21 days",
+              "streetIndex": 3.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.127",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Armor hidden inside the vehicle's interior/cargo space so it isn't obvious the vehicle is armored — not compatible with standard armor. Parts cost = 2,000¥ per Armor Point; 3 CF/point; load −(Body × Body × 5) kg/point; Avail 6/21 days; Street Index 3.5; Base Time (armor × 8) hrs. Rigger 2 p.127. (Design specifications p.127.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.7f17037d59574972"
+      },
+      "_key": "!actors.items!8d2d9d417f4aa14f.991eec0311134a53"
+    },
+    {
+      "_id": "2b3b6eca6602e931",
+      "name": "Roll Bars",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 2000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "roll-bars",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000",
+            "baseTime": "24",
+            "tn": "3",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/72 hours",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.129",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Adds rigidity that mitigates roll-over damage: negates the doubled Damage Resistance penalty for hard-tops and grants +3 dice to the occupant's Damage Resistance Test in a roll. Also required to mount some weapons on civilian vehicles. Parts cost 2,000¥; Avail 3/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.129. (Design specifications p.129.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.c43f2e1a876b6c1a"
+      },
+      "_key": "!actors.items!8d2d9d417f4aa14f.2b3b6eca6602e931"
+    },
+    {
+      "_id": "b38a1c09443188ea",
+      "name": "EnviroSeal (Gas Seal)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "B x 3",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "not:bike"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "250 x B",
+            "baseTime": "12",
+            "tn": "3",
+            "cf": "1",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "8/14 days",
+              "streetIndex": 2.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.128",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128. (Design specifications p.128.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.2dcbfc97c328bd76"
+      },
+      "_key": "!actors.items!8d2d9d417f4aa14f.b38a1c09443188ea"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "rolls-royce-phaeton"
+    }
+  },
+  "prototypeToken": {
+    "name": "Rolls-Royce Phaeton",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 8,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/mitsubishi-nightsky.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!8d2d9d417f4aa14f"
+}

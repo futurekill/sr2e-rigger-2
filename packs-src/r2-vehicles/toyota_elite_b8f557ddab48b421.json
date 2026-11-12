@@ -1,0 +1,165 @@
+{
+  "_id": "b8f557ddab48b421",
+  "name": "Toyota Elite",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/toyota-elite.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 8,
+    "speed": 120,
+    "stallSpeed": 0,
+    "acceleration": 12,
+    "body": 3,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 4,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 11,
+    "load": 100,
+    "seating": "4 bucket (2 front, 2 rear)",
+    "entryPoints": "2 + 2 + 1t",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 80,
+    "fuelUnit": "liters",
+    "economy": 12,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 625,
+    "cost": 125000,
+    "otherFeatures": "APPS, enviroseal",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.165 (originally SRII).</p>"
+  },
+  "items": [
+    {
+      "_id": "702ad25b9fd3256f",
+      "name": "Advanced Passenger Protection System (APPS)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 2500,
+        "designPoints": 0,
+        "dpPerLevel": 30,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "not:bike"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500 x R",
+            "baseTime": "40",
+            "tn": "4",
+            "cf": "1",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.128",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Secured seat belts, impact-activated airbags, and reinforced seat panels; allows a Strength (5) Test to reduce crash damage to occupants (not for motorcycles). Parts cost 2,500¥ per seat; Avail 3/6 days; Street Index 1; Base Time 40 hrs; Target Number 4. Rigger 2 p.128. Design: Rating = seats. (Design specifications p.128.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.1dfe296927d69fe4"
+      },
+      "_key": "!actors.items!b8f557ddab48b421.702ad25b9fd3256f"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "toyota-elite"
+    }
+  },
+  "prototypeToken": {
+    "name": "Toyota Elite",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 4,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/toyota-elite.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!b8f557ddab48b421"
+}

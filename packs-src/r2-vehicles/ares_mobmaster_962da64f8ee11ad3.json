@@ -1,0 +1,313 @@
+{
+  "_id": "962da64f8ee11ad3",
+  "name": "Ares Mobmaster",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/heavyTransport.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 6,
+    "handlingOffRoad": 12,
+    "speed": 120,
+    "stallSpeed": 0,
+    "acceleration": 3,
+    "body": 5,
+    "armor": 14,
+    "signature": 2,
+    "autonav": 4,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 16,
+    "load": 550,
+    "seating": "2 bucket + 2 folding bench (x5)",
+    "entryPoints": "2 + 1 rear",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 250,
+    "fuelUnit": "liters",
+    "economy": 5.2,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 2650,
+    "cost": 795000,
+    "otherFeatures": "Enviroseal (gas), life support (30 man-hours), small turret (weapon not included)",
+    "design": {
+      "category": "car",
+      "transport": true,
+      "traits": [
+        "truck"
+      ]
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.149 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "5340f743ba7a5914",
+      "name": "EnviroSeal (Gas Seal)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "B x 3",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "not:bike"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "250 x B",
+            "baseTime": "12",
+            "tn": "3",
+            "cf": "1",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "8/14 days",
+              "streetIndex": 2.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.128",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128. (Design specifications p.128.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.2dcbfc97c328bd76"
+      },
+      "_key": "!actors.items!962da64f8ee11ad3.5340f743ba7a5914"
+    },
+    {
+      "_id": "26cd075677ab14e5",
+      "name": "Life Support System",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 500,
+        "designPoints": 5,
+        "dpPerLevel": 1,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "R / 10",
+        "loadFormula": "R / 10 x 25",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "500 + 100 x R",
+            "baseTime": "8",
+            "tn": "3",
+            "cf": "R / 10",
+            "load": "R / 10 x 25"
+          },
+          "market": [
+            {
+              "availability": "8/14 days",
+              "streetIndex": 2.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.128-129",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Provides oxygen and basic climate control inside a sealed vehicle, rated in man-hours of support. Parts cost = 500¥ + 100¥ per man-hour; load −(25 kg per 10 man-hours); Avail 8/14 days. Rigger 2 p.128. Design: Rating = man-hours of support. (Design specifications p.128.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.fd5499632642120e"
+      },
+      "_key": "!actors.items!962da64f8ee11ad3.26cd075677ab14e5"
+    },
+    {
+      "_id": "bd163cb271e55f79",
+      "name": "Turret (Small)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 5000,
+        "designPoints": 250,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 7,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 100,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 4,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "7500",
+            "baseTime": "72",
+            "tn": "4",
+            "cf": "8",
+            "load": "100"
+          },
+          "market": [
+            {
+              "availability": "([Vehicle Cost ÷ 25] ÷ 6) × (Vehicle Cost ÷ 25) × 14 days (p.135)",
+              "streetIndex": 3
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.134-136",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A motorized, armored ring mount that protects its weapon (−1 to the vehicle's Signature). Sizes by max Weapon Value / hardpoints / parts cost: Mini (WV 2, 1 hp, 5,000¥, 7 CF, −25 kg), Small (WV 3, 2 hp, 7,500¥, 8 CF, −100 kg), Medium (WV 6, 3 hp, 15,000¥, 16 CF, −1,000 kg); Large (WV 8, 4 hp) and Extra-Large (WV 10, 6 hp) are custom-built. Anti-aircraft variant ×1.5 cost +1 CF; pop-up variant ×2 cost, doubled CF. Avail by formula; SI 2–3. Rigger 2 p.134–135. (Design specifications p.135.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.dd515e90c45ebe46"
+      },
+      "_key": "!actors.items!962da64f8ee11ad3.bd163cb271e55f79"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "ares-mobmaster"
+    }
+  },
+  "prototypeToken": {
+    "name": "Ares Mobmaster",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 3,
+    "height": 3,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/heavyTransport.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!962da64f8ee11ad3"
+}

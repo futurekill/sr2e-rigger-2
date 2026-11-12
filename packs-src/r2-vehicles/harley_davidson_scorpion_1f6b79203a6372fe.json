@@ -1,0 +1,90 @@
+{
+  "_id": "1f6b79203a6372fe",
+  "name": "Harley-Davidson Scorpion",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/harley-scorpion.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "bike",
+    "handling": 4,
+    "handlingOffRoad": 5,
+    "speed": 120,
+    "stallSpeed": 0,
+    "acceleration": 6,
+    "body": 2,
+    "armor": 1,
+    "signature": 2,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 4,
+    "load": 60,
+    "seating": "2 bucket (1 front, 1 rear)",
+    "entryPoints": "o",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 20,
+    "fuelUnit": "liters",
+    "economy": 10,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 285,
+    "cost": 14300,
+    "otherFeatures": "None",
+    "design": {
+      "category": "bike",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.158 (originally SRII).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "harley-davidson-scorpion"
+    }
+  },
+  "prototypeToken": {
+    "name": "Harley-Davidson Scorpion",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 2,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/harley-scorpion.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!1f6b79203a6372fe"
+}

@@ -1,0 +1,387 @@
+{
+  "_id": "c8143a038363a339",
+  "name": "Rolls-Royce Prairie Cat",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/rv.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 3,
+    "handlingOffRoad": 2,
+    "speed": 120,
+    "stallSpeed": 0,
+    "acceleration": 4,
+    "body": 4,
+    "armor": 3,
+    "signature": 2,
+    "autonav": 3,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 36,
+    "load": 1000,
+    "seating": "4 bucket (2 front, 2 rear)",
+    "entryPoints": "2 + 2 + 1H + 1g",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 100,
+    "fuelUnit": "liters",
+    "economy": 8,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 984,
+    "cost": 246000,
+    "otherFeatures": "APPS, amphibious operation (Lvl 3), concealed armor, roll bars, living amenities for 4 (High), luxury accommodations, satellite uplink (via electronics port)",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.164 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "cfcffd9cf4f909a6",
+      "name": "Advanced Passenger Protection System (APPS)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 2500,
+        "designPoints": 0,
+        "dpPerLevel": 30,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "not:bike"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500 x R",
+            "baseTime": "40",
+            "tn": "4",
+            "cf": "1",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.128",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Secured seat belts, impact-activated airbags, and reinforced seat panels; allows a Strength (5) Test to reduce crash damage to occupants (not for motorcycles). Parts cost 2,500¥ per seat; Avail 3/6 days; Street Index 1; Base Time 40 hrs; Target Number 4. Rigger 2 p.128. Design: Rating = seats. (Design specifications p.128.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.1dfe296927d69fe4"
+      },
+      "_key": "!actors.items!c8143a038363a339.cfcffd9cf4f909a6"
+    },
+    {
+      "_id": "ec794f5ea2c124b4",
+      "name": "Amphibious Operation Package (Level 1)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "accessory",
+        "rating": 1,
+        "cost": 2500,
+        "designPoints": 25,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "only:bike,car"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500",
+            "baseTime": "32",
+            "tn": "3",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "5/10 days",
+              "streetIndex": 1.25
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.140",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Modifies a ground vehicle to travel on/through water (needs watertight seals + life support + sealed power plant for full submersion). L1 (2,500¥, wheels propel at Speed 15, +2 Handling), L2 (7,500¥, propeller drive, Speed 30, no penalty, 2 CF), L3 (15,000¥, water-jet/impeller, Speed 45, no penalty, 2 CF); Avail 5/10–3/6 days; Street Index 1–1.5. Rigger 2 p.140–141. (Design specifications p.140.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.1f7ad77740208e25"
+      },
+      "_key": "!actors.items!c8143a038363a339.ec794f5ea2c124b4"
+    },
+    {
+      "_id": "4b519a94ff3233e8",
+      "name": "Concealed Vehicle Armor",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "armor",
+        "rating": 3,
+        "cost": 2000,
+        "designPoints": 0,
+        "dpPerLevel": 50,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 2,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "B x B x 5 x R",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "concealed-armor",
+        "maxRating": "",
+        "restrictions": [
+          "notWith:standard-armor"
+        ],
+        "effects": {
+          "armor": "R"
+        },
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000 x R",
+            "baseTime": "R x 8",
+            "tn": "ceil(A1 / 3)",
+            "cf": "3 x R",
+            "load": "B x B x 5 x R"
+          },
+          "market": [
+            {
+              "availability": "8/21 days",
+              "streetIndex": 3.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.127",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Armor hidden inside the vehicle's interior/cargo space so it isn't obvious the vehicle is armored — not compatible with standard armor. Parts cost = 2,000¥ per Armor Point; 3 CF/point; load −(Body × Body × 5) kg/point; Avail 6/21 days; Street Index 3.5; Base Time (armor × 8) hrs. Rigger 2 p.127. (Design specifications p.127.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.7f17037d59574972"
+      },
+      "_key": "!actors.items!c8143a038363a339.4b519a94ff3233e8"
+    },
+    {
+      "_id": "88617a63a1078504",
+      "name": "Roll Bars",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 2000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "roll-bars",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000",
+            "baseTime": "24",
+            "tn": "3",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/72 hours",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.129",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Adds rigidity that mitigates roll-over damage: negates the doubled Damage Resistance penalty for hard-tops and grants +3 dice to the occupant's Damage Resistance Test in a roll. Also required to mount some weapons on civilian vehicles. Parts cost 2,000¥; Avail 3/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.129. (Design specifications p.129.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.c43f2e1a876b6c1a"
+      },
+      "_key": "!actors.items!c8143a038363a339.88617a63a1078504"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "rolls-royce-prairie-cat"
+    }
+  },
+  "prototypeToken": {
+    "name": "Rolls-Royce Prairie Cat",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/rv.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!c8143a038363a339"
+}

@@ -1,0 +1,90 @@
+{
+  "_id": "9be8145ffdf896cb",
+  "name": "Harland & Wolff Classique",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/yacht.webp",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "motorboat",
+    "handling": 5,
+    "handlingOffRoad": null,
+    "speed": 45,
+    "stallSpeed": 0,
+    "acceleration": 4,
+    "body": 7,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 4,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 20,
+    "load": 1150,
+    "seating": "12 bucket (2 front, 10 rear)",
+    "entryPoints": "2",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 500,
+    "fuelUnit": "liters",
+    "economy": 2,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 1300,
+    "cost": 325000,
+    "otherFeatures": "Living amenities (High)",
+    "design": {
+      "category": "boat",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.158 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "harland-wolff-classique"
+    }
+  },
+  "prototypeToken": {
+    "name": "Harland & Wolff Classique",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 4,
+    "height": 4,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/yacht.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!9be8145ffdf896cb"
+}

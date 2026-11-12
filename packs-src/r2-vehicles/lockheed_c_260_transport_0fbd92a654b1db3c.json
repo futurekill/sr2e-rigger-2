@@ -1,0 +1,90 @@
+{
+  "_id": "0fbd92a654b1db3c",
+  "name": "Lockheed C-260 Transport",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/pratt-whitney-sundowner.webp",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "winged",
+    "handling": 7,
+    "handlingOffRoad": null,
+    "speed": 350,
+    "stallSpeed": 0,
+    "acceleration": 22,
+    "body": 9,
+    "armor": 12,
+    "signature": 2,
+    "autonav": 3,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 3000,
+    "load": 15000,
+    "seating": "2 bucket + 3 bucket",
+    "entryPoints": "1 + 1r",
+    "ltProfile": "Standard",
+    "setupTime": "NA",
+    "fuelType": "jetTurbine",
+    "fuelSize": 18000,
+    "fuelUnit": "liters",
+    "economy": 0.75,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 19225,
+    "cost": 14400000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "fixedWing",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.161 (originally FF).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "lockheed-c-260-transport"
+    }
+  },
+  "prototypeToken": {
+    "name": "Lockheed C-260 Transport",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 8,
+    "height": 6,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/pratt-whitney-sundowner.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!0fbd92a654b1db3c"
+}

@@ -1,0 +1,360 @@
+{
+  "_id": "3e9b1e6784caadb5",
+  "name": "Doc Wagon Osprey II",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/federated-boeing-commuter.webp",
+  "system": {
+    "vehicleType": "rotor",
+    "skill": "rotor",
+    "handling": 5,
+    "handlingOffRoad": null,
+    "speed": 380,
+    "stallSpeed": 0,
+    "acceleration": 12,
+    "body": 6,
+    "armor": 3,
+    "signature": 4,
+    "autonav": 3,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 12,
+    "load": 300,
+    "seating": "2 bucket",
+    "entryPoints": "1 + 1r",
+    "ltProfile": "VTOL",
+    "setupTime": "NA",
+    "fuelType": "jetPropeller",
+    "fuelSize": 600,
+    "fuelUnit": "liters",
+    "economy": 0.6,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 1635,
+    "cost": 817000,
+    "otherFeatures": "Anti-theft system (6), 2 external hardpoints (weapons not included), medical treatment gear (2 patients), VTOL capability",
+    "design": {
+      "category": "rotor",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.153 (originally NAGRL).</p>"
+  },
+  "items": [
+    {
+      "_id": "646c266a6c5a885e",
+      "name": "Anti-Theft System",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "accessory",
+        "rating": 6,
+        "cost": 100,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [
+          1,
+          2,
+          3,
+          16,
+          20,
+          24,
+          70,
+          80,
+          90,
+          500
+        ],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "anti-theft",
+        "maxRating": "10",
+        "restrictions": [],
+        "effects": {},
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "100 x (min(max(R1, 0), 3) - min(max(R0, 0), 3)) + 400 x (min(max(R1, 3), 6) - min(max(R0, 3), 6)) + 1000 x (min(max(R1, 6), 9) - min(max(R0, 6), 9)) + 5000 x (max(R1, 9) - max(R0, 9))",
+            "baseTime": "40",
+            "tn": "4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            },
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            },
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            },
+            {
+              "availability": "4/7 days",
+              "streetIndex": 1.25
+            },
+            {
+              "availability": "4/7 days",
+              "streetIndex": 1.25
+            },
+            {
+              "availability": "4/7 days",
+              "streetIndex": 1.25
+            },
+            {
+              "availability": "5/10 days",
+              "streetIndex": 1.5
+            },
+            {
+              "availability": "5/10 days",
+              "streetIndex": 1.5
+            },
+            {
+              "availability": "5/10 days",
+              "streetIndex": 1.5
+            },
+            {
+              "availability": "6/14 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {
+            "value": "10"
+          },
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.141",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Rated 1–10 (the rating = dice in an opposed test vs an intruder's Electronics/Maglocks). Parts cost by tier: R1–3 100¥/rating (SI 1), R4–6 400¥ (SI 1.25), R7–9 1,000¥ (SI 1.5), R10+ 5,000¥ (SI 2). Optional responses: automated security call; standard shock system +2,000¥ (10S Stun); or an explosive self-destruct (plastic explosive, Power = Body²). Base Time 40 hrs. Rigger 2 p.141. (Design specifications p.141.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.113bffb23a1fb4f1"
+      },
+      "_key": "!actors.items!3e9b1e6784caadb5.646c266a6c5a885e"
+    },
+    {
+      "_id": "da855cf31c6c6d80",
+      "name": "Fixed Mount (External Hardpoint)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 2000,
+        "designPoints": 25,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 1,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 10,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 2,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000",
+            "baseTime": "24",
+            "tn": "4",
+            "cf": "2",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "6/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.131-132",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132. Design: Plus the weapon's weight. (Design specifications p.132.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.95c3935a006e0160"
+      },
+      "_key": "!actors.items!3e9b1e6784caadb5.da855cf31c6c6d80"
+    },
+    {
+      "_id": "545603e0565292aa",
+      "name": "Fixed Mount (External Hardpoint)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 2000,
+        "designPoints": 25,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 1,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 10,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 2,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000",
+            "baseTime": "24",
+            "tn": "4",
+            "cf": "2",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "6/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.131-132",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132. Design: Plus the weapon's weight. (Design specifications p.132.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.95c3935a006e0160"
+      },
+      "_key": "!actors.items!3e9b1e6784caadb5.545603e0565292aa"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "doc-wagon-osprey-ii"
+    }
+  },
+  "prototypeToken": {
+    "name": "Doc Wagon Osprey II",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 12,
+    "height": 19,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/federated-boeing-commuter.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!3e9b1e6784caadb5"
+}

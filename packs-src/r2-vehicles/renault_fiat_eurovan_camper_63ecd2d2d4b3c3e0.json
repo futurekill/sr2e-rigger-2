@@ -1,0 +1,90 @@
+{
+  "_id": "63ecd2d2d4b3c3e0",
+  "name": "Renault-Fiat Eurovan (Camper)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/gmc-bulldog.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 10,
+    "speed": 105,
+    "stallSpeed": 0,
+    "acceleration": 6,
+    "body": 4,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 14,
+    "load": 550,
+    "seating": "2 front bucket, 2 rear bench",
+    "entryPoints": "2 + 1t",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 95,
+    "fuelUnit": "liters",
+    "economy": 5,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 500,
+    "cost": 50000,
+    "otherFeatures": "Living amenities (Basic/camper)",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.163 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "renault-fiat-eurovan-camper"
+    }
+  },
+  "prototypeToken": {
+    "name": "Renault-Fiat Eurovan (Camper)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 5,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/gmc-bulldog.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!63ecd2d2d4b3c3e0"
+}

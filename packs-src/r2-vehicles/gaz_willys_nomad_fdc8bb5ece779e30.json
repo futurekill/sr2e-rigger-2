@@ -1,0 +1,163 @@
+{
+  "_id": "fdc8bb5ece779e30",
+  "name": "GAZ-Willys Nomad",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/ford-bison.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 3,
+    "handlingOffRoad": 3,
+    "speed": 100,
+    "stallSpeed": 0,
+    "acceleration": 9,
+    "body": 4,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 18,
+    "load": 750,
+    "seating": "2 bucket, 2 folding bench",
+    "entryPoints": "2 + o",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 90,
+    "fuelUnit": "liters",
+    "economy": 7.8,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 410,
+    "cost": 41000,
+    "otherFeatures": "Roll bars",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.156 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "6fb4e32962608d3a",
+      "name": "Roll Bars",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 2000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "roll-bars",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000",
+            "baseTime": "24",
+            "tn": "3",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/72 hours",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.129",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Adds rigidity that mitigates roll-over damage: negates the doubled Damage Resistance penalty for hard-tops and grants +3 dice to the occupant's Damage Resistance Test in a roll. Also required to mount some weapons on civilian vehicles. Parts cost 2,000¥; Avail 3/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.129. (Design specifications p.129.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.c43f2e1a876b6c1a"
+      },
+      "_key": "!actors.items!fdc8bb5ece779e30.6fb4e32962608d3a"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "gaz-willys-nomad"
+    }
+  },
+  "prototypeToken": {
+    "name": "GAZ-Willys Nomad",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 4,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/ford-bison.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!fdc8bb5ece779e30"
+}

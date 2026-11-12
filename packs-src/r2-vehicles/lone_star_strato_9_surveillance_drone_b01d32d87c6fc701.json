@@ -1,0 +1,497 @@
+{
+  "_id": "b01d32d87c6fc701",
+  "name": "Lone Star Strato-9 Surveillance Drone",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/frc-44b-yellowjacket.webp",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "rotor",
+    "handling": 3,
+    "handlingOffRoad": null,
+    "speed": 100,
+    "stallSpeed": 0,
+    "acceleration": 9,
+    "body": 2,
+    "armor": 0,
+    "signature": 5,
+    "autonav": 0,
+    "pilot": 2,
+    "sensor": 5,
+    "cargo": 1,
+    "load": 25,
+    "seating": "None",
+    "entryPoints": "NA",
+    "ltProfile": "VTOL",
+    "setupTime": "5 minutes",
+    "fuelType": "jetTurbine",
+    "fuelSize": 60,
+    "fuelUnit": "liters",
+    "economy": 0.25,
+    "economyUnit": "km/liter",
+    "economyIdle": "5 min/ltr",
+    "designPointValue": 2480,
+    "cost": 186000,
+    "otherFeatures": "ECM 2, external fixed hardpoint with MMG (with Gas-Vent 3 Recoil Comp. and 500 rounds ammo), remote control interface, rigger adaptation",
+    "design": {
+      "category": "rotor",
+      "transport": false,
+      "traits": [
+        "drone"
+      ]
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.161 (originally LS).</p>"
+  },
+  "items": [
+    {
+      "_id": "35aa9a0c601a12a1",
+      "name": "Electronic Countermeasures (ECM)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "electronics",
+        "rating": 2,
+        "cost": 25000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [
+          250,
+          750,
+          1250,
+          2500,
+          1250,
+          1500,
+          5000,
+          7500,
+          12500,
+          25000
+        ],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          6,
+          10,
+          12,
+          16
+        ],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [
+          12,
+          25,
+          35,
+          50,
+          35,
+          75,
+          110,
+          150,
+          200,
+          250
+        ],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "ecm",
+        "maxRating": "10",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "baseTime": "16 x R",
+            "tn": "4",
+            "set": "1"
+          },
+          "market": [
+            {
+              "cost": 25000,
+              "cf": 1,
+              "load": 12,
+              "availability": "5/7 days",
+              "streetIndex": 2.5,
+              "restricted": ""
+            },
+            {
+              "cost": 75000,
+              "cf": 2,
+              "load": 25,
+              "availability": "6/10 days",
+              "streetIndex": 3,
+              "restricted": ""
+            },
+            {
+              "cost": 125000,
+              "cf": 3,
+              "load": 35,
+              "availability": "7/14 days",
+              "streetIndex": 3.5,
+              "restricted": ""
+            },
+            {
+              "cost": 250000,
+              "cf": 6,
+              "load": 50,
+              "availability": "8/21 days",
+              "streetIndex": 4,
+              "restricted": ""
+            },
+            {
+              "cost": 375000,
+              "cf": 3,
+              "load": 35,
+              "availability": "10/30 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 750000,
+              "cf": 8,
+              "load": 75,
+              "availability": "12/45 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 1500000,
+              "cf": 9,
+              "load": 110,
+              "availability": "14/60 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 7500000,
+              "cf": 12,
+              "load": 150,
+              "availability": "16/3 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 15000000,
+              "cf": 16,
+              "load": 200,
+              "availability": "18/6 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 30000000,
+              "cf": 20,
+              "load": 250,
+              "availability": "20/1 year",
+              "streetIndex": null,
+              "restricted": "military"
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.137",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Active jamming — barrage radio/infrared jammers, chaff, flare dispensers, harmonic disrupters — that foul enemy sensors and remote-control comms (security/military only). Cost & weight by Level: L1 25,000¥/12 kg/SI 2.5, L2 75,000¥/25, L3 125,000¥/35, L4 250,000¥/50, L5 375,000¥, L6 750,000¥, L7 1.5M¥, L8 7.5M¥, L9 15M¥, L10 30M¥; Avail 5/7 days (L1) up to 20/1 year (L10). Rigger 2 p.137. (Design specifications p.137.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.9defe09e44a05121"
+      },
+      "_key": "!actors.items!b01d32d87c6fc701.35aa9a0c601a12a1"
+    },
+    {
+      "_id": "26608d4f4a4199ca",
+      "name": "Fixed Mount (External Hardpoint)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 2000,
+        "designPoints": 25,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 1,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 10,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 2,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000",
+            "baseTime": "24",
+            "tn": "4",
+            "cf": "2",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "6/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.131-132",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132. Design: Plus the weapon's weight. (Design specifications p.132.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.95c3935a006e0160"
+      },
+      "_key": "!actors.items!b01d32d87c6fc701.26608d4f4a4199ca"
+    },
+    {
+      "_id": "508b29024da0ad10",
+      "name": "Remote-Control Interface",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "25 x B",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "remote-control-interface",
+        "maxRating": "",
+        "restrictions": [
+          "notDrone"
+        ],
+        "effects": {
+          "pilotSet": "1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500 x B",
+            "baseTime": "16",
+            "tn": "4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "4/72 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR",
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.125-126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Lets a vehicle receive and transmit remote-control data, giving it an initial Pilot Rating of 1 and remote autonomy. Parts cost = 2,500¥ × Body; Avail 4/72 days; Street Index 2; Base Time 16 hrs; needs B/R & Electronics. Rigger 2 p.125–126. (Design specifications p.125.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.86ef70f9a769cd7c"
+      },
+      "_key": "!actors.items!b01d32d87c6fc701.508b29024da0ad10"
+    },
+    {
+      "_id": "741cf9662b6284f3",
+      "name": "Rigger Adaptation",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 2800,
+        "designPoints": 35,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "rigger-adaptation",
+        "maxRating": "",
+        "restrictions": [
+          "needsRiggerBase"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2800",
+            "baseTime": "40",
+            "tn": "4",
+            "cf": "1",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "4/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A 'black box' translating machine code to neural stimuli and back, so a rigger controlling the vehicle through a VCR gets the full Control Pool and Reaction/Initiative bonuses. Parts cost 2,800¥; Avail 4/7 days; Street Index 2; Base Time 4 hrs; 1 CF (plus the datajack-port/remote-control CF); load −10 kg. Rigger 2 p.126. (Design specifications p.126.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.632d0ff576b53509"
+      },
+      "_key": "!actors.items!b01d32d87c6fc701.741cf9662b6284f3"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "lone-star-strato-9-surveillance-drone"
+    }
+  },
+  "prototypeToken": {
+    "name": "Lone Star Strato-9 Surveillance Drone",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 2,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/frc-44b-yellowjacket.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!b01d32d87c6fc701"
+}

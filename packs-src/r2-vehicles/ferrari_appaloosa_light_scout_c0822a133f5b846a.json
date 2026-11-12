@@ -1,0 +1,759 @@
+{
+  "_id": "c0822a133f5b846a",
+  "name": "Ferrari Appaloosa Light Scout",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/ares-citymaster.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 2,
+    "handlingOffRoad": 3,
+    "speed": 125,
+    "stallSpeed": 0,
+    "acceleration": 12,
+    "body": 7,
+    "armor": 9,
+    "signature": 5,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 6,
+    "cargo": 5,
+    "load": 625,
+    "seating": "1 bucket + 2 bucket + 1 folding bench",
+    "entryPoints": "1 hatch + 1 + 1 double-sized",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 800,
+    "fuelUnit": "liters",
+    "economy": 2,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 4779,
+    "cost": 1430000,
+    "otherFeatures": "ECM 5, ECCM 5, medium turret (weapon not included), micro-turret (weapon not included), Radar Absorbent Materials 1 (factored in), Thermal Baffles 1 (factored in)",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.154 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "6896dcb573e50591",
+      "name": "Electronic Countermeasures (ECM)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "electronics",
+        "rating": 5,
+        "cost": 25000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [
+          250,
+          750,
+          1250,
+          2500,
+          1250,
+          1500,
+          5000,
+          7500,
+          12500,
+          25000
+        ],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          6,
+          10,
+          12,
+          16
+        ],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [
+          12,
+          25,
+          35,
+          50,
+          35,
+          75,
+          110,
+          150,
+          200,
+          250
+        ],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "ecm",
+        "maxRating": "10",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "baseTime": "16 x R",
+            "tn": "4",
+            "set": "1"
+          },
+          "market": [
+            {
+              "cost": 25000,
+              "cf": 1,
+              "load": 12,
+              "availability": "5/7 days",
+              "streetIndex": 2.5,
+              "restricted": ""
+            },
+            {
+              "cost": 75000,
+              "cf": 2,
+              "load": 25,
+              "availability": "6/10 days",
+              "streetIndex": 3,
+              "restricted": ""
+            },
+            {
+              "cost": 125000,
+              "cf": 3,
+              "load": 35,
+              "availability": "7/14 days",
+              "streetIndex": 3.5,
+              "restricted": ""
+            },
+            {
+              "cost": 250000,
+              "cf": 6,
+              "load": 50,
+              "availability": "8/21 days",
+              "streetIndex": 4,
+              "restricted": ""
+            },
+            {
+              "cost": 375000,
+              "cf": 3,
+              "load": 35,
+              "availability": "10/30 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 750000,
+              "cf": 8,
+              "load": 75,
+              "availability": "12/45 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 1500000,
+              "cf": 9,
+              "load": 110,
+              "availability": "14/60 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 7500000,
+              "cf": 12,
+              "load": 150,
+              "availability": "16/3 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 15000000,
+              "cf": 16,
+              "load": 200,
+              "availability": "18/6 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 30000000,
+              "cf": 20,
+              "load": 250,
+              "availability": "20/1 year",
+              "streetIndex": null,
+              "restricted": "military"
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.137",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Active jamming — barrage radio/infrared jammers, chaff, flare dispensers, harmonic disrupters — that foul enemy sensors and remote-control comms (security/military only). Cost & weight by Level: L1 25,000¥/12 kg/SI 2.5, L2 75,000¥/25, L3 125,000¥/35, L4 250,000¥/50, L5 375,000¥, L6 750,000¥, L7 1.5M¥, L8 7.5M¥, L9 15M¥, L10 30M¥; Avail 5/7 days (L1) up to 20/1 year (L10). Rigger 2 p.137. (Design specifications p.137.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.9defe09e44a05121"
+      },
+      "_key": "!actors.items!c0822a133f5b846a.6896dcb573e50591"
+    },
+    {
+      "_id": "ed1fae4c27378515",
+      "name": "Electronic Counter-Countermeasures (ECCM)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "electronics",
+        "rating": 5,
+        "cost": 10000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [
+          100,
+          300,
+          500,
+          1000,
+          500,
+          750,
+          2000,
+          3500,
+          5000,
+          10000
+        ],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          6,
+          10,
+          12,
+          16
+        ],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [
+          12,
+          25,
+          35,
+          50,
+          35,
+          75,
+          110,
+          150,
+          200,
+          250
+        ],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "eccm",
+        "maxRating": "10",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "baseTime": "16 x R",
+            "tn": "4",
+            "set": "1"
+          },
+          "market": [
+            {
+              "cost": 110000,
+              "cf": 1,
+              "load": 12,
+              "availability": "4/7 days",
+              "streetIndex": 2,
+              "restricted": ""
+            },
+            {
+              "cost": 30000,
+              "cf": 2,
+              "load": 25,
+              "availability": "4/10 days",
+              "streetIndex": 2.5,
+              "restricted": ""
+            },
+            {
+              "cost": 350000,
+              "cf": 3,
+              "load": 35,
+              "availability": "5/14 days",
+              "streetIndex": 3,
+              "restricted": ""
+            },
+            {
+              "cost": 100000,
+              "cf": 6,
+              "load": 50,
+              "availability": "6/21 days",
+              "streetIndex": 3.5,
+              "restricted": ""
+            },
+            {
+              "cost": 150000,
+              "cf": 3,
+              "load": 35,
+              "availability": "8/30 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 250000,
+              "cf": 8,
+              "load": 75,
+              "availability": "10/45 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 750000,
+              "cf": 9,
+              "load": 110,
+              "availability": "12/60 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 2500000,
+              "cf": 12,
+              "load": 150,
+              "availability": "14/3 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 6000000,
+              "cf": 16,
+              "load": 200,
+              "availability": "16/6 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 12000000,
+              "cf": 20,
+              "load": 250,
+              "availability": "18/1 year",
+              "streetIndex": null,
+              "restricted": "military"
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.137-138",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Signal amplifiers and noise filters that nullify enemy ECM (generally more available than ECM). Leveled 1–10. Per-level Customization Cost: L1 10,000¥, L2 30,000¥, L3 100,000¥, L4 100,000¥, L5 150,000¥, L6 250,000¥, L7 750,000¥, L8 2.5M¥, L9 6M¥, L10 12M¥ (L3 and L4 both list 100,000¥ in the book). Weight 12 kg (L1) up to 250 kg (L10); Avail 4/7 days (L1) up to 18/1 year (L10); Base Time 16 hrs/level. Rigger 2 p.138. (Design specifications p.138.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.f0cd817434c10827"
+      },
+      "_key": "!actors.items!c0822a133f5b846a.ed1fae4c27378515"
+    },
+    {
+      "_id": "f2a6df5b7e1fb594",
+      "name": "Turret (Medium)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 5000,
+        "designPoints": 500,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 16,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 1000,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 6,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "15000",
+            "baseTime": "72",
+            "tn": "4",
+            "cf": "24",
+            "load": "1000"
+          },
+          "market": [
+            {
+              "availability": "([Vehicle Cost ÷ 25] ÷ 6) × (Vehicle Cost ÷ 25) × 14 days (p.135)",
+              "streetIndex": null,
+              "restricted": "military"
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.134-136",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A motorized, armored ring mount that protects its weapon (−1 to the vehicle's Signature). Sizes by max Weapon Value / hardpoints / parts cost: Mini (WV 2, 1 hp, 5,000¥, 7 CF, −25 kg), Small (WV 3, 2 hp, 7,500¥, 8 CF, −100 kg), Medium (WV 6, 3 hp, 15,000¥, 16 CF, −1,000 kg); Large (WV 8, 4 hp) and Extra-Large (WV 10, 6 hp) are custom-built. Anti-aircraft variant ×1.5 cost +1 CF; pop-up variant ×2 cost, doubled CF. Avail by formula; SI 2–3. Rigger 2 p.134–135. (Design specifications p.135.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.e852a3077fec2f48"
+      },
+      "_key": "!actors.items!c0822a133f5b846a.f2a6df5b7e1fb594"
+    },
+    {
+      "_id": "b861ee86edd08481",
+      "name": "Remote Turret (Micro)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 2500,
+        "designPoints": 100,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 10,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500",
+            "baseTime": "72",
+            "tn": "4",
+            "cf": "1",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "([Vehicle Cost ÷ 25] ÷ 6) × (Vehicle Cost ÷ 25) × 14 days (p.135)",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.134-136",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A weapons-only turret the operator controls from inside via remote sensors (a second rigger can run it independently of the driver). Sizes by parts cost / CF / load: Micro (2,500¥, 1 CF, −10 kg; pop-up micro = WV 1, 1 firmpoint), Mini (3 CF... , −25 kg), Small (9,000¥, 5 CF, −100 kg), Medium (8 CF, −1,000 kg). Avail per formula; Street Index 2 (micro/mini), 3 (small/medium); Base Time 72 hrs. Rigger 2 p.135–136. (Design specifications p.135.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.c19009fb1845cf03"
+      },
+      "_key": "!actors.items!c0822a133f5b846a.b861ee86edd08481"
+    },
+    {
+      "_id": "d5ec5b1235572c23",
+      "name": "Radar-Absorbent Materials (RAM)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "signature",
+        "rating": 1,
+        "cost": 25000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "R^3 x 50",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "ram",
+        "maxRating": "3",
+        "restrictions": [],
+        "effects": {
+          "signature": "R"
+        },
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "(R1^3 - R0^3) x 25000",
+            "baseTime": "12",
+            "tn": "4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "18/30 days",
+              "streetIndex": null,
+              "restricted": "military"
+            }
+          ],
+          "max": {
+            "value": "3"
+          },
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.130-131",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Radar-absorbing coatings/enamels that mask a vehicle's radar signature; each level adds +1 (max +3). Automatically makes the vehicle military-grade — very hard to obtain. Design cost = levels × 50 points; parts cost = levels × 25,000¥; Avail 18/30 days; Street Index military only. Rigger 2 p.130. Design: Military-grade if taken in design. (Design specifications p.130.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.9f61660a81af5193"
+      },
+      "_key": "!actors.items!c0822a133f5b846a.d5ec5b1235572c23"
+    },
+    {
+      "_id": "3828441c93a5fab0",
+      "name": "Thermal Baffles",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "signature",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 75,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "B x 50 x R",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "thermal-baffles",
+        "maxRating": "2",
+        "restrictions": [
+          "engine:methane,gasoline,diesel,jetPropeller,jetTurbine"
+        ],
+        "effects": {
+          "signature": "R"
+        },
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "B x 5000 x R",
+            "partsCost@bike": "B x 6000 x R",
+            "partsCost@truck": "B x 7500 x R",
+            "partsCost@fixedWing": "B x 7500 x R",
+            "partsCost@tractor": "B x 10000 x R",
+            "partsCost@rotor": "B x 10000 x R",
+            "partsCost@hovercraft": "B x 3750 x R",
+            "partsCost@boat": "B x 2500 x R",
+            "partsCost@zeppelin": "B x 2500 x R",
+            "baseTime": "R x 8",
+            "tn": "4",
+            "cf": "3 x R",
+            "load": "B x 50 x R"
+          },
+          "market": [
+            {
+              "availability": "6/14 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {
+            "value": "2"
+          },
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.130",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Heat-blocking baffles that mask a vehicle's thermographic signature (gasoline/methane/diesel/jet engines). Parts cost per +1 Signature: ground Body × 5,000¥, motorcycles Body × 6,000¥, trucks/fixed-wing Body × 7,500¥, tractors/helicopters Body × 10,000¥, hovercraft Body × 3,750¥, watercraft/zeppelins Body × 2,500¥; max +2; load −(Body × 50) kg/level; Avail 6/14 days; Street Index 3. Rigger 2 p.130. (Design specifications p.130.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.23c954352b97159e"
+      },
+      "_key": "!actors.items!c0822a133f5b846a.3828441c93a5fab0"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "ferrari-appaloosa-light-scout"
+    }
+  },
+  "prototypeToken": {
+    "name": "Ferrari Appaloosa Light Scout",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 4,
+    "height": 7,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/ares-citymaster.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!c0822a133f5b846a"
+}

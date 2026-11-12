@@ -1,0 +1,90 @@
+{
+  "_id": "9c8254b8875fe85f",
+  "name": "Ares Dragon",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/ares-dragon.webp",
+  "system": {
+    "vehicleType": "rotor",
+    "skill": "rotor",
+    "handling": 5,
+    "handlingOffRoad": null,
+    "speed": 260,
+    "stallSpeed": 0,
+    "acceleration": 10,
+    "body": 7,
+    "armor": 0,
+    "signature": 3,
+    "autonav": 3,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 95,
+    "load": 3250,
+    "seating": "3 bucket (2 front, 1 rear)",
+    "entryPoints": "2 + 1",
+    "ltProfile": "VTOL",
+    "setupTime": "NA",
+    "fuelType": "jetTurbine",
+    "fuelSize": 4500,
+    "fuelUnit": "liters",
+    "economy": 0.2,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 2355,
+    "cost": 589000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "rotor",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.149 (originally SRII). Cargo printed 5/90 (two spaces; 95 CF in all).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "ares-dragon"
+    }
+  },
+  "prototypeToken": {
+    "name": "Ares Dragon",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 12,
+    "height": 21,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/ares-dragon.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!9c8254b8875fe85f"
+}

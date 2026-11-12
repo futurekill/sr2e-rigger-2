@@ -1,0 +1,90 @@
+{
+  "_id": "44f22b460dc4118b",
+  "name": "Chrysler-Nissan Jackrabbit (Elec.)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/chrysler-nissan-jackrabbit.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 3,
+    "handlingOffRoad": 8,
+    "speed": 60,
+    "stallSpeed": 0,
+    "acceleration": 4,
+    "body": 3,
+    "armor": 0,
+    "signature": 5,
+    "autonav": 1,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 1,
+    "load": 45,
+    "seating": "2 bucket + 1 bench",
+    "entryPoints": "2 + 1t",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "electric",
+    "fuelSize": 200,
+    "fuelUnit": "PF",
+    "economy": 0.5,
+    "economyUnit": "km/PF",
+    "economyIdle": "",
+    "designPointValue": 163,
+    "cost": 16300,
+    "otherFeatures": "None",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.152 (originally SRII, RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "chrysler-nissan-jackrabbit-elec"
+    }
+  },
+  "prototypeToken": {
+    "name": "Chrysler-Nissan Jackrabbit (Elec.)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 4,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/chrysler-nissan-jackrabbit.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!44f22b460dc4118b"
+}

@@ -1,0 +1,311 @@
+{
+  "_id": "5077bc147b6df27e",
+  "name": "Harley Electroglide-1000",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/yamaha-rapier.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "bike",
+    "handling": 3,
+    "handlingOffRoad": 4,
+    "speed": 228,
+    "stallSpeed": 0,
+    "acceleration": 14,
+    "body": 2,
+    "armor": 2,
+    "signature": 2,
+    "autonav": 1,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 0.5,
+    "load": 50,
+    "seating": "1 bucket",
+    "entryPoints": "o",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 45,
+    "fuelUnit": "liters",
+    "economy": 8,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 466,
+    "cost": 116000,
+    "otherFeatures": "Electronics port w/radio, 2 external fixed firmpoints (weapons not included)",
+    "design": {
+      "category": "bike",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.158 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "392872501ec13560",
+      "name": "Electronics Port",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "electronics",
+        "rating": 1,
+        "cost": 1000,
+        "designPoints": 10,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0.5,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "1000",
+            "baseTime": "8",
+            "tn": "3",
+            "cf": "R",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.138-139",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A powered mount for electronics unrelated to driving (radios, cameras, surveillance gear, a remote-control deck); attached devices draw vehicle power and gain +½ the vehicle's Body (round up) to their Flux Rating. Parts cost = 1,000¥ + the equipment's cost; 1 CF per 0.1 m³ of equipment; Avail 3/6 days; Street Index 1; Base Time 8 hrs. Rigger 2 p.139. Design: Rating = tenths of a cubic meter of equipment (0.5 CF each); add the equipment's weight and cost. (Design specifications p.139.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.ca37290d39d118f6"
+      },
+      "_key": "!actors.items!5077bc147b6df27e.392872501ec13560"
+    },
+    {
+      "_id": "eb0aa2206902f3d0",
+      "name": "Fixed Mount (External Firmpoint)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 2000,
+        "designPoints": 10,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0.5,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 10,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "750",
+            "baseTime": "24",
+            "tn": "4",
+            "cf": "1",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "6/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.131-132",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132. Design: Plus the weapon's weight. (Design specifications p.132.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.9899f9283b954643"
+      },
+      "_key": "!actors.items!5077bc147b6df27e.eb0aa2206902f3d0"
+    },
+    {
+      "_id": "64ef3a11078e8456",
+      "name": "Fixed Mount (External Firmpoint)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 2000,
+        "designPoints": 10,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0.5,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 10,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "750",
+            "baseTime": "24",
+            "tn": "4",
+            "cf": "1",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "6/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.131-132",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132. Design: Plus the weapon's weight. (Design specifications p.132.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.9899f9283b954643"
+      },
+      "_key": "!actors.items!5077bc147b6df27e.64ef3a11078e8456"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "harley-electroglide-1000"
+    }
+  },
+  "prototypeToken": {
+    "name": "Harley Electroglide-1000",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 3,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/yamaha-rapier.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!5077bc147b6df27e"
+}

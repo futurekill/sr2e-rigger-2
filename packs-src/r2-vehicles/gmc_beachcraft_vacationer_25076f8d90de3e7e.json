@@ -1,0 +1,165 @@
+{
+  "_id": "25076f8d90de3e7e",
+  "name": "GMC Beachcraft Vacationer",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/gmc-beachcraft-patroller.webp",
+  "system": {
+    "vehicleType": "hovercraft",
+    "skill": "hovercraft",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 105,
+    "stallSpeed": 0,
+    "acceleration": 7,
+    "body": 4,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 3,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 6,
+    "load": 300,
+    "seating": "2 folding bucket, 4 reinforced folding bucket",
+    "entryPoints": "2 + 2 + 1d",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 400,
+    "fuelUnit": "liters",
+    "economy": 0.5,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 800,
+    "cost": 200000,
+    "otherFeatures": "Hovercraft water seals, living amenities (Basic)",
+    "design": {
+      "category": "hovercraft",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.157 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "92060d006042607b",
+      "name": "Hovercraft Water Seals",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "accessory",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "B x 5",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "only:hovercraft"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "500 x B",
+            "baseTime": "32",
+            "tn": "3",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "4/96 hours",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.145",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Watertight chassis seals so a powered-down hovercraft floats instead of sinking (a normal hovercraft sinks within 30 min over water). Parts cost = Body × 500¥; design = Body × 5 points; Avail 4/96 hrs; Street Index 1; Base Time 32 hrs. Rigger 2 p.145. (Design specifications p.145.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.d813bebe29eec3a0"
+      },
+      "_key": "!actors.items!25076f8d90de3e7e.92060d006042607b"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "gmc-beachcraft-vacationer"
+    }
+  },
+  "prototypeToken": {
+    "name": "GMC Beachcraft Vacationer",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 5,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/gmc-beachcraft-patroller.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!25076f8d90de3e7e"
+}

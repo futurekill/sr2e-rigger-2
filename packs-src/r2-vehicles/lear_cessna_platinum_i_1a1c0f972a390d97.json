@@ -1,0 +1,90 @@
+{
+  "_id": "1a1c0f972a390d97",
+  "name": "Lear-Cessna Platinum I",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/lear-cessna-platinum-i.webp",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "winged",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 330,
+    "stallSpeed": 135,
+    "acceleration": 24,
+    "body": 6,
+    "armor": 0,
+    "signature": 4,
+    "autonav": 3,
+    "pilot": 0,
+    "sensor": 2,
+    "cargo": 14,
+    "load": 400,
+    "seating": "2 folding bucket, 2 reinforced folding bench (x3)",
+    "entryPoints": "2 + 1t",
+    "ltProfile": "STOL",
+    "setupTime": "NA",
+    "fuelType": "jetPropeller",
+    "fuelSize": 500,
+    "fuelUnit": "liters",
+    "economy": 1,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 760,
+    "cost": 475000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "fixedWing",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.160 (originally SRII). Cargo printed 4/10 (two spaces; 14 CF in all).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "lear-cessna-platinum-i"
+    }
+  },
+  "prototypeToken": {
+    "name": "Lear-Cessna Platinum I",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 8,
+    "height": 8,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/lear-cessna-platinum-i.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!1a1c0f972a390d97"
+}

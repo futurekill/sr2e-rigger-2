@@ -1,0 +1,90 @@
+{
+  "_id": "29f85a3ad8861f68",
+  "name": "Volkswagen Superkombi III (Flatbed)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/ford-bison.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 8,
+    "speed": 105,
+    "stallSpeed": 0,
+    "acceleration": 7,
+    "body": 4,
+    "armor": 1,
+    "signature": 2,
+    "autonav": 3,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 48,
+    "load": 540,
+    "seating": "2 bucket",
+    "entryPoints": "2 + o",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 120,
+    "fuelUnit": "liters",
+    "economy": 5,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 400,
+    "cost": 40000,
+    "otherFeatures": "Living amenities (Improved/RV)",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.166 (originally RBB1). Cargo printed 4/44 (two spaces; 48 CF in all).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "volkswagen-superkombi-iii-flatbed"
+    }
+  },
+  "prototypeToken": {
+    "name": "Volkswagen Superkombi III (Flatbed)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 4,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/ford-bison.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!29f85a3ad8861f68"
+}

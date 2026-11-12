@@ -1,0 +1,90 @@
+{
+  "_id": "426d033726c6a4d0",
+  "name": "Samuvani Criscraft Otter",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/samuvani-criscraft-otter.webp",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "motorboat",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 45,
+    "stallSpeed": 0,
+    "acceleration": 6,
+    "body": 5,
+    "armor": 0,
+    "signature": 3,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 18,
+    "load": 300,
+    "seating": "2 folding bucket, 2 folding bench (x2) (reinforced)",
+    "entryPoints": "o",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 200,
+    "fuelUnit": "liters",
+    "economy": 4,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 275,
+    "cost": 27500,
+    "otherFeatures": "None",
+    "design": {
+      "category": "boat",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.164 (originally SRII).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "samuvani-criscraft-otter"
+    }
+  },
+  "prototypeToken": {
+    "name": "Samuvani Criscraft Otter",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 3,
+    "height": 7,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/samuvani-criscraft-otter.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!426d033726c6a4d0"
+}

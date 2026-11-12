@@ -1,0 +1,90 @@
+{
+  "_id": "acb4065231707b5a",
+  "name": "Leyland-Rover Transport/Gasoline (Minibus)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/gmc-bulldog.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 8,
+    "speed": 75,
+    "stallSpeed": 0,
+    "acceleration": 4,
+    "body": 4,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 8,
+    "load": 300,
+    "seating": "2 folding bucket, 8 reinforced folding bench (r)",
+    "entryPoints": "2 + 1d + 1g",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 120,
+    "fuelUnit": "liters",
+    "economy": 6,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 500,
+    "cost": 50000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.160 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "leyland-rover-transport-gasoline-minibus"
+    }
+  },
+  "prototypeToken": {
+    "name": "Leyland-Rover Transport/Gasoline (Minibus)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 5,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/gmc-bulldog.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!acb4065231707b5a"
+}

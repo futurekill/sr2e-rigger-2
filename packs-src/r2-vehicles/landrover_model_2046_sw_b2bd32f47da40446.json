@@ -1,0 +1,90 @@
+{
+  "_id": "b2bd32f47da40446",
+  "name": "Landrover Model 2046 (SW)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/ford-bison.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 3,
+    "handlingOffRoad": 3,
+    "speed": 100,
+    "stallSpeed": 0,
+    "acceleration": 6,
+    "body": 4,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 1,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 18,
+    "load": 500,
+    "seating": "2 bucket, 4 folding bench",
+    "entryPoints": "2 + 1h + 1g",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 90,
+    "fuelUnit": "liters",
+    "economy": 5,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 375,
+    "cost": 37500,
+    "otherFeatures": "None. Available in short wheel base (SW) and long wheel base (LW).",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.159 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "landrover-model-2046-sw"
+    }
+  },
+  "prototypeToken": {
+    "name": "Landrover Model 2046 (SW)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 4,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/ford-bison.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!b2bd32f47da40446"
+}

@@ -1,0 +1,244 @@
+{
+  "_id": "0ab4d1006c8b14ca",
+  "name": "Citroën Brouillard Smoke Generator",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/citroen-brouillard-smoke-generator.webp",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 4,
+    "speed": 50,
+    "stallSpeed": 0,
+    "acceleration": 5,
+    "body": 2,
+    "armor": 0,
+    "signature": 4,
+    "autonav": 0,
+    "pilot": 1,
+    "sensor": 1,
+    "cargo": 0,
+    "load": 250,
+    "seating": "NA",
+    "entryPoints": "NA",
+    "ltProfile": "NA",
+    "setupTime": "None",
+    "fuelType": "diesel",
+    "fuelSize": 100,
+    "fuelUnit": "liters",
+    "economy": 1,
+    "economyUnit": "km/liter",
+    "economyIdle": "1 hour/ltr",
+    "designPointValue": 1250,
+    "cost": 12500,
+    "otherFeatures": "Remote control interface, rigger adaptation, smoke generator (250 liters fog oil, 60 liters graphite smoke fuel)",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": [
+        "drone"
+      ]
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.152.</p>"
+  },
+  "items": [
+    {
+      "_id": "97e18c855aedd12b",
+      "name": "Remote-Control Interface",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "25 x B",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "remote-control-interface",
+        "maxRating": "",
+        "restrictions": [
+          "notDrone"
+        ],
+        "effects": {
+          "pilotSet": "1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500 x B",
+            "baseTime": "16",
+            "tn": "4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "4/72 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR",
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.125-126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Lets a vehicle receive and transmit remote-control data, giving it an initial Pilot Rating of 1 and remote autonomy. Parts cost = 2,500¥ × Body; Avail 4/72 days; Street Index 2; Base Time 16 hrs; needs B/R & Electronics. Rigger 2 p.125–126. (Design specifications p.125.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.86ef70f9a769cd7c"
+      },
+      "_key": "!actors.items!0ab4d1006c8b14ca.97e18c855aedd12b"
+    },
+    {
+      "_id": "d4b035bbd37fc7d4",
+      "name": "Rigger Adaptation",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 2800,
+        "designPoints": 35,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "rigger-adaptation",
+        "maxRating": "",
+        "restrictions": [
+          "needsRiggerBase"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2800",
+            "baseTime": "40",
+            "tn": "4",
+            "cf": "1",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "4/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A 'black box' translating machine code to neural stimuli and back, so a rigger controlling the vehicle through a VCR gets the full Control Pool and Reaction/Initiative bonuses. Parts cost 2,800¥; Avail 4/7 days; Street Index 2; Base Time 4 hrs; 1 CF (plus the datajack-port/remote-control CF); load −10 kg. Rigger 2 p.126. (Design specifications p.126.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.632d0ff576b53509"
+      },
+      "_key": "!actors.items!0ab4d1006c8b14ca.d4b035bbd37fc7d4"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "citroen-brouillard-smoke-generator"
+    }
+  },
+  "prototypeToken": {
+    "name": "Citroën Brouillard Smoke Generator",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/citroen-brouillard-smoke-generator.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!0ab4d1006c8b14ca"
+}

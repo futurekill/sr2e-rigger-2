@@ -1,0 +1,179 @@
+{
+  "_id": "bb343a242dc134f1",
+  "name": "Honda-GM 3220 ZX (Turbo)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/eurocar-westwind-2000.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 8,
+    "speed": 160,
+    "stallSpeed": 0,
+    "acceleration": 12,
+    "body": 3,
+    "armor": 0,
+    "signature": 1,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 3,
+    "load": 40,
+    "seating": "4 bucket (2 front, 2 rear)",
+    "entryPoints": "2 + 1t",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 60,
+    "fuelUnit": "liters",
+    "economy": 5.4,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 358,
+    "cost": 35800,
+    "otherFeatures": "Turbocharging (factored in)",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.158 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "ba7cb601fcbdfb08",
+      "name": "Turbocharging / Superconductive Drive",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "engine",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "E x 1.75 x R",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "turbocharging",
+        "maxRating": "",
+        "restrictions": [
+          "engine:electric,methane,gasoline,diesel",
+          "notAircraftUnlessElectric"
+        ],
+        "effects": {
+          "speed": "15 x R",
+          "acceleration": "10 x R",
+          "signature": "-R",
+          "economyMult": "0.95^R"
+        },
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "V x 1.1 x R",
+            "baseTime": "8 x R",
+            "tn": "R1 + 2",
+            "tn@drone": "R1 + 3",
+            "tn@hovercraft": "R1 + 3",
+            "tn@electricAircraft": "R1 + 4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "6/12 days",
+              "streetIndex": 1.5
+            }
+          ],
+          "max": {
+            "basis": "stat:speed",
+            "value": "S0 x 1.5",
+            "round": "down",
+            "minOneLevel": true
+          },
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.122",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Turbine boost for methane/gas/diesel engines (the 'superconductive drive' does the same for electric). Each level adds +15 Speed and +10 Acceleration; new max Speed = initial max × 1.25. Design cost = power-plant Design-Point cost × 1.5 per level; parts cost = vehicle's original cost × 1.10 per level; Avail 6/12 days; Street Index 2; Base Time 8 hrs. Rigger 2 p.122. (Design specifications p.122.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.30888c6b2a9b334d"
+      },
+      "_key": "!actors.items!bb343a242dc134f1.ba7cb601fcbdfb08"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "honda-gm-3220-zx-turbo"
+    }
+  },
+  "prototypeToken": {
+    "name": "Honda-GM 3220 ZX (Turbo)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 4,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/eurocar-westwind-2000.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!bb343a242dc134f1"
+}

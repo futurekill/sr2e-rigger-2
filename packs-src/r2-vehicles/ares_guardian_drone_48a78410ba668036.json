@@ -1,0 +1,319 @@
+{
+  "_id": "48a78410ba668036",
+  "name": "Ares Guardian Drone",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/spotter-drone.webp",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "vectorThrust",
+    "handling": 5,
+    "handlingOffRoad": null,
+    "speed": 60,
+    "stallSpeed": 0,
+    "acceleration": 6,
+    "body": 2,
+    "armor": 12,
+    "signature": 8,
+    "autonav": 0,
+    "pilot": 3,
+    "sensor": 4,
+    "cargo": 1,
+    "load": 20,
+    "seating": "None",
+    "entryPoints": "NA",
+    "ltProfile": "VTOL",
+    "setupTime": "None",
+    "fuelType": "electric",
+    "fuelSize": 150,
+    "fuelUnit": "PF",
+    "economy": 1,
+    "economyUnit": "km/PF",
+    "economyIdle": "min/PF",
+    "designPointValue": 3020,
+    "cost": 227000,
+    "otherFeatures": "Mini-turret (weapons not included), remote control interface, rigger adaptation",
+    "design": {
+      "category": "vector",
+      "transport": false,
+      "traits": [
+        "drone",
+        "electricAircraft"
+      ]
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.149 (originally CS).</p>"
+  },
+  "items": [
+    {
+      "_id": "4c391ba79f02170e",
+      "name": "Turret (Mini)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 5000,
+        "designPoints": 125,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 6,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 25,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 2,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "5000",
+            "baseTime": "72",
+            "tn": "4",
+            "cf": "7",
+            "load": "25"
+          },
+          "market": [
+            {
+              "availability": "([Vehicle Cost ÷ 25] ÷ 6) × (Vehicle Cost ÷ 25) × 14 days (p.135)",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.134-136",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A motorized, armored ring mount that protects its weapon (−1 to the vehicle's Signature). Sizes by max Weapon Value / hardpoints / parts cost: Mini (WV 2, 1 hp, 5,000¥, 7 CF, −25 kg), Small (WV 3, 2 hp, 7,500¥, 8 CF, −100 kg), Medium (WV 6, 3 hp, 15,000¥, 16 CF, −1,000 kg); Large (WV 8, 4 hp) and Extra-Large (WV 10, 6 hp) are custom-built. Anti-aircraft variant ×1.5 cost +1 CF; pop-up variant ×2 cost, doubled CF. Avail by formula; SI 2–3. Rigger 2 p.134–135. (Design specifications p.135.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.e9082bd14a794425"
+      },
+      "_key": "!actors.items!48a78410ba668036.4c391ba79f02170e"
+    },
+    {
+      "_id": "b323a1d0d001b837",
+      "name": "Remote-Control Interface",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "25 x B",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "remote-control-interface",
+        "maxRating": "",
+        "restrictions": [
+          "notDrone"
+        ],
+        "effects": {
+          "pilotSet": "1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500 x B",
+            "baseTime": "16",
+            "tn": "4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "4/72 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR",
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.125-126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Lets a vehicle receive and transmit remote-control data, giving it an initial Pilot Rating of 1 and remote autonomy. Parts cost = 2,500¥ × Body; Avail 4/72 days; Street Index 2; Base Time 16 hrs; needs B/R & Electronics. Rigger 2 p.125–126. (Design specifications p.125.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.86ef70f9a769cd7c"
+      },
+      "_key": "!actors.items!48a78410ba668036.b323a1d0d001b837"
+    },
+    {
+      "_id": "5f0b53bd2245b425",
+      "name": "Rigger Adaptation",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 2800,
+        "designPoints": 35,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "rigger-adaptation",
+        "maxRating": "",
+        "restrictions": [
+          "needsRiggerBase"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2800",
+            "baseTime": "40",
+            "tn": "4",
+            "cf": "1",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "4/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A 'black box' translating machine code to neural stimuli and back, so a rigger controlling the vehicle through a VCR gets the full Control Pool and Reaction/Initiative bonuses. Parts cost 2,800¥; Avail 4/7 days; Street Index 2; Base Time 4 hrs; 1 CF (plus the datajack-port/remote-control CF); load −10 kg. Rigger 2 p.126. (Design specifications p.126.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.632d0ff576b53509"
+      },
+      "_key": "!actors.items!48a78410ba668036.5f0b53bd2245b425"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "ares-guardian-drone"
+    }
+  },
+  "prototypeToken": {
+    "name": "Ares Guardian Drone",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/spotter-drone.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!48a78410ba668036"
+}

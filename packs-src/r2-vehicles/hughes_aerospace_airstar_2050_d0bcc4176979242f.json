@@ -1,0 +1,167 @@
+{
+  "_id": "d0bcc4176979242f",
+  "name": "Hughes Aerospace Airstar 2050",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/hughes-airstar.webp",
+  "system": {
+    "vehicleType": "rotor",
+    "skill": "rotor",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 200,
+    "stallSpeed": 0,
+    "acceleration": 16,
+    "body": 7,
+    "armor": 6,
+    "signature": 3,
+    "autonav": 4,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 10,
+    "load": 450,
+    "seating": "2 bucket + 3 bucket (x3)",
+    "entryPoints": "2 + 2 + 1d",
+    "ltProfile": "VTOL",
+    "setupTime": "NA",
+    "fuelType": "jetTurbine",
+    "fuelSize": 4500,
+    "fuelUnit": "liters",
+    "economy": 0.2,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 2519,
+    "cost": 944000,
+    "otherFeatures": "Concealed armor, luxury accommodations",
+    "design": {
+      "category": "rotor",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.159 (originally SRII).</p>"
+  },
+  "items": [
+    {
+      "_id": "78cab10d8fb539ce",
+      "name": "Concealed Vehicle Armor",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "armor",
+        "rating": 6,
+        "cost": 2000,
+        "designPoints": 0,
+        "dpPerLevel": 50,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 2,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "B x B x 5 x R",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "concealed-armor",
+        "maxRating": "",
+        "restrictions": [
+          "notWith:standard-armor"
+        ],
+        "effects": {
+          "armor": "R"
+        },
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000 x R",
+            "baseTime": "R x 8",
+            "tn": "ceil(A1 / 3)",
+            "cf": "3 x R",
+            "load": "B x B x 5 x R"
+          },
+          "market": [
+            {
+              "availability": "8/21 days",
+              "streetIndex": 3.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.127",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Armor hidden inside the vehicle's interior/cargo space so it isn't obvious the vehicle is armored — not compatible with standard armor. Parts cost = 2,000¥ per Armor Point; 3 CF/point; load −(Body × Body × 5) kg/point; Avail 6/21 days; Street Index 3.5; Base Time (armor × 8) hrs. Rigger 2 p.127. (Design specifications p.127.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.7f17037d59574972"
+      },
+      "_key": "!actors.items!d0bcc4176979242f.78cab10d8fb539ce"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "hughes-aerospace-airstar-2050"
+    }
+  },
+  "prototypeToken": {
+    "name": "Hughes Aerospace Airstar 2050",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 12,
+    "height": 21,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/hughes-airstar.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!d0bcc4176979242f"
+}

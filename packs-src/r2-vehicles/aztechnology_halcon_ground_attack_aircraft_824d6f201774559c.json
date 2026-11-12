@@ -1,0 +1,1007 @@
+{
+  "_id": "824d6f201774559c",
+  "name": "Aztechnology Halcón Ground-Attack Aircraft",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/efa-eurofighter.webp",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "winged",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 1800,
+    "stallSpeed": 150,
+    "acceleration": 80,
+    "body": 7,
+    "armor": 12,
+    "signature": 6,
+    "autonav": 4,
+    "pilot": 0,
+    "sensor": 9,
+    "cargo": 3,
+    "load": 2605,
+    "seating": "1 ejection",
+    "entryPoints": "1",
+    "ltProfile": "Standard",
+    "setupTime": "NA",
+    "fuelType": "jetTurbine",
+    "fuelSize": 2500,
+    "fuelUnit": "liters",
+    "economy": 0.1,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 79764,
+    "cost": 59800000,
+    "otherFeatures": "ECM 9, ECCM 9, enviroseal (gas), 2 external fixed hardpoints (weapons not included), 7 external missile mounts (2,100 kg total ordnance weight)",
+    "design": {
+      "category": "fixedWing",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.150 (originally Aztlan).</p>"
+  },
+  "items": [
+    {
+      "_id": "9af50ed6900dda9a",
+      "name": "Electronic Countermeasures (ECM)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "electronics",
+        "rating": 9,
+        "cost": 25000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [
+          250,
+          750,
+          1250,
+          2500,
+          1250,
+          1500,
+          5000,
+          7500,
+          12500,
+          25000
+        ],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          6,
+          10,
+          12,
+          16
+        ],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [
+          12,
+          25,
+          35,
+          50,
+          35,
+          75,
+          110,
+          150,
+          200,
+          250
+        ],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "ecm",
+        "maxRating": "10",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "baseTime": "16 x R",
+            "tn": "4",
+            "set": "1"
+          },
+          "market": [
+            {
+              "cost": 25000,
+              "cf": 1,
+              "load": 12,
+              "availability": "5/7 days",
+              "streetIndex": 2.5,
+              "restricted": ""
+            },
+            {
+              "cost": 75000,
+              "cf": 2,
+              "load": 25,
+              "availability": "6/10 days",
+              "streetIndex": 3,
+              "restricted": ""
+            },
+            {
+              "cost": 125000,
+              "cf": 3,
+              "load": 35,
+              "availability": "7/14 days",
+              "streetIndex": 3.5,
+              "restricted": ""
+            },
+            {
+              "cost": 250000,
+              "cf": 6,
+              "load": 50,
+              "availability": "8/21 days",
+              "streetIndex": 4,
+              "restricted": ""
+            },
+            {
+              "cost": 375000,
+              "cf": 3,
+              "load": 35,
+              "availability": "10/30 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 750000,
+              "cf": 8,
+              "load": 75,
+              "availability": "12/45 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 1500000,
+              "cf": 9,
+              "load": 110,
+              "availability": "14/60 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 7500000,
+              "cf": 12,
+              "load": 150,
+              "availability": "16/3 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 15000000,
+              "cf": 16,
+              "load": 200,
+              "availability": "18/6 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 30000000,
+              "cf": 20,
+              "load": 250,
+              "availability": "20/1 year",
+              "streetIndex": null,
+              "restricted": "military"
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.137",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Active jamming — barrage radio/infrared jammers, chaff, flare dispensers, harmonic disrupters — that foul enemy sensors and remote-control comms (security/military only). Cost & weight by Level: L1 25,000¥/12 kg/SI 2.5, L2 75,000¥/25, L3 125,000¥/35, L4 250,000¥/50, L5 375,000¥, L6 750,000¥, L7 1.5M¥, L8 7.5M¥, L9 15M¥, L10 30M¥; Avail 5/7 days (L1) up to 20/1 year (L10). Rigger 2 p.137. (Design specifications p.137.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.9defe09e44a05121"
+      },
+      "_key": "!actors.items!824d6f201774559c.9af50ed6900dda9a"
+    },
+    {
+      "_id": "2c213917959c8bc9",
+      "name": "Electronic Counter-Countermeasures (ECCM)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "electronics",
+        "rating": 9,
+        "cost": 10000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [
+          100,
+          300,
+          500,
+          1000,
+          500,
+          750,
+          2000,
+          3500,
+          5000,
+          10000
+        ],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          6,
+          10,
+          12,
+          16
+        ],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [
+          12,
+          25,
+          35,
+          50,
+          35,
+          75,
+          110,
+          150,
+          200,
+          250
+        ],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "eccm",
+        "maxRating": "10",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "baseTime": "16 x R",
+            "tn": "4",
+            "set": "1"
+          },
+          "market": [
+            {
+              "cost": 110000,
+              "cf": 1,
+              "load": 12,
+              "availability": "4/7 days",
+              "streetIndex": 2,
+              "restricted": ""
+            },
+            {
+              "cost": 30000,
+              "cf": 2,
+              "load": 25,
+              "availability": "4/10 days",
+              "streetIndex": 2.5,
+              "restricted": ""
+            },
+            {
+              "cost": 350000,
+              "cf": 3,
+              "load": 35,
+              "availability": "5/14 days",
+              "streetIndex": 3,
+              "restricted": ""
+            },
+            {
+              "cost": 100000,
+              "cf": 6,
+              "load": 50,
+              "availability": "6/21 days",
+              "streetIndex": 3.5,
+              "restricted": ""
+            },
+            {
+              "cost": 150000,
+              "cf": 3,
+              "load": 35,
+              "availability": "8/30 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 250000,
+              "cf": 8,
+              "load": 75,
+              "availability": "10/45 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 750000,
+              "cf": 9,
+              "load": 110,
+              "availability": "12/60 days",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 2500000,
+              "cf": 12,
+              "load": 150,
+              "availability": "14/3 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 6000000,
+              "cf": 16,
+              "load": 200,
+              "availability": "16/6 months",
+              "streetIndex": null,
+              "restricted": "military"
+            },
+            {
+              "cost": 12000000,
+              "cf": 20,
+              "load": 250,
+              "availability": "18/1 year",
+              "streetIndex": null,
+              "restricted": "military"
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.137-138",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Signal amplifiers and noise filters that nullify enemy ECM (generally more available than ECM). Leveled 1–10. Per-level Customization Cost: L1 10,000¥, L2 30,000¥, L3 100,000¥, L4 100,000¥, L5 150,000¥, L6 250,000¥, L7 750,000¥, L8 2.5M¥, L9 6M¥, L10 12M¥ (L3 and L4 both list 100,000¥ in the book). Weight 12 kg (L1) up to 250 kg (L10); Avail 4/7 days (L1) up to 18/1 year (L10); Base Time 16 hrs/level. Rigger 2 p.138. (Design specifications p.138.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.f0cd817434c10827"
+      },
+      "_key": "!actors.items!824d6f201774559c.2c213917959c8bc9"
+    },
+    {
+      "_id": "86dc6ccc7a0b33a3",
+      "name": "EnviroSeal (Gas Seal)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "B x 3",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "not:bike"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "250 x B",
+            "baseTime": "12",
+            "tn": "3",
+            "cf": "1",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "8/14 days",
+              "streetIndex": 2.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.128",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128. (Design specifications p.128.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.2dcbfc97c328bd76"
+      },
+      "_key": "!actors.items!824d6f201774559c.86dc6ccc7a0b33a3"
+    },
+    {
+      "_id": "fe421400e32befd3",
+      "name": "Fixed Mount (External Hardpoint)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 2000,
+        "designPoints": 25,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 1,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 10,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 2,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000",
+            "baseTime": "24",
+            "tn": "4",
+            "cf": "2",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "6/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.131-132",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132. Design: Plus the weapon's weight. (Design specifications p.132.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.95c3935a006e0160"
+      },
+      "_key": "!actors.items!824d6f201774559c.fe421400e32befd3"
+    },
+    {
+      "_id": "358f6dd8b820871a",
+      "name": "Fixed Mount (External Hardpoint)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 2000,
+        "designPoints": 25,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 1,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 10,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 2,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000",
+            "baseTime": "24",
+            "tn": "4",
+            "cf": "2",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "6/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.131-132",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132. Design: Plus the weapon's weight. (Design specifications p.132.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.95c3935a006e0160"
+      },
+      "_key": "!actors.items!824d6f201774559c.358f6dd8b820871a"
+    },
+    {
+      "_id": "b3914b9b17619ab2",
+      "name": "External Missile/Rocket Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": false,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "state": "factory"
+        },
+        "installed": false,
+        "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.b043a33076ce8cc6"
+      },
+      "_key": "!actors.items!824d6f201774559c.b3914b9b17619ab2"
+    },
+    {
+      "_id": "3f6b3bb1481e49ee",
+      "name": "External Missile/Rocket Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": false,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "state": "factory"
+        },
+        "installed": false,
+        "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.b043a33076ce8cc6"
+      },
+      "_key": "!actors.items!824d6f201774559c.3f6b3bb1481e49ee"
+    },
+    {
+      "_id": "0c16250c854b13df",
+      "name": "External Missile/Rocket Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": false,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "state": "factory"
+        },
+        "installed": false,
+        "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.b043a33076ce8cc6"
+      },
+      "_key": "!actors.items!824d6f201774559c.0c16250c854b13df"
+    },
+    {
+      "_id": "6998ccd96fb11c41",
+      "name": "External Missile/Rocket Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": false,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "state": "factory"
+        },
+        "installed": false,
+        "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.b043a33076ce8cc6"
+      },
+      "_key": "!actors.items!824d6f201774559c.6998ccd96fb11c41"
+    },
+    {
+      "_id": "c85ad3156bd5869a",
+      "name": "External Missile/Rocket Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": false,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "state": "factory"
+        },
+        "installed": false,
+        "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.b043a33076ce8cc6"
+      },
+      "_key": "!actors.items!824d6f201774559c.c85ad3156bd5869a"
+    },
+    {
+      "_id": "133da89a78308ba5",
+      "name": "External Missile/Rocket Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": false,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "state": "factory"
+        },
+        "installed": false,
+        "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.b043a33076ce8cc6"
+      },
+      "_key": "!actors.items!824d6f201774559c.133da89a78308ba5"
+    },
+    {
+      "_id": "e4bf88e1b4b09097",
+      "name": "External Missile/Rocket Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": false,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "state": "factory"
+        },
+        "installed": false,
+        "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.b043a33076ce8cc6"
+      },
+      "_key": "!actors.items!824d6f201774559c.e4bf88e1b4b09097"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "aztechnology-halcon-ground-attack-aircraft"
+    }
+  },
+  "prototypeToken": {
+    "name": "Aztechnology Halcón Ground-Attack Aircraft",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 8,
+    "height": 11,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/efa-eurofighter.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!824d6f201774559c"
+}

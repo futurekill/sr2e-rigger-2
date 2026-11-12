@@ -1,0 +1,311 @@
+{
+  "_id": "edbec72027a0bc68",
+  "name": "GMC Riverine (Police Model)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/gmc-riverine.webp",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "motorboat",
+    "handling": 3,
+    "handlingOffRoad": null,
+    "speed": 90,
+    "stallSpeed": 0,
+    "acceleration": 5,
+    "body": 5,
+    "armor": 6,
+    "signature": 2,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 45,
+    "load": 1290,
+    "seating": "2 bucket + 2 folding bench",
+    "entryPoints": "o",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 200,
+    "fuelUnit": "liters",
+    "economy": 2,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 1199,
+    "cost": 240000,
+    "otherFeatures": "External fixed hardpoint (weapon not included), living amenities (Basic), 2 ring mounts",
+    "design": {
+      "category": "boat",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.157 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "92146330db1e0d19",
+      "name": "Fixed Mount (External Hardpoint)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 2000,
+        "designPoints": 25,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 1,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 10,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 2,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000",
+            "baseTime": "24",
+            "tn": "4",
+            "cf": "2",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "6/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.131-132",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132. Design: Plus the weapon's weight. (Design specifications p.132.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.95c3935a006e0160"
+      },
+      "_key": "!actors.items!edbec72027a0bc68.92146330db1e0d19"
+    },
+    {
+      "_id": "e2fbedb396c9eb34",
+      "name": "Ring Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 3000,
+        "designPoints": 10,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 1,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 25,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 2,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "3000",
+            "baseTime": "8",
+            "tn": "3",
+            "cf": "1",
+            "cf@rotor": "16",
+            "load": "25"
+          },
+          "market": [
+            {
+              "availability": "8/14 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.134",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A freely-rotating ring with a tripod, a step up from a pintle mount (hardtop or roll-bar-equipped vehicles only); counts as a hardpoint, can be operated remotely by a jacked-in rigger, and grants 6 points of recoil compensation. Parts cost 3,000¥; Avail 8/14 days; Street Index 2; Base Time 8 hrs; 1 CF (16 CF for door-gun config); load −25 kg. Rigger 2 p.133–134. Design: 16 CF as a helicopter door gun. (Design specifications p.134.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.8f0140c135c93507"
+      },
+      "_key": "!actors.items!edbec72027a0bc68.e2fbedb396c9eb34"
+    },
+    {
+      "_id": "27ccc8f796bd6407",
+      "name": "Ring Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 3000,
+        "designPoints": 10,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 1,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 25,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 2,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "3000",
+            "baseTime": "8",
+            "tn": "3",
+            "cf": "1",
+            "cf@rotor": "16",
+            "load": "25"
+          },
+          "market": [
+            {
+              "availability": "8/14 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.134",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A freely-rotating ring with a tripod, a step up from a pintle mount (hardtop or roll-bar-equipped vehicles only); counts as a hardpoint, can be operated remotely by a jacked-in rigger, and grants 6 points of recoil compensation. Parts cost 3,000¥; Avail 8/14 days; Street Index 2; Base Time 8 hrs; 1 CF (16 CF for door-gun config); load −25 kg. Rigger 2 p.133–134. Design: 16 CF as a helicopter door gun. (Design specifications p.134.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.8f0140c135c93507"
+      },
+      "_key": "!actors.items!edbec72027a0bc68.27ccc8f796bd6407"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "gmc-riverine-police-model"
+    }
+  },
+  "prototypeToken": {
+    "name": "GMC Riverine (Police Model)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 3,
+    "height": 7,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/gmc-riverine.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!edbec72027a0bc68"
+}

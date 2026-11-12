@@ -1,0 +1,90 @@
+{
+  "_id": "4cc45b0b6cbdf252",
+  "name": "Cessna C750 (Standard)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/cessna-c750.webp",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "winged",
+    "handling": 5,
+    "handlingOffRoad": null,
+    "speed": 340,
+    "stallSpeed": 135,
+    "acceleration": 22,
+    "body": 6,
+    "armor": 0,
+    "signature": 4,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 46,
+    "load": 1100,
+    "seating": "2 bucket",
+    "entryPoints": "1 + 1t",
+    "ltProfile": "STOL",
+    "setupTime": "NA",
+    "fuelType": "jetPropeller",
+    "fuelSize": 500,
+    "fuelUnit": "liters",
+    "economy": 1,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 820,
+    "cost": 205000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "fixedWing",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.151 (originally SRII).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "cessna-c750-standard"
+    }
+  },
+  "prototypeToken": {
+    "name": "Cessna C750 (Standard)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 8,
+    "height": 8,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/cessna-c750.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!4cc45b0b6cbdf252"
+}

@@ -1,0 +1,535 @@
+{
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.96ce6d68ac822470": {
+  "vehicleId": "aerodesign-systems-condor-series-ldsd-23",
+  "name": "Aerodesign Condor LDSD-23"
+ },
+ "Compendium.sr2e-fields-of-fire.ff-vehicles.Actor.e38205de81e41915": {
+  "vehicleId": "aerodesign-systems-condor-series-ldsd-41",
+  "name": "Aerodesign Condor II"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.0164754e48c6317f": {
+  "vehicleId": "aerodesign-systems-condor-series-ldsd-41",
+  "name": "Aerodesign Condor II LDSD-41"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.ca78bf1c14c2dfaf": {
+  "vehicleId": "aeroquip-redball-express-long-range-resupply-drone",
+  "name": "Aeroquip Redball Express"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.88adec95ec6be240": {
+  "vehicleId": "agusta-cierva-plutocrat-armed",
+  "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft (Armed)"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.5ff4894ba3b0fe51": {
+  "vehicleId": "agusta-cierva-plutocrat-standard",
+  "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.c64b19205f7e9c87": {
+  "vehicleId": "airship-industries-skyswimmer",
+  "name": "Airship Industries Skyswimmer"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.2c348e61f6995d0a": {
+  "vehicleId": "ares-arms-sentry-ii",
+  "name": "Ares Arms Sentry II"
+ },
+ "Compendium.sr2e.vehicles.Actor.687d773613171bff": {
+  "vehicleId": "ares-citymaster",
+  "name": "Ares Citymaster"
+ },
+ "Compendium.sr2e.vehicles.Actor.52bb0a006726360c": {
+  "vehicleId": "ares-dragon",
+  "name": "Ares Dragon"
+ },
+ "Compendium.sr2e-corporate-security.csh-vehicles.Actor.fe65a160c58047cc": {
+  "vehicleId": "ares-guardian-drone",
+  "name": "Ares Guardian Drone"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.1efeeeab7d2b363e": {
+  "vehicleId": "ares-mobmaster",
+  "name": "Ares Mobmaster Riot Control Vehicle"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.e0c6db91055d4e08": {
+  "vehicleId": "ares-roadmaster",
+  "name": "Ares Roadmaster"
+ },
+ "Compendium.sr2e-corporate-security.csh-vehicles.Actor.639f16e2b1dad3a9": {
+  "vehicleId": "ares-sentinel-p-series-drone",
+  "name": "Ares Sentinel \"P\" Series Drone"
+ },
+ "Compendium.sr2e-corporate-security.csh-vehicles.Actor.f3933ed2183e4404": {
+  "vehicleId": "ares-tr-55c-cargoliner",
+  "name": "Ares TR-55C Cargoliner VTOL"
+ },
+ "Compendium.sr2e-corporate-security.csh-vehicles.Actor.87f89159934cd843": {
+  "vehicleId": "ares-tr-55e-presidents-edition-executive",
+  "name": "Ares TR-55E \"President's Edition\" Executive VTOL"
+ },
+ "Compendium.sr2e-corporate-security.csh-vehicles.Actor.bcb797039c6cef76": {
+  "vehicleId": "ares-tr-55t-traveller",
+  "name": "Ares TR-55T Traveler VTOL"
+ },
+ "Compendium.sr2e-fields-of-fire.ff-vehicles.Actor.bec5741f46f81014": {
+  "vehicleId": "artemis-industries-nightglider",
+  "name": "Artemis Nightglider"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.d77c57d19e3f77d8": {
+  "vehicleId": "aztech-gcr-23c-crawler",
+  "name": "Aztechnology GCR-23C Crawler"
+ },
+ "Compendium.sr2e.vehicles.Actor.110ead2a77979424": {
+  "vehicleId": "aztech-nightrunner-standard",
+  "name": "Aztechnology Nightrunner"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.638c848f9473792a": {
+  "vehicleId": "aztechnology-aguilar-ex",
+  "name": "Aztechnology Aguilar-EX Attack Helicopter"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.5799a406de06ad92": {
+  "vehicleId": "aztechnology-hedgehog-signal-interceptor",
+  "name": "Aztechnology Hedgehog"
+ },
+ "Compendium.sr2e.vehicles.Actor.582bad720d7f5015": {
+  "vehicleId": "bac-dassault-mbb-efa-variants",
+  "name": "EFA (Eurofighter)"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.f20c5dd86d204465": {
+  "vehicleId": "blohm-voss-river-commander",
+  "name": "Blohm & Voss River Commander"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.2aecf441cb9c07ab": {
+  "vehicleId": "bmw-blitzen-2050",
+  "name": "BMW Blitzen 2050"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.07bce9073a0ef119": {
+  "vehicleId": "cas-wandjina-rpv",
+  "name": "CAS \"Wandjina\" RPV"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.4823d8e882e31b56": {
+  "vehicleId": "casa-j-239-raven",
+  "name": "CASA J-239 Raven"
+ },
+ "Compendium.sr2e.vehicles.Actor.09f2216b523797f3": {
+  "vehicleId": "cessna-c750-standard",
+  "name": "Cessna C750"
+ },
+ "Compendium.sr2e.vehicles.Actor.1990b4986ba1f60a": {
+  "vehicleId": "chrysler-nissan-g12a-pass",
+  "name": "Chrysler-Nissan G12a"
+ },
+ "Compendium.sr2e.vehicles.Actor.bfd27cd108f62619": {
+  "vehicleId": "chrysler-nissan-jackrabbit-elec",
+  "name": "Chrysler-Nissan Jackrabbit"
+ },
+ "Compendium.sr2e.vehicles.Actor.379b5fb40911a5f9": {
+  "vehicleId": "chrysler-nissan-patrol-1",
+  "name": "Chrysler-Nissan Patrol-1"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.0ab4d1006c8b14ca": {
+  "vehicleId": "citroen-brouillard-smoke-generator",
+  "name": "Citroën Brouillard Smoke Generator"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.a740a05b9fc7abf5": {
+  "vehicleId": "colorado-craft-cigarette-hydrofoil",
+  "name": "Colorado Craft \"Cigarette\" Hydroconvertible"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.f3537f073ca3236b": {
+  "vehicleId": "conestoga-trailblazer",
+  "name": "Conestoga Trailblazer Prime Mover"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.c2cd8c1494487c43": {
+  "vehicleId": "cyberspace-designs-dalmatian",
+  "name": "Cyberspace Designs Dalmatian Recon Drone"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.2d38c0b5d6d124d0": {
+  "vehicleId": "cyberspace-systems-wolfhound-advanced-reconnaissance-aircraft",
+  "name": "Cyberspace Designs Wolfhound"
+ },
+ "Compendium.sr2e.vehicles.Actor.05ac5ce3c478b0f0": {
+  "vehicleId": "dodge-scoot",
+  "name": "Dodge Scoot"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.9184ae264b26aaa3": {
+  "vehicleId": "embraer-dassault-mistral",
+  "name": "Embraer-Dassault Mistral"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.3096a55f04f2df88": {
+  "vehicleId": "entertainment-systems-papoose",
+  "name": "Entertainment Systems Papoose"
+ },
+ "Compendium.sr2e.vehicles.Actor.9e269eccff58623d": {
+  "vehicleId": "eurocar-westwind-2000-standard",
+  "name": "Eurocar Westwind 2000"
+ },
+ "Compendium.sr2e.vehicles.Actor.aaa911b709792a3c": {
+  "vehicleId": "federated-boeing-commuter",
+  "name": "Federated-Boeing Commuter"
+ },
+ "Compendium.sr2e.vehicles.Actor.4a3cebff8313eca1": {
+  "vehicleId": "federated-boeing-eagle",
+  "name": "Federated-Boeing Eagle"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.cefc71722b619998": {
+  "vehicleId": "ferrari-appaloosa-light-scout",
+  "name": "Ferrari \"Appaloosa\" Light Scout Vehicle"
+ },
+ "Compendium.sr2e-fields-of-fire.ff-vehicles.Actor.812ea9ca352a7672": {
+  "vehicleId": "ferret-rpd-vi-perimeter-drone",
+  "name": "Ferret"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.2b5edd328657731b": {
+  "vehicleId": "fiat-fokker-cloud-nine",
+  "name": "Fiat-Fokker \"Cloud Nine\" Amphibian"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.006d13d8c7a84fdc": {
+  "vehicleId": "fmc-stonebrooke-tads-firebird",
+  "name": "FMC-Stonebrooke TADS Firebird"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.8b19f9cfeec68789": {
+  "vehicleId": "fmc-stonebrooke-tads-salamander",
+  "name": "FMC-Stonebrooke TADS Salamander"
+ },
+ "Compendium.sr2e.vehicles.Actor.b429b498168d47a9": {
+  "vehicleId": "ford-americar",
+  "name": "Ford Americar"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.d1f034bd86c5bd6b": {
+  "vehicleId": "ford-canada-bison",
+  "name": "Ford-Canada Bison"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.17f0da936d3aacfa": {
+  "vehicleId": "gaz-niki-gnrd-71-bis-snooper",
+  "name": "GAZ-Niki GNRD-71bis Snooper"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.36237413f1cf03b2": {
+  "vehicleId": "gaz-niki-white-eagle",
+  "name": "GAZ-Niki White Eagle"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.8caaf6ab54ef7d80": {
+  "vehicleId": "gaz-willys-nomad",
+  "name": "GAZ-Willys Nomad"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.7c1c75a3fcfa914f": {
+  "vehicleId": "general-products-cop",
+  "name": "General Products COP"
+ },
+ "Compendium.sr2e.vehicles.Actor.ccaf7bd892ec3a31": {
+  "vehicleId": "generic-surveillance-drone",
+  "name": "Surveillance Drone"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.be9725464b753f9d": {
+  "vehicleId": "gm-nissan-doberman",
+  "name": "GM-Nissan \"Doberman\" Patrol Vehicle"
+ },
+ "Compendium.sr2e.vehicles.Actor.e3f1a0c8ad665e52": {
+  "vehicleId": "gm-nissan-spotter",
+  "name": "Spotter Drone",
+  "review": true
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.bc00ca1b08b39cb4": {
+  "vehicleId": "gmc-4201",
+  "name": "GMC 4201 Series"
+ },
+ "Compendium.sr2e.vehicles.Actor.913f2b70879869b5": {
+  "vehicleId": "gmc-banshee",
+  "name": "GMC Banshee"
+ },
+ "Compendium.sr2e.vehicles.Actor.f904e4d2fabf90f9": {
+  "vehicleId": "gmc-beachcraft-patroller",
+  "name": "GMC Beachcraft Patroller"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.f555db9ed57269c6": {
+  "vehicleId": "gmc-beachcraft-vacationer",
+  "name": "GMC-Beachcraft \"Vacationer\" ACV"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.ecd979dc66472058": {
+  "vehicleId": "gmc-bulldog-step-van-bc-var",
+  "name": "GMC Bulldog Step-Van (Bonded-Courier)"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.f9a7487e0be7fdd2": {
+  "vehicleId": "gmc-bulldog-step-van-standard",
+  "name": "GMC Bulldog Step-Van (Multifuel)"
+ },
+ "Compendium.sr2e-fields-of-fire.ff-vehicles.Actor.05d7368b2eff3e22": {
+  "vehicleId": "gmc-mpuv",
+  "name": "GMC MPUV"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.abfd7b7f7b765dec": {
+  "vehicleId": "gmc-nissan-hovertruck",
+  "name": "GMC-Nissan Hovertruck"
+ },
+ "Compendium.sr2e.vehicles.Actor.7b98667b901c2e26": {
+  "vehicleId": "gmc-riverine",
+  "name": "GMC Riverine"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.f49345033ff44f59": {
+  "vehicleId": "goodyear-commuter-47",
+  "name": "Goodyear Commuter-47 LTA"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.d56ce94ccd1af336": {
+  "vehicleId": "gte-ford-retrans-unit",
+  "name": "GTE-Ford Retrans Unit"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.713ac9e3aed1da96": {
+  "vehicleId": "harland-wolff-classique",
+  "name": "Harland & Wolff \"Classique\" Motor Yacht"
+ },
+ "Compendium.sr2e.vehicles.Actor.c9330e180d1d7e0e": {
+  "vehicleId": "harley-davidson-scorpion",
+  "name": "Harley Scorpion"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.159507ed9791ccd5": {
+  "vehicleId": "harley-electroglide-1000",
+  "name": "Harley Electraglide-1000 Patrol Cycle"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.e59572ee51dc7a97": {
+  "vehicleId": "hawker-ridley-hs-895-skytruck",
+  "name": "Hawker-Siddley HS-895 Skytruck"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.ee479af7f4f49a6f": {
+  "vehicleId": "honda-gm-3220-zx-standard",
+  "name": "Honda-GM 3220 ZX"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.56d55cfb7d9a0962": {
+  "vehicleId": "honda-gm-3220-zx-turbo",
+  "name": "Honda-GM 3220 ZX Turbo"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.07841a9957adc76f": {
+  "vehicleId": "honda-viking",
+  "name": "Honda \"Viking\" Supercycle"
+ },
+ "Compendium.sr2e-street-samurai-catalog.ssc-vehicles.Actor.dc608ced55c2b0a8": {
+  "vehicleId": "honda-viking",
+  "name": "Honda Viking"
+ },
+ "Compendium.sr2e.vehicles.Actor.69fd8e02108ca380": {
+  "vehicleId": "hughes-aerospace-airstar-2050",
+  "name": "Hughes Airstar"
+ },
+ "Compendium.sr2e.vehicles.Actor.50f1bc38c994fa43": {
+  "vehicleId": "hughes-wk-2-stallion",
+  "name": "Hughes WK-2 Stallion"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.7e441e125c0951b2": {
+  "vehicleId": "hyundai-offroader",
+  "name": "Hyundai Offroader"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.06a9f2b35442980e": {
+  "vehicleId": "integrated-weapon-system-dlk-mk-6-utility-machine",
+  "name": "IWS DLK MK 6 Utility Machine"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.994123e5ff7fa922": {
+  "vehicleId": "integrated-weapon-system-dlk-mk-6-utility-machine-armed-variant",
+  "name": "IWS DLK MK 6 (Armed Variant)"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.db482c34f4a42c00": {
+  "vehicleId": "landrover-model-2046-lw",
+  "name": "Landrover Model 2046 (Long Wheelbase)"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.3c38e0942968eca3": {
+  "vehicleId": "landrover-model-2046-sw",
+  "name": "Landrover Model 2046 (Short Wheelbase)"
+ },
+ "Compendium.sr2e-fields-of-fire.ff-vehicles.Actor.096cd60cca42f845": {
+  "vehicleId": "lav-103-striker-light-tank",
+  "name": "Striker Light Tank"
+ },
+ "Compendium.sr2e-fields-of-fire.ff-vehicles.Actor.afadd5ddfac2a910": {
+  "vehicleId": "lav-93-devil-rat",
+  "name": "Devil Rat APC"
+ },
+ "Compendium.sr2e.vehicles.Actor.9a2df0fd95103c0b": {
+  "vehicleId": "lear-cessna-platinum-i",
+  "name": "Lear-Cessna Platinum I"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.57e0a0276093b1fc": {
+  "vehicleId": "lear-cessna-platinum-ii",
+  "name": "Lear-Cessna Platinum II"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.2cfc8075163e9632": {
+  "vehicleId": "leyland-rover-transport-electric-encl-box",
+  "name": "Leyland-Rover Transport (Electric)",
+  "review": true
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.729bb94cc42aa698": {
+  "vehicleId": "leyland-rover-transport-gasoline-encl-box",
+  "name": "Leyland-Rover Transport (Internal Combustion)",
+  "review": true
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.501dbc213b956a55": {
+  "vehicleId": "leyland-zil-tsarina-elec",
+  "name": "Leyland-Zil Tsarina (Electric)"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.fe633adbda6d1ad7": {
+  "vehicleId": "leyland-zil-tsarina-meth",
+  "name": "Leyland-Zil Tsarina (Multifuel)"
+ },
+ "Compendium.sr2e-fields-of-fire.ff-vehicles.Actor.1f9c5e35edf5818a": {
+  "vehicleId": "lockheed-c-260-transport",
+  "name": "Titan Transport",
+  "review": true
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.408e1a27e6148cb4": {
+  "vehicleId": "luftschiffbau-zeppelin-lz-2049",
+  "name": "Luftschiffbau Zeppelin LZ-2049"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.857ad61b49dc866f": {
+  "vehicleId": "marine-technologies-dolphin-ii",
+  "name": "Marine Technologies \"Dolphin II\" Motor Yacht"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.da38d07d8b2bfee3": {
+  "vehicleId": "mct-nissan-roto-drone",
+  "name": "MCT-Nissan Roto-Drone"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.bef065650eaf1dc0": {
+  "vehicleId": "mesametric-kodiak-roadway-clearance-system",
+  "name": "Mesametric Kodiak Roadway Clearance System"
+ },
+ "Compendium.sr2e.vehicles.Actor.3e1504a3e35e4aeb": {
+  "vehicleId": "mitsubishi-nightsky",
+  "name": "Mitsubishi Nightsky"
+ },
+ "Compendium.sr2e-queen-euphoria.qe-actors.Actor.dc823ae934f75053": {
+  "vehicleId": "mitsubishi-nightsky",
+  "name": "Mitsubishi Nightsky"
+ },
+ "Compendium.sr2e.vehicles.Actor.3a2bde2a674f6ef3": {
+  "vehicleId": "mitsubishi-runabout",
+  "name": "Mitsubishi Runabout"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.074edb52ce7cc156": {
+  "vehicleId": "moonlight-aerospace-avenger",
+  "name": "Moonlight Aerospace Avenger"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.6495395c2eaad99f": {
+  "vehicleId": "mostrans-kvp-14t-pass",
+  "name": "Mostrans \"Ivan the Terrible\" KVP-14T"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.7f7d33466a98a8a3": {
+  "vehicleId": "nissan-holden-brumby",
+  "name": "Nissan-Holden Brumby"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.dc71ccaa6f4ecaca": {
+  "vehicleId": "nordkapp-conestoga-bergen-tractor",
+  "name": "Nordkapp-Conestoga \"Bergen\" (Command Module)"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.1ecc55c629065b6d": {
+  "vehicleId": "nordkapp-conestoga-bergen-trailer",
+  "name": "Nordkapp-Conestoga \"Bergen\" (Cargo Module)"
+ },
+ "Compendium.sr2e.vehicles.Actor.b33a9832e56d2aaa": {
+  "vehicleId": "northrup-wasp-prc-42b-variant",
+  "name": "Northrup PRC-42B Wasp"
+ },
+ "Compendium.sr2e.vehicles.Actor.3bb96b417ee5e828": {
+  "vehicleId": "northrup-yellowjacket-prc-44b-variant",
+  "name": "FRC-44B Yellowjacket"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.b67517aaee28219a": {
+  "vehicleId": "pratt-whitney-sundowner-aerial-sprayer",
+  "name": "Pratt & Whitney Sundowner"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.561eeae95cc8d4bf": {
+  "vehicleId": "renault-fiat-eurovan-encl-cargo",
+  "name": "Renault-Fiat Eurovan",
+  "review": true
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.0fa0079a17748313": {
+  "vehicleId": "renraku-arachnoid-mini-drone",
+  "name": "Renraku Arachnoid Mini-Drone"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.08913c944619656d": {
+  "vehicleId": "rolls-royce-phaeton",
+  "name": "Rolls Royce \"Phaeton\" Limousine"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.092fc1fcb507db38": {
+  "vehicleId": "rolls-royce-prairie-cat",
+  "name": "Rolls Royce Prairie Cat"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.d69c567a06644512": {
+  "vehicleId": "saab-dynamit-778-ti",
+  "name": "Saab \"Dynamit\" 776TI"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.c33784c68792fe5b": {
+  "vehicleId": "saab-thyssen-bloodhound",
+  "name": "Saab-Thyssen Bloodhound"
+ },
+ "Compendium.sr2e.vehicles.Actor.58242176954de19c": {
+  "vehicleId": "samuvani-criscraft-otter",
+  "name": "Samuvani Criscraft Otter"
+ },
+ "Compendium.sr2e.vehicles.Actor.8bb9cfefbc1c87ec": {
+  "vehicleId": "sendanko-marlin",
+  "name": "Sendanko Marlin"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.0138800bb63cf6d4": {
+  "vehicleId": "shiawase-kanmushi-mechanical-crawler",
+  "name": "Shiawase Kanmushi Mechanical Crawler"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.b73d0eb5d019dda8": {
+  "vehicleId": "sikorsky-bell-microskimmer",
+  "name": "Sikorsky-Bell Microskimmer"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.18fa35171e661c87": {
+  "vehicleId": "sikorsky-bell-microskimmer-ii",
+  "name": "Sikorsky-Bell Microskimmer II"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.11c189cfd0caeb75": {
+  "vehicleId": "sikorsky-bell-red-ranger",
+  "name": "Sikorsky-Bell \"Red Ranger\" Scout ACV"
+ },
+ "Compendium.sr2e-fields-of-fire.ff-vehicles.Actor.3e91423944a00b1c": {
+  "vehicleId": "steel-lynx-ground-combat-drone",
+  "name": "Steel Lynx"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.9879f95451909445": {
+  "vehicleId": "surfstar-marine-seacop",
+  "name": "Surfstar Marine Seacop (5M)"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.f94626eb10c6036c": {
+  "vehicleId": "suzuki-aurora",
+  "name": "Suzuki \"Aurora\" Racing Bike"
+ },
+ "Compendium.sr2e-street-samurai-catalog.ssc-vehicles.Actor.fce5842ba62b0581": {
+  "vehicleId": "suzuki-aurora",
+  "name": "Suzuki Aurora"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.1ace35d033e73955": {
+  "vehicleId": "suzuki-watersport-elec",
+  "name": "Suzuki Watersport (Electric)"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.45bf272b8c2536ab": {
+  "vehicleId": "suzuki-watersport-gas",
+  "name": "Suzuki Watersport (Standard)"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.9cdf0193acbbe56e": {
+  "vehicleId": "thundercloud-pinto",
+  "name": "Thundercloud \"Pinto\" All-Terrain Trike"
+ },
+ "Compendium.sr2e.vehicles.Actor.2dd32e0315af9ceb": {
+  "vehicleId": "toyota-elite",
+  "name": "Toyota Elite"
+ },
+ "Compendium.sr2e-rigger-2.r2-vehicles.Actor.b295270236d3b9bf": {
+  "vehicleId": "toyota-mk-guyver-search-and-rescue-robot",
+  "name": "Toyota MK-Guyver"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.7352d3dc6da0b2b0": {
+  "vehicleId": "toyotacorp-gopher",
+  "name": "Toyotacorp Gopher Pickup"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.deca8b6f44e72c12": {
+  "vehicleId": "volkswagen-elektro",
+  "name": "Volkswagen Elektro"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.eaf72c1cc05c07fb": {
+  "vehicleId": "volkswagen-superkombi-iii-encl-van",
+  "name": "Volkswagen Superkombi III (Enclosed-Van)"
+ },
+ "Compendium.sr2e.vehicles.Actor.b57f50f176440123": {
+  "vehicleId": "yamaha-rapier",
+  "name": "Yamaha Rapier"
+ },
+ "Compendium.sr2e-rigger-black-book.rbb-vehicles.Actor.02dd6601f16815f1": {
+  "vehicleId": "zemlya-poltava-swordsman-standard",
+  "name": "Zemlya-Poltava Swordsman"
+ }
+}

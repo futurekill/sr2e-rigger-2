@@ -1,0 +1,90 @@
+{
+  "_id": "99c3db23dc88cc60",
+  "name": "Zemlya-Poltava Swordsman (Standard)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/gmc-riverine.webp",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "motorboat",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 75,
+    "stallSpeed": 0,
+    "acceleration": 5,
+    "body": 5,
+    "armor": 0,
+    "signature": 3,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 14,
+    "load": 300,
+    "seating": "2 folding bucket, 2 reinforced folding bench (x3)",
+    "entryPoints": "o",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 200,
+    "fuelUnit": "liters",
+    "economy": 4,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 375,
+    "cost": 37500,
+    "otherFeatures": "None",
+    "design": {
+      "category": "boat",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.166 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "zemlya-poltava-swordsman-standard"
+    }
+  },
+  "prototypeToken": {
+    "name": "Zemlya-Poltava Swordsman (Standard)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 3,
+    "height": 7,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/gmc-riverine.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!99c3db23dc88cc60"
+}

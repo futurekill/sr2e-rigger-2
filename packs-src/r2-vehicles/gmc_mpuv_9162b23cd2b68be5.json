@@ -1,0 +1,308 @@
+{
+  "_id": "9162b23cd2b68be5",
+  "name": "GMC MPUV",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/ford-bison.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 3,
+    "speed": 120,
+    "stallSpeed": 0,
+    "acceleration": 8,
+    "body": 4,
+    "armor": 6,
+    "signature": 2,
+    "autonav": 0,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 11,
+    "load": 745,
+    "seating": "2 bucket + 1 bench",
+    "entryPoints": "2 + 2",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 100,
+    "fuelUnit": "liters",
+    "economy": 6,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 587,
+    "cost": 58700,
+    "otherFeatures": "Electronics port (with radio), pintle mount (weapon not included), spotlight (white light)",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.157 (originally FF).</p>"
+  },
+  "items": [
+    {
+      "_id": "bb93ac357555e85a",
+      "name": "Electronics Port",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "electronics",
+        "rating": 1,
+        "cost": 1000,
+        "designPoints": 10,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0.5,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "1000",
+            "baseTime": "8",
+            "tn": "3",
+            "cf": "R",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.138-139",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A powered mount for electronics unrelated to driving (radios, cameras, surveillance gear, a remote-control deck); attached devices draw vehicle power and gain +½ the vehicle's Body (round up) to their Flux Rating. Parts cost = 1,000¥ + the equipment's cost; 1 CF per 0.1 m³ of equipment; Avail 3/6 days; Street Index 1; Base Time 8 hrs. Rigger 2 p.139. Design: Rating = tenths of a cubic meter of equipment (0.5 CF each); add the equipment's weight and cost. (Design specifications p.139.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.ca37290d39d118f6"
+      },
+      "_key": "!actors.items!9162b23cd2b68be5.bb93ac357555e85a"
+    },
+    {
+      "_id": "08d4ac8d98d767f6",
+      "name": "Pintle Mount",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 50,
+        "designPoints": 1,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 1,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "50",
+            "baseTime": "12",
+            "tn": "2",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "4/96 hours",
+              "streetIndex": 1.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.133",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "The simplest mount — a reinforced swivel socket (one firmpoint) accepting any firmpoint-sized weapon; ~60° left/right and 30° up/down arc, and grants 2 points of recoil compensation. Cannot be operated remotely by a jacked-in rigger; mounting/removing is a Complex Action (+ Quickness (3) Test if moving). Parts cost 50¥; Avail 4/96 hrs; Street Index 1.5; Base Time 12 hrs. Rigger 2 p.133. (Design specifications p.133.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.07ce1f02240a4aca"
+      },
+      "_key": "!actors.items!9162b23cd2b68be5.08d4ac8d98d767f6"
+    },
+    {
+      "_id": "c6a866280cea19f3",
+      "name": "Spotlight",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "accessory",
+        "rating": 1,
+        "cost": 600,
+        "designPoints": 6,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "600",
+            "baseTime": "1",
+            "tn": "3",
+            "cf": "0",
+            "load": "0",
+            "baseUnit": "days"
+          },
+          "market": [
+            {
+              "availability": "4/96 hours",
+              "streetIndex": 1.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.145-146",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A concentrated beam (effective range 600 m; spot ~0.5 m at the source widening to ~5 m at max), controllable manually or remotely from inside; also available in invisible medium-range infrared. Parts cost 600¥; Avail 4/96 hrs; Street Index 1.5; Base Time 1 day. Rigger 2 p.145–146. (Design specifications p.146.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.5c4a410074168031"
+      },
+      "_key": "!actors.items!9162b23cd2b68be5.c6a866280cea19f3"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "gmc-mpuv"
+    }
+  },
+  "prototypeToken": {
+    "name": "GMC MPUV",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 4,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/ford-bison.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!9162b23cd2b68be5"
+}

@@ -1,0 +1,165 @@
+{
+  "_id": "d495909b3b7daa27",
+  "name": "Sikorsky-Bell Red Ranger",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/chrysler-nissan-g12a.webp",
+  "system": {
+    "vehicleType": "hovercraft",
+    "skill": "hovercraft",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 270,
+    "stallSpeed": 0,
+    "acceleration": 18,
+    "body": 3,
+    "armor": 2,
+    "signature": 2,
+    "autonav": 3,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 10,
+    "load": 98,
+    "seating": "1 bucket + 1 bucket",
+    "entryPoints": "1 + 1",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 60,
+    "fuelUnit": "liters",
+    "economy": 6,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 933,
+    "cost": 280000,
+    "otherFeatures": "Amphibious Operation 3",
+    "design": {
+      "category": "hovercraft",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.165 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "77023619659aa1a7",
+      "name": "Amphibious Operation Package (Level 3)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "accessory",
+        "rating": 1,
+        "cost": 2500,
+        "designPoints": 200,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 2,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "only:bike,car"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "15000",
+            "baseTime": "80",
+            "tn": "5",
+            "cf": "4",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.140-141",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Modifies a ground vehicle to travel on/through water (needs watertight seals + life support + sealed power plant for full submersion). L1 (2,500¥, wheels propel at Speed 15, +2 Handling), L2 (7,500¥, propeller drive, Speed 30, no penalty, 2 CF), L3 (15,000¥, water-jet/impeller, Speed 45, no penalty, 2 CF); Avail 5/10–3/6 days; Street Index 1–1.5. Rigger 2 p.140–141. (Design specifications p.141.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.baf22e58b9def975"
+      },
+      "_key": "!actors.items!d495909b3b7daa27.77023619659aa1a7"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "sikorsky-bell-red-ranger"
+    }
+  },
+  "prototypeToken": {
+    "name": "Sikorsky-Bell Red Ranger",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 3,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/chrysler-nissan-g12a.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!d495909b3b7daa27"
+}

@@ -1,0 +1,244 @@
+{
+  "_id": "504973ad7be53974",
+  "name": "Generic Surveillance Drone",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/surveillance-drone.webp",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "rotor",
+    "handling": 3,
+    "handlingOffRoad": null,
+    "speed": 70,
+    "stallSpeed": 0,
+    "acceleration": 9,
+    "body": 1,
+    "armor": 0,
+    "signature": 5,
+    "autonav": 0,
+    "pilot": 2,
+    "sensor": 1,
+    "cargo": 0,
+    "load": 10,
+    "seating": "None",
+    "entryPoints": "NA",
+    "ltProfile": "VTOL",
+    "setupTime": "3 minutes",
+    "fuelType": "jetTurbine",
+    "fuelSize": 210,
+    "fuelUnit": "liters",
+    "economy": 0.25,
+    "economyUnit": "km/liter",
+    "economyIdle": "5min/ltr",
+    "designPointValue": 250,
+    "cost": 6250,
+    "otherFeatures": "Remote control interface, rigger adaptation",
+    "design": {
+      "category": "rotor",
+      "transport": false,
+      "traits": [
+        "drone"
+      ]
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.156 (originally SRII).</p>"
+  },
+  "items": [
+    {
+      "_id": "d00a865393ceac86",
+      "name": "Remote-Control Interface",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "25 x B",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "remote-control-interface",
+        "maxRating": "",
+        "restrictions": [
+          "notDrone"
+        ],
+        "effects": {
+          "pilotSet": "1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500 x B",
+            "baseTime": "16",
+            "tn": "4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "4/72 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR",
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.125-126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Lets a vehicle receive and transmit remote-control data, giving it an initial Pilot Rating of 1 and remote autonomy. Parts cost = 2,500¥ × Body; Avail 4/72 days; Street Index 2; Base Time 16 hrs; needs B/R & Electronics. Rigger 2 p.125–126. (Design specifications p.125.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.86ef70f9a769cd7c"
+      },
+      "_key": "!actors.items!504973ad7be53974.d00a865393ceac86"
+    },
+    {
+      "_id": "a103b9a7c4de172e",
+      "name": "Rigger Adaptation",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 2800,
+        "designPoints": 35,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "rigger-adaptation",
+        "maxRating": "",
+        "restrictions": [
+          "needsRiggerBase"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2800",
+            "baseTime": "40",
+            "tn": "4",
+            "cf": "1",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "4/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A 'black box' translating machine code to neural stimuli and back, so a rigger controlling the vehicle through a VCR gets the full Control Pool and Reaction/Initiative bonuses. Parts cost 2,800¥; Avail 4/7 days; Street Index 2; Base Time 4 hrs; 1 CF (plus the datajack-port/remote-control CF); load −10 kg. Rigger 2 p.126. (Design specifications p.126.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.632d0ff576b53509"
+      },
+      "_key": "!actors.items!504973ad7be53974.a103b9a7c4de172e"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "generic-surveillance-drone"
+    }
+  },
+  "prototypeToken": {
+    "name": "Generic Surveillance Drone",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/surveillance-drone.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!504973ad7be53974"
+}

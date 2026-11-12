@@ -1,0 +1,90 @@
+{
+  "_id": "5624cb16107bb2df",
+  "name": "Marine Technologies Dolphin II",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/yacht.webp",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "motorboat",
+    "handling": 3,
+    "handlingOffRoad": null,
+    "speed": 45,
+    "stallSpeed": 0,
+    "acceleration": 4,
+    "body": 7,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 56,
+    "load": 950,
+    "seating": "6 bucket (1 front, 5 rear)",
+    "entryPoints": "1",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 200,
+    "fuelUnit": "liters",
+    "economy": 4,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 500,
+    "cost": 50000,
+    "otherFeatures": "Living amenities (Improved)",
+    "design": {
+      "category": "boat",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.162 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "marine-technologies-dolphin-ii"
+    }
+  },
+  "prototypeToken": {
+    "name": "Marine Technologies Dolphin II",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 4,
+    "height": 4,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/yacht.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!5624cb16107bb2df"
+}

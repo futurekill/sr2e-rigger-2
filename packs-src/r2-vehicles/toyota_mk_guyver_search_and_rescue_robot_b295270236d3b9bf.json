@@ -1,0 +1,237 @@
+{
+  "_id": "b295270236d3b9bf",
+  "name": "Toyota MK-Guyver Search and Rescue Robot",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/toyota-mk-guyver.webp",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 4,
+    "speed": 20,
+    "stallSpeed": 0,
+    "acceleration": 0,
+    "body": 2,
+    "armor": 3,
+    "signature": 4,
+    "autonav": 0,
+    "pilot": 3,
+    "sensor": 1,
+    "cargo": 5,
+    "load": 1000,
+    "seating": "None",
+    "entryPoints": "NA",
+    "ltProfile": "NA",
+    "setupTime": "None",
+    "fuelType": "diesel",
+    "fuelSize": 20,
+    "fuelUnit": "liters",
+    "economy": 0.1,
+    "economyUnit": "km/liter",
+    "economyIdle": "1 hour/liter",
+    "designPointValue": 965,
+    "cost": 29000,
+    "otherFeatures": "Learning Pool 2 (for Search & Rescue), 2 mechanical arms",
+    "design": {
+      "category": "special",
+      "transport": false,
+      "traits": [
+        "drone"
+      ]
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.166. Printed Speed 20/5. Printed Acceleration 4/NA.</p>"
+  },
+  "items": [
+    {
+      "_id": "a5fb0156fdbd2006",
+      "name": "Mechanical Arms",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "accessory",
+        "rating": 1,
+        "cost": 25000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 2,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "B x 250 + R x 8000 + min(1, max(0, R - 3)) x R x 2000",
+        "cfFormula": "",
+        "loadFormula": "(B x B + R) x 25",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "B x 10 - B x B",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "B x 25000 + 75000 x (min(max(R1, 0), 3) - min(max(R0, 0), 3)) + 90000 x (max(R1, 3) - max(R0, 3))",
+            "baseTime": "40",
+            "tn": "6",
+            "cf": "4",
+            "load": "(B x B + R) x 25"
+          },
+          "market": [
+            {
+              "availability": "4/4 days",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "cyberBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.145",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Articulated arms (Body = ½ vehicle Body) — weaker than a crane but dextrous, doing anything a metahuman arm can; base Strength scales, lifts (Strength × 50) kg, and can mount most cyberarm accessories (at half a cyberarm's cost). Strength may be bought up: parts +75,000¥/point (1–3) or +90,000¥/point (4+); base parts 25,000¥; 4 CF; load −(Strength × 25) kg; Avail 4/4 days; needs Cybertechnology B/R. Rigger 2 p.145. Design: Rating = Strength enhancement points (8,000 DP each for 1–3, 10,000 each for 4+). Strength = Body² + enhancement. (Design specifications p.145.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.ac65b5ab5f32ed6b"
+      },
+      "_key": "!actors.items!b295270236d3b9bf.a5fb0156fdbd2006"
+    },
+    {
+      "_id": "294f5cbfc1929dcc",
+      "name": "Mechanical Arms",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "accessory",
+        "rating": 1,
+        "cost": 25000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 2,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "B x 250 + R x 8000 + min(1, max(0, R - 3)) x R x 2000",
+        "cfFormula": "",
+        "loadFormula": "(B x B + R) x 25",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "B x 10 - B x B",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "B x 25000 + 75000 x (min(max(R1, 0), 3) - min(max(R0, 0), 3)) + 90000 x (max(R1, 3) - max(R0, 3))",
+            "baseTime": "40",
+            "tn": "6",
+            "cf": "4",
+            "load": "(B x B + R) x 25"
+          },
+          "market": [
+            {
+              "availability": "4/4 days",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "cyberBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.145",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Articulated arms (Body = ½ vehicle Body) — weaker than a crane but dextrous, doing anything a metahuman arm can; base Strength scales, lifts (Strength × 50) kg, and can mount most cyberarm accessories (at half a cyberarm's cost). Strength may be bought up: parts +75,000¥/point (1–3) or +90,000¥/point (4+); base parts 25,000¥; 4 CF; load −(Strength × 25) kg; Avail 4/4 days; needs Cybertechnology B/R. Rigger 2 p.145. Design: Rating = Strength enhancement points (8,000 DP each for 1–3, 10,000 each for 4+). Strength = Body² + enhancement. (Design specifications p.145.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.ac65b5ab5f32ed6b"
+      },
+      "_key": "!actors.items!b295270236d3b9bf.294f5cbfc1929dcc"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "toyota-mk-guyver-search-and-rescue-robot"
+    }
+  },
+  "prototypeToken": {
+    "name": "Toyota MK-Guyver Search and Rescue Robot",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/toyota-mk-guyver.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!b295270236d3b9bf"
+}

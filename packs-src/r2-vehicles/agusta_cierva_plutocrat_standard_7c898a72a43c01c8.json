@@ -1,0 +1,90 @@
+{
+  "_id": "7c898a72a43c01c8",
+  "name": "Agusta-Cierva Plutocrat (Standard)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/hughes-airstar.webp",
+  "system": {
+    "vehicleType": "rotor",
+    "skill": "rotor",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 290,
+    "stallSpeed": 0,
+    "acceleration": 17,
+    "body": 4,
+    "armor": 2,
+    "signature": 2,
+    "autonav": 4,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 15,
+    "load": 240,
+    "seating": "2 folding bucket, 2 reinforced bench (x2)",
+    "entryPoints": "2 + 2",
+    "ltProfile": "VTOL",
+    "setupTime": "NA",
+    "fuelType": "jetTurbine",
+    "fuelSize": 1500,
+    "fuelUnit": "liters",
+    "economy": 0.1,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 1250,
+    "cost": 781000,
+    "otherFeatures": "Luxury accommodations, satellite uplink via electronics port (both), small turret (armed only)",
+    "design": {
+      "category": "rotor",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.148 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "agusta-cierva-plutocrat-standard"
+    }
+  },
+  "prototypeToken": {
+    "name": "Agusta-Cierva Plutocrat (Standard)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 12,
+    "height": 18,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/hughes-airstar.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!7c898a72a43c01c8"
+}

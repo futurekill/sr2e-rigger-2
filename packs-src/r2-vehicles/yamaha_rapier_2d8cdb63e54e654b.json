@@ -1,0 +1,90 @@
+{
+  "_id": "2d8cdb63e54e654b",
+  "name": "Yamaha Rapier",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/yamaha-rapier.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "bike",
+    "handling": 3,
+    "handlingOffRoad": 6,
+    "speed": 195,
+    "stallSpeed": 0,
+    "acceleration": 10,
+    "body": 2,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 1,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 1,
+    "load": 40,
+    "seating": "1 bucket",
+    "entryPoints": "o",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 15,
+    "fuelUnit": "liters",
+    "economy": 8,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 255,
+    "cost": 12700,
+    "otherFeatures": "None",
+    "design": {
+      "category": "bike",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.166 (originally SRII).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "yamaha-rapier"
+    }
+  },
+  "prototypeToken": {
+    "name": "Yamaha Rapier",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 3,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/yamaha-rapier.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!2d8cdb63e54e654b"
+}

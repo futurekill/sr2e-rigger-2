@@ -1,0 +1,92 @@
+{
+  "_id": "8a2d4f885aa58314",
+  "name": "Luftschiffbau Zeppelin LZ-2049",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/zeppelin.webp",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "winged",
+    "handling": 3,
+    "handlingOffRoad": null,
+    "speed": 200,
+    "stallSpeed": 0,
+    "acceleration": 10,
+    "body": 8,
+    "armor": 4,
+    "signature": 2,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 122,
+    "load": 2500,
+    "seating": "2 bucket, 2 bench",
+    "entryPoints": "1 + 2 + 1d",
+    "ltProfile": "VTOL",
+    "setupTime": "NA",
+    "fuelType": "jetTurbine",
+    "fuelSize": 2500,
+    "fuelUnit": "liters",
+    "economy": 1,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 3148,
+    "cost": 787000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "special",
+      "transport": false,
+      "traits": [
+        "zeppelin"
+      ]
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.161 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "luftschiffbau-zeppelin-lz-2049"
+    }
+  },
+  "prototypeToken": {
+    "name": "Luftschiffbau Zeppelin LZ-2049",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 32,
+    "height": 32,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/zeppelin.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!8a2d4f885aa58314"
+}

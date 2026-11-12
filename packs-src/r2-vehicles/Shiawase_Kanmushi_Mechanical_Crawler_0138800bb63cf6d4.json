@@ -5,32 +5,230 @@
   "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/shiawase-kanmushi-mechanical-crawler.webp",
   "system": {
     "vehicleType": "drone",
-    "skill": "",
-    "handling": 2,
+    "skill": "car",
+    "handling": 3,
+    "handlingOffRoad": 3,
     "speed": 2,
+    "stallSpeed": 0,
     "acceleration": 0,
     "body": 0,
     "armor": 0,
     "signature": 16,
+    "autonav": 0,
     "pilot": 1,
     "sensor": 1,
     "cargo": 0,
     "load": 0,
-    "seating": "0",
+    "seating": "None",
+    "entryPoints": "NA",
+    "ltProfile": "NA",
+    "setupTime": "None",
+    "fuelType": "electric",
+    "fuelSize": 4,
+    "fuelUnit": "PF",
+    "economy": 20,
+    "economyUnit": "m/PF",
+    "economyIdle": "25 hours/PF",
+    "designPointValue": 502,
     "cost": 30000,
-    "availability": "",
-    "autonav": 0,
+    "otherFeatures": "Remote control interface, rigger adaptation, smart materials",
+    "design": {
+      "category": "special",
+      "transport": false,
+      "traits": [
+        "drone"
+      ]
+    },
     "conditionMonitor": {
       "value": 0,
       "max": 10
     },
-    "notes": "Insect-sized 'Beetle' crawler built from smart materials, ideal for penetrating tight spaces — Body 0, so any hit destroys it; sensors have a fixed Flux Rating of 0. Remote control interface. Rigger 2."
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.164.</p>"
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "b3ad13d155c8e17f",
+      "name": "Remote-Control Interface",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "25 x B",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "remote-control-interface",
+        "maxRating": "",
+        "restrictions": [
+          "notDrone"
+        ],
+        "effects": {
+          "pilotSet": "1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500 x B",
+            "baseTime": "16",
+            "tn": "4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "4/72 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR",
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.125-126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Lets a vehicle receive and transmit remote-control data, giving it an initial Pilot Rating of 1 and remote autonomy. Parts cost = 2,500¥ × Body; Avail 4/72 days; Street Index 2; Base Time 16 hrs; needs B/R & Electronics. Rigger 2 p.125–126. (Design specifications p.125.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.86ef70f9a769cd7c"
+      },
+      "_key": "!actors.items!0138800bb63cf6d4.b3ad13d155c8e17f"
+    },
+    {
+      "_id": "16d3405a37591fca",
+      "name": "Rigger Adaptation",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 2800,
+        "designPoints": 35,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "rigger-adaptation",
+        "maxRating": "",
+        "restrictions": [
+          "needsRiggerBase"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2800",
+            "baseTime": "40",
+            "tn": "4",
+            "cf": "1",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "4/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A 'black box' translating machine code to neural stimuli and back, so a rigger controlling the vehicle through a VCR gets the full Control Pool and Reaction/Initiative bonuses. Parts cost 2,800¥; Avail 4/7 days; Street Index 2; Base Time 4 hrs; 1 CF (plus the datajack-port/remote-control CF); load −10 kg. Rigger 2 p.126. (Design specifications p.126.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.632d0ff576b53509"
+      },
+      "_key": "!actors.items!0138800bb63cf6d4.16d3405a37591fca"
+    }
+  ],
   "effects": [],
   "folder": null,
   "sort": 0,
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "vehicleId": "shiawase-kanmushi-mechanical-crawler"
+    }
+  },
+  "prototypeToken": {
+    "name": "Shiawase Kanmushi Mechanical Crawler",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/shiawase-kanmushi-mechanical-crawler.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
   "_stats": {
     "coreVersion": "13.351",
     "systemId": "sr2e",
@@ -41,28 +239,6 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
-  },
-  "prototypeToken": {
-    "name": "Shiawase Kanmushi Mechanical Crawler",
-    "displayName": 0,
-    "actorLink": false,
-    "width": 1,
-    "height": 2,
-    "texture": {
-      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/shiawase-kanmushi-mechanical-crawler.webp",
-      "anchorX": 0.5,
-      "anchorY": 0.5,
-      "scaleX": 1,
-      "scaleY": 1,
-      "fit": "contain",
-      "tint": "#ffffff"
-    },
-    "lockRotation": false,
-    "disposition": 0,
-    "displayBars": 0
-  },
-  "ownership": {
-    "default": 0
   },
   "_key": "!actors!0138800bb63cf6d4"
 }

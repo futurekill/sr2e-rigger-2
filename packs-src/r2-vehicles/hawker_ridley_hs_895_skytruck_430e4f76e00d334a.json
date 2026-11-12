@@ -1,0 +1,90 @@
+{
+  "_id": "430e4f76e00d334a",
+  "name": "Hawker-Ridley HS-895 Skytruck",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/pratt-whitney-sundowner.webp",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "winged",
+    "handling": 5,
+    "handlingOffRoad": null,
+    "speed": 320,
+    "stallSpeed": 135,
+    "acceleration": 22,
+    "body": 9,
+    "armor": 0,
+    "signature": 3,
+    "autonav": 3,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 260,
+    "load": 1500,
+    "seating": "2 folding bucket, 2 reinforced bench (x20)",
+    "entryPoints": "2 +1d",
+    "ltProfile": "Standard",
+    "setupTime": "NA",
+    "fuelType": "jetPropeller",
+    "fuelSize": 5000,
+    "fuelUnit": "liters",
+    "economy": 0.75,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 2775,
+    "cost": 694000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "fixedWing",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.158 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "hawker-ridley-hs-895-skytruck"
+    }
+  },
+  "prototypeToken": {
+    "name": "Hawker-Ridley HS-895 Skytruck",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 8,
+    "height": 6,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/pratt-whitney-sundowner.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!430e4f76e00d334a"
+}

@@ -5,42 +5,281 @@
   "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/fmc-stonebrooke-tads-firebird.webp",
   "system": {
     "vehicleType": "drone",
-    "skill": "",
-    "handling": 5,
+    "skill": "winged",
+    "handling": 4,
+    "handlingOffRoad": null,
     "speed": 105,
+    "stallSpeed": 40,
     "acceleration": 20,
     "body": 2,
     "armor": 0,
-    "signature": 5,
+    "signature": 6,
+    "autonav": 0,
     "pilot": 2,
-    "sensor": 4,
+    "sensor": 3,
     "cargo": 0,
     "load": 10,
-    "seating": "0",
+    "seating": "None",
+    "entryPoints": "NA",
+    "ltProfile": "STOL",
+    "setupTime": "5 minutes",
+    "fuelType": "jetTurbine",
+    "fuelSize": 230,
+    "fuelUnit": "liters",
+    "economy": 1,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 1395,
     "cost": 35000,
-    "availability": "",
-    "autonav": 0,
+    "otherFeatures": "BattleTac FDDM, remote control interface, rigger adaptation",
+    "design": {
+      "category": "fixedWing",
+      "transport": false,
+      "traits": [
+        "drone"
+      ]
+    },
     "conditionMonitor": {
       "value": 0,
       "max": 10
     },
-    "notes": "Fixed-wing target-acquisition & designation UAV (cruise/max 40/105) — finds, identifies, and lases targets for friendly weapons. STOL; BattleTac FDDM. Remote control interface + rigger adaptation. Rigger 2."
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.155.</p>"
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "2fdcc02aaed8f994",
+      "name": "BattleTac FDDM Receiver Module",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "electronics",
+        "rating": 1,
+        "cost": 35000,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "P x 350",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "needsRemote"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "P x 35000",
+            "baseTime": "64",
+            "tn": "4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "10/21 days",
+              "streetIndex": 3
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "computerBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Microtronics shop",
+          "pageCust": "p.136",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Lets a remote-controlled vehicle/drone share targeting data over a BattleTac FDDM network, enabling indirect fire on targets outside its own line of sight. Parts cost = Pilot Rating × 35,000¥; design = Pilot × 350 points; Avail 10/21 days; Street Index 3; Base Time 64 hrs; needs Computer B/R + a microtronics shop. Rigger 2 p.136. (Design specifications p.136.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.0cadc12add171982"
+      },
+      "_key": "!actors.items!006d13d8c7a84fdc.2fdcc02aaed8f994"
+    },
+    {
+      "_id": "85569f85f5451e35",
+      "name": "Remote-Control Interface",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "25 x B",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "remote-control-interface",
+        "maxRating": "",
+        "restrictions": [
+          "notDrone"
+        ],
+        "effects": {
+          "pilotSet": "1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500 x B",
+            "baseTime": "16",
+            "tn": "4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "4/72 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR",
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.125-126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Lets a vehicle receive and transmit remote-control data, giving it an initial Pilot Rating of 1 and remote autonomy. Parts cost = 2,500¥ × Body; Avail 4/72 days; Street Index 2; Base Time 16 hrs; needs B/R & Electronics. Rigger 2 p.125–126. (Design specifications p.125.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.86ef70f9a769cd7c"
+      },
+      "_key": "!actors.items!006d13d8c7a84fdc.85569f85f5451e35"
+    },
+    {
+      "_id": "6c5588a2ff7f8f8a",
+      "name": "Rigger Adaptation",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "control",
+        "rating": 1,
+        "cost": 2800,
+        "designPoints": 35,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "rigger-adaptation",
+        "maxRating": "",
+        "restrictions": [
+          "needsRiggerBase"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2800",
+            "baseTime": "40",
+            "tn": "4",
+            "cf": "1",
+            "load": "10"
+          },
+          "market": [
+            {
+              "availability": "4/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.126",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A 'black box' translating machine code to neural stimuli and back, so a rigger controlling the vehicle through a VCR gets the full Control Pool and Reaction/Initiative bonuses. Parts cost 2,800¥; Avail 4/7 days; Street Index 2; Base Time 4 hrs; 1 CF (plus the datajack-port/remote-control CF); load −10 kg. Rigger 2 p.126. (Design specifications p.126.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.632d0ff576b53509"
+      },
+      "_key": "!actors.items!006d13d8c7a84fdc.6c5588a2ff7f8f8a"
+    }
+  ],
   "effects": [],
   "folder": null,
   "sort": 0,
-  "flags": {},
-  "_stats": {
-    "coreVersion": "13.351",
-    "systemId": "sr2e",
-    "systemVersion": "0.0.1",
-    "createdTime": 1781600000000,
-    "modifiedTime": 1781600000000,
-    "lastModifiedBy": null,
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
+  "flags": {
+    "sr2e": {
+      "vehicleId": "fmc-stonebrooke-tads-firebird"
+    }
   },
   "prototypeToken": {
     "name": "FMC-Stonebrooke TADS Firebird",
@@ -54,15 +293,26 @@
       "anchorY": 0.5,
       "scaleX": 1,
       "scaleY": 1,
-      "fit": "fill",
+      "fit": "contain",
       "tint": "#ffffff"
     },
-    "lockRotation": false,
+    "lockRotation": true,
     "disposition": 0,
     "displayBars": 0
   },
   "ownership": {
     "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!actors!006d13d8c7a84fdc"
 }

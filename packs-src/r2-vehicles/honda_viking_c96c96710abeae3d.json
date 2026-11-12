@@ -1,0 +1,179 @@
+{
+  "_id": "c96c96710abeae3d",
+  "name": "Honda Viking",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/harley-scorpion.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "bike",
+    "handling": 3,
+    "handlingOffRoad": 5,
+    "speed": 120,
+    "stallSpeed": 0,
+    "acceleration": 5,
+    "body": 2,
+    "armor": 1,
+    "signature": 1,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 4,
+    "load": 40,
+    "seating": "1bucket + 1 bucket (both reinforced)",
+    "entryPoints": "o",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 35,
+    "fuelUnit": "liters",
+    "economy": 9.5,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 356,
+    "cost": 17800,
+    "otherFeatures": "Turbocharging (factored in)",
+    "design": {
+      "category": "bike",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.159 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "010117afdde3331c",
+      "name": "Turbocharging / Superconductive Drive",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "engine",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "E x 1.75 x R",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "turbocharging",
+        "maxRating": "",
+        "restrictions": [
+          "engine:electric,methane,gasoline,diesel",
+          "notAircraftUnlessElectric"
+        ],
+        "effects": {
+          "speed": "15 x R",
+          "acceleration": "10 x R",
+          "signature": "-R",
+          "economyMult": "0.95^R"
+        },
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "V x 1.1 x R",
+            "baseTime": "8 x R",
+            "tn": "R1 + 2",
+            "tn@drone": "R1 + 3",
+            "tn@hovercraft": "R1 + 3",
+            "tn@electricAircraft": "R1 + 4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "6/12 days",
+              "streetIndex": 1.5
+            }
+          ],
+          "max": {
+            "basis": "stat:speed",
+            "value": "S0 x 1.5",
+            "round": "down",
+            "minOneLevel": true
+          },
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.122",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Turbine boost for methane/gas/diesel engines (the 'superconductive drive' does the same for electric). Each level adds +15 Speed and +10 Acceleration; new max Speed = initial max × 1.25. Design cost = power-plant Design-Point cost × 1.5 per level; parts cost = vehicle's original cost × 1.10 per level; Avail 6/12 days; Street Index 2; Base Time 8 hrs. Rigger 2 p.122. (Design specifications p.122.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.30888c6b2a9b334d"
+      },
+      "_key": "!actors.items!c96c96710abeae3d.010117afdde3331c"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "honda-viking"
+    }
+  },
+  "prototypeToken": {
+    "name": "Honda Viking",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 2,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/harley-scorpion.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!c96c96710abeae3d"
+}

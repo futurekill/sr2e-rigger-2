@@ -1,0 +1,90 @@
+{
+  "_id": "4a5a959b424a1c65",
+  "name": "Mostrans KVP-14T (Standard)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/gmc-beachcraft-patroller.webp",
+  "system": {
+    "vehicleType": "hovercraft",
+    "skill": "hovercraft",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 180,
+    "stallSpeed": 0,
+    "acceleration": 9,
+    "body": 4,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 1,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 64,
+    "load": 800,
+    "seating": "2 bucket",
+    "entryPoints": "2 + 1",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 400,
+    "fuelUnit": "liters",
+    "economy": 0.5,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 460,
+    "cost": 115000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "hovercraft",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.162 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "mostrans-kvp-14t-standard"
+    }
+  },
+  "prototypeToken": {
+    "name": "Mostrans KVP-14T (Standard)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 5,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/gmc-beachcraft-patroller.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!4a5a959b424a1c65"
+}

@@ -1,0 +1,90 @@
+{
+  "_id": "c0c7e1ee73d1d0cd",
+  "name": "Ares TR-55E \"President's Edition\" Executive",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/federated-boeing-commuter.webp",
+  "system": {
+    "vehicleType": "rotor",
+    "skill": "rotor",
+    "handling": 5,
+    "handlingOffRoad": null,
+    "speed": 350,
+    "stallSpeed": 0,
+    "acceleration": 12,
+    "body": 6,
+    "armor": 0,
+    "signature": 3,
+    "autonav": 3,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 25,
+    "load": 500,
+    "seating": "2 bucket + 3 bucket (x3)",
+    "entryPoints": "1 + 1",
+    "ltProfile": "VTOL",
+    "setupTime": "NA",
+    "fuelType": "jetPropeller",
+    "fuelSize": 1520,
+    "fuelUnit": "liters",
+    "economy": 0.6,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 1247,
+    "cost": 624000,
+    "otherFeatures": "VTOL capability, luxury accommodations",
+    "design": {
+      "category": "rotor",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.149 (originally CS).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "ares-tr-55e-presidents-edition-executive"
+    }
+  },
+  "prototypeToken": {
+    "name": "Ares TR-55E \"President's Edition\" Executive",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 12,
+    "height": 19,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/federated-boeing-commuter.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!c0c7e1ee73d1d0cd"
+}

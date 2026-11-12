@@ -1,0 +1,471 @@
+{
+  "_id": "a61466a9401b2dfb",
+  "name": "Lone Star \"Black Mariah\" USPTV",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/gmc-bulldog.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 5,
+    "speed": 100,
+    "stallSpeed": 0,
+    "acceleration": 4,
+    "body": 4,
+    "armor": 9,
+    "signature": 2,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 50,
+    "load": 1255,
+    "seating": "2 bucket + 2 bench",
+    "entryPoints": "2 + 1g",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 95,
+    "fuelUnit": "liters",
+    "economy": 4,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 1329,
+    "cost": 399000,
+    "otherFeatures": "Enviroseal (gas), life support (12 man-hours), 2 mini-turrets (weapons not included), Thermal Baffles 1 (factored in)",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.161 (originally LS).</p>"
+  },
+  "items": [
+    {
+      "_id": "0cf9402cc8a45824",
+      "name": "EnviroSeal (Gas Seal)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "B x 3",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "not:bike"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "250 x B",
+            "baseTime": "12",
+            "tn": "3",
+            "cf": "1",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "8/14 days",
+              "streetIndex": 2.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.128",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128. (Design specifications p.128.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.2dcbfc97c328bd76"
+      },
+      "_key": "!actors.items!a61466a9401b2dfb.0cf9402cc8a45824"
+    },
+    {
+      "_id": "1d4a73d94255e365",
+      "name": "Life Support System",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 500,
+        "designPoints": 5,
+        "dpPerLevel": 1,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "R / 10",
+        "loadFormula": "R / 10 x 25",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "500 + 100 x R",
+            "baseTime": "8",
+            "tn": "3",
+            "cf": "R / 10",
+            "load": "R / 10 x 25"
+          },
+          "market": [
+            {
+              "availability": "8/14 days",
+              "streetIndex": 2.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.128-129",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Provides oxygen and basic climate control inside a sealed vehicle, rated in man-hours of support. Parts cost = 500¥ + 100¥ per man-hour; load −(25 kg per 10 man-hours); Avail 8/14 days. Rigger 2 p.128. Design: Rating = man-hours of support. (Design specifications p.128.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.fd5499632642120e"
+      },
+      "_key": "!actors.items!a61466a9401b2dfb.1d4a73d94255e365"
+    },
+    {
+      "_id": "0d3bcb07daa0b714",
+      "name": "Turret (Mini)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 5000,
+        "designPoints": 125,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 6,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 25,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 2,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "5000",
+            "baseTime": "72",
+            "tn": "4",
+            "cf": "7",
+            "load": "25"
+          },
+          "market": [
+            {
+              "availability": "([Vehicle Cost ÷ 25] ÷ 6) × (Vehicle Cost ÷ 25) × 14 days (p.135)",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.134-136",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A motorized, armored ring mount that protects its weapon (−1 to the vehicle's Signature). Sizes by max Weapon Value / hardpoints / parts cost: Mini (WV 2, 1 hp, 5,000¥, 7 CF, −25 kg), Small (WV 3, 2 hp, 7,500¥, 8 CF, −100 kg), Medium (WV 6, 3 hp, 15,000¥, 16 CF, −1,000 kg); Large (WV 8, 4 hp) and Extra-Large (WV 10, 6 hp) are custom-built. Anti-aircraft variant ×1.5 cost +1 CF; pop-up variant ×2 cost, doubled CF. Avail by formula; SI 2–3. Rigger 2 p.134–135. (Design specifications p.135.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.e9082bd14a794425"
+      },
+      "_key": "!actors.items!a61466a9401b2dfb.0d3bcb07daa0b714"
+    },
+    {
+      "_id": "21c6b66666d97e16",
+      "name": "Turret (Mini)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 5000,
+        "designPoints": 125,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 6,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 25,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 2,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {
+          "signature": "-1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "5000",
+            "baseTime": "72",
+            "tn": "4",
+            "cf": "7",
+            "load": "25"
+          },
+          "market": [
+            {
+              "availability": "([Vehicle Cost ÷ 25] ÷ 6) × (Vehicle Cost ÷ 25) × 14 days (p.135)",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.134-136",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A motorized, armored ring mount that protects its weapon (−1 to the vehicle's Signature). Sizes by max Weapon Value / hardpoints / parts cost: Mini (WV 2, 1 hp, 5,000¥, 7 CF, −25 kg), Small (WV 3, 2 hp, 7,500¥, 8 CF, −100 kg), Medium (WV 6, 3 hp, 15,000¥, 16 CF, −1,000 kg); Large (WV 8, 4 hp) and Extra-Large (WV 10, 6 hp) are custom-built. Anti-aircraft variant ×1.5 cost +1 CF; pop-up variant ×2 cost, doubled CF. Avail by formula; SI 2–3. Rigger 2 p.134–135. (Design specifications p.135.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.e9082bd14a794425"
+      },
+      "_key": "!actors.items!a61466a9401b2dfb.21c6b66666d97e16"
+    },
+    {
+      "_id": "f718fec9b3d84e18",
+      "name": "Thermal Baffles",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "signature",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 75,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "B x 50 x R",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "thermal-baffles",
+        "maxRating": "2",
+        "restrictions": [
+          "engine:methane,gasoline,diesel,jetPropeller,jetTurbine"
+        ],
+        "effects": {
+          "signature": "R"
+        },
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "B x 5000 x R",
+            "partsCost@bike": "B x 6000 x R",
+            "partsCost@truck": "B x 7500 x R",
+            "partsCost@fixedWing": "B x 7500 x R",
+            "partsCost@tractor": "B x 10000 x R",
+            "partsCost@rotor": "B x 10000 x R",
+            "partsCost@hovercraft": "B x 3750 x R",
+            "partsCost@boat": "B x 2500 x R",
+            "partsCost@zeppelin": "B x 2500 x R",
+            "baseTime": "R x 8",
+            "tn": "4",
+            "cf": "3 x R",
+            "load": "B x 50 x R"
+          },
+          "market": [
+            {
+              "availability": "6/14 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {
+            "value": "2"
+          },
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.130",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Heat-blocking baffles that mask a vehicle's thermographic signature (gasoline/methane/diesel/jet engines). Parts cost per +1 Signature: ground Body × 5,000¥, motorcycles Body × 6,000¥, trucks/fixed-wing Body × 7,500¥, tractors/helicopters Body × 10,000¥, hovercraft Body × 3,750¥, watercraft/zeppelins Body × 2,500¥; max +2; load −(Body × 50) kg/level; Avail 6/14 days; Street Index 3. Rigger 2 p.130. (Design specifications p.130.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.23c954352b97159e"
+      },
+      "_key": "!actors.items!a61466a9401b2dfb.f718fec9b3d84e18"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "lone-star-black-mariah-usptv"
+    }
+  },
+  "prototypeToken": {
+    "name": "Lone Star \"Black Mariah\" USPTV",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 5,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/gmc-bulldog.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!a61466a9401b2dfb"
+}

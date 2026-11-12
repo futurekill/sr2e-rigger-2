@@ -1,0 +1,90 @@
+{
+  "_id": "f42d67b80db45c8e",
+  "name": "Embraer-Dassault Mistral",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/cessna-c750.webp",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "winged",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 300,
+    "stallSpeed": 135,
+    "acceleration": 21,
+    "body": 6,
+    "armor": 0,
+    "signature": 4,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 12,
+    "load": 600,
+    "seating": "2 bucket front, 3 rear (x5)",
+    "entryPoints": "1 + 1t",
+    "ltProfile": "VSTOL",
+    "setupTime": "NA",
+    "fuelType": "jetPropeller",
+    "fuelSize": 2000,
+    "fuelUnit": "liters",
+    "economy": 1,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 1125,
+    "cost": 281000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "fixedWing",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.154 (originally RBB1). Cargo printed 0/12 (two spaces; 12 CF in all).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "embraer-dassault-mistral"
+    }
+  },
+  "prototypeToken": {
+    "name": "Embraer-Dassault Mistral",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 8,
+    "height": 8,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/cessna-c750.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!f42d67b80db45c8e"
+}

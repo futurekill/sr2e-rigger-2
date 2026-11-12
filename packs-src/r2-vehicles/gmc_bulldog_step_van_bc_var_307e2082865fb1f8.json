@@ -1,0 +1,167 @@
+{
+  "_id": "307e2082865fb1f8",
+  "name": "GMC Bulldog Step-Van (BC Var.)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/gmc-bulldog.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 6,
+    "speed": 85,
+    "stallSpeed": 0,
+    "acceleration": 4,
+    "body": 4,
+    "armor": 5,
+    "signature": 2,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 50,
+    "load": 1125,
+    "seating": "1 bucket, 1 folding bench",
+    "entryPoints": "2 + 1g",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 100,
+    "fuelUnit": "liters",
+    "economy": 4,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 600,
+    "cost": 60000,
+    "otherFeatures": "Concealed armor",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.157 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "8089b5b57324bcfc",
+      "name": "Concealed Vehicle Armor",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "armor",
+        "rating": 5,
+        "cost": 2000,
+        "designPoints": 0,
+        "dpPerLevel": 50,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 2,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "B x B x 5 x R",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "concealed-armor",
+        "maxRating": "",
+        "restrictions": [
+          "notWith:standard-armor"
+        ],
+        "effects": {
+          "armor": "R"
+        },
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2000 x R",
+            "baseTime": "R x 8",
+            "tn": "ceil(A1 / 3)",
+            "cf": "3 x R",
+            "load": "B x B x 5 x R"
+          },
+          "market": [
+            {
+              "availability": "8/21 days",
+              "streetIndex": 3.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.127",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Armor hidden inside the vehicle's interior/cargo space so it isn't obvious the vehicle is armored — not compatible with standard armor. Parts cost = 2,000¥ per Armor Point; 3 CF/point; load −(Body × Body × 5) kg/point; Avail 6/21 days; Street Index 3.5; Base Time (armor × 8) hrs. Rigger 2 p.127. (Design specifications p.127.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.7f17037d59574972"
+      },
+      "_key": "!actors.items!307e2082865fb1f8.8089b5b57324bcfc"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "gmc-bulldog-step-van-bc-var"
+    }
+  },
+  "prototypeToken": {
+    "name": "GMC Bulldog Step-Van (BC Var.)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 5,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/gmc-bulldog.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!307e2082865fb1f8"
+}

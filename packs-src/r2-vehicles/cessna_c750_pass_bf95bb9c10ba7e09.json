@@ -1,0 +1,90 @@
+{
+  "_id": "bf95bb9c10ba7e09",
+  "name": "Cessna C750 (Pass.)",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/cessna-c750.webp",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "winged",
+    "handling": 5,
+    "handlingOffRoad": null,
+    "speed": 340,
+    "stallSpeed": 135,
+    "acceleration": 22,
+    "body": 6,
+    "armor": 0,
+    "signature": 4,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 10,
+    "load": 500,
+    "seating": "4 bucket, 2 f, 2 r (x3)",
+    "entryPoints": "1 + 1t",
+    "ltProfile": "STOL",
+    "setupTime": "NA",
+    "fuelType": "jetPropeller",
+    "fuelSize": 500,
+    "fuelUnit": "liters",
+    "economy": 1,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 820,
+    "cost": 205000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "fixedWing",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.151 (originally SRII). Cargo printed 0/10 (two spaces; 10 CF in all).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "cessna-c750-pass"
+    }
+  },
+  "prototypeToken": {
+    "name": "Cessna C750 (Pass.)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 8,
+    "height": 8,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/cessna-c750.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!bf95bb9c10ba7e09"
+}

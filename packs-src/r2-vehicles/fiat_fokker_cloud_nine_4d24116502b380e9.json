@@ -1,0 +1,170 @@
+{
+  "_id": "4d24116502b380e9",
+  "name": "Fiat-Fokker Cloud Nine",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/singleEngine.webp",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "winged",
+    "handling": 4,
+    "handlingOffRoad": null,
+    "speed": 200,
+    "stallSpeed": 60,
+    "acceleration": 21,
+    "body": 4,
+    "armor": 0,
+    "signature": 4,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 8,
+    "load": 325,
+    "seating": "2 folding bucket, 4 reinforced folding bench (r)",
+    "entryPoints": "2 + 2",
+    "ltProfile": "VSTOL",
+    "setupTime": "NA",
+    "fuelType": "jetPropeller",
+    "fuelSize": 250,
+    "fuelUnit": "liters",
+    "economy": 1,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 890,
+    "cost": 223000,
+    "otherFeatures": "Flotation package",
+    "design": {
+      "category": "fixedWing",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.155 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "9e0100747d7ed84d",
+      "name": "Floatation Package (Aircraft)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "accessory",
+        "rating": 1,
+        "cost": 2500,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "C x 1.20",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "only:fixedWing,rotor"
+        ],
+        "effects": {
+          "speedMult": "0.5",
+          "economyMult": "1.20",
+          "speedMult@rotor": "0.9",
+          "economyMult@rotor": "1"
+        },
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "V x 0.1 + 2500",
+            "baseTime": "32",
+            "tn": "3",
+            "cf": "0",
+            "load": "100"
+          },
+          "market": [
+            {
+              "availability": "4/7 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.144-145",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Floats for an aircraft or helicopter for water operation. Aircraft: economy ×1.20, Speed halved, cannot land on land. Helicopters: Speed ×0.9, can still land on land. Parts cost = vehicle cost × 0.1 + 2,500¥; design = chassis Point Value × 1.20; Avail 4/7 days; Street Index 2. Rigger 2 p.144. (Design specifications p.144.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.fc0da6bc909ff7f0"
+      },
+      "_key": "!actors.items!4d24116502b380e9.9e0100747d7ed84d"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "fiat-fokker-cloud-nine"
+    }
+  },
+  "prototypeToken": {
+    "name": "Fiat-Fokker Cloud Nine",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 8,
+    "height": 8,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/singleEngine.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!4d24116502b380e9"
+}

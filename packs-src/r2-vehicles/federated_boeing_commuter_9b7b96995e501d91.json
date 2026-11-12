@@ -1,0 +1,90 @@
+{
+  "_id": "9b7b96995e501d91",
+  "name": "Federated Boeing Commuter",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/federated-boeing-commuter.webp",
+  "system": {
+    "vehicleType": "rotor",
+    "skill": "rotor",
+    "handling": 5,
+    "handlingOffRoad": null,
+    "speed": 320,
+    "stallSpeed": 0,
+    "acceleration": 10,
+    "body": 6,
+    "armor": 0,
+    "signature": 3,
+    "autonav": 3,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 42,
+    "load": 850,
+    "seating": "2 bucket front, 3 rear (x5)",
+    "entryPoints": "1 + 1",
+    "ltProfile": "VTOL",
+    "setupTime": "NA",
+    "fuelType": "jetPropeller",
+    "fuelSize": 750,
+    "fuelUnit": "liters",
+    "economy": 0.6,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 1510,
+    "cost": 378000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "rotor",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.154 (originally SRII). Cargo printed 10/32 (two spaces; 42 CF in all).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "federated-boeing-commuter"
+    }
+  },
+  "prototypeToken": {
+    "name": "Federated Boeing Commuter",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 12,
+    "height": 19,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/federated-boeing-commuter.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!9b7b96995e501d91"
+}

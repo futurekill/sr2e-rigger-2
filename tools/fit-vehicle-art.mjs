@@ -12,10 +12,10 @@
  * box, so the vehicle rendered at roughly half the size of its own footprint.
  * Trimming makes the image the vehicle, so it fills the box it was given.
  *
- * FOOTPRINTS come from tools/gen-vehicles.mjs, which sizes each drone from its
+ * FOOTPRINTS come from tools/gen-vehicle-list.mjs, which sizes each drone from its
  * Body and takes the length from this trimmed art. Run the generator AFTER this,
  * so it measures trimmed files: `node tools/fit-vehicle-art.mjs --fix` then
- * `node tools/gen-vehicles.mjs`. This tool only reports the fit it would pick;
+ * `node tools/gen-vehicle-list.mjs`. This tool only reports the fit it would pick;
  * the generator is what writes it.
  *
  * Requires ImageMagick (`magick`), same as the other art tooling.
@@ -60,7 +60,7 @@ for (const file of readdirSync(DIR).filter(f => f.endsWith(".json"))) {
       execFileSync("magick", [rel, "-trim", "+repage",
         "-bordercolor", "none", "-border", String(MARGIN), "-quality", "95", rel]);
     }
-    // packs-src is owned by gen-vehicles.mjs here; only the image is rewritten.
+    // packs-src is owned by gen-vehicle-list.mjs here; only the image is rewritten.
   }
 
   rows.push({ name: doc.name, box: `${pt.width}x${pt.height}`, content: `${box.w}x${box.h}`,

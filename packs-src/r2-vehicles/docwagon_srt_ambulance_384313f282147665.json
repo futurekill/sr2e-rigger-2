@@ -1,0 +1,212 @@
+{
+  "_id": "384313f282147665",
+  "name": "DocWagon SRT Ambulance",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/gmc-bulldog.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "handlingOffRoad": 10,
+    "speed": 80,
+    "stallSpeed": 0,
+    "acceleration": 8,
+    "body": 4,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 1,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 6,
+    "load": 250,
+    "seating": "2 bucket",
+    "entryPoints": "2 + 1 gate-style",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 95,
+    "fuelUnit": "liters",
+    "economy": 5,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 244,
+    "cost": 48800,
+    "otherFeatures": "Anti-theft system (6), medical treatment gear (1 patient)",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.153 (originally RBB1).</p>"
+  },
+  "items": [
+    {
+      "_id": "f512d309ab3ed906",
+      "name": "Anti-Theft System",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "accessory",
+        "rating": 6,
+        "cost": 100,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [
+          1,
+          2,
+          3,
+          16,
+          20,
+          24,
+          70,
+          80,
+          90,
+          500
+        ],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "anti-theft",
+        "maxRating": "10",
+        "restrictions": [],
+        "effects": {},
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "100 x (min(max(R1, 0), 3) - min(max(R0, 0), 3)) + 400 x (min(max(R1, 3), 6) - min(max(R0, 3), 6)) + 1000 x (min(max(R1, 6), 9) - min(max(R0, 6), 9)) + 5000 x (max(R1, 9) - max(R0, 9))",
+            "baseTime": "40",
+            "tn": "4",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            },
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            },
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            },
+            {
+              "availability": "4/7 days",
+              "streetIndex": 1.25
+            },
+            {
+              "availability": "4/7 days",
+              "streetIndex": 1.25
+            },
+            {
+              "availability": "4/7 days",
+              "streetIndex": 1.25
+            },
+            {
+              "availability": "5/10 days",
+              "streetIndex": 1.5
+            },
+            {
+              "availability": "5/10 days",
+              "streetIndex": 1.5
+            },
+            {
+              "availability": "5/10 days",
+              "streetIndex": 1.5
+            },
+            {
+              "availability": "6/14 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {
+            "value": "10"
+          },
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.141",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Rated 1–10 (the rating = dice in an opposed test vs an intruder's Electronics/Maglocks). Parts cost by tier: R1–3 100¥/rating (SI 1), R4–6 400¥ (SI 1.25), R7–9 1,000¥ (SI 1.5), R10+ 5,000¥ (SI 2). Optional responses: automated security call; standard shock system +2,000¥ (10S Stun); or an explosive self-destruct (plastic explosive, Power = Body²). Base Time 40 hrs. Rigger 2 p.141. (Design specifications p.141.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.113bffb23a1fb4f1"
+      },
+      "_key": "!actors.items!384313f282147665.f512d309ab3ed906"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "docwagon-srt-ambulance"
+    }
+  },
+  "prototypeToken": {
+    "name": "DocWagon SRT Ambulance",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 5,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/gmc-bulldog.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!384313f282147665"
+}

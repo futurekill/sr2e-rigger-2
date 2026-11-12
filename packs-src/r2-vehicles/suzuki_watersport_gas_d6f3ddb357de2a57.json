@@ -1,0 +1,90 @@
+{
+  "_id": "d6f3ddb357de2a57",
+  "name": "Suzuki Watersport (Gas)",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/waterScooter.webp",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "motorboat",
+    "handling": 2,
+    "handlingOffRoad": null,
+    "speed": 45,
+    "stallSpeed": 0,
+    "acceleration": 7,
+    "body": 2,
+    "armor": 0,
+    "signature": 5,
+    "autonav": 0,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 1,
+    "load": 50,
+    "seating": "1 bucket",
+    "entryPoints": "o",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 20,
+    "fuelUnit": "liters",
+    "economy": 7,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 180,
+    "cost": 18000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "boat",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.165 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "suzuki-watersport-gas"
+    }
+  },
+  "prototypeToken": {
+    "name": "Suzuki Watersport (Gas)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/waterScooter.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!d6f3ddb357de2a57"
+}

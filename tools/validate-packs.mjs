@@ -2,7 +2,7 @@
 // Foundry: checks every packs-src/*/*.json document for valid JSON, required
 // keys, correct _key form, and duplicate _ids; reports per-pack counts. Exits
 // non-zero if anything fails. Run: `node tools/validate-packs.mjs`.
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 const ROOT = "packs-src";
@@ -123,6 +123,42 @@ function formulaSyntaxOk(v) {
     let shipped = null;
     try { shipped = readFileSync(join("data", f), "utf8"); } catch { /* missing */ }
     if (shipped !== readFileSync(join("tools/data", f), "utf8")) note(`data/${f} differs from tools/data/${f}: run npm run sync-design-data`);
+  }
+}
+
+// The Vehicle List (system docs/PLAN-vehicle-list.md): ids the system knows, factory items from the catalog, identities
+// that resolve to a shipped document.
+{
+  const TYPES = new Set(["ground", "hovercraft", "boat", "aircraft", "rotor", "vectored_thrust", "drone"]);
+  const SKILLS = new Set(["bike", "car", "hovercraft", "motorboat", "sailboat", "rotor", "winged", "vectorThrust"]);
+  const CATS = new Set(["bike", "car", "hovercraft", "boat", "rotor", "fixedWing", "vector", "special"]);
+  const TRAITS = new Set(["zeppelin", "tractor", "truck", "drone", "electricAircraft"]);
+  const ENGINES = new Set(["gasoline", "diesel", "electric", "methane", "jetPropeller", "jetTurbine", "sail"]);
+  const modNames = new Set(readdirSync(join(ROOT, "r2-vehicle-mods")).filter(f => f.endsWith(".json")).map(f => JSON.parse(readFileSync(join(ROOT, "r2-vehicle-mods", f), "utf8")).name));
+  const list = JSON.parse(readFileSync("data/vehicle-list.json", "utf8"));
+  for (const [vid, row] of Object.entries(list.rows)) {
+    const s = row.system;
+    if (!TYPES.has(s.vehicleType)) note(`vehicle list ${vid}: vehicleType "${s.vehicleType}"`);
+    if (!SKILLS.has(s.skill)) note(`vehicle list ${vid}: skill "${s.skill}"`);
+    if (!CATS.has(s.design.category)) note(`vehicle list ${vid}: category "${s.design.category}"`);
+    for (const t of s.design.traits) if (!TRAITS.has(t)) note(`vehicle list ${vid}: trait "${t}"`);
+    if (s.fuelType && !ENGINES.has(s.fuelType)) note(`vehicle list ${vid}: engine "${s.fuelType}"`);
+    for (const k of ["handling", "speed", "acceleration", "body", "armor", "signature", "cargo", "load", "cost"]) if (!(Number(s[k]) >= 0)) note(`vehicle list ${vid}: ${k} ${s[k]}`);
+    for (const i of row.factory) if (!modNames.has(i.name) || i.system.custom?.state !== "factory") note(`vehicle list ${vid}: factory item "${i.name}"`);
+  }
+  const shipped = {};
+  for (const dir of readdirSync("..").filter(d => d.startsWith("sr2e-"))) {
+    let packsDir; try { packsDir = readdirSync(join("..", dir, "packs-src")); } catch { continue; }
+    let pkg; try { pkg = JSON.parse(readFileSync(join("..", dir, existsSync(join("..", dir, "system.json")) ? "system.json" : "module.json"), "utf8")).id; } catch { continue; }
+    for (const pack of packsDir) {
+      let files; try { files = readdirSync(join("..", dir, "packs-src", pack)).filter(f => f.endsWith(".json")); } catch { continue; }
+      for (const f of files) { try { const d = JSON.parse(readFileSync(join("..", dir, "packs-src", pack, f), "utf8")); if (d.type === "vehicle") shipped[`Compendium.${pkg}.${pack}.Actor.${d._id}`] = true; } catch { /* not a doc */ } }
+    }
+  }
+  const siblings = Object.keys(shipped).length > 0;
+  for (const [uuid, e] of Object.entries(list.identity)) {
+    if (!list.rows[e.vehicleId]) note(`identity ${uuid}: unknown vehicleId ${e.vehicleId}`);
+    if (siblings && !shipped[uuid]) note(`identity ${uuid} (${e.name}) doesn't resolve to a shipped vehicle`);
   }
 }
 

@@ -1,0 +1,90 @@
+{
+  "_id": "96b8f851934a19c9",
+  "name": "Thundercloud Pinto",
+  "type": "vehicle",
+  "img": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/atv.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "bike",
+    "handling": 4,
+    "handlingOffRoad": 2,
+    "speed": 85,
+    "stallSpeed": 0,
+    "acceleration": 4,
+    "body": 2,
+    "armor": 0,
+    "signature": 2,
+    "autonav": 0,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 8,
+    "load": 40,
+    "seating": "3 bucket (1 front, 2 rear)",
+    "entryPoints": "o",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "gasoline",
+    "fuelSize": 50,
+    "fuelUnit": "liters",
+    "economy": 10,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 701,
+    "cost": 35000,
+    "otherFeatures": "None",
+    "design": {
+      "category": "bike",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.166 (originally RBB1).</p>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "thundercloud-pinto"
+    }
+  },
+  "prototypeToken": {
+    "name": "Thundercloud Pinto",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/sr2e-rigger-2/assets/vehicle_portraits/chassis/atv.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!96b8f851934a19c9"
+}

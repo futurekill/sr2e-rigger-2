@@ -1,0 +1,469 @@
+{
+  "_id": "f9081f45960659ac",
+  "name": "LAV-93 Devil Rat",
+  "type": "vehicle",
+  "img": "systems/sr2e/assets/vehicle_portraits/ares-citymaster.webp",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 5,
+    "handlingOffRoad": 4,
+    "speed": 75,
+    "stallSpeed": 0,
+    "acceleration": 5,
+    "body": 7,
+    "armor": 12,
+    "signature": 3,
+    "autonav": 2,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 12,
+    "load": 2830,
+    "seating": "2 bucket + 2 bench + 2 bench",
+    "entryPoints": "1h + 2h + 1r",
+    "ltProfile": "NA",
+    "setupTime": "NA",
+    "fuelType": "diesel",
+    "fuelSize": 800,
+    "fuelUnit": "liters",
+    "economy": 2,
+    "economyUnit": "km/liter",
+    "economyIdle": "",
+    "designPointValue": 586,
+    "cost": 698000,
+    "otherFeatures": "Amphibious Operation 1, electronics port (with telecommunications system), enviroseal (gas), small remote turret (weapon not included), Thermal Baffles 1 (factored in)",
+    "design": {
+      "category": "car",
+      "transport": false,
+      "traits": []
+    },
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "availability": "",
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.160 (originally FF).</p>"
+  },
+  "items": [
+    {
+      "_id": "0cffb55e7d625136",
+      "name": "Amphibious Operation Package (Level 1)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "accessory",
+        "rating": 1,
+        "cost": 2500,
+        "designPoints": 25,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "only:bike,car"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "2500",
+            "baseTime": "32",
+            "tn": "3",
+            "cf": "0",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "5/10 days",
+              "streetIndex": 1.25
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.140",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Modifies a ground vehicle to travel on/through water (needs watertight seals + life support + sealed power plant for full submersion). L1 (2,500¥, wheels propel at Speed 15, +2 Handling), L2 (7,500¥, propeller drive, Speed 30, no penalty, 2 CF), L3 (15,000¥, water-jet/impeller, Speed 45, no penalty, 2 CF); Avail 5/10–3/6 days; Street Index 1–1.5. Rigger 2 p.140–141. (Design specifications p.140.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.1f7ad77740208e25"
+      },
+      "_key": "!actors.items!f9081f45960659ac.0cffb55e7d625136"
+    },
+    {
+      "_id": "b52aabe08555e06e",
+      "name": "Electronics Port",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "electronics",
+        "rating": 1,
+        "cost": 1000,
+        "designPoints": 10,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0.5,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "1000",
+            "baseTime": "8",
+            "tn": "3",
+            "cf": "R",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "3/6 days",
+              "streetIndex": 1
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "electronicsBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle shop",
+          "pageCust": "p.138-139",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A powered mount for electronics unrelated to driving (radios, cameras, surveillance gear, a remote-control deck); attached devices draw vehicle power and gain +½ the vehicle's Body (round up) to their Flux Rating. Parts cost = 1,000¥ + the equipment's cost; 1 CF per 0.1 m³ of equipment; Avail 3/6 days; Street Index 1; Base Time 8 hrs. Rigger 2 p.139. Design: Rating = tenths of a cubic meter of equipment (0.5 CF each); add the equipment's weight and cost. (Design specifications p.139.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.ca37290d39d118f6"
+      },
+      "_key": "!actors.items!f9081f45960659ac.b52aabe08555e06e"
+    },
+    {
+      "_id": "aefbd6d2fec14cab",
+      "name": "EnviroSeal (Gas Seal)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "protection",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "B x 3",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [
+          "not:bike"
+        ],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "250 x B",
+            "baseTime": "12",
+            "tn": "3",
+            "cf": "1",
+            "load": "0"
+          },
+          "market": [
+            {
+              "availability": "8/14 days",
+              "streetIndex": 2.5
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.128",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128. (Design specifications p.128.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.2dcbfc97c328bd76"
+      },
+      "_key": "!actors.items!f9081f45960659ac.aefbd6d2fec14cab"
+    },
+    {
+      "_id": "0cd4ce5bc598e306",
+      "name": "Remote Turret (Small)",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "weapon",
+        "rating": 1,
+        "cost": 2500,
+        "designPoints": 350,
+        "dpPerLevel": 0,
+        "dpTable": [],
+        "cfConsumed": 4,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 100,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 4,
+        "modKey": "",
+        "maxRating": "",
+        "restrictions": [],
+        "effects": {},
+        "stack": "",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "9000",
+            "baseTime": "72",
+            "tn": "4",
+            "cf": "5",
+            "load": "100"
+          },
+          "market": [
+            {
+              "availability": "([Vehicle Cost ÷ 25] ÷ 6) × (Vehicle Cost ÷ 25) × 14 days (p.135)",
+              "streetIndex": 3
+            }
+          ],
+          "max": {},
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.134-136",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "A weapons-only turret the operator controls from inside via remote sensors (a second rigger can run it independently of the driver). Sizes by parts cost / CF / load: Micro (2,500¥, 1 CF, −10 kg; pop-up micro = WV 1, 1 firmpoint), Mini (3 CF... , −25 kg), Small (9,000¥, 5 CF, −100 kg), Medium (8 CF, −1,000 kg). Avail per formula; Street Index 2 (micro/mini), 3 (small/medium); Base Time 72 hrs. Rigger 2 p.135–136. (Design specifications p.135.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.85c9cc7094c2de6d"
+      },
+      "_key": "!actors.items!f9081f45960659ac.0cd4ce5bc598e306"
+    },
+    {
+      "_id": "366da2b9b6db9e52",
+      "name": "Thermal Baffles",
+      "type": "vehicle_mod",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "modType": "signature",
+        "rating": 1,
+        "cost": 0,
+        "designPoints": 0,
+        "dpPerLevel": 75,
+        "dpTable": [],
+        "cfConsumed": 0,
+        "cfPerLevel": 0,
+        "cfTable": [],
+        "loadReduction": 0,
+        "loadPerLevel": 0,
+        "loadTable": [],
+        "dpFormula": "",
+        "cfFormula": "",
+        "loadFormula": "B x 50 x R",
+        "designable": true,
+        "designNuyen": false,
+        "mountPoints": 0,
+        "modKey": "thermal-baffles",
+        "maxRating": "2",
+        "restrictions": [
+          "engine:methane,gasoline,diesel,jetPropeller,jetTurbine"
+        ],
+        "effects": {
+          "signature": "R"
+        },
+        "stack": "levels",
+        "custom": {
+          "customizable": true,
+          "formulas": {
+            "partsCost": "B x 5000 x R",
+            "partsCost@bike": "B x 6000 x R",
+            "partsCost@truck": "B x 7500 x R",
+            "partsCost@fixedWing": "B x 7500 x R",
+            "partsCost@tractor": "B x 10000 x R",
+            "partsCost@rotor": "B x 10000 x R",
+            "partsCost@hovercraft": "B x 3750 x R",
+            "partsCost@boat": "B x 2500 x R",
+            "partsCost@zeppelin": "B x 2500 x R",
+            "baseTime": "R x 8",
+            "tn": "4",
+            "cf": "3 x R",
+            "load": "B x 50 x R"
+          },
+          "market": [
+            {
+              "availability": "6/14 days",
+              "streetIndex": 2
+            }
+          ],
+          "max": {
+            "value": "2"
+          },
+          "procedure": "test",
+          "fixedHours": 0,
+          "skills": [
+            "vehicleBR"
+          ],
+          "combine": "lowest",
+          "equipment": "Vehicle facility",
+          "pageCust": "p.130",
+          "state": "factory",
+          "choice": {}
+        },
+        "installed": false,
+        "notes": "Heat-blocking baffles that mask a vehicle's thermographic signature (gasoline/methane/diesel/jet engines). Parts cost per +1 Signature: ground Body × 5,000¥, motorcycles Body × 6,000¥, trucks/fixed-wing Body × 7,500¥, tractors/helicopters Body × 10,000¥, hovercraft Body × 3,750¥, watercraft/zeppelins Body × 2,500¥; max +2; load −(Body × 50) kg/level; Avail 6/14 days; Street Index 3. Rigger 2 p.130. (Design specifications p.130.)"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sr2e": {
+          "factory": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.sr2e-rigger-2.r2-vehicle-mods.Item.23c954352b97159e"
+      },
+      "_key": "!actors.items!f9081f45960659ac.366da2b9b6db9e52"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e": {
+      "vehicleId": "lav-93-devil-rat"
+    }
+  },
+  "prototypeToken": {
+    "name": "LAV-93 Devil Rat",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 4,
+    "height": 7,
+    "texture": {
+      "src": "systems/sr2e/assets/vehicle_portraits/ares-citymaster.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "scaleX": 1,
+      "scaleY": 1,
+      "fit": "contain",
+      "tint": "#ffffff"
+    },
+    "lockRotation": true,
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.144.0",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!actors!f9081f45960659ac"
+}
