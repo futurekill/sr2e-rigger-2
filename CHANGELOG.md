@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.1 — 2026-11-11
+
+### Fixed
+- The Vehicle List's identity map names the core book's **Northrup PRC-44B Yellowjacket** (was "FRC-44B").
+
 ## 0.8.0 — 2026-11-11
 
 Needs the SR2E system 0.145.0 or later.
