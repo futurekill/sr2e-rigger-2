@@ -7,8 +7,9 @@
     "kind": "flaw",
     "category": "mental",
     "pointValue": -2,
+    "rule": "sensitive-neural-structure",
     "source": "Rigger 2 p.15",
-    "notes": "The character is unusually vulnerable to neural damage — BTL chips, black IC, rigger drain, and dump shock. Reduce Willpower by 1 (at value −2) or 2 (at value −4) when resisting such damage. Tiered: −2 or −4."
+    "notes": "<p>Value −2 or −4. When resisting neural damage (BTLs, black IC, rigger dump shock and other damaging simsense), effective Willpower is reduced by 1 (−2 Flaw) or 2 (−4 Flaw), never below 1.</p>"
   },
   "effects": [],
   "flags": {},

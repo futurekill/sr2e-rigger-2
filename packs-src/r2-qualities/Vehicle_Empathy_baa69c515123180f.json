@@ -1,0 +1,33 @@
+{
+  "_id": "baa69c515123180f",
+  "name": "Vehicle Empathy",
+  "type": "quality",
+  "img": "modules/sr2e-rigger-2/assets/item_icons/quality/vehicle-empathy.webp",
+  "system": {
+    "kind": "edge",
+    "category": "other",
+    "pointValue": 2,
+    "rule": "vehicle-empathy",
+    "source": "Rigger 2 p.16",
+    "notes": "<p>Whenever the character is in physical contact with a vehicle (manual controls, or jacked into the vehicle itself), reduce its Handling by 1.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!baa69c515123180f"
+}

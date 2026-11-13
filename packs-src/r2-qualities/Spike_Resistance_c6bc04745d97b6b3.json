@@ -7,8 +7,9 @@
     "kind": "edge",
     "category": "mental",
     "pointValue": 2,
+    "rule": "spike-resistance",
     "source": "Rigger 2 p.15",
-    "notes": "The character shrugs off harsh ASIST spikes and dump shock: add 1 (at value +2) or 2 (at value +4) to Willpower when resisting spike/dump-shock damage. Tiered: +2 or +4."
+    "notes": "<p>Value 2 or 4. When resisting high simsense spikes and harmful ASIST (black IC, rigger dump shock), effective Willpower +1 for every 2 points of Spike Resistance.</p>"
   },
   "effects": [],
   "flags": {},

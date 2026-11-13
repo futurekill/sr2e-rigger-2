@@ -7,8 +7,9 @@
     "kind": "flaw",
     "category": "skill",
     "pointValue": -3,
+    "rule": "computer-illiterate",
     "source": "Rigger 2 p.15",
-    "notes": "The character has extreme difficulty with computers and other electronics, suffering a +1 target-number modifier to all tests involving computer or electronic devices (which for a rigger includes piloting drones and decks)."
+    "notes": "<p>Extreme difficulty with computers and other electronic devices: +1 to the target number of every test that involves a computer or electronic device in any way (riggers and deckers too; a mage reading an electronic hermetic library). The gamemaster may also require Success Tests (Target Number 2 or 3) for everyday tasks such as using an unfamiliar telecom.</p>"
   },
   "effects": [],
   "flags": {},

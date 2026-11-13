@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.9.0 — 2026-11-12
+
+Needs the SR2E system 0.148.0 or later.
+
+### Added
+- **Vehicle Empathy** (Edge, 2; p.16) in the Edges & Flaws pack: −1 Handling in physical contact with the vehicle.
+- Every Edge and Flaw carries its automated rule, which the system applies (Simsense Vertigo, Sensitive Neural
+  Structure, Spike Resistance, Computer Illiterate, Gremlins, Vehicle Empathy).
+
+### Fixed
+- The Edges and Flaws notes now say what the book says: Gremlins breaks equipment on a 2 on 2D6 (the old note said
+  "on a 1") with the four tiers as printed; Simsense Vertigo also costs 1 Initiative; Spike Resistance and Sensitive
+  Neural Structure name the damage they apply to.
+- Re-running the Edges and Flaws generator keeps the art already wired in.
+
 ## 0.8.1 — 2026-11-11
 
 ### Fixed
