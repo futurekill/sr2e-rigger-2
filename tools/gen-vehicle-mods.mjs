@@ -334,7 +334,7 @@ for (const m of MODS) {
     load: d.load ?? 0, loadPerLevel: d.loadPerLevel ?? 0, loadTable: d.loadTable ?? [], loadFormula: d.loadFormula ?? "",
     designable: d.designable ?? true, designNuyen: !!d.designNuyen, mountPoints: d.mountPoints ?? 0, modKey: d.modKey ?? "",
     maxRating: d.maxRating ?? "", restrictions: d.restrictions ?? [], effects: d.effects ?? {} });
-  // Customization Specifications (tools/data/custom-specs.mjs; system docs/PLAN-vehicle-customization.md C2).
+  // Customization Specifications (tools/data/custom-specs.mjs; system docs/archive/plans/PLAN-vehicle-customization.md C2).
   const c = CUSTOM[m.name];
   if (c) {
     if (c.key && !m.modKey) m.modKey = c.key;

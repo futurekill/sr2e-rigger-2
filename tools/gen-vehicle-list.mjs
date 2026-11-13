@@ -1,5 +1,5 @@
 // Generate the Rigger 2 Vehicle List (book p.148–166) into packs-src/r2-vehicles, and the runtime data the module's
-// precedence hook and update window use (data/vehicle-list.json). System docs/PLAN-vehicle-list.md.
+// precedence hook and update window use (data/vehicle-list.json). System docs/archive/plans/PLAN-vehicle-list.md.
 //   node tools/gen-vehicle-list.mjs            write
 //   node tools/gen-vehicle-list.mjs --check    self-test of the row mapper, writes nothing
 // Source rows: tools/data/vehicle-list.json (two agreeing transcriptions, docs/DESIGN-DATA-CHECK.md).

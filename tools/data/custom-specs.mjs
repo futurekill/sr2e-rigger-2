@@ -1,5 +1,5 @@
 // Customization Specifications (Rigger 2 p.120–146), transcribed in pass 1 (tools/transcribe/custom-specs-pass1.jsonl)
-// and written as data for the system's customization rules (system docs/PLAN-vehicle-customization.md C2). User
+// and written as data for the system's customization rules (system docs/archive/plans/PLAN-vehicle-customization.md C2). User
 // rulings 11–13: level-8 electronics costs read as millions; ECCM levels 1/3 as printed; rigger adaptation 2,800¥.
 // Formula variables: R (levels added), R0 (the family's levels already on the vehicle), R1 (= R0 + R), B (Body),
 // P (Pilot), V (the vehicle's original cost), N (its power plant's cost), EY (its engine customization's ¥ cost),

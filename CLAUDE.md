@@ -44,11 +44,11 @@ packs (LevelDB locks).
   vehicle_mod / weapon / cyberware / gear per their schemas).
 - The back-of-book **Vehicle List** restates many earlier vehicles under the new design rules. User ruling
   (2026-11-07): with this module active its stats supersede the core book's, so the WHOLE list ships here (0.8.0;
-  system docs/PLAN-vehicle-list.md). `tools/data/vehicle-list.json` (two agreeing transcription passes) →
+  system docs/archive/plans/PLAN-vehicle-list.md). `tools/data/vehicle-list.json` (two agreeing transcription passes) →
   `node tools/gen-vehicle-list.mjs [--check]` writes `packs-src/r2-vehicles` (169 docs; FEATURES/WEAPONS tables make
   factory items) and `data/vehicle-list.json` (rows + `tools/data/vehicle-identity.json`, the hand-reviewed map of
   other compendiums' vehicles to list rows), which `scripts/register-design-data.mjs` registers with the system.
-- **Vehicle design data** (system docs/PLAN-vehicle-builder.md): `tools/data/design-*.json` (Chassis / Power Plant /
+- **Vehicle design data** (system docs/archive/plans/PLAN-vehicle-builder.md): `tools/data/design-*.json` (Chassis / Power Plant /
   Fuel / Mark-Up tables; the power plants are GENERATED from `tools/transcribe/power-plants.py`) and the mods'
   `DESIGN` map in `tools/gen-vehicle-mods.mjs` are the single sources, checked as in `docs/DESIGN-DATA-CHECK.md`.
   `npm run sync-design-data` copies them to `data/` (what ships); `npm run validate` fails if they drift.

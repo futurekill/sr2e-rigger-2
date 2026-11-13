@@ -104,7 +104,7 @@ function formulaSyntaxOk(v) {
       if (!/^(only|not|engine|notWith):[A-Za-z,-]+$|^(notDrone|needsEngineCustom|needsRemote|needsRiggerBase|notAircraftUnlessElectric)$|^minBody:\d+$/.test(t)) note(`${f}: unknown restriction "${t}"`);
     }
     if (typeof sys.designable !== "boolean") note(`${f}: designable must be true or false`);
-    // Customization Specifications (system docs/PLAN-vehicle-customization.md C2).
+    // Customization Specifications (system docs/archive/plans/PLAN-vehicle-customization.md C2).
     const cu = sys.custom ?? {};
     for (const [k, v] of Object.entries(cu.formulas ?? {})) {
       if (k === "baseUnit" || k === "set") continue;
@@ -126,7 +126,7 @@ function formulaSyntaxOk(v) {
   }
 }
 
-// The Vehicle List (system docs/PLAN-vehicle-list.md): ids the system knows, factory items from the catalog, identities
+// The Vehicle List (system docs/archive/plans/PLAN-vehicle-list.md): ids the system knows, factory items from the catalog, identities
 // that resolve to a shipped document.
 {
   const TYPES = new Set(["ground", "hovercraft", "boat", "aircraft", "rotor", "vectored_thrust", "drone"]);

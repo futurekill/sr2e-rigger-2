@@ -1,7 +1,7 @@
 # Design data: how it was checked
 
 The vehicle builder's tables (`tools/data/design-chassis.json`, `design-powerplants.json`, `design-rules.json`) were
-re-transcribed on 2026-11-07 for the vehicle-builder overhaul (system `docs/PLAN-vehicle-builder.md`, release 2).
+re-transcribed on 2026-11-07 for the vehicle-builder overhaul (system `docs/archive/plans/PLAN-vehicle-builder.md`, release 2).
 They replaced the old `chassis.json` / `powerplants.json`, which were deleted in module 0.6.1 with the old Design tab.
 
 ## Method
@@ -84,7 +84,7 @@ turrets (−1 Signature; pop-up turrets don't while concealed; p.134), aircraft 
 helicopters Speed ×0.9 rounded down; p.144), sidecars (+4/8/12 CF, Handling +1/+1/+2, Speed −15, Economy ×0.9;
 p.145). Active thermal masking works only while running (p.130), so it has no design effect.
 
-## Customization Specifications (system docs/PLAN-vehicle-customization.md C2; 2026-11-07 / 2026-11-11)
+## Customization Specifications (system docs/archive/plans/PLAN-vehicle-customization.md C2; 2026-11-07 / 2026-11-11)
 - **Pass 1 (Claude):** every mod's Customization Specifications and the customization-cost tables, book p.120–146,
   read from the 200 dpi renders: `tools/transcribe/custom-specs-pass1.jsonl` (70 entries). Doubtful glyphs re-read at
   600 dpi: nitrous's base time "(Level + 47) hours" and the recoil adjuster / gyro Load "Rating + 24 kg" print a plus.
