@@ -1,0 +1,88 @@
+{
+  "_id": "b9865f62f62b6fac",
+  "name": "Sensor Upgrade: Magnification",
+  "type": "vehicle_mod",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "modType": "electronics",
+    "rating": 1,
+    "cost": 0,
+    "designPoints": 0,
+    "dpPerLevel": 0,
+    "dpTable": [],
+    "cfConsumed": 0,
+    "cfPerLevel": 0,
+    "cfTable": [],
+    "loadReduction": 0,
+    "loadPerLevel": 0,
+    "loadTable": [],
+    "dpFormula": "",
+    "cfFormula": "",
+    "loadFormula": "",
+    "designable": false,
+    "designNuyen": false,
+    "mountPoints": 0,
+    "modKey": "sensor-upgrade",
+    "maxRating": "",
+    "restrictions": [
+      "needsSensors"
+    ],
+    "effects": {},
+    "stack": "",
+    "custom": {
+      "customizable": true,
+      "formulas": {
+        "partsCost": "SC x 0.1 x R",
+        "baseTime": "16 x R",
+        "tn": "4",
+        "cf": "0",
+        "load": "0"
+      },
+      "market": [
+        {
+          "availability": "",
+          "streetIndex": null
+        }
+      ],
+      "max": {
+        "value": "10"
+      },
+      "procedure": "test",
+      "fixedHours": 0,
+      "skills": [
+        "electronicsBR"
+      ],
+      "combine": "lowest",
+      "equipment": "Vehicle facility",
+      "pageCust": "p.27",
+      "state": "",
+      "choice": {}
+    },
+    "components": {
+      "magnification": {
+        "level": 1
+      }
+    },
+    "installed": false,
+    "notes": "Each level adds 50× magnification to the sensors (p.27: All sensors include magnification power equal to 50 times the sensor rating; Skyrie's +100× = 2 levels). Parts cost = the sensors' original cost × .10 × levels (p.27); installed by the Sensors' own customization rules (TN 4, 16 hrs × levels, Electronics B/R, Vehicle facility). The sensor's overall rating does not change. Rigger 2 p.27. (Design specifications p.27.)"
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.0.1",
+    "createdTime": 1781600000000,
+    "modifiedTime": 1781600000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!b9865f62f62b6fac"
+}

@@ -43,7 +43,7 @@ for (const pack of packs.sort()) {
 
 /** The system evaluator's grammar, as a structural check: tokens, balanced parentheses, operand/operator alternation. */
 function formulaSyntaxOk(v) {
-  const toks = v.replace(/\s+/g, "").match(/floor\(|ceil\(|min\(|max\(|\d+(\.\d+)?|EDP|EY|R0|R1|HO|A0|A1|S0|STR|[RBPCEKLVNHS]|[+\-x/^(),]/g);
+  const toks = v.replace(/\s+/g, "").match(/floor\(|ceil\(|min\(|max\(|\d+(\.\d+)?|EDP|EY|R0|R1|HO|A0|A1|S0|SC|STR|[RBPCEKLVNHS]|[+\-x/^(),]/g);
   if (!toks || toks.join("") !== v.replace(/\s+/g, "")) return false;
   let depth = 0, wantOperand = true;
   for (const t of toks) {
@@ -101,7 +101,7 @@ function formulaSyntaxOk(v) {
       if (v && !formulaSyntaxOk(v)) note(`${f}: ${k} "${v}" isn't a valid formula (R B P C E K L, numbers, + - x / ^ ( ) , floor ceil min max)`);
     }
     for (const t of sys.restrictions ?? []) {
-      if (!/^(only|not|engine|notWith):[A-Za-z,-]+$|^(notDrone|needsEngineCustom|needsRemote|needsRiggerBase|notAircraftUnlessElectric)$|^minBody:\d+$/.test(t)) note(`${f}: unknown restriction "${t}"`);
+      if (!/^(only|not|engine|notWith):[A-Za-z,-]+$|^(notDrone|needsEngineCustom|needsRemote|needsRiggerBase|needsSensors|notAircraftUnlessElectric)$|^minBody:\d+$/.test(t)) note(`${f}: unknown restriction "${t}"`);
     }
     if (typeof sys.designable !== "boolean") note(`${f}: designable must be true or false`);
     // Customization Specifications (system docs/archive/plans/PLAN-vehicle-customization.md C2).
