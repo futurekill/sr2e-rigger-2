@@ -1,5 +1,21 @@
 # Changelog
 
+## Unreleased
+
+### Added
+- Missiles and rockets carry their guidance data (kind, Intelligence) for Rigger 2 gunnery (sr2e Part 4b).
+- BattleTac FDDM items carry their identity for indirect fire (sr2e Part 4b.5).
+
+## 0.10.0 — 2026-11-14
+
+Needs the SR2E system 0.153.0 or later.
+
+### Added
+- **Sensor Upgrade** modifications (p.27): add a sensor component or magnification levels to a vehicle's sensors
+  through the Customize window; parts cost = the sensors' original cost × .10 per level (system: Sensors panel).
+- The Electronics Port carries its identity (`modKey: electronics-port`), so devices can be connected to it for
+  engine Flux boosts (p.30).
+
 ## 0.9.0 — 2026-11-12
 
 Needs the SR2E system 0.148.0 or later.
