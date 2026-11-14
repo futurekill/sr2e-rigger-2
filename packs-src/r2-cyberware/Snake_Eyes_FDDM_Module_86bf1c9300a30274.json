@@ -28,7 +28,11 @@
     "notes": "Snake-Eyes add-on module for an FDDM network (Essence 0.1). Rigger 2 p.96."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "fddm"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

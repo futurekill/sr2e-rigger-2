@@ -21,7 +21,11 @@
     "notes": "Deck-mounted master unit for a BattleTac FDDM (Fire Direction Data Manager) network — coordinates indirect-fire targeting across drones. External counterpart of the cranial CRD unit. Street Index 3. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "fddm"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

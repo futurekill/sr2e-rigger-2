@@ -28,7 +28,11 @@
     "notes": "Cranial master unit for a BattleTac FDDM tactical network. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "fddm"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {
