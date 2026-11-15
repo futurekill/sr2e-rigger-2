@@ -166,8 +166,14 @@ export function mapRow(r) {
     ...fuelFields(r.fuel, engine), ...economyFields(r.economy),
     designPointValue: n(r.pointValue), cost: n(r.cost), otherFeatures: r.other,
     design: cls.design,
+    // A printed (Robotic) Learning Pool (p.67; system plan 5a.4): its dice and scope.
+    ...learningPoolOf(r.other),
   };
   return { system, notes, chassisKey };
+}
+function learningPoolOf(other) {
+  const m = /Learning Pool (\d+)(?: \(for ([^)]+)\))?/i.exec(String(other ?? ""));
+  return m ? { learningPool: { dice: Number(m[1]), scope: m[2] ?? "" } } : {};
 }
 
 /* ── Factory equipment (plan: "Factory equipment"; level families one item with a rating, instances N items) ── */

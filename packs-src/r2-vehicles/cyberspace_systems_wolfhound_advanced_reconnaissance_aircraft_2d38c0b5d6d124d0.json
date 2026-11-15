@@ -44,7 +44,11 @@
       "max": 10
     },
     "availability": "",
-    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.153.</p>"
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.153.</p>",
+    "learningPool": {
+      "dice": 2,
+      "scope": "Avoid Detection"
+    }
   },
   "items": [
     {

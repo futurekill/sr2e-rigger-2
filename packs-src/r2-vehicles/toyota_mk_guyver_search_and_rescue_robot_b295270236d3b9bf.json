@@ -44,7 +44,11 @@
       "max": 10
     },
     "availability": "",
-    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.166. Printed Speed 20/5. Printed Acceleration 4/NA.</p>"
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.166. Printed Speed 20/5. Printed Acceleration 4/NA.</p>",
+    "learningPool": {
+      "dice": 2,
+      "scope": "Search & Rescue"
+    }
   },
   "items": [
     {
