@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## 0.11.0 — 2026-11-15
+
+Uses the SR2E system 0.154.0 (Rigger 2 gunnery).
 
 ### Added
 - Missiles and rockets carry their guidance data (kind, Intelligence) for Rigger 2 gunnery (sr2e Part 4b).
