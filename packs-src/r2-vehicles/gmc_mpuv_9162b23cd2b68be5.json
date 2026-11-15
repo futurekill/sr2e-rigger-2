@@ -73,7 +73,7 @@
         "designable": true,
         "designNuyen": false,
         "mountPoints": 0,
-        "modKey": "",
+        "modKey": "electronics-port",
         "maxRating": "",
         "restrictions": [],
         "effects": {},
@@ -105,6 +105,7 @@
           "state": "factory",
           "choice": {}
         },
+        "components": {},
         "installed": false,
         "notes": "A powered mount for electronics unrelated to driving (radios, cameras, surveillance gear, a remote-control deck); attached devices draw vehicle power and gain +½ the vehicle's Body (round up) to their Flux Rating. Parts cost = 1,000¥ + the equipment's cost; 1 CF per 0.1 m³ of equipment; Avail 3/6 days; Street Index 1; Base Time 8 hrs. Rigger 2 p.139. Design: Rating = tenths of a cubic meter of equipment (0.5 CF each); add the equipment's weight and cost. (Design specifications p.139.)",
         "citation": {
@@ -181,6 +182,7 @@
           "state": "factory",
           "choice": {}
         },
+        "components": {},
         "installed": false,
         "notes": "The simplest mount — a reinforced swivel socket (one firmpoint) accepting any firmpoint-sized weapon; ~60° left/right and 30° up/down arc, and grants 2 points of recoil compensation. Cannot be operated remotely by a jacked-in rigger; mounting/removing is a Complex Action (+ Quickness (3) Test if moving). Parts cost 50¥; Avail 4/96 hrs; Street Index 1.5; Base Time 12 hrs. Rigger 2 p.133. (Design specifications p.133.)",
         "citation": {
@@ -258,6 +260,7 @@
           "state": "factory",
           "choice": {}
         },
+        "components": {},
         "installed": false,
         "notes": "A concentrated beam (effective range 600 m; spot ~0.5 m at the source widening to ~5 m at max), controllable manually or remotely from inside; also available in invisible medium-range infrared. Parts cost 600¥; Avail 4/96 hrs; Street Index 1.5; Base Time 1 day. Rigger 2 p.145–146. (Design specifications p.146.)",
         "citation": {

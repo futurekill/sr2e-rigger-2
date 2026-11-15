@@ -73,7 +73,7 @@
         "designable": true,
         "designNuyen": false,
         "mountPoints": 0,
-        "modKey": "",
+        "modKey": "electronics-port",
         "maxRating": "",
         "restrictions": [],
         "effects": {},
@@ -105,6 +105,7 @@
           "state": "factory",
           "choice": {}
         },
+        "components": {},
         "installed": false,
         "notes": "A powered mount for electronics unrelated to driving (radios, cameras, surveillance gear, a remote-control deck); attached devices draw vehicle power and gain +½ the vehicle's Body (round up) to their Flux Rating. Parts cost = 1,000¥ + the equipment's cost; 1 CF per 0.1 m³ of equipment; Avail 3/6 days; Street Index 1; Base Time 8 hrs. Rigger 2 p.139. Design: Rating = tenths of a cubic meter of equipment (0.5 CF each); add the equipment's weight and cost. (Design specifications p.139.)",
         "citation": {
@@ -183,6 +184,7 @@
           "state": "factory",
           "choice": {}
         },
+        "components": {},
         "installed": false,
         "notes": "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132. Design: Plus the weapon's weight. (Design specifications p.132.)",
         "citation": {
@@ -261,6 +263,7 @@
           "state": "factory",
           "choice": {}
         },
+        "components": {},
         "installed": false,
         "notes": "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132. Design: Plus the weapon's weight. (Design specifications p.132.)",
         "citation": {

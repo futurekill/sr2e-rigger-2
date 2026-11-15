@@ -4,6 +4,15 @@
 
 ### Added
 - **Citations**: every catalog item (and vehicle) records the page it's printed on (`system.citation`), shown as a badge on its sheet (needs sr2e 0.156.0+). `npm run validate` now fails an entry without one.
+- **Remote-control networks** (sr2e 0.156.0): the remote-control deck, IVIS master, protocol emulation, decryption,
+  encryption, ECCM, storage memory, signal amplifier and hitcher jacks carry the identities the system's drone
+  networks read, and the IVIS and FDDM receivers carry their mod keys.
+- **Learning Pools** (p.67): the Wolfhound (2, for Avoid Detection) and the MK-Guyver (2, for Search & Rescue) carry
+  their printed pools, which the system adds to the drone's own tests.
+
+### Fixed
+- The Vehicle List's factory items were stale copies from before 0.10.0: they now carry the catalog's Electronics Port
+  and receiver mod keys, so a list vehicle's factory port is recognised like a bought one.
 
 ## 0.11.0 — 2026-11-15
 

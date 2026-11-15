@@ -212,6 +212,7 @@
           "state": "factory",
           "choice": {}
         },
+        "components": {},
         "installed": false,
         "notes": "Active jamming — barrage radio/infrared jammers, chaff, flare dispensers, harmonic disrupters — that foul enemy sensors and remote-control comms (security/military only). Cost & weight by Level: L1 25,000¥/12 kg/SI 2.5, L2 75,000¥/25, L3 125,000¥/35, L4 250,000¥/50, L5 375,000¥, L6 750,000¥, L7 1.5M¥, L8 7.5M¥, L9 15M¥, L10 30M¥; Avail 5/7 days (L1) up to 20/1 year (L10). Rigger 2 p.137. (Design specifications p.137.)",
         "citation": {
@@ -395,6 +396,7 @@
           "state": "factory",
           "choice": {}
         },
+        "components": {},
         "installed": false,
         "notes": "Signal amplifiers and noise filters that nullify enemy ECM (generally more available than ECM). Leveled 1–10. Per-level Customization Cost: L1 10,000¥, L2 30,000¥, L3 100,000¥, L4 100,000¥, L5 150,000¥, L6 250,000¥, L7 750,000¥, L8 2.5M¥, L9 6M¥, L10 12M¥ (L3 and L4 both list 100,000¥ in the book). Weight 12 kg (L1) up to 250 kg (L10); Avail 4/7 days (L1) up to 18/1 year (L10); Base Time 16 hrs/level. Rigger 2 p.138. (Design specifications p.138.)",
         "citation": {
@@ -473,6 +475,7 @@
           "state": "factory",
           "choice": {}
         },
+        "components": {},
         "installed": false,
         "notes": "A hard/firmpoint with a weapon permanently affixed, firing in a fixed arc (aimed by moving the vehicle; doubled recoil on hovercraft). Parts cost & CF by type: external hardpoint 2,000¥/1 CF, external firmpoint 750¥/0.5 CF, internal hardpoint 3,000¥/4 CF, internal firmpoint 1,500¥/3 CF; Avail 6/7 days; Street Index 2; Base Time 24 hrs; load −(10 kg + weapon weight). Rigger 2 p.131–132. Design: Plus the weapon's weight. (Design specifications p.132.)",
         "citation": {
@@ -525,6 +528,7 @@
         "custom": {
           "state": "factory"
         },
+        "components": {},
         "installed": false,
         "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)",
         "citation": {
@@ -577,6 +581,7 @@
         "custom": {
           "state": "factory"
         },
+        "components": {},
         "installed": false,
         "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)",
         "citation": {
@@ -629,6 +634,7 @@
         "custom": {
           "state": "factory"
         },
+        "components": {},
         "installed": false,
         "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)",
         "citation": {
@@ -681,6 +687,7 @@
         "custom": {
           "state": "factory"
         },
+        "components": {},
         "installed": false,
         "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)",
         "citation": {
@@ -733,6 +740,7 @@
         "custom": {
           "state": "factory"
         },
+        "components": {},
         "installed": false,
         "notes": "An external firing system (one firmpoint) for missiles or rockets; reduces the vehicle's Signature by 1 while loaded. Ground vehicles carry up to Body Rating missiles/rockets; aircraft carry more (up to 300 kg). Rigger 2 p.133. (Design specifications p.133.)",
         "citation": {
@@ -814,6 +822,7 @@
           "state": "factory",
           "choice": {}
         },
+        "components": {},
         "installed": false,
         "notes": "Radar-absorbing coatings/enamels that mask a vehicle's radar signature; each level adds +1 (max +3). Automatically makes the vehicle military-grade — very hard to obtain. Design cost = levels × 50 points; parts cost = levels × 25,000¥; Avail 18/30 days; Street Index military only. Rigger 2 p.130. Design: Military-grade if taken in design. (Design specifications p.130.)",
         "citation": {
