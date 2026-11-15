@@ -25,7 +25,11 @@
       "reaction": 0,
       "initiativeDice": 0
     },
-    "notes": "Electronic counter-countermeasures for a remote-control deck. Tiers: R1–3 (Ess 0.2, ×15,000¥, 4/7 days, SI 2); R4–6 (0.3, ×35,000¥, 6/14 days, SI 3); R7–9 (0.4, ×75,000¥, 12/28 days, SI 4); R10 (0.45, 900,000¥ flat, 18/45 days). Rigger 2."
+    "notes": "Electronic counter-countermeasures for a remote-control deck. Tiers: R1–3 (Ess 0.2, ×15,000¥, 4/7 days, SI 2); R4–6 (0.3, ×35,000¥, 6/14 days, SI 3); R7–9 (0.4, ×75,000¥, 12/28 days, SI 4); R10 (0.45, 900,000¥ flat, 18/45 days). Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "96"
+    }
   },
   "effects": [],
   "flags": {

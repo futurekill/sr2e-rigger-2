@@ -9,7 +9,11 @@
     "pointValue": -1,
     "rule": "gremlins",
     "source": "Rigger 2 p.15",
-    "notes": "<p>Value −1 to −4. Whenever the character handles a piece of equipment, roll 2D6: on a 2 it breaks down.</p><ul><li><b>1 point:</b> +1 or −1 against the character on Success Tests and effect values (Power, Flux, MPCP…); a Simple Action banging it on a hard surface makes it work normally during the character's next Combat Phase.</li><li><b>2 points:</b> it doesn't work; a sharp jolt (Simple Action) brings it back on-line in the character's next Combat Turn.</li><li><b>3 points:</b> major malfunction, +2 or −2 against the character until repaired (cost × 0.2 plus labour).</li><li><b>4 points:</b> breaks down; only a major overhaul fixes it (cost × 0.5 plus labour).</li></ul><p>Driving a vehicle: one major subsystem or modification goes down (the gamemaster rolls or picks). No effect on cyberware, bioware or magical equipment; hermetic libraries on electronic media can be hit.</p>"
+    "notes": "<p>Value −1 to −4. Whenever the character handles a piece of equipment, roll 2D6: on a 2 it breaks down.</p><ul><li><b>1 point:</b> +1 or −1 against the character on Success Tests and effect values (Power, Flux, MPCP…); a Simple Action banging it on a hard surface makes it work normally during the character's next Combat Phase.</li><li><b>2 points:</b> it doesn't work; a sharp jolt (Simple Action) brings it back on-line in the character's next Combat Turn.</li><li><b>3 points:</b> major malfunction, +2 or −2 against the character until repaired (cost × 0.2 plus labour).</li><li><b>4 points:</b> breaks down; only a major overhaul fixes it (cost × 0.5 plus labour).</li></ul><p>Driving a vehicle: one major subsystem or modification goes down (the gamemaster rolls or picks). No effect on cyberware, bioware or magical equipment; hermetic libraries on electronic media can be hit.</p>",
+    "citation": {
+      "book": "r2",
+      "page": "15"
+    }
   },
   "effects": [],
   "flags": {},

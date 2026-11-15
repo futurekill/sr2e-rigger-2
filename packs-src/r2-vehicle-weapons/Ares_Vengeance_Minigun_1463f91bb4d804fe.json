@@ -37,7 +37,11 @@
     "streetIndex": "3.5",
     "equipped": false,
     "accessories": [],
-    "notes": "Vehicle-mounted minigun (MMG class), belt-fed full-auto. Rigger 2."
+    "notes": "Vehicle-mounted minigun (MMG class), belt-fed full-auto. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "92"
+    }
   },
   "effects": [],
   "flags": {},

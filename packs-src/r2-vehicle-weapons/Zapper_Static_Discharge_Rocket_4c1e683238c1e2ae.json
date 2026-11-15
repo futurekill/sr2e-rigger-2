@@ -37,7 +37,11 @@
     "streetIndex": "2.5",
     "equipped": false,
     "accessories": [],
-    "notes": "Static-discharge rocket — overloads a target drone's electronics on impact rather than destroying it outright. Rigger 2."
+    "notes": "Static-discharge rocket — overloads a target drone's electronics on impact rather than destroying it outright. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "94"
+    }
   },
   "effects": [],
   "flags": {},

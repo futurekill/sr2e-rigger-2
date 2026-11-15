@@ -18,7 +18,11 @@
     "combatTnMod": 0,
     "accessoryRecoilComp": 0,
     "requiresSmartgun": false,
-    "notes": "Boosts a remote-control signal's range (Rating 1–10). Weight = 1 × Rating kg; cost = Rating × 250¥. Street Index 1.5. Rigger 2."
+    "notes": "Boosts a remote-control signal's range (Rating 1–10). Weight = 1 × Rating kg; cost = Rating × 250¥. Street Index 1.5. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "99"
+    }
   },
   "effects": [],
   "flags": {

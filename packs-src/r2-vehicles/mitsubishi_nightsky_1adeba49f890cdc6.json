@@ -42,7 +42,11 @@
       "max": 10
     },
     "availability": "",
-    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.162 (originally SRII).</p>"
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.162 (originally SRII).</p>",
+    "citation": {
+      "book": "r2",
+      "page": "162"
+    }
   },
   "items": [
     {
@@ -104,7 +108,11 @@
           "choice": {}
         },
         "installed": false,
-        "notes": "Secured seat belts, impact-activated airbags, and reinforced seat panels; allows a Strength (5) Test to reduce crash damage to occupants (not for motorcycles). Parts cost 2,500¥ per seat; Avail 3/6 days; Street Index 1; Base Time 40 hrs; Target Number 4. Rigger 2 p.128. Design: Rating = seats. (Design specifications p.128.)"
+        "notes": "Secured seat belts, impact-activated airbags, and reinforced seat panels; allows a Strength (5) Test to reduce crash damage to occupants (not for motorcycles). Parts cost 2,500¥ per seat; Avail 3/6 days; Street Index 1; Base Time 40 hrs; Target Number 4. Rigger 2 p.128. Design: Rating = seats. (Design specifications p.128.)",
+        "citation": {
+          "book": "r2",
+          "page": "128"
+        }
       },
       "effects": [],
       "folder": null,
@@ -180,7 +188,11 @@
           "choice": {}
         },
         "installed": false,
-        "notes": "Armor hidden inside the vehicle's interior/cargo space so it isn't obvious the vehicle is armored — not compatible with standard armor. Parts cost = 2,000¥ per Armor Point; 3 CF/point; load −(Body × Body × 5) kg/point; Avail 6/21 days; Street Index 3.5; Base Time (armor × 8) hrs. Rigger 2 p.127. (Design specifications p.127.)"
+        "notes": "Armor hidden inside the vehicle's interior/cargo space so it isn't obvious the vehicle is armored — not compatible with standard armor. Parts cost = 2,000¥ per Armor Point; 3 CF/point; load −(Body × Body × 5) kg/point; Avail 6/21 days; Street Index 3.5; Base Time (armor × 8) hrs. Rigger 2 p.127. (Design specifications p.127.)",
+        "citation": {
+          "book": "r2",
+          "page": "127"
+        }
       },
       "effects": [],
       "folder": null,
@@ -252,7 +264,11 @@
           "choice": {}
         },
         "installed": false,
-        "notes": "Adds rigidity that mitigates roll-over damage: negates the doubled Damage Resistance penalty for hard-tops and grants +3 dice to the occupant's Damage Resistance Test in a roll. Also required to mount some weapons on civilian vehicles. Parts cost 2,000¥; Avail 3/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.129. (Design specifications p.129.)"
+        "notes": "Adds rigidity that mitigates roll-over damage: negates the doubled Damage Resistance penalty for hard-tops and grants +3 dice to the occupant's Damage Resistance Test in a roll. Also required to mount some weapons on civilian vehicles. Parts cost 2,000¥; Avail 3/72 hrs; Street Index 1; Base Time 24 hrs. Rigger 2 p.129. (Design specifications p.129.)",
+        "citation": {
+          "book": "r2",
+          "page": "129"
+        }
       },
       "effects": [],
       "folder": null,
@@ -326,7 +342,11 @@
           "choice": {}
         },
         "installed": false,
-        "notes": "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128. (Design specifications p.128.)"
+        "notes": "Seals the vehicle against gas, water, or vacuum (separate engine seal required). Parts cost by tier: gas seal Body × 250¥, water seal Body × 750¥, engine seal Body × 1,000¥, cabin overpressurization Body × 5,000¥; Avail 8/14 days; Street Index 2.5; Base Time 12 hrs; 1 CF (2 CF w/overpressurization); not for motorcycles. Rigger 2 p.128. (Design specifications p.128.)",
+        "citation": {
+          "book": "r2",
+          "page": "128"
+        }
       },
       "effects": [],
       "folder": null,

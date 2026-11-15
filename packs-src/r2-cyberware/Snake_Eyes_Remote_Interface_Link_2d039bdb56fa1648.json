@@ -25,7 +25,11 @@
       "reaction": 0,
       "initiativeDice": 0
     },
-    "notes": "High-end remote interface link blending remote control with the user's own senses. Rigger 2 p.96."
+    "notes": "High-end remote interface link blending remote control with the user's own senses. Rigger 2 p.96.",
+    "citation": {
+      "book": "r2",
+      "page": "96"
+    }
   },
   "effects": [],
   "flags": {},

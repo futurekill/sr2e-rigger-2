@@ -42,7 +42,11 @@
     "streetIndex": "5",
     "equipped": false,
     "accessories": [],
-    "notes": "Guided jammer missile (Intelligence 3) — delivers electronic-warfare jamming transponders to a chosen target area. Rigger 2."
+    "notes": "Guided jammer missile (Intelligence 3) — delivers electronic-warfare jamming transponders to a chosen target area. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "95"
+    }
   },
   "effects": [],
   "flags": {},

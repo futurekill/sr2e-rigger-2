@@ -18,7 +18,11 @@
     "combatTnMod": 0,
     "accessoryRecoilComp": 0,
     "requiresSmartgun": false,
-    "notes": "Deck-mounted master unit coordinating a BattleTac IVIS tactical network (the external counterpart of the cranial CRD unit). Street Index 3. Rigger 2."
+    "notes": "Deck-mounted master unit coordinating a BattleTac IVIS tactical network (the external counterpart of the cranial CRD unit). Street Index 3. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "97"
+    }
   },
   "effects": [],
   "flags": {

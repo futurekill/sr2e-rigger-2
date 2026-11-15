@@ -18,7 +18,11 @@
     "combatTnMod": 0,
     "accessoryRecoilComp": 0,
     "requiresSmartgun": false,
-    "notes": "Carried unit that emulates another deck's control protocols to seize foreign drones (Rating 1–10). Cost = Rating × 5,000¥. Street Index 2. Rigger 2."
+    "notes": "Carried unit that emulates another deck's control protocols to seize foreign drones (Rating 1–10). Cost = Rating × 5,000¥. Street Index 2. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "98"
+    }
   },
   "effects": [],
   "flags": {

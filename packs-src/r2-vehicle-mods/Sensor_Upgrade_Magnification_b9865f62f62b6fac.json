@@ -64,7 +64,11 @@
       }
     },
     "installed": false,
-    "notes": "Each level adds 50× magnification to the sensors (p.27: All sensors include magnification power equal to 50 times the sensor rating; Skyrie's +100× = 2 levels). Parts cost = the sensors' original cost × .10 × levels (p.27); installed by the Sensors' own customization rules (TN 4, 16 hrs × levels, Electronics B/R, Vehicle facility). The sensor's overall rating does not change. Rigger 2 p.27. (Design specifications p.27.)"
+    "notes": "Each level adds 50× magnification to the sensors (p.27: All sensors include magnification power equal to 50 times the sensor rating; Skyrie's +100× = 2 levels). Parts cost = the sensors' original cost × .10 × levels (p.27); installed by the Sensors' own customization rules (TN 4, 16 hrs × levels, Electronics B/R, Vehicle facility). The sensor's overall rating does not change. Rigger 2 p.27. (Design specifications p.27.)",
+    "citation": {
+      "book": "r2",
+      "page": "27"
+    }
   },
   "effects": [],
   "flags": {},

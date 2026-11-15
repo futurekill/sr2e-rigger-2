@@ -18,7 +18,11 @@
     "combatTnMod": 0,
     "accessoryRecoilComp": 0,
     "requiresSmartgun": false,
-    "notes": "Imagery-analysis expert system (Rating 1–5) that adds its Rating to a drone's Pilot Rating for Perception Tests (a rigger can use it in conjunction with their own Intelligence). Parts cost = Rating × 250,000¥ (R1–3; R4–5 GM's discretion); Street Index 3; Base Time 72 hrs; needs Computer B/R. Rigger 2."
+    "notes": "Imagery-analysis expert system (Rating 1–5) that adds its Rating to a drone's Pilot Rating for Perception Tests (a rigger can use it in conjunction with their own Intelligence). Parts cost = Rating × 250,000¥ (R1–3; R4–5 GM's discretion); Street Index 3; Base Time 72 hrs; needs Computer B/R. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "100"
+    }
   },
   "effects": [],
   "flags": {},

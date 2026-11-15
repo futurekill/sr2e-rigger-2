@@ -18,7 +18,11 @@
     "combatTnMod": 0,
     "accessoryRecoilComp": 0,
     "requiresSmartgun": false,
-    "notes": "A two-way intercom letting the rigger and passengers talk while the rigger is jacked in (speaking is a Complex Action for a jacked-in rigger). Cost 25¥. Street Index 1. Rigger 2."
+    "notes": "A two-way intercom letting the rigger and passengers talk while the rigger is jacked in (speaking is a Complex Action for a jacked-in rigger). Cost 25¥. Street Index 1. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "99"
+    }
   },
   "effects": [],
   "flags": {},

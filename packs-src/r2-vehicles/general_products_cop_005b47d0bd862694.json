@@ -42,7 +42,11 @@
       "max": 10
     },
     "availability": "",
-    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.156 (originally RBB1).</p>"
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.156 (originally RBB1).</p>",
+    "citation": {
+      "book": "r2",
+      "page": "156"
+    }
   },
   "items": [
     {
@@ -106,7 +110,11 @@
           "choice": {}
         },
         "installed": false,
-        "notes": "Lets an electric ground vehicle draw power from a city's buried GridLink induction grid at normal traffic speeds (no battery drain). Monthly grid fee = Body × 100¥ (cars), × 25¥ (motorcycles), or × 250¥ (trucks/buses). Parts cost 600¥; 1 CF; Avail 3/96 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.121. (Design specifications p.121.)"
+        "notes": "Lets an electric ground vehicle draw power from a city's buried GridLink induction grid at normal traffic speeds (no battery drain). Monthly grid fee = Body × 100¥ (cars), × 25¥ (motorcycles), or × 250¥ (trucks/buses). Parts cost 600¥; 1 CF; Avail 3/96 hrs; Street Index 1; Base Time 16 hrs. Rigger 2 p.121. (Design specifications p.121.)",
+        "citation": {
+          "book": "r2",
+          "page": "121"
+        }
       },
       "effects": [],
       "folder": null,
@@ -194,7 +202,11 @@
           "choice": {}
         },
         "installed": false,
-        "notes": "Turbine boost for methane/gas/diesel engines (the 'superconductive drive' does the same for electric). Each level adds +15 Speed and +10 Acceleration; new max Speed = initial max × 1.25. Design cost = power-plant Design-Point cost × 1.5 per level; parts cost = vehicle's original cost × 1.10 per level; Avail 6/12 days; Street Index 2; Base Time 8 hrs. Rigger 2 p.122. (Design specifications p.122.)"
+        "notes": "Turbine boost for methane/gas/diesel engines (the 'superconductive drive' does the same for electric). Each level adds +15 Speed and +10 Acceleration; new max Speed = initial max × 1.25. Design cost = power-plant Design-Point cost × 1.5 per level; parts cost = vehicle's original cost × 1.10 per level; Avail 6/12 days; Street Index 2; Base Time 8 hrs. Rigger 2 p.122. (Design specifications p.122.)",
+        "citation": {
+          "book": "r2",
+          "page": "122"
+        }
       },
       "effects": [],
       "folder": null,

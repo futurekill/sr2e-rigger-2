@@ -9,7 +9,11 @@
     "pointValue": 2,
     "rule": "spike-resistance",
     "source": "Rigger 2 p.15",
-    "notes": "<p>Value 2 or 4. When resisting high simsense spikes and harmful ASIST (black IC, rigger dump shock), effective Willpower +1 for every 2 points of Spike Resistance.</p>"
+    "notes": "<p>Value 2 or 4. When resisting high simsense spikes and harmful ASIST (black IC, rigger dump shock), effective Willpower +1 for every 2 points of Spike Resistance.</p>",
+    "citation": {
+      "book": "r2",
+      "page": "15"
+    }
   },
   "effects": [],
   "flags": {},

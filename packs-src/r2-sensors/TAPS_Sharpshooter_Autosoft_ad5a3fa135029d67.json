@@ -18,7 +18,11 @@
     "combatTnMod": 0,
     "accessoryRecoilComp": 0,
     "requiresSmartgun": false,
-    "notes": "Target-acquisition expert system (Rating 1–5) that adds its Rating to a drone's Pilot Rating for Gunnery Tests, letting the drone fight effectively without a rigger jacked in. Parts cost = Rating × 250,000¥ (R1–2; R3–5 GM's discretion); Street Index 3; Base Time 72 hrs; needs Computer B/R. Rigger 2."
+    "notes": "Target-acquisition expert system (Rating 1–5) that adds its Rating to a drone's Pilot Rating for Gunnery Tests, letting the drone fight effectively without a rigger jacked in. Parts cost = Rating × 250,000¥ (R1–2; R3–5 GM's discretion); Street Index 3; Base Time 72 hrs; needs Computer B/R. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "99"
+    }
   },
   "effects": [],
   "flags": {},

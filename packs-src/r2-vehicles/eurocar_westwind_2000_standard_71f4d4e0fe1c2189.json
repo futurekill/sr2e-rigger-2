@@ -42,7 +42,11 @@
       "max": 10
     },
     "availability": "",
-    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.154 (originally SRII, RBB1).</p>"
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.154 (originally SRII, RBB1).</p>",
+    "citation": {
+      "book": "r2",
+      "page": "154"
+    }
   },
   "items": [
     {
@@ -104,7 +108,11 @@
           "choice": {}
         },
         "installed": false,
-        "notes": "Secured seat belts, impact-activated airbags, and reinforced seat panels; allows a Strength (5) Test to reduce crash damage to occupants (not for motorcycles). Parts cost 2,500¥ per seat; Avail 3/6 days; Street Index 1; Base Time 40 hrs; Target Number 4. Rigger 2 p.128. Design: Rating = seats. (Design specifications p.128.)"
+        "notes": "Secured seat belts, impact-activated airbags, and reinforced seat panels; allows a Strength (5) Test to reduce crash damage to occupants (not for motorcycles). Parts cost 2,500¥ per seat; Avail 3/6 days; Street Index 1; Base Time 40 hrs; Target Number 4. Rigger 2 p.128. Design: Rating = seats. (Design specifications p.128.)",
+        "citation": {
+          "book": "r2",
+          "page": "128"
+        }
       },
       "effects": [],
       "folder": null,

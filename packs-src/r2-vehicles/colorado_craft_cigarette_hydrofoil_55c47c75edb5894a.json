@@ -42,7 +42,11 @@
       "max": 10
     },
     "availability": "",
-    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.152 (originally RBB1). Handling 5 when the alternate mode is used (Other Features). Speed 105 in the alternate mode (Other Features). Acceleration 15 in the alternate mode. Signature 1 in the alternate mode. Autonav 0 in the alternate mode.</p>"
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.152 (originally RBB1). Handling 5 when the alternate mode is used (Other Features). Speed 105 in the alternate mode (Other Features). Acceleration 15 in the alternate mode. Signature 1 in the alternate mode. Autonav 0 in the alternate mode.</p>",
+    "citation": {
+      "book": "r2",
+      "page": "152"
+    }
   },
   "items": [],
   "effects": [],

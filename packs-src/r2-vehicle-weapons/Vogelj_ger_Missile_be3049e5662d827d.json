@@ -42,7 +42,11 @@
     "streetIndex": "4",
     "equipped": false,
     "accessories": [],
-    "notes": "Light man-portable anti-air missile; Intelligence 5. Rigger 2 p.93."
+    "notes": "Light man-portable anti-air missile; Intelligence 5. Rigger 2 p.93.",
+    "citation": {
+      "book": "r2",
+      "page": "93"
+    }
   },
   "effects": [],
   "flags": {},

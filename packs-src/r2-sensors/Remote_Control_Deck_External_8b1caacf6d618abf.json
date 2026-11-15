@@ -18,7 +18,11 @@
     "combatTnMod": 0,
     "accessoryRecoilComp": 0,
     "requiresSmartgun": false,
-    "notes": "Carried (non-cyber) remote-control deck for jumping into and piloting drones/vehicles; holds storage memory, protocol emulation, and other modules. Cost = Rating × 5,000¥. Street Index 3. The external counterpart of the cranial deck. Rigger 2."
+    "notes": "Carried (non-cyber) remote-control deck for jumping into and piloting drones/vehicles; holds storage memory, protocol emulation, and other modules. Cost = Rating × 5,000¥. Street Index 3. The external counterpart of the cranial deck. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "97"
+    }
   },
   "effects": [],
   "flags": {

@@ -37,7 +37,11 @@
     "streetIndex": "4",
     "equipped": false,
     "accessories": [],
-    "notes": "Sensor-guided smart anti-vehicle mine; fires an explosively-formed penetrator (Rating 4 sensor / Rating 2 Pilot). Rigger 2."
+    "notes": "Sensor-guided smart anti-vehicle mine; fires an explosively-formed penetrator (Rating 4 sensor / Rating 2 Pilot). Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "94"
+    }
   },
   "effects": [],
   "flags": {},

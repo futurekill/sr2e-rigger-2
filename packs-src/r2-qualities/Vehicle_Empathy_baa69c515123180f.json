@@ -9,7 +9,11 @@
     "pointValue": 2,
     "rule": "vehicle-empathy",
     "source": "Rigger 2 p.16",
-    "notes": "<p>Whenever the character is in physical contact with a vehicle (manual controls, or jacked into the vehicle itself), reduce its Handling by 1.</p>"
+    "notes": "<p>Whenever the character is in physical contact with a vehicle (manual controls, or jacked into the vehicle itself), reduce its Handling by 1.</p>",
+    "citation": {
+      "book": "r2",
+      "page": "16"
+    }
   },
   "effects": [],
   "flags": {},

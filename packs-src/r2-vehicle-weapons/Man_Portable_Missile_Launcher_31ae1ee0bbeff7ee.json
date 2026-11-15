@@ -37,7 +37,11 @@
     "streetIndex": "4",
     "equipped": false,
     "accessories": [],
-    "notes": "Shoulder-fired/hardpoint missile launcher; fires one missile per shot (load a missile below). Rigger 2 p.93."
+    "notes": "Shoulder-fired/hardpoint missile launcher; fires one missile per shot (load a missile below). Rigger 2 p.93.",
+    "citation": {
+      "book": "r2",
+      "page": "93"
+    }
   },
   "effects": [],
   "flags": {},

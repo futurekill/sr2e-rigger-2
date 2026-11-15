@@ -18,7 +18,11 @@
     "combatTnMod": 0,
     "accessoryRecoilComp": 0,
     "requiresSmartgun": false,
-    "notes": "Carried unit that cracks encrypted remote-control traffic (Rating 1–10). Cost = Rating × 7,500¥. Street Index 3. Rigger 2."
+    "notes": "Carried unit that cracks encrypted remote-control traffic (Rating 1–10). Cost = Rating × 7,500¥. Street Index 3. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "98"
+    }
   },
   "effects": [],
   "flags": {

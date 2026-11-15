@@ -25,7 +25,11 @@
       "reaction": 0,
       "initiativeDice": 0
     },
-    "notes": "Cranial master unit coordinating a BattleTac IVIS tactical network. Rigger 2."
+    "notes": "Cranial master unit coordinating a BattleTac IVIS tactical network. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "96"
+    }
   },
   "effects": [],
   "flags": {

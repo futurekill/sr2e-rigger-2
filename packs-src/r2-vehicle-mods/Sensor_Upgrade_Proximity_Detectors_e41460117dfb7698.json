@@ -64,7 +64,11 @@
       }
     },
     "installed": false,
-    "notes": "Adds proximity detectors to a sensor system that doesn't include it (p.27: included from Sensor Rating 1). Levels = how far the purchase boosts the system toward that component's rating band (e.g. flare compensation on a Rating 4 system: 1 level). Parts cost = the sensors' original cost × .10 × levels (p.27); installed by the Sensors' own customization rules (TN 4, 16 hrs × levels, Electronics B/R, Vehicle facility). The sensor's overall rating does not change. Rigger 2 p.27. (Design specifications p.27.)"
+    "notes": "Adds proximity detectors to a sensor system that doesn't include it (p.27: included from Sensor Rating 1). Levels = how far the purchase boosts the system toward that component's rating band (e.g. flare compensation on a Rating 4 system: 1 level). Parts cost = the sensors' original cost × .10 × levels (p.27); installed by the Sensors' own customization rules (TN 4, 16 hrs × levels, Electronics B/R, Vehicle facility). The sensor's overall rating does not change. Rigger 2 p.27. (Design specifications p.27.)",
+    "citation": {
+      "book": "r2",
+      "page": "27"
+    }
   },
   "effects": [],
   "flags": {},

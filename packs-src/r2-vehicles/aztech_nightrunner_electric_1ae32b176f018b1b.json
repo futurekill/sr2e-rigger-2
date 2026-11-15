@@ -42,7 +42,11 @@
       "max": 10
     },
     "availability": "",
-    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.150 (originally SRII).</p>"
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.150 (originally SRII).</p>",
+    "citation": {
+      "book": "r2",
+      "page": "150"
+    }
   },
   "items": [],
   "effects": [],

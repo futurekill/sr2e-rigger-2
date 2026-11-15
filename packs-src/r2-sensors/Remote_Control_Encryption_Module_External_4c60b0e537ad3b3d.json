@@ -18,7 +18,11 @@
     "combatTnMod": 0,
     "accessoryRecoilComp": 0,
     "requiresSmartgun": false,
-    "notes": "Carried encryption unit for a remote-control deck (Rating 1–10). Cost = Rating × 5,000¥. Street Index 3. The external counterpart of the implanted module. Rigger 2."
+    "notes": "Carried encryption unit for a remote-control deck (Rating 1–10). Cost = Rating × 5,000¥. Street Index 3. The external counterpart of the implanted module. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "98"
+    }
   },
   "effects": [],
   "flags": {

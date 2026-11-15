@@ -45,7 +45,11 @@
       "max": 10
     },
     "availability": "",
-    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.148.</p>"
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.148.</p>",
+    "citation": {
+      "book": "r2",
+      "page": "148"
+    }
   },
   "items": [
     {
@@ -110,7 +114,11 @@
           "choice": {}
         },
         "installed": false,
-        "notes": "Lets a vehicle receive and transmit remote-control data, giving it an initial Pilot Rating of 1 and remote autonomy. Parts cost = 2,500¥ × Body; Avail 4/72 days; Street Index 2; Base Time 16 hrs; needs B/R & Electronics. Rigger 2 p.125–126. (Design specifications p.125.)"
+        "notes": "Lets a vehicle receive and transmit remote-control data, giving it an initial Pilot Rating of 1 and remote autonomy. Parts cost = 2,500¥ × Body; Avail 4/72 days; Street Index 2; Base Time 16 hrs; needs B/R & Electronics. Rigger 2 p.125–126. (Design specifications p.125.)",
+        "citation": {
+          "book": "r2",
+          "page": "125–126"
+        }
       },
       "effects": [],
       "folder": null,
@@ -184,7 +192,11 @@
           "choice": {}
         },
         "installed": false,
-        "notes": "A 'black box' translating machine code to neural stimuli and back, so a rigger controlling the vehicle through a VCR gets the full Control Pool and Reaction/Initiative bonuses. Parts cost 2,800¥; Avail 4/7 days; Street Index 2; Base Time 4 hrs; 1 CF (plus the datajack-port/remote-control CF); load −10 kg. Rigger 2 p.126. (Design specifications p.126.)"
+        "notes": "A 'black box' translating machine code to neural stimuli and back, so a rigger controlling the vehicle through a VCR gets the full Control Pool and Reaction/Initiative bonuses. Parts cost 2,800¥; Avail 4/7 days; Street Index 2; Base Time 4 hrs; 1 CF (plus the datajack-port/remote-control CF); load −10 kg. Rigger 2 p.126. (Design specifications p.126.)",
+        "citation": {
+          "book": "r2",
+          "page": "126"
+        }
       },
       "effects": [],
       "folder": null,
@@ -259,7 +271,11 @@
           "choice": {}
         },
         "installed": false,
-        "notes": "Externally-mounted solar cells that feed an electric vehicle Body × 25 PF/hour on a sunny day (half in cloud, none at night/heavy overcast); not for motorcycles. Design 5 points; parts cost 500¥; Avail 3/72 hrs; Street Index 1; Base Time 8 hrs. Rigger 2 p.121. (Design specifications p.121.)"
+        "notes": "Externally-mounted solar cells that feed an electric vehicle Body × 25 PF/hour on a sunny day (half in cloud, none at night/heavy overcast); not for motorcycles. Design 5 points; parts cost 500¥; Avail 3/72 hrs; Street Index 1; Base Time 8 hrs. Rigger 2 p.121. (Design specifications p.121.)",
+        "citation": {
+          "book": "r2",
+          "page": "121"
+        }
       },
       "effects": [],
       "folder": null,

@@ -42,7 +42,11 @@
     "streetIndex": "5",
     "equipped": false,
     "accessories": [],
-    "notes": "Outlaw missile, single high-explosive warhead; Intelligence 6. Rigger 2 p.93."
+    "notes": "Outlaw missile, single high-explosive warhead; Intelligence 6. Rigger 2 p.93.",
+    "citation": {
+      "book": "r2",
+      "page": "93"
+    }
   },
   "effects": [],
   "flags": {},

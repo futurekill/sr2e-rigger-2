@@ -37,7 +37,11 @@
     "streetIndex": "4",
     "equipped": false,
     "accessories": [],
-    "notes": "Rocket-deployed cluster of 8 Trapdoor smart mines; Intelligence 4. Rigger 2."
+    "notes": "Rocket-deployed cluster of 8 Trapdoor smart mines; Intelligence 4. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "94"
+    }
   },
   "effects": [],
   "flags": {},

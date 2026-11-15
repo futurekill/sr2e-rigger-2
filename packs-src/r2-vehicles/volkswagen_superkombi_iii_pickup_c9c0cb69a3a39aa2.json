@@ -42,7 +42,11 @@
       "max": 10
     },
     "availability": "",
-    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.166 (originally RBB1). Cargo printed 4/32 (two spaces; 36 CF in all).</p>"
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.166 (originally RBB1). Cargo printed 4/32 (two spaces; 36 CF in all).</p>",
+    "citation": {
+      "book": "r2",
+      "page": "166"
+    }
   },
   "items": [],
   "effects": [],

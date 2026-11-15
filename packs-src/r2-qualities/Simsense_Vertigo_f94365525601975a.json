@@ -9,7 +9,11 @@
     "pointValue": -2,
     "rule": "simsense-vertigo",
     "source": "Rigger 2 p.15",
-    "notes": "<p>Disoriented by cyberdecks, vehicle control rigs, simrigs, smartlinks, display links and other simsense technology: +1 to all target numbers and −1 Initiative while operating any simsense-related device.</p>"
+    "notes": "<p>Disoriented by cyberdecks, vehicle control rigs, simrigs, smartlinks, display links and other simsense technology: +1 to all target numbers and −1 Initiative while operating any simsense-related device.</p>",
+    "citation": {
+      "book": "r2",
+      "page": "15"
+    }
   },
   "effects": [],
   "flags": {},

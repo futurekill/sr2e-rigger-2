@@ -9,7 +9,11 @@
     "pointValue": -2,
     "rule": "sensitive-neural-structure",
     "source": "Rigger 2 p.15",
-    "notes": "<p>Value −2 or −4. When resisting neural damage (BTLs, black IC, rigger dump shock and other damaging simsense), effective Willpower is reduced by 1 (−2 Flaw) or 2 (−4 Flaw), never below 1.</p>"
+    "notes": "<p>Value −2 or −4. When resisting neural damage (BTLs, black IC, rigger dump shock and other damaging simsense), effective Willpower is reduced by 1 (−2 Flaw) or 2 (−4 Flaw), never below 1.</p>",
+    "citation": {
+      "book": "r2",
+      "page": "15"
+    }
   },
   "effects": [],
   "flags": {},

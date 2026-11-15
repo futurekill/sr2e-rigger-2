@@ -42,7 +42,11 @@
       "max": 10
     },
     "availability": "",
-    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.148 (originally RBB1).</p>"
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.148 (originally RBB1).</p>",
+    "citation": {
+      "book": "r2",
+      "page": "148"
+    }
   },
   "items": [],
   "effects": [],

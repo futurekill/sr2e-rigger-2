@@ -37,7 +37,11 @@
     "streetIndex": "5",
     "equipped": false,
     "accessories": [],
-    "notes": "Unguided rocket that scatters electronic-warfare jamming transponders over an area rather than dealing damage — fouls sensors, radios, and remote-control links. Rigger 2."
+    "notes": "Unguided rocket that scatters electronic-warfare jamming transponders over an area rather than dealing damage — fouls sensors, radios, and remote-control links. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "95"
+    }
   },
   "effects": [],
   "flags": {},

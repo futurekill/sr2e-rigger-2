@@ -42,7 +42,11 @@
     "streetIndex": "5",
     "equipped": false,
     "accessories": [],
-    "notes": "Outlaw vehicle missile, improved conventional munition (ICM); Intelligence 5. Rigger 2 p.93."
+    "notes": "Outlaw vehicle missile, improved conventional munition (ICM); Intelligence 5. Rigger 2 p.93.",
+    "citation": {
+      "book": "r2",
+      "page": "93"
+    }
   },
   "effects": [],
   "flags": {},

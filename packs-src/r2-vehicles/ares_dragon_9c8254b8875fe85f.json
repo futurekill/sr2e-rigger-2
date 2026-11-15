@@ -42,7 +42,11 @@
       "max": 10
     },
     "availability": "",
-    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.149 (originally SRII). Cargo printed 5/90 (two spaces; 95 CF in all).</p>"
+    "notes": "<p><em>Rigger 2 Vehicle List:</em> Rigger 2 p.149 (originally SRII). Cargo printed 5/90 (two spaces; 95 CF in all).</p>",
+    "citation": {
+      "book": "r2",
+      "page": "149"
+    }
   },
   "items": [],
   "effects": [],

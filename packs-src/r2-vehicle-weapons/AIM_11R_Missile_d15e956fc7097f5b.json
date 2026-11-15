@@ -42,7 +42,11 @@
     "streetIndex": "5",
     "equipped": false,
     "accessories": [],
-    "notes": "Anti-air missile, Intelligence 6 guidance; fired from a missile launcher. Rigger 2."
+    "notes": "Anti-air missile, Intelligence 6 guidance; fired from a missile launcher. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "93"
+    }
   },
   "effects": [],
   "flags": {},

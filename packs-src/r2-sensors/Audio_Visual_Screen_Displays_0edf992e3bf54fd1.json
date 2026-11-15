@@ -18,7 +18,11 @@
     "combatTnMod": 0,
     "accessoryRecoilComp": 0,
     "requiresSmartgun": false,
-    "notes": "LCD screens that mirror the rigger's point of view (a drone's sensor feed) for passengers who aren't jacked in; one screen shows one drone at a time, up to the deck's Rating. Cost 100¥ each. Street Index 1. Rigger 2."
+    "notes": "LCD screens that mirror the rigger's point of view (a drone's sensor feed) for passengers who aren't jacked in; one screen shows one drone at a time, up to the deck's Rating. Cost 100¥ each. Street Index 1. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "99"
+    }
   },
   "effects": [],
   "flags": {},

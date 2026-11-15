@@ -25,7 +25,11 @@
       "reaction": 0,
       "initiativeDice": 0
     },
-    "notes": "Encrypts a remote-control deck's signals (Rating 1–10). Cost = Rating × 10,000¥; availability scales with Rating. Rigger 2."
+    "notes": "Encrypts a remote-control deck's signals (Rating 1–10). Cost = Rating × 10,000¥; availability scales with Rating. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "96"
+    }
   },
   "effects": [],
   "flags": {

@@ -37,7 +37,11 @@
     "streetIndex": "5",
     "equipped": false,
     "accessories": [],
-    "notes": "Heavy belt-fed vehicle autocannon; single-shot or full-auto. Rigger 2."
+    "notes": "Heavy belt-fed vehicle autocannon; single-shot or full-auto. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "92"
+    }
   },
   "effects": [],
   "flags": {},

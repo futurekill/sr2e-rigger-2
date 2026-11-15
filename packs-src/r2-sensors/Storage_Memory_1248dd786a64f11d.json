@@ -18,7 +18,11 @@
     "combatTnMod": 0,
     "accessoryRecoilComp": 0,
     "requiresSmartgun": false,
-    "notes": "Removable mass-storage for a remote-control deck. Cost = Mp × 5¥ (per megapulse). Street Index 1. Rigger 2."
+    "notes": "Removable mass-storage for a remote-control deck. Cost = Mp × 5¥ (per megapulse). Street Index 1. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "99"
+    }
   },
   "effects": [],
   "flags": {

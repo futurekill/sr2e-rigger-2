@@ -37,7 +37,11 @@
     "streetIndex": "3.5",
     "equipped": false,
     "accessories": [],
-    "notes": "Heavy vehicle minigun (HMG class), belt-fed full-auto. Rigger 2."
+    "notes": "Heavy vehicle minigun (HMG class), belt-fed full-auto. Rigger 2.",
+    "citation": {
+      "book": "r2",
+      "page": "92"
+    }
   },
   "effects": [],
   "flags": {},
