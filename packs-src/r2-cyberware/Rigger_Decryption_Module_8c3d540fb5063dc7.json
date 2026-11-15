@@ -28,7 +28,11 @@
     "notes": "Cracks encrypted remote-control traffic (Rating 1–10). Cost = Rating × 17,500¥. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "decryption"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

@@ -21,7 +21,11 @@
     "notes": "Boosts a remote-control signal's range (Rating 1–10). Weight = 1 × Rating kg; cost = Rating × 250¥. Street Index 1.5. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "signal-amplifier"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

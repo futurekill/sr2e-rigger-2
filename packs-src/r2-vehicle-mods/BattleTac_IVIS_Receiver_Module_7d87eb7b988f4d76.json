@@ -22,7 +22,7 @@
     "designable": true,
     "designNuyen": false,
     "mountPoints": 0,
-    "modKey": "",
+    "modKey": "ivis-receiver",
     "maxRating": "",
     "restrictions": [
       "needsRemote"

@@ -21,7 +21,11 @@
     "notes": "Carried unit that cracks encrypted remote-control traffic (Rating 1–10). Cost = Rating × 7,500¥. Street Index 3. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "decryption"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

@@ -28,7 +28,11 @@
     "notes": "Cranial master unit coordinating a BattleTac IVIS tactical network. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "ivis-master"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

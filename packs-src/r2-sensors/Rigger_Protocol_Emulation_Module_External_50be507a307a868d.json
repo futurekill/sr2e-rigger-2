@@ -21,7 +21,11 @@
     "notes": "Carried unit that emulates another deck's control protocols to seize foreign drones (Rating 1–10). Cost = Rating × 5,000¥. Street Index 2. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "protocol-emulation"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

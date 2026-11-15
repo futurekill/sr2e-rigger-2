@@ -21,7 +21,11 @@
     "notes": "Carried (non-cyber) remote-control deck for jumping into and piloting drones/vehicles; holds storage memory, protocol emulation, and other modules. Cost = Rating × 5,000¥. Street Index 3. The external counterpart of the cranial deck. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "rc-deck"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

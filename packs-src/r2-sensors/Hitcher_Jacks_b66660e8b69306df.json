@@ -21,7 +21,11 @@
     "notes": "Extra datajack ports on a remote-control deck that let passengers ('hitchers') jack in and share the rigger's sensory feed — a hitcher can observe but not control (the number of jacks a deck handles is capped at its Rating). Cost = Rating × 100¥ per jack. Street Index 1. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "hitcher-jacks"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

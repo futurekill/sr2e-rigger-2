@@ -21,7 +21,11 @@
     "notes": "Removable mass-storage for a remote-control deck. Cost = Mp × 5¥ (per megapulse). Street Index 1. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "storage-memory"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

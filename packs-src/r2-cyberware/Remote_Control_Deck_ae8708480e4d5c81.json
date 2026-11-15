@@ -28,7 +28,11 @@
     "notes": "Implanted remote-control deck — jump into and pilot drones and vehicles by wire. Cost = Rating × 25,000¥. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "rc-deck"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

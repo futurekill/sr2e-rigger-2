@@ -21,7 +21,11 @@
     "notes": "Carried electronic counter-countermeasures for a remote-control deck. Tiers: R1–3 (1.5 kg, ×7,500¥, 4/7 days, SI 2); R4–6 (2 kg, ×15,000¥, 6/14 days, SI 3); R7–9 (2.5 kg, ×35,000¥, 12/28 days, SI 4); R10 (2.5 kg, 500,000¥ flat, 18/45 days). Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "rc-eccm"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

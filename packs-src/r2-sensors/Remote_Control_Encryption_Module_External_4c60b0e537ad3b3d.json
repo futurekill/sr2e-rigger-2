@@ -21,7 +21,11 @@
     "notes": "Carried encryption unit for a remote-control deck (Rating 1–10). Cost = Rating × 5,000¥. Street Index 3. The external counterpart of the implanted module. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "rc-encryption"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {

@@ -28,7 +28,11 @@
     "notes": "Lets a rigger emulate another deck's control protocols to seize foreign drones. Cost = Rating × 5,000¥. Rigger 2."
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "protocol-emulation"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {
