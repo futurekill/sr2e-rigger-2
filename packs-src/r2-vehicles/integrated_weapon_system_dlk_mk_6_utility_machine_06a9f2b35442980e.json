@@ -58,7 +58,7 @@
       "img": "icons/svg/upgrade.svg",
       "system": {
         "modType": "accessory",
-        "rating": 1,
+        "rating": 0,
         "cost": 25000,
         "designPoints": 0,
         "dpPerLevel": 0,
@@ -120,7 +120,8 @@
       "sort": 0,
       "flags": {
         "sr2e": {
-          "factory": true
+          "factory": true,
+          "rule": "mechanical-arms"
         }
       },
       "_stats": {
@@ -135,7 +136,7 @@
       "img": "icons/svg/upgrade.svg",
       "system": {
         "modType": "accessory",
-        "rating": 1,
+        "rating": 0,
         "cost": 25000,
         "designPoints": 0,
         "dpPerLevel": 0,
@@ -197,7 +198,8 @@
       "sort": 0,
       "flags": {
         "sr2e": {
-          "factory": true
+          "factory": true,
+          "rule": "mechanical-arms"
         }
       },
       "_stats": {

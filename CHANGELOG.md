@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+- **Factory Mechanical Arms had a phantom point of Strength.** An arm's rating is the Strength bought up on top of the
+  vehicle's Body squared (p.145); the catalog item and the factory arms of the MK-Guyver and the DLK MK 6 shipped at
+  rating 1, so each arm hit one point too hard and cost 25 kg too much Load. They're rating 0 now, flagged
+  `mechanical-arms` for the system's arm rules (sr2e Part 5c). Vehicles already imported keep their old arms: set
+  the rating to 0 or import them again.
+
 ## 0.12.1 — 2026-11-15
 
 ### Changed

@@ -257,7 +257,8 @@ export function factoryFor(r, system) {
     if (kind === "armor") { rating = system.armor; kind = "level"; }
     if (!MOD[name]) throw new Error(`${vehicleIdOf(r)}: catalog has no "${name}"`);
     if (kind === "level" || kind === "set") out.push({ name, rating: rating || 1, count: 1 });
-    else out.push({ name, rating: 1, count });
+    // A Mechanical Arms' rating is its Strength BOUGHT UP (p.145): a factory arm has none (system 5c review).
+    else out.push({ name, rating: name === "Mechanical Arms" ? 0 : 1, count });
   }
   return { items: out, unmapped };
 }

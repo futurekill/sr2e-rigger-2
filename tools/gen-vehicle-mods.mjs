@@ -29,7 +29,7 @@ function mod(m) {
       stack: m.stack ?? "", custom: m.custom ?? {}, components: m.components ?? {},
       installed: false, notes: m.notes ?? ""
     },
-    effects: [], flags: {}, folder: null, sort: 0,
+    effects: [], flags: m.flags ?? {}, folder: null, sort: 0,
     _stats: { coreVersion: "13.351", systemId: "sr2e", systemVersion: "0.0.1", createdTime: 1781600000000, modifiedTime: 1781600000000, lastModifiedBy: null, compendiumSource: null, duplicateSource: null, exportSource: null },
     ownership: { default: 0 }, _key: `!items!${_id}`
   };
@@ -162,7 +162,7 @@ const MODS = [
     notes: "Floats for an aircraft or helicopter for water operation. Aircraft: economy ×1.20, Speed halved, cannot land on land. Helicopters: Speed ×0.9, can still land on land. Parts cost = vehicle cost × 0.1 + 2,500¥; design = chassis Point Value × 1.20; Avail 4/7 days; Street Index 2. Rigger 2 p.144." },
   { name: "Hovercraft Water Seals", modType: "accessory", cost: 0,
     notes: "Watertight chassis seals so a powered-down hovercraft floats instead of sinking (a normal hovercraft sinks within 30 min over water). Parts cost = Body × 500¥; design = Body × 5 points; Avail 4/96 hrs; Street Index 1; Base Time 32 hrs. Rigger 2 p.145." },
-  { name: "Mechanical Arms", modType: "accessory", cost: 25000,
+  { name: "Mechanical Arms", modType: "accessory", cost: 25000, rating: 0, flags: { sr2e: { rule: "mechanical-arms" } },
     notes: "Articulated arms (Body = ½ vehicle Body) — weaker than a crane but dextrous, doing anything a metahuman arm can; base Strength scales, lifts (Strength × 50) kg, and can mount most cyberarm accessories (at half a cyberarm's cost). Strength may be bought up: parts +75,000¥/point (1–3) or +90,000¥/point (4+); base parts 25,000¥; 4 CF; load −(Strength × 25) kg; Avail 4/4 days; needs Cybertechnology B/R. Rigger 2 p.145." },
   { name: "Motorcycle Sidecar", modType: "accessory", cost: 1000,
     notes: "A sidecar (Body = the cycle's): −15 Speed, +Handling, economy ×0.9. Sizes by cargo/Handling/cost: Small 4 CF/+1/1,000¥, Medium 8 CF/+1/2,000¥, Large 12 CF/+2/3,500¥ (seating eats the cargo CF). Mount/remove in 15 min; armor upgradeable per the standard rules. Rigger 2 p.145." },

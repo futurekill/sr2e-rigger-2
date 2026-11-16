@@ -5,7 +5,7 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "modType": "accessory",
-    "rating": 1,
+    "rating": 0,
     "cost": 25000,
     "designPoints": 0,
     "dpPerLevel": 0,
@@ -63,7 +63,11 @@
     }
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "sr2e": {
+      "rule": "mechanical-arms"
+    }
+  },
   "folder": null,
   "sort": 0,
   "_stats": {
