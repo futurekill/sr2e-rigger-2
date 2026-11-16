@@ -104,6 +104,9 @@ const TYPE_BY_CATEGORY = { bike: "ground", car: "ground", hovercraft: "hovercraf
 const SKILL_BY_CATEGORY = { bike: "bike", car: "car", hovercraft: "hovercraft", boat: "motorboat", rotor: "rotor",
   fixedWing: "winged", vector: "vectorThrust" };
 const TRANSPORT = new Set(["mediumTransport", "heavyTransport", "tractor"]);
+// Robots (p.67): the Vehicle List marks none, so the user rules each one (wiki Rulings). MK-Guyver: ruled a robot
+// 2026-11-15 despite its printed Learning Pool of 2 ≠ Pilot 3 — the printed, scoped pool stands.
+const ROBOTS = new Set(["Toyota MK-Guyver Search and Rescue Robot"]);
 export function classify(r, chassisKey, engine) {
   const ch = CHASSIS[chassisKey];
   const drone = DRONE_CHASSIS.test(chassisKey) || /drone|uav|rpv|crawler/i.test(r.template) || (dash(r.seating) || /^none$/i.test(r.seating.trim())) && !dash(r.pilot);
@@ -114,6 +117,7 @@ export function classify(r, chassisKey, engine) {
   if (chassisKey === "tractor") traits.push("tractor");
   if (chassisKey === "mediumTransport" || chassisKey === "heavyTransport") traits.push("truck");
   if (drone) traits.push("drone");
+  if (ROBOTS.has(r.name)) traits.push("robot");
   if (engine === "electric" && ["rotor", "fixedWing", "vector"].includes(ch.category)) traits.push("electricAircraft");
   const vehicleType = drone ? "drone" : zeppelin ? "aircraft" : TYPE_BY_CATEGORY[category] ?? "ground";
   const sail = engine === "sail";

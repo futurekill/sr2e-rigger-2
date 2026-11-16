@@ -36,7 +36,8 @@
       "category": "special",
       "transport": false,
       "traits": [
-        "drone"
+        "drone",
+        "robot"
       ]
     },
     "learningPool": {

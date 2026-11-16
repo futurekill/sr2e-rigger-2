@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.12.1 — 2026-11-15
+
+### Changed
+- **The Toyota MK-Guyver Search and Rescue Robot is a robot** (Rigger 2 p.67; ruled 2026-11-15, see the wiki's
+  Rulings page): Reaction 2 × Pilot, its own Initiative (Learning Pool + 1 dice), its printed Search & Rescue
+  Learning Pool of 2 kept. Vehicles already imported keep their old record: import it again to get the change.
+
 ## 0.12.0 — 2026-11-15
 
 Requires sr2e 0.156.0 (citations).

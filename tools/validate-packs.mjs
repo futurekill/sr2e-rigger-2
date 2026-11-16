@@ -132,7 +132,7 @@ function formulaSyntaxOk(v) {
   const TYPES = new Set(["ground", "hovercraft", "boat", "aircraft", "rotor", "vectored_thrust", "drone"]);
   const SKILLS = new Set(["bike", "car", "hovercraft", "motorboat", "sailboat", "rotor", "winged", "vectorThrust"]);
   const CATS = new Set(["bike", "car", "hovercraft", "boat", "rotor", "fixedWing", "vector", "special"]);
-  const TRAITS = new Set(["zeppelin", "tractor", "truck", "drone", "electricAircraft"]);
+  const TRAITS = new Set(["zeppelin", "tractor", "truck", "drone", "electricAircraft", "robot"]);
   const ENGINES = new Set(["gasoline", "diesel", "electric", "methane", "jetPropeller", "jetTurbine", "sail"]);
   const weaponNames = new Set(readdirSync(join(ROOT, "r2-vehicle-weapons")).filter(f => f.endsWith(".json")).map(f => JSON.parse(readFileSync(join(ROOT, "r2-vehicle-weapons", f), "utf8")).name));
   const modNames = new Set(readdirSync(join(ROOT, "r2-vehicle-mods")).filter(f => f.endsWith(".json")).map(f => JSON.parse(readFileSync(join(ROOT, "r2-vehicle-mods", f), "utf8")).name));
