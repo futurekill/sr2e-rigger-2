@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.12.2 — 2026-11-16
 
 ### Fixed
 - **Factory Mechanical Arms had a phantom point of Strength.** An arm's rating is the Strength bought up on top of the
