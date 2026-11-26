@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.12.3 — 2026-11-26
+
+### Fixed
+- **Firearm Conversion Kits' prices** (p.131): the SMG, Rifle/Shotgun/LMG and Heavy Weapon kits all cost 150¥; the
+  book prints 350¥, 750¥ and 1,000¥ (the Pistol kit is 150¥). The sr2e system (0.169.0) and the chargen app's
+  Workshop install these kits when a personal firearm goes on a fixed mount or a turret.
+
 ## 0.12.2 — 2026-11-16
 
 ### Fixed

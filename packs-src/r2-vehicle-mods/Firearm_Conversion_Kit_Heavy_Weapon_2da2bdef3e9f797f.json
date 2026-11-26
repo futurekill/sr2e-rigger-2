@@ -6,7 +6,7 @@
   "system": {
     "modType": "weapon",
     "rating": 0,
-    "cost": 150,
+    "cost": 1000,
     "designPoints": 3,
     "dpPerLevel": 0,
     "dpTable": [],
@@ -56,7 +56,7 @@
     },
     "components": {},
     "installed": false,
-    "notes": "Required to mount a personal firearm on a vehicle weapon mount. Cost/availability by class: Pistol 150¥ 4/36 hrs (SI 2); SMG 150¥ 5/48 hrs (SI 2, −0.25 kg); Rifle/Shotgun/LMG 750¥ 6/72 hrs (SI 2.5, −0.5 kg); Heavy Weapons 1,000¥ 16/14 days (SI 2.5, −1 kg). Rigger 2 p.131. (Design specifications p.131.)",
+    "notes": "Required to mount a personal firearm on a vehicle weapon mount. Cost/availability by class: Pistol 150¥ 4/36 hrs (SI 2); SMG 350¥ 5/48 hrs (SI 2, −0.25 kg); Rifle/Shotgun/LMG 750¥ 6/72 hrs (SI 2.5, −0.5 kg); Heavy Weapons 1,000¥ 16/14 days (SI 2.5, −1 kg). Rigger 2 p.131. (Design specifications p.131.)",
     "citation": {
       "book": "r2",
       "page": "131"
